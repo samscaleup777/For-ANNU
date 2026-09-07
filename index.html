@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annïka — Faith in heart, strength in life.</title>
+  
+  <!-- Google Fonts: Playfair Display (Serif), Plus Jakarta Sans (Sans-serif), Caveat (Script) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================
+       1. VARIABLES & RE-USABLE STYLES
+       ========================================== */
+    :root {
+      --font-heading: 'Playfair Display', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-script: 'Caveat', cursive;
+
+      --color-dark-green: #0f1c18;
+      --color-deep-forest: #14241e;
+      --color-emerald-dark: #1b2f27;
+      --color-cream-light: #faf8f5;
+      --color-cream-card: #f5f0eb;
+      --color-beige-subtle: #eae3da;
+      --color-peach-soft: #f2cebe;
+      --color-peach-hover: #eabfae;
+      --color-text-dark: #1e2422;
+      --color-text-muted: #6b7770;
+      --color-border-light: rgba(0, 0, 0, 0.08);
+      --color-border-dark: rgba(255, 255, 255, 0.15);
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+
+      --container-max: 1280px;
+      --transition-base: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text-dark);
+      background-color: var(--color-cream-light);
+      line-height: 1.5;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition-base);
+    }
+
+    button {
+      font-family: inherit;
+      border: none;
+      outline: none;
+      background: none;
+      cursor: pointer;
+      transition: var(--transition-base);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    .font-script {
+      font-family: var(--font-script);
+    }
+
+    /* ==========================================
+       2. HEADER & NAVIGATION
+       ========================================== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(15, 28, 24, 0.88);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 0.85rem 0;
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      color: #ffffff;
+      font-family: var(--font-heading);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      stroke: #ffffff;
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 0.9rem;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-links a:hover {
+      color: #ffffff;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .btn-search {
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.4rem;
+      border-radius: var(--radius-full);
+    }
+
+    .btn-search:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn-outline-light {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      color: #ffffff;
+      padding: 0.45rem 1.3rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .btn-outline-light:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: #ffffff;
+    }
+
+    .btn-peach {
+      background-color: var(--color-peach-soft);
+      color: #2c1b18;
+      padding: 0.45rem 1.3rem;
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .btn-peach:hover {
+      background-color: var(--color-peach-hover);
+      transform: translateY(-1px);
+    }
+
+    .mobile-toggle {
+      display: none;
+      color: #ffffff;
+      font-size: 1.5rem;
+    }
+
+    /* ==========================================
+       3. HERO SECTION
+       ========================================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 80px;
+      overflow: hidden;
+      background: #111e1a;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    /* CSS Drawn Sunset Mosque & Hijab Girl Silhouette Composition */
+    .hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center bottom;
+      filter: brightness(0.9) contrast(1.05);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        90deg, 
+        rgba(15, 28, 24, 0.92) 0%, 
+        rgba(15, 28, 24, 0.6) 45%, 
+        rgba(15, 28, 24, 0.2) 100%
+      );
+      z-index: 2;
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 560px;
+      color: #ffffff;
+    }
+
+    .hero-breadcrumb {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      color: rgba(255, 255, 255, 0.75);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-breadcrumb span {
+      opacity: 0.5;
+    }
+
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: 5rem;
+      font-weight: 500;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 300;
+      line-height: 1.6;
+      margin-bottom: 2.25rem;
+    }
+
+    .hero-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background-color: var(--color-peach-soft);
+      color: #241815;
+      padding: 0.85rem 1.8rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    .hero-cta-btn:hover {
+      background-color: var(--color-peach-hover);
+      transform: translateY(-2px);
+    }
+
+    .hero-right-content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    /* Circular Play Widget */
+    .video-play-widget {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      color: #ffffff;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 18%;
+      margin-top: 10%;
+    }
+
+    .play-circle-btn {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-base);
+    }
+
+    .play-circle-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: #ffffff;
+      margin-left: 3px;
+    }
+
+    .video-play-widget:hover .play-circle-btn {
+      transform: scale(1.08);
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    .video-label {
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .video-duration {
+      font-size: 0.75rem;
+      opacity: 0.7;
+    }
+
+    /* Handwritten hero note */
+    .hero-handwritten {
+      position: absolute;
+      right: 2rem;
+      top: 25%;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 2.2rem;
+      line-height: 1.1;
+      transform: rotate(3deg);
+      pointer-events: none;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    /* ==========================================
+       4. SECTION 2 — INTRO & FEATURE OVERVIEW
+       ========================================== */
+    .intro-section {
+      padding: 6rem 0;
+      background-color: var(--color-cream-light);
+    }
+
+    .intro-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 3.5rem;
+      align-items: center;
+    }
+
+    .intro-header {
+      margin-bottom: 3.5rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 2.75rem;
+      font-weight: 500;
+      color: var(--color-text-dark);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.85rem;
+    }
+
+    .section-subtitle {
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      max-width: 540px;
+    }
+
+    /* Feature columns container */
+    .features-row {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      position: relative;
+    }
+
+    .feature-item {
+      padding: 0 0.8rem;
+      position: relative;
+    }
+
+    .feature-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 10%;
+      height: 80%;
+      width: 1px;
+      background-color: var(--color-border-light);
+    }
+
+    .feature-icon {
+      width: 38px;
+      height: 38px;
+      margin-bottom: 1.25rem;
+      color: var(--color-text-dark);
+    }
+
+    .feature-title {
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-text-dark);
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+
+    .feature-desc {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      line-height: 1.4;
+    }
+
+    /* Right side image card */
+    .intro-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+      aspect-ratio: 4 / 3;
+    }
+
+    .intro-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .intro-card-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.4) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2.5rem;
+    }
+
+    .intro-card-script {
+      color: #ffffff;
+      font-size: 2.5rem;
+      line-height: 1.1;
+      transform: rotate(-4deg);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    /* ==========================================
+       5. SECTION 3 — EXPLORE OUR SECTIONS
+       ========================================== */
+    .explore-section {
+      padding: 6rem 0;
+      background-color: var(--color-cream-card);
+    }
+
+    .explore-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 3.5rem;
+    }
+
+    .btn-view-all {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.6rem 1.5rem;
+      border: 1px solid var(--color-text-dark);
+      border-radius: var(--radius-full);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-text-dark);
+    }
+
+    .btn-view-all:hover {
+      background-color: var(--color-text-dark);
+      color: #ffffff;
+    }
+
+    .explore-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .explore-card {
+      background-color: #ffffff;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition-base);
+    }
+
+    .explore-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .card-img-wrapper {
+      position: relative;
+      height: 200px;
+      width: 100%;
+      overflow: hidden;
+      background-color: #e5dfd8;
+    }
+
+    .card-img-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .explore-card:hover .card-img-wrapper img {
+      transform: scale(1.05);
+    }
+
+    /* Special overlay tag inside card 3 image */
+    .safety-tag-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(15, 28, 24, 0.75);
+      backdrop-filter: blur(4px);
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-sm);
+      color: #ffffff;
+      font-size: 0.75rem;
+      border: 1px solid rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      flex-grow: 1;
+      position: relative;
+    }
+
+    .card-title {
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--color-text-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .card-tags {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+      letter-spacing: 0.01em;
+    }
+
+    .card-arrow-btn {
+      position: absolute;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 1px solid var(--color-border-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-text-dark);
+      transition: var(--transition-base);
+      background: #faf8f5;
+    }
+
+    .explore-card:hover .card-arrow-btn {
+      background-color: var(--color-text-dark);
+      color: #ffffff;
+      border-color: var(--color-text-dark);
+    }
+
+    /* ==========================================
+       6. SECTION 4 — DARK STORY & COMMUNITY
+       ========================================== */
+    .community-section {
+      background-color: var(--color-dark-green);
+      color: #ffffff;
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .community-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      opacity: 0.35;
+    }
+
+    .community-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .community-container {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .community-left {
+      max-width: 580px;
+    }
+
+    .community-title {
+      font-family: var(--font-heading);
+      font-size: 3.25rem;
+      font-weight: 500;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+    }
+
+    .community-desc {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 3.5rem;
+      font-weight: 300;
+    }
+
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      border-top: 1px solid var(--color-border-dark);
+      padding-top: 2rem;
+    }
+
+    .stat-number {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #ffffff;
+    }
+
+    .stat-label {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.65);
+    }
+
+    /* Right column inside dark section */
+    .community-right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      position: relative;
+    }
+
+    .community-video-play {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 4rem;
+      margin-right: 25%;
+      cursor: pointer;
+    }
+
+    .community-video-play .play-circle-btn {
+      width: 72px;
+      height: 72px;
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .community-script-center {
+      position: absolute;
+      top: 28%;
+      right: 18%;
+      font-size: 2.2rem;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.2;
+      transform: rotate(-5deg);
+      pointer-events: none;
+    }
+
+    .community-script-brand {
+      position: absolute;
+      bottom: -1rem;
+      right: 40%;
+      font-size: 2rem;
+      color: rgba(255, 255, 255, 0.7);
+      transform: rotate(2deg);
+    }
+
+    /* MERN Tech Card */
+    .tech-card {
+      background: rgba(20, 36, 30, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-lg);
+      padding: 2rem 2.2rem;
+      width: 100%;
+      max-width: 380px;
+      margin-top: auto;
+    }
+
+    .tech-card-title {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+    }
+
+    .tech-card-sub {
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.55);
+      margin-bottom: 1.75rem;
+      letter-spacing: 0.03em;
+    }
+
+    .tech-stack-icons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+
+    .tech-icon-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .tech-icon-box {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .tech-name {
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .btn-tech-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.7rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: var(--radius-full);
+      color: #ffffff;
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+
+    .btn-tech-cta:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: #ffffff;
+    }
+
+    /* ==========================================
+       7. FOOTER
+       ========================================== */
+    footer {
+      background-color: var(--color-cream-light);
+      padding: 4rem 0 2.5rem 0;
+      border-top: 1px solid var(--color-border-light);
+    }
+
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 3rem;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--color-text-dark);
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .footer-logo-icon {
+      width: 28px;
+      height: 28px;
+      stroke: var(--color-text-dark);
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .footer-tagline {
+      font-size: 0.82rem;
+      color: var(--color-text-muted);
+    }
+
+    .footer-nav {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .footer-nav a {
+      color: var(--color-text-dark);
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    .footer-nav a:hover {
+      color: var(--color-text-muted);
+    }
+
+    .footer-socials {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .social-icon-btn {
+      color: var(--color-text-dark);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-base);
+    }
+
+    .social-icon-btn:hover {
+      opacity: 0.6;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--color-border-light);
+    }
+
+    .copyright {
+      font-size: 0.78rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================
+       8. RESPONSIVE BREAKPOINTS
+       ========================================== */
+    @media (max-width: 1024px) {
+      .hero-title {
+        font-size: 4rem;
+      }
+      .features-row {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+      .feature-item:not(:last-child)::after {
+        display: none;
+      }
+      .explore-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .community-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .community-right {
+        align-items: flex-start;
+      }
+      .community-video-play {
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-right {
+        display: none;
+      }
+      .mobile-toggle {
+        display: block;
+      }
+      .hero-container {
+        grid-template-columns: 1fr;
+      }
+      .hero-right-content {
+        display: none;
+      }
+      .intro-grid {
+        grid-template-columns: 1fr;
+      }
+      .features-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .explore-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+      }
+      .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+      }
+      .footer-nav {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 3rem;
+      }
+      .features-row {
+        grid-template-columns: 1fr;
+      }
+      .explore-cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAVIGATION
+       ========================================== -->
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <svg class="logo-icon" viewBox="0 0 32 32">
+          <!-- Minimal line art icon: crescent/hijab motif -->
+          <path d="M16 4C10 4 6 9 6 15C6 22 11 27 16 28C14 24 13 19 14 14C15 9 18 6 22 5C20 4.3 18 4 16 4Z" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 14C12 16 11 19 12 23" stroke="currentColor" stroke-linecap="round"/>
+        </svg>
+        <span>Annïka</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#fashion">Fashion</a></li>
+        <li><a href="#quran">Quran & Hadith</a></li>
+        <li><a href="#safety">Safety</a></li>
+        <li><a href="#lifestyle">Lifestyle</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="btn-search" aria-label="Search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <button class="btn-outline-light">Login</button>
+        <button class="btn-peach">Sign Up</button>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <!-- High-resolution sunset Muslimah cinematic wallpaper -->
+      <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=2000&auto=format&fit=crop" alt="Cinematic Sunset Mosque & Muslimah" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-breadcrumb">
+          <span>Faith</span> • <span>Fashion</span> • <span>Safety</span> • <span>Growth</span>
+        </div>
+        <h1 class="hero-title">Annïka</h1>
+        <p class="hero-desc">
+          A safe space for every Muslimah —<br>
+          to learn, grow, express and stay protected.
+        </p>
+        <a href="#explore" class="hero-cta-btn">
+          Explore Now <span>&rarr;</span>
+        </a>
+      </div>
+
+      <div class="hero-right-content">
+        <div class="hero-handwritten font-script">
+          Not just<br>a website,<br>it’s a journey…
+        </div>
+
+        <div class="video-play-widget">
+          <div class="play-circle-btn">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <span class="video-label">Watch Our Story</span>
+          <span class="video-duration">(1:12)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 2 — INTRO / FEATURE OVERVIEW
+       ========================================== -->
+  <section class="intro-section">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-left">
+          <div class="intro-header">
+            <h2 class="section-title">Everything You Need in One Place</h2>
+            <p class="section-subtitle">
+              Annïka brings together the essentials of a meaningful and secure Muslim life — with modern tools and trusted content.
+            </p>
+          </div>
+
+          <div class="features-row">
+            <!-- Feature 1 -->
+            <div class="feature-item">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Minimal Hanger Icon -->
+                <path d="M12 2a3 3 0 0 0-3 3c0 .8.3 1.5.8 2L2 13h20L14.2 7c.5-.5.8-1.2.8-2a3 3 0 0 0-3-3z"/>
+                <path d="M2 13v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6"/>
+              </svg>
+              <h3 class="feature-title">Hijab & Burkha Fashion</h3>
+              <p class="feature-desc">Modest styles for every occasion.</p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-item">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Open Book Icon -->
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+              <h3 class="feature-title">Quran & Hadith</h3>
+              <p class="feature-desc">Learn, reflect, grow.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-item">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Shield Icon -->
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <h3 class="feature-title">Women Safety</h3>
+              <p class="feature-desc">Be aware. Be prepared. Be safe.</p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="feature-item">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Leaf Icon -->
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.4 19 2c1 2 2 4.1 2 9 0 4.9-4 9-9 9z"></path>
+                <path d="M11 20v-5a3 3 0 0 1 3-3h5"></path>
+              </svg>
+              <h3 class="feature-title">Islamic Lifestyle</h3>
+              <p class="feature-desc">Daily duas, habits, & inspiration.</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="feature-item">
+              <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Code/Terminal Icon -->
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              <h3 class="feature-title">MERN Powered</h3>
+              <p class="feature-desc">Modern. Secure. Built for you.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right side image card -->
+        <div class="intro-card">
+          <img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?q=80&w=1000&auto=format&fit=crop" alt="Modest woman overlooking mosque" />
+          <div class="intro-card-overlay">
+            <div class="intro-card-script font-script">
+              Modest<br>is powerful<br>♡
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 3 — EXPLORE OUR SECTIONS
+       ========================================== -->
+  <section class="explore-section" id="explore">
+    <div class="container">
+      <div class="explore-top">
+        <div>
+          <h2 class="section-title">Explore Our Sections</h2>
+          <p class="section-subtitle">
+            Discover what makes Annïka special — designed for your lifestyle, values and safety.
+          </p>
+        </div>
+        <a href="#" class="btn-view-all">
+          View All <span>&rarr;</span>
+        </a>
+      </div>
+
+      <div class="explore-cards-grid">
+        <!-- CARD 1 -->
+        <div class="explore-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?q=80&w=800&auto=format&fit=crop" alt="Hijab & Burkha Fashion" />
+          </div>
+          <div class="card-content">
+            <div>
+              <h3 class="card-title">Hijab & Burkha Fashion</h3>
+              <p class="card-tags">Trendy • Modest • Elegant</p>
+            </div>
+            <button class="card-arrow-btn" aria-label="Explore Fashion">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="explore-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=800&auto=format&fit=crop" alt="Quran & Hadith" />
+          </div>
+          <div class="card-content">
+            <div>
+              <h3 class="card-title">Quran & Hadith</h3>
+              <p class="card-tags">Daily verses • Authentic Hadith • Reflections</p>
+            </div>
+            <button class="card-arrow-btn" aria-label="Explore Quran">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="explore-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop" alt="Women Safety" />
+            <div class="safety-tag-overlay">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+              <span>Online Safety</span>
+            </div>
+          </div>
+          <div class="card-content">
+            <div>
+              <h3 class="card-title">Women Safety</h3>
+              <p class="card-tags">Awareness • Tips • Help & Report</p>
+            </div>
+            <button class="card-arrow-btn" aria-label="Explore Safety">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="explore-card">
+          <div class="card-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?q=80&w=800&auto=format&fit=crop" alt="Islamic Lifestyle" />
+          </div>
+          <div class="card-content">
+            <div>
+              <h3 class="card-title">Islamic Lifestyle</h3>
+              <p class="card-tags">Duas • Habits • Ramadan</p>
+            </div>
+            <button class="card-arrow-btn" aria-label="Explore Lifestyle">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 4 — DARK STORY & COMMUNITY
+       ========================================== -->
+  <section class="community-section" id="community">
+    <div class="community-bg">
+      <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=2000&auto=format&fit=crop" alt="Forest mood background" />
+    </div>
+
+    <div class="container community-container">
+      <div class="community-left">
+        <h2 class="community-title">A Safer, Stronger<br>Muslimah Community</h2>
+        <p class="community-desc">
+          Annïka is more than a platform — it’s a sisterhood. Together, we learn, support, and build a safer future for every Muslimah.
+        </p>
+
+        <div class="stats-row">
+          <div class="stat-item">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Happy Users</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Fashion Styles</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Quran & Hadith</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Safety Support</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="community-right">
+        <div class="community-video-play">
+          <div class="play-circle-btn">
+            <svg viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          </div>
+          <span class="video-label">Watch the Full Story</span>
+          <span class="video-duration">(1:12)</span>
+        </div>
+
+        <div class="community-script-center font-script">
+          Learn<br>Grow<br>♡ Be Safe
+        </div>
+
+        <div class="community-script-brand font-script">
+          — Annïka
+        </div>
+
+        <!-- Tech stack card -->
+        <div class="tech-card">
+          <h3 class="tech-card-title">Built with MERN Stack</h3>
+          <p class="tech-card-sub">Fast • Secure • Scalable</p>
+
+          <div class="tech-stack-icons">
+            <div class="tech-icon-item">
+              <div class="tech-icon-box">Mg</div>
+              <span class="tech-name">MongoDB</span>
+            </div>
+            <div class="tech-icon-item">
+              <div class="tech-icon-box">ex</div>
+              <span class="tech-name">Express.js</span>
+            </div>
+            <div class="tech-icon-item">
+              <div class="tech-icon-box">⚛</div>
+              <span class="tech-name">React</span>
+            </div>
+            <div class="tech-icon-item">
+              <div class="tech-icon-box">Node</div>
+              <span class="tech-name">Node.js</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn-tech-cta">
+            Explore Tech Details <span>&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="footer-logo-icon" viewBox="0 0 32 32">
+              <path d="M16 4C10 4 6 9 6 15C6 22 11 27 16 28C14 24 13 19 14 14C15 9 18 6 22 5C20 4.3 18 4 16 4Z" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Annïka</span>
+          </div>
+          <p class="footer-tagline">Faith in heart, strength in life.</p>
+        </div>
+
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#fashion">Fashion</a></li>
+          <li><a href="#quran">Quran & Hadith</a></li>
+          <li><a href="#safety">Safety</a></li>
+          <li><a href="#lifestyle">Lifestyle</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+
+        <div class="footer-socials">
+          <!-- YouTube -->
+          <a href="#" class="social-icon-btn" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" class="social-icon-btn" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <!-- X / Twitter -->
+          <a href="#" class="social-icon-btn" aria-label="X">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="#" class="social-icon-btn" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2025 Annïka. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
