@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://annus.vercel.app/sitemap.xml
+Sitemap: https://annus-hk777.vercel.app/sitemap.xml
