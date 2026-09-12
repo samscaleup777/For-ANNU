@@ -4,5 +4,10 @@
   "private": true,
   "scripts": {
     "build": "node -e \"console.log('Annïka static site: no build step required')\""
+    {
+  "scripts": {
+    "build": "[my-framework] build --output public"
+  }
+}
   }
 }
