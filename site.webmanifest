@@ -1,0 +1,15 @@
+{
+  "name": "Annïka",
+  "short_name": "Annïka",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8f5",
+  "theme_color": "#0f1c18",
+  "description": "A thoughtful space for faith, modest fashion, safety and everyday growth.",
+  "icons": [{
+    "src": "/favicon.svg",
+    "sizes": "any",
+    "type": "image/svg+xml",
+    "purpose": "any maskable"
+  }]
+}
