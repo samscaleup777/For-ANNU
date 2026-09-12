@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://annika-website-one.vercel.app/sitemap.xml
+Sitemap: https://annus.vercel.app/sitemap.xml
