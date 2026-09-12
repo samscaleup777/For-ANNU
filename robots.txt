@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samscaleup777.github.io/For-ANNU/sitemap.xml
