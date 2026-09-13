@@ -1,0 +1,37 @@
+name: Build local fashion media
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build-media:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install SVG renderer
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin ffmpeg
+
+      - name: Render local preview and video
+        run: |
+          mkdir -p assets/generated
+          rsvg-convert -w 960 -h 720 assets/fashion-01.svg -o assets/generated/fashion-frame.png
+          ffmpeg -y -loop 1 -i assets/generated/fashion-frame.png -t 6 \
+            -vf "zoompan=z='min(zoom+0.0008,1.06)':x='iw/2-(iw/zoom/2)+10*sin(on/20)':y='ih/2-(ih/zoom/2)+8*cos(on/27)':d=1:s=960x720:fps=30,format=yuv420p" \
+            -an -c:v libx264 -preset veryfast -crf 28 -movflags +faststart assets/fashion-film.mp4
+          rm -rf assets/generated
+          rm -f .github/workflows/build-local-fashion-media.yml
+
+      - name: Commit local media
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/fashion-film.mp4 assets/fashion-01.svg assets/fashion-02.svg assets/fashion-03.svg assets/fashion-04.svg .github/workflows/build-local-fashion-media.yml
+          git commit -m "Add local fashion media and remove media build workflow" || exit 0
+          git push
