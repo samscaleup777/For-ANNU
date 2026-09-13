@@ -17,6 +17,48 @@
 <meta name="twitter:description" content="Practical modest fashion inspiration for confident, comfortable everyday dressing.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/styles.css">
+<style>
+body.fashion-page{background:#f8f3e8}
+.fashion-page .fashion-hero{background:radial-gradient(circle at 88% 14%,rgba(229,173,121,.28),transparent 25%),linear-gradient(135deg,#f7eee0 0%,#fbf7ef 56%,#efe2cd 100%);padding:76px 0 70px;overflow:hidden}
+.fashion-page .fashion-hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.fashion-page .fashion-hero h1{max-width:760px}
+.fashion-page .fashion-hero-visual{position:relative;min-height:540px;border-radius:38px;overflow:hidden;box-shadow:0 30px 80px rgba(18,49,38,.18);background:#17231d}
+.fashion-page .fashion-hero-visual img{width:100%;height:540px;object-fit:cover;object-position:center 26%;filter:saturate(.9)}
+.fashion-page .fashion-hero-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,49,38,.06) 35%,rgba(18,49,38,.72) 100%)}
+.fashion-page .fashion-hero-card{position:absolute;z-index:2;left:24px;right:24px;bottom:24px;padding:24px;border:1px solid rgba(255,255,255,.18);background:rgba(18,49,38,.68);backdrop-filter:blur(14px);border-radius:24px;color:#fff}
+.fashion-page .fashion-hero-card .script{color:#f0c59d;font-size:42px}
+.fashion-page .topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fashion-page .topic-card{position:relative;min-height:390px;border-radius:28px;overflow:hidden;background:#173327;box-shadow:0 16px 50px rgba(18,49,38,.12)}
+.fashion-page .topic-card img{width:100%;height:390px;object-fit:cover;transition:transform .8s cubic-bezier(.22,1,.36,1),filter .5s ease}
+.fashion-page .topic-card:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(18,49,38,.02) 28%,rgba(18,49,38,.84) 100%)}
+.fashion-page .topic-card:hover img{transform:scale(1.07);filter:saturate(1.04)}
+.fashion-page .topic-copy{position:absolute;z-index:2;left:22px;right:22px;bottom:22px;color:#fff}
+.fashion-page .topic-copy .topic-no{display:inline-flex;padding:6px 9px;border:1px solid rgba(255,255,255,.28);border-radius:999px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+.fashion-page .topic-copy h3{font-size:30px;margin-bottom:7px}
+.fashion-page .topic-copy p{font-size:13px;color:rgba(255,255,255,.78);margin:0}
+.fashion-page .fashion-feature{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:stretch}
+.fashion-page .fashion-feature-image{position:relative;min-height:560px;border-radius:32px;overflow:hidden;box-shadow:0 24px 70px rgba(18,49,38,.15)}
+.fashion-page .fashion-feature-image img{width:100%;height:100%;object-fit:cover}
+.fashion-page .fashion-feature-image:after{content:'Wear with intention';position:absolute;left:24px;bottom:20px;font:600 47px Caveat,cursive;color:#fff;text-shadow:0 4px 25px rgba(0,0,0,.2);transform:rotate(-4deg)}
+.fashion-page .fashion-video{border-radius:32px;overflow:hidden;background:var(--forest);color:#fff;box-shadow:0 24px 70px rgba(18,49,38,.15)}
+.fashion-page .fashion-video-media{position:relative;aspect-ratio:16/11;background:#10271e}
+.fashion-page .fashion-video-media img{width:100%;height:100%;object-fit:cover;opacity:.82}
+.fashion-page .fashion-video-overlay{position:absolute;inset:0;display:grid;place-items:center;background:linear-gradient(180deg,rgba(18,49,38,.08),rgba(18,49,38,.74))}
+.fashion-page .play-link{width:78px;height:78px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);color:var(--forest);font-size:28px;box-shadow:0 18px 50px rgba(0,0,0,.2);transition:transform .35s ease,box-shadow .35s ease}
+.fashion-page .play-link:hover{transform:scale(1.08);box-shadow:0 24px 70px rgba(0,0,0,.26)}
+.fashion-page .video-copy{padding:30px}
+.fashion-page .video-copy h2{font-size:42px;margin:10px 0 12px}
+.fashion-page .video-copy p{color:rgba(255,255,255,.75)}
+.fashion-page .video-source{display:inline-flex;margin-top:8px;font-size:13px;color:#f0c59d;text-decoration:underline;text-underline-offset:3px}
+.fashion-page .howto-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.fashion-page .howto-card{display:grid;grid-template-columns:74px 1fr;gap:18px;align-items:start;padding:24px;border:1px solid var(--line);background:rgba(255,255,255,.7);border-radius:24px;transition:transform .35s ease,box-shadow .35s ease}
+.fashion-page .howto-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.fashion-page .howto-num{width:58px;height:58px;display:grid;place-items:center;border-radius:18px;background:var(--forest);color:#fff;font-family:'Playfair Display',serif;font-size:22px}
+.fashion-page .questions-card{max-width:900px}
+@media(max-width:980px){.fashion-page .fashion-hero-grid,.fashion-page .fashion-feature{grid-template-columns:1fr}.fashion-page .topic-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.fashion-page .topic-grid,.fashion-page .howto-grid{grid-template-columns:1fr}.fashion-page .fashion-hero-visual,.fashion-page .fashion-hero-visual img{min-height:420px;height:420px}.fashion-page .fashion-feature-image{min-height:420px}.fashion-page .topic-card,.fashion-page .topic-card img{min-height:350px;height:350px}.fashion-page .howto-card{grid-template-columns:58px 1fr}.fashion-page .video-copy h2{font-size:34px}}
+@media(prefers-reduced-motion:reduce){.fashion-page .topic-card img,.fashion-page .play-link,.fashion-page .howto-card{transition:none}}
+</style>
 <script type="application/ld+json">{
   "@context":"https://schema.org",
   "@type":"CollectionPage",
@@ -26,7 +68,7 @@
   "isPartOf":{"@type":"WebSite","name":"Annïka","url":"https://annus-hk777.vercel.app/"}
 }</script>
 </head>
-<body>
+<body class="fashion-page">
 <header class="nav"><div class="wrap navin">
 <a class="brand" href="/"><span class="mark"></span>Annïka</a>
 <button class="menu" aria-label="Open navigation" aria-expanded="false" aria-controls="site-navigation">☰</button>
@@ -34,40 +76,60 @@
 <a href="/">Home</a><a href="/fashion.html" aria-current="page">Fashion</a><a href="/quran-hadith.html">Quran &amp; Hadith</a><a href="/safety.html">Safety</a><a href="/lifestyle.html">Lifestyle</a><a href="/blog.html">Blog</a><a href="/about.html">About</a>
 </nav></div></header>
 <main id="main-content">
-<section class="hero"><div class="wrap hero-grid">
-<div><span class="eyebrow">Modest fashion</span><h1>Style with intention.</h1><p class="lead">A practical guide to modest dressing that puts comfort, confidence, personal expression and thoughtful buying decisions ahead of fast-moving trends.</p><div class="actions"><a class="btn primary" href="#guides">Explore guides</a><a class="btn" href="/blog.html">Read the blog</a></div></div>
-<div class="hero-art"><div class="hero-card"><div class="script">Wear what feels like you.</div><p>Build a wardrobe around reliable silhouettes, breathable fabrics and pieces you can style more than one way.</p></div></div>
+<section class="fashion-hero"><div class="wrap fashion-hero-grid">
+<div>
+<span class="eyebrow">Modest fashion</span>
+<h1>Style with intention.</h1>
+<p class="lead">A practical guide to modest dressing that puts comfort, confidence, personal expression and thoughtful buying decisions ahead of fast-moving trends.</p>
+<div class="actions"><a class="btn primary" href="#guides">Explore guides</a><a class="btn" href="/blog.html">Read the blog</a></div>
+</div>
+<div class="fashion-hero-visual">
+<img src="https://images.pexels.com/photos/12208801/pexels-photo-12208801.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Woman wearing a stylish modest outfit with hijab" loading="eager" fetchpriority="high">
+<div class="fashion-hero-card"><div class="script">Wear what feels like you.</div><p>Build a wardrobe around reliable silhouettes, breathable fabrics and pieces you can style more than one way.</p></div>
+</div>
 </div></section>
+
 <section class="section" id="guides"><div class="wrap">
 <div class="section-head"><div><span class="eyebrow">Start here</span><h2>Four practical style foundations</h2></div><p>Use these pillars to make everyday dressing easier, more intentional and more repeatable.</p></div>
-<div class="grid4">
-<article class="card"><div class="icon">◌</div><h3>Hijab</h3><p>Think about fabric weight, grip, drape, face framing and how a scarf behaves across work, study, errands and occasions.</p></article>
-<article class="card"><div class="icon">◇</div><h3>Abaya</h3><p>Look for a silhouette that lets you move comfortably. Straight, open, belted and layered shapes can each create a different feel.</p></article>
-<article class="card"><div class="icon">✧</div><h3>Burkha</h3><p>Prioritise visibility, ventilation, ease of movement and a practical fit for the environments where you will wear it.</p></article>
-<article class="card"><div class="icon">♡</div><h3>Wardrobe</h3><p>Create a small core of pieces that coordinate naturally, then add personality with texture, accessories and seasonal accents.</p></article>
+<div class="topic-grid">
+<article class="topic-card"><img src="https://images.pexels.com/photos/31492377/pexels-photo-31492377.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Woman in a beige hijab styled in a calm neutral palette" loading="lazy"><div class="topic-copy"><span class="topic-no">01 · Hijab</span><h3>Hijab</h3><p>Think about fabric weight, grip, drape, face framing and how a scarf behaves across work, study, errands and occasions.</p></div></article>
+<article class="topic-card"><img src="https://images.pexels.com/photos/35344026/pexels-photo-35344026.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Modern Muslim woman showcasing an elegant abaya look" loading="lazy"><div class="topic-copy"><span class="topic-no">02 · Abaya</span><h3>Abaya</h3><p>Look for a silhouette that lets you move comfortably. Straight, open, belted and layered shapes can each create a different feel.</p></div></article>
+<article class="topic-card"><img src="https://images.pexels.com/photos/7249739/pexels-photo-7249739.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Two women wearing colorful modest Muslim fashion" loading="lazy"><div class="topic-copy"><span class="topic-no">03 · Burkha</span><h3>Burkha</h3><p>Prioritise visibility, ventilation, ease of movement and a practical fit for the environments where you will wear it.</p></div></article>
+<article class="topic-card"><img src="https://images.pexels.com/photos/9219303/pexels-photo-9219303.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Woman in hijab choosing clothes from a wardrobe" loading="lazy"><div class="topic-copy"><span class="topic-no">04 · Wardrobe</span><h3>Wardrobe</h3><p>Create a small core of pieces that coordinate naturally, then add personality with texture, accessories and seasonal accents.</p></div></article>
 </div></div></section>
-<section class="section alt"><div class="wrap story">
-<div class="panel"><span class="eyebrow" style="border-color:rgba(255,255,255,.2);color:#fff">Build a better wardrobe</span><h2>Buy fewer pieces. Use them better.</h2><p>A useful modest wardrobe does not need to be large. Start with dependable neutrals, one or two statement colours, versatile layers and shoes that work across multiple outfits.</p><div class="mini-stat"><div><strong>01</strong><span>Define your lifestyle</span></div><div><strong>02</strong><span>Choose versatile pieces</span></div><div><strong>03</strong><span>Repeat with confidence</span></div></div></div>
-<div class="feature-photo" aria-hidden="true"></div>
+
+<section class="section alt"><div class="wrap fashion-feature">
+<div class="fashion-feature-image"><img src="https://images.pexels.com/photos/8070605/pexels-photo-8070605.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Two women in modern modest fashion with headscarves" loading="lazy"></div>
+<div class="fashion-video">
+<div class="fashion-video-media"><img src="https://images.pexels.com/videos/7816748/conceptual-diversity-drapery-female-7816748.jpeg?auto=compress&dpr=1&h=900&w=1400" alt="Preview of an elegant modest fashion video" loading="lazy"><div class="fashion-video-overlay"><a class="play-link" href="https://www.pexels.com/video/a-woman-wearing-abaya-7816748/" target="_blank" rel="noopener noreferrer" aria-label="Watch the modest fashion video">▶</a></div></div>
+<div class="video-copy"><span class="eyebrow" style="border-color:rgba(255,255,255,.2);color:#fff">Fashion film</span><h2>See modest style in motion.</h2><p>A real Pexels fashion clip adds movement and atmosphere without turning the page into a distracting gallery. Open the short film for an elegant abaya-focused reference.</p><a class="video-source" href="https://www.pexels.com/video/a-woman-wearing-abaya-7816748/" target="_blank" rel="noopener noreferrer">Watch on Pexels ↗</a></div>
+</div>
 </div></section>
+
 <section class="section"><div class="wrap">
-<div class="section-head"><div><span class="eyebrow">How-to guides</span><h2>Make everyday styling simpler</h2></div><p>Practical ideas for creating outfits without turning your wardrobe into a daily decision-making problem.</p></div>
-<div class="grid4">
-<article class="card"><div class="icon">01</div><h3>Choose the right fabric</h3><p>Warm climates often call for breathable, comfortable fabrics. Consider opacity, care requirements, layering and movement before buying.</p></article>
-<article class="card"><div class="icon">02</div><h3>Style one base three ways</h3><p>Take one reliable dress, skirt or wide-leg trouser and change the look with an outer layer, scarf arrangement, shoes or accessories.</p></article>
-<article class="card"><div class="icon">03</div><h3>Dress for the setting</h3><p>Workwear, university, travel and events have different practical needs. Build outfit formulas that suit your real schedule.</p></article>
-<article class="card"><div class="icon">04</div><h3>Shop with a checklist</h3><p>Before purchasing, ask whether the item fits your existing colours, can be styled multiple ways and will be worn often enough to earn its place.</p></article>
-</div></div></section>
+<div class="section-head"><div><span class="eyebrow">Build a better wardrobe</span><h2>Buy fewer pieces. Use them better.</h2></div><p>A useful modest wardrobe does not need to be large. Start with dependable neutrals, one or two statement colours, versatile layers and shoes that work across multiple outfits.</p></div>
+<div class="panel"><p style="margin-top:0;color:rgba(255,255,255,.76)">Build outfit formulas around your real week, not a fantasy wardrobe. Define what you need for work, study, travel and occasions, then choose pieces that repeat naturally.</p><div class="mini-stat"><div><strong>01</strong><span>Define your lifestyle</span></div><div><strong>02</strong><span>Choose versatile pieces</span></div><div><strong>03</strong><span>Repeat with confidence</span></div></div></div>
+</div></section>
+
 <section class="section alt"><div class="wrap">
+<div class="section-head"><div><span class="eyebrow">How-to guides</span><h2>Make everyday styling simpler</h2></div><p>Practical ideas for creating outfits without turning your wardrobe into a daily decision-making problem.</p></div>
+<div class="howto-grid">
+<article class="howto-card"><div class="howto-num">01</div><div><h3>Choose the right fabric</h3><p>Warm climates often call for breathable, comfortable fabrics. Consider opacity, care requirements, layering and movement before buying.</p></div></article>
+<article class="howto-card"><div class="howto-num">02</div><div><h3>Style one base three ways</h3><p>Take one reliable dress, skirt or wide-leg trouser and change the look with an outer layer, scarf arrangement, shoes or accessories.</p></div></article>
+<article class="howto-card"><div class="howto-num">03</div><div><h3>Dress for the setting</h3><p>Workwear, university, travel and events have different practical needs. Build outfit formulas that suit your real schedule.</p></div></article>
+<article class="howto-card"><div class="howto-num">04</div><div><h3>Shop with a checklist</h3><p>Before purchasing, ask whether the item fits your existing colours, can be styled multiple ways and will be worn often enough to earn its place.</p></div></article>
+</div></div></section>
+
+<section class="section"><div class="wrap">
 <div class="section-head"><div><span class="eyebrow">Style notes</span><h2>Questions worth asking</h2></div></div>
-<article class="card"><h3>Is modest fashion only about loose clothing?</h3><p>No single silhouette defines personal modest style. Coverage, comfort, fabric, fit and the context you are dressing for can all matter. The goal is a wardrobe that reflects your values while still feeling practical and personal.</p><h3>How many pieces do I need?</h3><p>There is no universal number. Start with what your week actually requires. A smaller wardrobe is useful when the pieces coordinate well, but personal needs, climate, work, budget and laundry routines should decide the final size.</p><h3>Should I follow trends?</h3><p>Use trends as inspiration rather than a shopping rule. A trend is more valuable when it fits your existing wardrobe and still feels appropriate after the trend cycle ends.</p></article>
+<article class="card questions-card"><h3>Is modest fashion only about loose clothing?</h3><p>No single silhouette defines personal modest style. Coverage, comfort, fabric, fit and the context you are dressing for can all matter. The goal is a wardrobe that reflects your values while still feeling practical and personal.</p><h3>How many pieces do I need?</h3><p>There is no universal number. Start with what your week actually requires. A smaller wardrobe is useful when the pieces coordinate well, but personal needs, climate, work, budget and laundry routines should decide the final size.</p><h3>Should I follow trends?</h3><p>Use trends as inspiration rather than a shopping rule. A trend is more valuable when it fits your existing wardrobe and still feels appropriate after the trend cycle ends.</p></article>
 </div></section>
 <section class="cta"><div class="wrap cta-box"><span class="eyebrow">Keep exploring</span><h2>From wardrobe choices to everyday wellbeing.</h2><p>Explore Annïka's lifestyle, safety and faith-focused guides for a more thoughtful everyday routine.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="/lifestyle.html">Explore lifestyle</a><a class="btn" href="/safety.html">Safety guides</a><a class="btn" href="/quran-hadith.html">Faith &amp; reflection</a></div></div></section>
 </main>
 <footer class="footer"><div class="wrap footer-in"><div><a class="brand" href="/"><span class="mark"></span>Annïka</a></div><nav class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a><a href="/contact.html">Contact</a></nav><div style="font-size:12px;color:var(--muted)">© <span data-year></span> Annïka</div></div></footer>
 <script src="/app.js" defer></script>
 <script>
-  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
+window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
 </script>
 <script defer src="/_vercel/speed-insights/script.js"></script>
 </body></html>
