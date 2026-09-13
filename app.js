@@ -36,6 +36,12 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
 
+  // Cache-busted animation stylesheet: static DOM stays visible until this JS enables the motion layer.
+  const animationStyle=document.createElement('link');
+  animationStyle.rel='stylesheet';
+  animationStyle.href='/animations-v2.css?v=2';
+  document.head.appendChild(animationStyle);
+
   const path=window.location.pathname.toLowerCase();
   const pageClass=path.includes('fashion')?'page-fashion':path.includes('quran-hadith')?'page-quran':path.includes('safety')?'page-safety':path.includes('lifestyle')?'page-lifestyle':path.includes('blog')?'page-blog':path.includes('about')?'page-about':path.includes('contact')?'page-contact':'page-home';
   document.body.classList.add(pageClass);
@@ -67,8 +73,37 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   }
 
-  // Enable animation styles only after reveal observers/fallback are initialized.
+  // Enable the motion layer only after observers/fallback are ready, so a JS/CSS timing issue cannot hide content.
   document.body.classList.add('ani-on');
+
+  // Fashion media is repo-local: replace every external Pexels asset and remove redirect-only video behavior.
+  if(pageClass==='page-fashion'){
+    const localImages=['/assets/fashion-01.svg','/assets/fashion-02.svg','/assets/fashion-03.svg','/assets/fashion-04.svg'];
+    const heroImage=document.querySelector('.fashion-hero-visual img');
+    if(heroImage){heroImage.src=localImages[0];heroImage.removeAttribute('srcset');heroImage.alt='Fully covered modest-fashion editorial illustration with face and body details concealed';}
+
+    document.querySelectorAll('.topic-card img').forEach((img,index)=>{
+      img.src=localImages[index]||localImages[0];
+      img.removeAttribute('srcset');
+      img.alt=`Fully covered modest fashion visual for ${['Hijab','Abaya','Burkha','Wardrobe'][index]||'modest wardrobe'}`;
+    });
+
+    const featureImage=document.querySelector('.fashion-feature-image img');
+    if(featureImage){featureImage.src=localImages[1];featureImage.removeAttribute('srcset');featureImage.alt='Fully covered modest fashion editorial illustration with face concealed';}
+
+    const videoMedia=document.querySelector('.fashion-video-media');
+    if(videoMedia){
+      videoMedia.innerHTML='<video class="local-fashion-video" controls muted loop playsinline preload="metadata" aria-label="Local Annïka modest fashion film with fully covered figure"><source src="/assets/fashion-film.mp4" type="video/mp4">Your browser does not support the local fashion video.</video><div class="fashion-video-overlay-local"><span>Local fashion film</span></div>';
+    }
+
+    document.querySelectorAll('.fashion-page a[href*="pexels.com"]').forEach(a=>{
+      a.removeAttribute('target');
+      a.removeAttribute('rel');
+      a.removeAttribute('href');
+      a.classList.add('local-media-note');
+      a.textContent='Video stored in Annïka repository';
+    });
+  }
 
   // Major content pages get a slow editorial strip.
   if(['page-fashion','page-quran','page-safety','page-lifestyle'].includes(pageClass)){
