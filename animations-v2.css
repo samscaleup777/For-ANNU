@@ -1,0 +1,67 @@
+/* Annïka animation system v2 — explicit, cache-busted, fallback-safe. */
+:root{--ani-ease:cubic-bezier(.22,1,.36,1)}
+@keyframes aniRise{from{opacity:0;transform:translate3d(0,46px,0) scale(.975)}to{opacity:1;transform:none}}
+@keyframes aniScale{from{opacity:0;transform:scale(.92) translateY(20px)}to{opacity:1;transform:none}}
+@keyframes aniFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes aniDrift{0%,100%{transform:translate3d(0,0,0) rotate(-12deg)}50%{transform:translate3d(8px,-10px,0) rotate(-7deg)}}
+@keyframes aniGlow{0%,100%{opacity:.3;transform:scale(1)}50%{opacity:.75;transform:scale(1.08)}}
+@keyframes aniShine{0%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+@keyframes aniMarquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* No-JS safety: everything stays visible until JS deliberately enables .ani-on. */
+body.ani-on .section-head,body.ani-on .card,body.ani-on .panel,body.ani-on .feature-photo,body.ani-on .cta-box,body.ani-on .footer,body.ani-on .legal article,body.ani-on .contact-card,body.ani-on .topic-card,body.ani-on .fashion-video-block{opacity:.001;transform:translateY(28px)}
+body.ani-on .is-visible{opacity:1;transform:none}
+body.ani-on .section-head.is-visible{animation:aniRise .9s var(--ani-ease) both}
+body.ani-on .card.is-visible{animation:aniRise .82s var(--reveal-delay,0ms) var(--ani-ease) both}
+body.ani-on .panel.is-visible,body.ani-on .feature-photo.is-visible{animation:aniScale 1s var(--ani-ease) both}
+body.ani-on .cta-box.is-visible,body.ani-on .footer.is-visible,body.ani-on .legal article.is-visible,body.ani-on .contact-card.is-visible{animation:aniRise .88s var(--ani-ease) both}
+body.ani-on .topic-card.is-visible{animation:aniRise .9s var(--reveal-delay,0ms) var(--ani-ease) both}
+body.ani-on .fashion-video-block.is-visible{animation:aniScale 1s var(--ani-ease) both}
+
+body.ani-on .hero .eyebrow,body.ani-on .hero h1,body.ani-on .hero .lead,body.ani-on .hero .actions,body.ani-on .hero-art,.fashion-page .fashion-hero .eyebrow,.fashion-page .fashion-hero h1,.fashion-page .fashion-hero .lead,.fashion-page .fashion-hero .actions,.fashion-page .fashion-hero-visual{animation:aniRise 1s var(--ani-ease) both}
+body.ani-on .hero h1{animation-delay:.08s}.ani-on .hero .lead{animation-delay:.18s}.ani-on .hero .actions{animation-delay:.28s}.ani-on .hero-art{animation-delay:.15s}
+body.ani-on .hero-card,.fashion-page .fashion-hero-card{animation:aniScale .95s .45s var(--ani-ease) both}
+body.ani-on .hero-art:before{animation:aniGlow 9s ease-in-out infinite}
+body.ani-on .brand .mark{animation:aniDrift 6s ease-in-out infinite}
+body.ani-on .mini-stat strong:last-child{animation:aniFloat 5s ease-in-out infinite}
+body.ani-on .btn{position:relative;overflow:hidden;transition:transform .35s var(--ani-ease),box-shadow .35s ease}
+body.ani-on .btn:after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.18) 50%,transparent 65%);transform:translateX(-120%)}
+body.ani-on .btn:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(18,49,38,.16)}
+body.ani-on .btn:hover:after{animation:aniShine .75s ease both}
+body.ani-on .card{will-change:transform,opacity}
+body.ani-on .card:hover{transform:translateY(-9px) scale(1.01)!important;transition:transform .4s var(--ani-ease),box-shadow .4s ease}
+body.ani-on .card:hover .icon{transform:translateY(-3px) rotate(-8deg) scale(1.1);transition:transform .4s var(--ani-ease)}
+body.ani-on .nav{transition:background-color .35s ease,box-shadow .35s ease}
+body.ani-on .nav.nav-scrolled{background:rgba(251,247,239,.78);box-shadow:0 14px 36px rgba(18,49,38,.10)}
+body.ani-on .links a{position:relative}.ani-on .links a:after{content:'';position:absolute;left:0;right:100%;bottom:-7px;height:2px;border-radius:2px;background:var(--accent2);transition:right .3s var(--ani-ease)}.ani-on .links a:hover:after{right:0}
+.hero:after{content:'';position:absolute;pointer-events:none;width:360px;height:360px;right:-150px;top:90px;border:1px solid rgba(18,49,38,.10);border-radius:50%;box-shadow:0 0 0 36px rgba(18,49,38,.025),0 0 0 72px rgba(18,49,38,.018);animation:aniDrift 15s ease-in-out infinite}
+
+/* Fashion page: no external media. Local media fills the visual surfaces. */
+body.page-fashion .hero{background:linear-gradient(120deg,#f8efe3,#fffdf9 55%,#efe0cd);padding-top:100px;padding-bottom:88px}
+body.page-fashion .hero-grid{grid-template-columns:.9fr 1.1fr;gap:64px}
+body.page-fashion .hero-art{min-height:540px;background-image:linear-gradient(160deg,rgba(18,49,38,.1),rgba(18,49,38,.78)),url('/assets/fashion-01.svg');background-size:cover;background-position:center;box-shadow:0 32px 90px rgba(18,49,38,.2)}
+body.page-fashion #guides .card{overflow:hidden;padding:0;min-height:430px;display:flex;flex-direction:column}
+body.page-fashion #guides .card>.topic-media{order:-1;height:230px;overflow:hidden;position:relative}
+body.page-fashion #guides .card>.topic-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s var(--ani-ease)}
+body.page-fashion #guides .card:hover>.topic-media img{transform:scale(1.07)}
+body.page-fashion .topic-media{background:#e4dac8}
+body.page-fashion .topic-media:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(9,22,16,.28))}
+body.page-fashion .fashion-video-block{margin-top:42px;border-radius:32px;overflow:hidden;background:#10251d;box-shadow:0 30px 80px rgba(16,37,29,.2);position:relative}
+body.page-fashion .fashion-video-block video{display:block;width:100%;aspect-ratio:16/8;object-fit:cover;background:#07120e}
+body.page-fashion .fashion-video-copy{position:absolute;left:26px;bottom:26px;max-width:440px;padding:20px 22px;border:1px solid rgba(255,255,255,.16);border-radius:20px;background:rgba(8,24,17,.68);backdrop-filter:blur(12px);color:#fff}
+body.page-fashion .fashion-video-copy h3{font-size:30px;margin:0 0 8px}.ani-on .fashion-video-copy p{margin:0;color:rgba(255,255,255,.76);font-size:14px}
+body.page-fashion .feature-photo{background-image:linear-gradient(135deg,rgba(18,49,38,.18),rgba(18,49,38,.72)),url('/assets/fashion-02.svg');background-size:cover;background-position:center}
+body.page-fashion .cta{background:linear-gradient(120deg,#173c2e,#0f241c);color:#fff}body.page-fashion .cta-box p{color:rgba(255,255,255,.72)}
+
+/* Other pages keep their own identities while sharing the motion language. */
+body.page-quran .hero{background:radial-gradient(circle at 82% 18%,rgba(229,173,121,.2),transparent 22%),linear-gradient(135deg,#10251d,#183b2d 58%,#244d3b);color:#fff}
+body.page-quran .hero .lead{color:rgba(255,255,255,.76)}body.page-quran .hero .eyebrow{color:#f3d4b0;border-color:rgba(255,255,255,.2)}
+body.page-safety .hero{background:linear-gradient(135deg,#edf2ee,#faf9f4 55%,#e8eee8)}body.page-safety .hero-art{background:linear-gradient(155deg,#10231c,#365b4a)}
+body.page-lifestyle .hero{background:radial-gradient(circle at 16% 18%,rgba(142,169,146,.18),transparent 24%),linear-gradient(135deg,#f4f3eb,#fbf8f0 58%,#e7eee6)}body.page-lifestyle .grid4 .card:nth-child(even){transform:translateY(18px)}
+body.page-blog .legal{padding-top:96px}body.page-blog .legal> .wrap>h1{font-size:clamp(58px,8vw,104px);letter-spacing:-.045em}
+
+.ani-library-strip{display:flex;overflow:hidden;margin-top:30px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;white-space:nowrap}.ani-library-track{display:flex;gap:18px;min-width:max-content;animation:aniMarquee 28s linear infinite}.ani-library-track span{padding:8px 12px;border:1px solid var(--line);border-radius:999px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+@media(max-width:980px){body.page-fashion .hero-grid{grid-template-columns:1fr}body.page-fashion .hero-art{min-height:430px}}
+@media(max-width:620px){body.page-fashion .hero-art{min-height:380px}.ani-library-track{animation-duration:36s}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.001ms!important}}
