@@ -17,9 +17,10 @@ document.addEventListener('DOMContentLoaded',()=>{
     menu.setAttribute('aria-expanded',String(open));
   };
   if(menu&&links){
-    menu.setAttribute('aria-expanded','false');
-    menu.setAttribute('aria-controls','primary-navigation');
-    links.id='primary-navigation';
+    menu.setAttribute('aria-expanded',links.classList.contains('open')?'true':'false');
+    const id=links.id||'primary-navigation';
+    links.id=id;
+    menu.setAttribute('aria-controls',id);
     menu.addEventListener('click',()=>setMenuState(!links.classList.contains('open')));
     links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenuState(false)));
     document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenuState(false)});
