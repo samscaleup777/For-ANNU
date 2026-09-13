@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   // Cache-busted animation stylesheet: static DOM stays visible until this JS enables the motion layer.
   const animationStyle=document.createElement('link');
   animationStyle.rel='stylesheet';
-  animationStyle.href='/animations-v2.css?v=2';
+  animationStyle.href='/animations-v3.css?v=3';
   document.head.appendChild(animationStyle);
 
   const path=window.location.pathname.toLowerCase();
@@ -78,22 +78,22 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   // Fashion media is repo-local: replace every external Pexels asset and remove redirect-only video behavior.
   if(pageClass==='page-fashion'){
-    const localImages=['/assets/fashion-01.svg','/assets/fashion-02.svg','/assets/fashion-03.svg','/assets/fashion-04.svg'];
+    const localImages=['/assets/real-fashion-01.jpg','/assets/real-fashion-02.jpg','/assets/real-fashion-03.jpg','/assets/real-fashion-04.jpg'];
     const heroImage=document.querySelector('.fashion-hero-visual img');
-    if(heroImage){heroImage.src=localImages[0];heroImage.removeAttribute('srcset');heroImage.alt='Fully covered modest-fashion editorial illustration with face and body details concealed';}
+    if(heroImage){heroImage.src=localImages[0];heroImage.removeAttribute('srcset');heroImage.alt='Real modest-fashion photo with full coverage and no visible face';}
 
     document.querySelectorAll('.topic-card img').forEach((img,index)=>{
       img.src=localImages[index]||localImages[0];
       img.removeAttribute('srcset');
-      img.alt=`Fully covered modest fashion visual for ${['Hijab','Abaya','Burkha','Wardrobe'][index]||'modest wardrobe'}`;
+      img.alt=`Real modest-fashion photo with face fully concealed for ${['Hijab','Abaya','Burqa','Wardrobe'][index]||'modest wardrobe'}`;
     });
 
     const featureImage=document.querySelector('.fashion-feature-image img');
-    if(featureImage){featureImage.src=localImages[1];featureImage.removeAttribute('srcset');featureImage.alt='Fully covered modest fashion editorial illustration with face concealed';}
+    if(featureImage){featureImage.src=localImages[1];featureImage.removeAttribute('srcset');featureImage.alt='Real modest-fashion photo with full coverage and no visible face';}
 
     const videoMedia=document.querySelector('.fashion-video-media');
     if(videoMedia){
-      videoMedia.innerHTML='<video class="local-fashion-video" controls muted loop playsinline preload="metadata" aria-label="Local Annïka modest fashion film with fully covered figure"><source src="/assets/fashion-film.mp4" type="video/mp4">Your browser does not support the local fashion video.</video><div class="fashion-video-overlay-local"><span>Local fashion film</span></div>';
+      videoMedia.innerHTML='<video class="local-fashion-video" controls muted loop playsinline preload="metadata" aria-label="Real Annïka modest fashion film with no visible face"><source src="/assets/real-fashion-film.mp4" type="video/mp4">Your browser does not support the local fashion video.</video><div class="fashion-video-overlay-local"><span>Local fashion film</span></div>';
     }
 
     document.querySelectorAll('.fashion-page a[href*="pexels.com"]').forEach(a=>{
