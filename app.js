@@ -43,3 +43,5 @@ document.addEventListener('DOMContentLoaded',()=>{
     if(anchor&&!document.querySelector('.ani-library-strip')){const strip=document.createElement('div');strip.className='ani-library-strip wrap';const track=document.createElement('div');track.className='ani-library-track';const labels=pageClass==='page-fashion'?['Hijab','Abaya','Burkha','Wardrobe','Fabric','Layering']:pageClass==='page-quran'?['Read','Reflect','Verify','Context','Learn','Practice']:pageClass==='page-safety'?['Privacy','Travel','Boundaries','Emergency','Accounts','Awareness']:['Prayer','Wellbeing','Family','Learning','Ramadan','Rest'];[...labels,...labels].forEach(label=>{const chip=document.createElement('span');chip.textContent=label;track.appendChild(chip)});strip.appendChild(track);anchor.parentNode.insertBefore(strip,anchor.nextSibling)}
   }
 });
+
+(()=>{if(window.__annikaChatLoader)return;window.__annikaChatLoader=true;const load=()=>{const script=document.createElement('script');script.src='/chatbot.js?v=1';script.defer=true;document.head.appendChild(script)};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load()})();
