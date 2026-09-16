@@ -41,19 +41,32 @@ function cleanHistory(history) {
     .map(item => ({ role: item.role, content: item.content.slice(0, 2500) }));
 }
 
+function localAnswer(message) {
+  const q=message.toLowerCase();
+  if(/what is ann|who are you|about ann/.test(q)) return 'Annïka is a calm digital space for Muslim women, bringing together modest fashion, Quran & Hadith learning, women’s safety awareness, and practical Islamic lifestyle resources. You can start from the Home or About sections.';
+  if(/fashion|hijab|abaya|burqa|burkha|wardrobe|modest/.test(q)) return 'For modest fashion inspiration, explore the Fashion section. It covers hijab, abaya, burkha/burqa and practical wardrobe ideas with a modern, usable approach.';
+  if(/quran|hadith|dua|islam|faith|ramadan/.test(q)) return 'The Quran & Hadith section is the place for reading guides, reminders and faith-focused reflections. For personal religious rulings, it is best to verify important matters with a qualified scholar.';
+  if(/safety|safe|privacy|emergency|travel|account|security|boundary/.test(q)) return 'The Safety section covers practical digital and real-world awareness, including privacy, travel, boundaries, emergency awareness and account security. No single habit can guarantee safety, so urgent situations should be handled through appropriate local services or trusted professionals.';
+  if(/lifestyle|wellbeing|well-being|family|routine|prayer|rest|learning/.test(q)) return 'The Lifestyle section brings together practical topics such as duas, routines, wellbeing, family, learning, Ramadan and everyday ways to connect faith with daily life.';
+  if(/blog|article|read/.test(q)) return 'You can browse the Blog for articles and practical guidance related to Annïka’s four core topics: fashion, faith, safety and lifestyle.';
+  return 'I can help you explore Annïka’s fashion, Quran & Hadith, safety and lifestyle resources. Tell me what you are looking for, and I’ll point you to the most relevant section.';
+}
+
 module.exports = async (req, res) => {
   if (req.method !== 'POST') return json(res, 405, { error: 'Method not allowed' });
-  if (!process.env.OPENAI_API_KEY) return json(res, 503, { error: 'AI service is not configured yet.' });
 
   try {
     const body = typeof req.body === 'string' ? JSON.parse(req.body) : (req.body || {});
     const message = typeof body.message === 'string' ? body.message.trim().slice(0, 1200) : '';
     if (!message) return json(res, 400, { error: 'Message is required.' });
 
+    if (!process.env.OPENAI_API_KEY) {
+      return json(res, 200, { answer: localAnswer(message), mode: 'local-fallback' });
+    }
+
     const history = cleanHistory(body.history);
     const page = typeof body.page === 'string' ? body.page.slice(0, 120) : '/';
     const model = process.env.OPENAI_MODEL || 'gpt-5.6-luna';
-
     const input = [
       { role: 'developer', content: `${SITE_KNOWLEDGE}\nThe visitor is currently viewing: ${page}` },
       ...history,
@@ -65,11 +78,7 @@ module.exports = async (req, res) => {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`,
       },
-      body: JSON.stringify({
-        model,
-        input,
-        max_output_tokens: 700,
-      }),
+      body: JSON.stringify({ model, input, max_output_tokens: 700 }),
     });
 
     const data = await apiResponse.json().catch(() => ({}));
@@ -88,7 +97,7 @@ module.exports = async (req, res) => {
       : '';
 
     if (!answer) return json(res, 502, { error: 'The AI service returned an empty response.' });
-    return json(res, 200, { answer });
+    return json(res, 200, { answer, mode: 'ai' });
   } catch (error) {
     console.error('Annïka chat error', error);
     return json(res, 500, { error: 'Unexpected chat error.' });
