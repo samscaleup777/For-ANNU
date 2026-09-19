@@ -61,6 +61,9 @@ jobs:
             ("27-haircare-products.jpg", "7440062", False),
             ("28-argan-haircare.jpg", "10427813", False),
             ("29-hair-oil-care.jpg", "7428095", False),
+            ("30-prayer-rug-quran.jpg", "7957080", False),
+            ("31-womens-wristwatch.jpg", "1697569", False),
+            ("32-sunglasses.jpg", "20689005", False),
           ]
 
           out = Path("assets/shop/real")
