@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   const setMenuState=open=>{if(!menu||!links)return;links.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Open navigation')};
   if(menu&&links){menu.setAttribute('aria-expanded',links.classList.contains('open')?'true':'false');menu.addEventListener('click',()=>setMenuState(!links.classList.contains('open')));links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setMenuState(false)));document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenuState(false)})}
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
+  document.querySelectorAll('link[rel="icon"]').forEach(icon=>{icon.href='/assets/annika-mark-exact-visible.png';icon.type='image/png'});
 
   const oldAni=[...document.querySelectorAll('link[href^="/animations-v3.css"]')];
   oldAni.forEach(link=>{link.href='/animations-v3.css?v=12'});
