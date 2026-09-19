@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded',()=>{
 
   document.querySelectorAll('.grid4 .card').forEach((card,index)=>{if(card.querySelector('img,.context-media'))return;const media=document.createElement('div');media.className='context-media';const img=document.createElement('img');img.src=visuals[index%visuals.length];img.onerror=()=>{img.onerror=null;img.src='/assets/real-fashion-01.jpg'};img.alt='Annïka visual for '+((card.querySelector('h3')?.textContent||'this topic').trim());img.loading='lazy';media.appendChild(img);card.prepend(media);card.classList.add('has-context-media')});
   const feature=document.querySelector('.feature-photo');
-  if(feature&&!feature.querySelector('img')){const featureImages={'page-home':'/assets/shop/real/25-colorful-modest-fashion.jpg','page-quran':'/assets/shop/real/16-quran-open.jpg','page-safety':'/assets/shop/real/23-hijab-scarf-detail.jpg','page-lifestyle':'/assets/shop/real/19-makeup-flatlay.jpg','page-blog':'/assets/shop/real/20-jewelry-set.jpg','page-about':'/assets/shop/real/10-embroidered-abaya.jpg','page-contact':'/assets/shop/real/11-handbag.jpg'}feature.style.backgroundImage=`linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.32)),url('${featureImages[pageClass]||'/assets/section-lifestyle.svg'}')`;feature.setAttribute('aria-label','Annïka section visual')}
+  if(feature&&!feature.querySelector('img')){const featureImages={'page-home':'/assets/real/annika-girl-01.jpg','page-quran':'/assets/real/annika-girl-02.jpg','page-safety':'/assets/real/annika-girl-03.jpg','page-lifestyle':'/assets/real/annika-girl-04.jpg','page-blog':'/assets/real/annika-girl-01.jpg','page-about':'/assets/real/annika-girl-03.jpg','page-contact':'/assets/real/annika-girl-02.jpg'};feature.style.backgroundImage=`linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.32)),url('${featureImages[pageClass]||'/assets/real/annika-girl-01.jpg'}')`;feature.setAttribute('aria-label','Annïka section visual')}
   const search=document.querySelector('[data-search]'),cards=[...document.querySelectorAll('[data-searchable]')];
   if(search&&cards.length)search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();cards.forEach(c=>c.classList.toggle('hidden',q&&!c.textContent.toLowerCase().includes(q)))});
 
@@ -46,4 +46,3 @@ document.addEventListener('DOMContentLoaded',()=>{
   }
 });
 
-(()=>{if(window.__annikaChatLoader)return;window.__annikaChatLoader=true;const load=()=>{const script=document.createElement('script');script.src='/chatbot.js?v=1';script.defer=true;document.head.appendChild(script)};if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load()})();
