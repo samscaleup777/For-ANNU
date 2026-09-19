@@ -48,3 +48,10 @@ body.animation-ready .legal article.is-visible,body.animation-ready .contact-car
 body.animation-ready .tag{transition:transform .25s ease,background-color .25s ease,border-color .25s ease}
 body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;border-color:#cfb991}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}body.animation-ready .section-head,body.animation-ready .card,body.animation-ready .panel,body.animation-ready .feature-photo,body.animation-ready .cta-box,body.animation-ready .footer,body.animation-ready .legal article,body.animation-ready .contact-card{opacity:1!important;transform:none!important}}
+
+
+/* Exact Annïka mark used consistently across every page. */
+.brand-logo-exact{width:36px;height:44px;object-fit:contain;display:block;animation:annikaExactLogoFloat 4.8s ease-in-out infinite;filter:drop-shadow(0 5px 9px rgba(201,130,79,.24));transition:transform .35s ease,filter .35s ease}
+.brand:hover .brand-logo-exact{transform:translateY(-2px) rotate(-2deg) scale(1.08);filter:drop-shadow(0 9px 16px rgba(201,130,79,.34))}
+@keyframes annikaExactLogoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px) scale(1.04)}}
+@media(max-width:620px){.brand-logo-exact{width:32px;height:40px}.brand{gap:9px}}
