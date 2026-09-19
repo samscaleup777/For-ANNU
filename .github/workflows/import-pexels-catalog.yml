@@ -171,7 +171,7 @@ jobs:
                       print("source",pool,i,pid)
           print("DOWNLOADED",len(downloaded),"FAILURES",len(failures))
 
-                    def choose_pool(p):
+          def choose_pool(p):
               s=(p["section"]+" "+p["subsection"]+" "+p["name"]+" "+p["query"]).lower()
               exact={
                 "Ramadan Planner":"stationery","Quran Stand":"faith","Iftar Serving Essentials":"home",
