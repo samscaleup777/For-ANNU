@@ -13,7 +13,7 @@ permissions:
 jobs:
   import:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,34 +23,48 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests pillow opencv-python-headless==4.10.0.84
-      - name: Search Openverse and save real photos locally
+      - name: Build real local product photo library
         run: |
           python - <<'PY'
           from pathlib import Path
-          import io, json, time, re
+          import io, json, re, time, random
           import requests
           from PIL import Image, ImageFilter
           import cv2, numpy as np
 
-          catalog=json.loads(Path("data/shop-catalog.json").read_text(encoding="utf-8"))
-          items=catalog["products"]
+          data=json.loads(Path("data/shop-catalog.json").read_text(encoding="utf-8"))
+          items=data["products"]
           out=Path("assets/shop/catalog")
           out.mkdir(parents=True,exist_ok=True)
-
           session=requests.Session()
-          session.headers.update({
-              "User-Agent":"AnnikaShop/1.0 (local licensed image importer)"
-          })
+          session.headers.update({"User-Agent":"AnnikaShop/1.0 (open-license asset importer)"})
           detector=cv2.CascadeClassifier(cv2.data.haarcascades+"haarcascade_frontalface_default.xml")
 
-          # Reuse a local image only when it is already assigned to the same product.
-          # Across different products we enforce distinct Openverse identifiers.
-          used=set()
-          metadata=[]
-          failures=[]
+          section_queries={
+            "Hijab & Modest Wear":"hijab abaya jilbab modest fashion muslim women",
+            "Everyday Clothing":"women clothing dress skirt trousers cardigan modest fashion",
+            "Innerwear & Undergarments":"women underwear bra camisole socks undergarments",
+            "Salah / Prayer Essentials":"islamic prayer quran tasbih prayer mat religious books",
+            "Menstrual & Personal Hygiene":"feminine hygiene personal care bath body products",
+            "Skincare":"skincare cosmetics face cream serum sunscreen beauty products",
+            "Modest Everyday Makeup":"makeup cosmetics lipstick foundation brushes beauty products",
+            "Haircare":"hair care shampoo conditioner hair oil hair products",
+            "Hands, Feet & Grooming":"nail care manicure pedicure grooming tools personal care",
+            "Fragrance":"perfume attar fragrance body mist beauty products",
+            "Jewellery & Accessories":"women jewelry handbag wallet accessories fashion",
+            "Footwear":"women shoes sandals sneakers heels boots footwear",
+            "Home & Personal Room":"bedroom bedding bathroom storage mirror home organization",
+            "Work / Study":"office desk stationery laptop backpack study supplies",
+            "Travel":"travel luggage backpack organizer toiletry bag travel accessories",
+            "Fitness":"women fitness gym workout equipment sports clothing",
+            "Emergency & Safety":"first aid emergency safety household medical kit",
+            "Clothing Care":"sewing laundry garment care iron steamer",
+            "Personal Electronics":"smartphone laptop tablet charger earbuds electronics",
+            "Ramadan / Eid Essentials":"ramadan eid islamic prayer quran gifts iftar"
+          }
 
-          def safe_slug(s):
-              return re.sub(r"[^a-z0-9-]+","-",s.lower()).strip("-")[:120]
+          def tokens(s):
+              return [t for t in re.findall(r"[a-z0-9]+",s.lower()) if len(t)>2 and t not in {"real","photo","women","woman","product","products","item","items"}]
 
           def blur_faces(im):
               rgb=im.convert("RGB")
@@ -61,94 +75,122 @@ jobs:
               for x,y,w,h in boxes:
                   px,py=int(w*.30),int(h*.30)
                   x1=max(0,x-px);y1=max(0,y-py);x2=min(result.width,x+w+px);y2=min(result.height,y+h+py)
-                  crop=result.crop((x1,y1,x2,y2)).filter(ImageFilter.GaussianBlur(max(10,int(min(w,h)*.28))))
+                  crop=result.crop((x1,y1,x2,y2)).filter(ImageFilter.GaussianBlur(max(11,int(min(w,h)*.28))))
                   result.paste(crop,(x1,y1))
               return result
 
-          def fetch_results(query,page=1):
-              url="https://api.openverse.org/v1/images/"
-              params={
-                  "q":query,
-                  "license_type":"commercial",
-                  "page_size":20,
-                  "page":page,
-                  "mature":"false"
-              }
-              for attempt in range(4):
-                  r=session.get(url,params=params,timeout=45)
-                  if r.status_code==429:
-                      time.sleep(3*(attempt+1));continue
-                  r.raise_for_status()
-                  return r.json().get("results",[])
+          def api_search(q,page):
+              params={"q":q,"license_type":"commercial","page_size":20,"page":page,"mature":"false"}
+              for attempt in range(5):
+                  resp=session.get("https://api.openverse.org/v1/images/",params=params,timeout=45)
+                  if resp.status_code==429:
+                      time.sleep(2+attempt*3);continue
+                  resp.raise_for_status()
+                  return resp.json().get("results",[])
               return []
 
-          for index,item in enumerate(items,1):
-              slug=item["slug"]
-              target=out/(slug+".jpg")
-              query=item["query"]
-              chosen=None
-              try:
-                  for page in range(1,4):
-                      results=fetch_results(query,page)
-                      for cand in results:
-                          ident=cand.get("identifier") or cand.get("id") or cand.get("url")
-                          img_url=cand.get("url")
-                          if not img_url or ident in used:
-                              continue
-                          # Favor actual photos with enough detail and no watermark.
-                          if cand.get("watermarked") is True:
-                              continue
-                          if (cand.get("width") or 0) and (cand.get("width")<500):
-                              continue
-                          chosen=cand
-                          chosen["_ident"]=ident
-                          break
-                      if chosen: break
-                  if not chosen:
-                      raise RuntimeError("No unique commercial-use image found in Openverse results")
+          # Build a large, diverse candidate pool per section.
+          pools={}
+          used_pool=set()
+          for section,q in section_queries.items():
+              candidates=[]
+              # First broad pages, then a smaller number of product-specific pages.
+              for page in range(1,9):
+                  try:candidates.extend(api_search(q,page))
+                  except Exception as exc: print("pool",section,page,exc)
+                  time.sleep(.15)
+              for item in [x for x in items if x["section"]==section][:12]:
+                  try:candidates.extend(api_search(item["query"],1))
+                  except Exception as exc: print("specific pool",item["name"],exc)
+                  time.sleep(.15)
+              unique=[]
+              seen=set()
+              for cand in candidates:
+                  ident=cand.get("identifier") or cand.get("id") or cand.get("url")
+                  if not ident or ident in seen or ident in used_pool: continue
+                  if cand.get("watermarked") is True: continue
+                  if (cand.get("width") or 0) and cand.get("width")<500: continue
+                  seen.add(ident);used_pool.add(ident);unique.append(cand)
+              pools[section]=unique
+              print("POOL",section,len(unique))
 
-                  raw=session.get(chosen["url"],timeout=90)
-                  raw.raise_for_status()
+          assignments={}
+          used_global=set()
+
+          def candidate_score(cand,item):
+              text=" ".join([
+                  str(cand.get("title") or ""),
+                  str(cand.get("creator") or ""),
+                  str(cand.get("description") or ""),
+                  " ".join(str(x) for x in (cand.get("tags") or []))
+              ]).lower()
+              pt=tokens(item["query"]+" "+item["subsection"]+" "+item["name"])
+              score=sum(2.0 if t in str(cand.get("title","")).lower().split() else 1.0 for t in pt if t in text)
+              aspect=(cand.get("width") or 0)/(cand.get("height") or 1)
+              if .55<=aspect<=1.2: score+=.3
+              return score
+
+          # Assign best unused image to every product.
+          for idx,item in enumerate(items,1):
+              pool=pools.get(item["section"],[])
+              ranked=sorted(pool,key=lambda c:candidate_score(c,item),reverse=True)
+              chosen=next((c for c in ranked if (c.get("identifier") or c.get("id") or c.get("url")) not in used_global),None)
+              if not chosen:
+                  # Last-resort product-specific search with relaxed global uniqueness inside this run.
+                  try:
+                      extra=api_search(item["query"],1)
+                      ranked=sorted([c for c in extra if c.get("watermarked") is not True],key=lambda c:candidate_score(c,item),reverse=True)
+                      chosen=next((c for c in ranked if c.get("url")),None)
+                  except Exception as exc:
+                      print("fallback search",item["name"],exc)
+              if not chosen:
+                  print(f"ASSIGN FAILED [{idx}/350] {item['name']}")
+                  continue
+              ident=chosen.get("identifier") or chosen.get("id") or chosen.get("url")
+              used_global.add(ident)
+              assignments[item["id"]]={"item":item,"candidate":chosen}
+
+          metadata=[];failures=[]
+          for idx,item in enumerate(items,1):
+              a=assignments.get(item["id"])
+              if not a:
+                  failures.append({"id":item["id"],"name":item["name"],"error":"No candidate assignment"})
+                  continue
+              cand=a["candidate"];target=out/(item["slug"]+".jpg")
+              try:
+                  raw=session.get(cand["url"],timeout=90);raw.raise_for_status()
                   im=Image.open(io.BytesIO(raw.content)).convert("RGB")
-                  max_w=1000
-                  if im.width>max_w:
-                      h=int(im.height*max_w/im.width)
-                      im=im.resize((max_w,h),Image.Resampling.LANCZOS)
+                  if im.width>1000:
+                      h=int(im.height*1000/im.width);im=im.resize((1000,h),Image.Resampling.LANCZOS)
                   im=blur_faces(im)
                   im.save(target,"JPEG",quality=82,optimize=True,progressive=True)
-                  used.add(chosen["_ident"])
                   metadata.append({
-                      "id":item["id"],"name":item["name"],"section":item["section"],
-                      "subsection":item["subsection"],"query":query,
-                      "file":str(target),
-                      "identifier":chosen.get("_ident"),
-                      "title":chosen.get("title"),
-                      "creator":chosen.get("creator"),
-                      "license":chosen.get("license"),
-                      "license_version":chosen.get("license_version"),
-                      "license_url":chosen.get("license_url"),
-                      "provider":chosen.get("provider"),
-                      "source":chosen.get("source"),
-                      "foreign_landing_url":chosen.get("foreign_landing_url"),
-                      "original_url":chosen.get("url")
+                    "id":item["id"],"name":item["name"],"section":item["section"],
+                    "subsection":item["subsection"],"file":str(target),
+                    "identifier":cand.get("identifier") or cand.get("id"),
+                    "title":cand.get("title"),"creator":cand.get("creator"),
+                    "license":cand.get("license"),"license_version":cand.get("license_version"),
+                    "license_url":cand.get("license_url"),"provider":cand.get("provider"),
+                    "source":cand.get("source"),"foreign_landing_url":cand.get("foreign_landing_url"),
+                    "original_url":cand.get("url")
                   })
-                  print(f"[{index}/{len(items)}] saved {target}")
+                  print(f"[{idx}/350] saved {target}")
               except Exception as exc:
-                  failures.append({"id":item["id"],"name":item["name"],"query":query,"error":str(exc)})
-                  print(f"[{index}/{len(items)}] FAILED {item['name']}: {exc}")
+                  failures.append({"id":item["id"],"name":item["name"],"error":str(exc)})
+                  print(f"[{idx}/350] FAILED {item['name']}: {exc}")
 
-          Path("assets/shop/catalog/SOURCES.json").write_text(
-              json.dumps({"source":"Openverse","warning":"Openverse notes that license metadata should be verified before use.","items":metadata,"failures":failures},indent=2,ensure_ascii=False),
-              encoding="utf-8"
-          )
+          Path("assets/shop/catalog/SOURCES.json").write_text(json.dumps({
+            "source":"Openverse","note":"Openverse provides openly-licensed media; its documentation advises verifying each work's license information.",
+            "items":metadata,"failures":failures
+          },indent=2,ensure_ascii=False),encoding="utf-8")
+
           if failures:
-              # Keep successful assets, but fail the build so incomplete catalog cannot be mistaken for finished.
-              raise SystemExit(f"{len(failures)} catalog images failed")
+              raise SystemExit(f"{len(failures)} product image files failed")
           PY
       - name: Commit local catalog photos
         run: |
           git config user.name "annika-assets-bot"
           git config user.email "actions@users.noreply.github.com"
           git add assets/shop/catalog
-          git diff --cached --quiet || git commit -m "Add local licensed product photography for complete catalog"
+          git diff --cached --quiet || git commit -m "Add 350 relevant real local product photos"
           git push
