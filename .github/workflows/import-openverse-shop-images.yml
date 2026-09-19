@@ -10,6 +10,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: annika-openverse-import
+  cancel-in-progress: true
+
 jobs:
   import:
     runs-on: ubuntu-latest
