@@ -1,0 +1,123 @@
+name: Import real Pexels photos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-real-images.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  import-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install image tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 pillow opencv-python-headless
+
+      - name: Download, blur faces and save locally
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import io
+          import re
+          import requests
+          from bs4 import BeautifulSoup
+          from PIL import Image, ImageFilter
+          import cv2
+          import numpy as np
+
+          items = [
+              ("fashion-hero.jpg", "https://www.pexels.com/photo/woman-in-black-hijab-covering-her-face-7249358/"),
+              ("fashion-hijab.jpg", "https://www.pexels.com/photo/woman-hiding-face-with-hijab-8996004/"),
+              ("fashion-shopping.jpg", "https://www.pexels.com/photo/two-women-in-hijabs-shopping-outdoors-35324629/"),
+              ("fashion-wardrobe.jpg", "https://www.pexels.com/photo/a-woman-in-hijab-looking-clothes-9219303/"),
+              ("fashion-rack.jpg", "https://www.pexels.com/photo/woman-in-hijab-shopping-for-traditional-clothing-38879788/"),
+              ("quran-reading.jpg", "https://www.pexels.com/photo/serene-muslim-woman-reading-quran-at-mosque-34481780/"),
+              ("quran-reading-2.jpg", "https://www.pexels.com/photo/muslim-woman-reading-quran-in-mosque-36211944/"),
+              ("lifestyle-kitchen.jpg", "https://www.pexels.com/photo/woman-preparing-traditional-feast-in-kitchen-36778682/"),
+              ("lifestyle-home.jpg", "https://www.pexels.com/photo/a-woman-cooking-in-the-kitchen-4910232/"),
+              ("safety-laptop.jpg", "https://www.pexels.com/photo/a-woman-in-a-hijab-working-on-her-laptop-8154764/"),
+              ("safety-laptop-2.jpg", "https://www.pexels.com/photo/a-woman-in-a-hijab-working-on-her-laptop-8121777/"),
+              ("lifestyle-outdoor.jpg", "https://www.pexels.com/photo/back-view-of-person-with-hijab-8755719/"),
+          ]
+
+          out = Path("assets/real")
+          out.mkdir(parents=True, exist_ok=True)
+          session = requests.Session()
+          session.headers.update({"User-Agent":"Mozilla/5.0 Annika-real-image-import/1.0"})
+
+          face = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+
+          def blur_faces(im: Image.Image) -> Image.Image:
+              rgb = im.convert("RGB")
+              arr = np.array(rgb)
+              gray = cv2.cvtColor(arr, cv2.COLOR_RGB2GRAY)
+              gray = cv2.equalizeHist(gray)
+              boxes = face.detectMultiScale(gray, scaleFactor=1.08, minNeighbors=5, minSize=(48,48))
+              work = rgb.copy()
+              for (x,y,w,h) in boxes:
+                  pad_x = int(w * 0.30); pad_y = int(h * 0.35)
+                  x1=max(0,x-pad_x); y1=max(0,y-pad_y); x2=min(work.width,x+w+pad_x); y2=min(work.height,y+h+pad_y)
+                  crop=work.crop((x1,y1,x2,y2)).filter(ImageFilter.GaussianBlur(radius=max(10,int(min(w,h)*0.22))))
+                  work.paste(crop,(x1,y1))
+              return work
+
+          failures=[]
+          for filename, page_url in items:
+              try:
+                  html = session.get(page_url, timeout=30)
+                  html.raise_for_status()
+                  soup=BeautifulSoup(html.text,"html.parser")
+                  meta=soup.find("meta",attrs={"property":"og:image"})
+                  image_url=meta.get("content","") if meta else ""
+                  if not image_url:
+                      link=re.search(r'https://images\.pexels\.com/photos/[^"\\]+', html.text)
+                      image_url=link.group(0) if link else ""
+                  if not image_url:
+                      raise RuntimeError("Could not locate image URL")
+                  image_url=image_url.replace("&amp;","&")
+                  raw=session.get(image_url,timeout=60)
+                  raw.raise_for_status()
+                  im=Image.open(io.BytesIO(raw.content)).convert("RGB")
+                  max_w=1800
+                  if im.width>max_w:
+                      h=int(im.height*max_w/im.width)
+                      im=im.resize((max_w,h),Image.Resampling.LANCZOS)
+                  im=blur_faces(im)
+                  im.save(out/filename,format="JPEG",quality=88,optimize=True)
+                  print("saved",filename,im.size)
+              except Exception as e:
+                  failures.append((filename,str(e)))
+                  print("FAILED",filename,e)
+
+          (out/"SOURCES.txt").write_text(
+              "Annïka real-image sources\n"
+              "Downloaded from Pexels pages and stored locally in this repository.\n"
+              "Faces detected in downloaded photos were blurred locally before saving.\n\n"
+              + "\n".join(f"{filename} <- {url}" for filename,url in items)
+              + ("\n\nFailures:\n" + "\n".join(f"{a}: {b}" for a,b in failures) if failures else ""),
+              encoding="utf-8"
+          )
+          if failures:
+              raise SystemExit(1)
+          PY
+
+      - name: Commit local photos
+        run: |
+          git config user.name "annika-assets-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add assets/real
+          git diff --cached --quiet || git commit -m "Add real locally hosted Annïka photography"
+          git push
