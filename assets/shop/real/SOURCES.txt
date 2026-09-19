@@ -31,3 +31,6 @@ Where a photo contains a person, faces are blurred locally before saving.
 27-haircare-products.jpg <- Pexels photo 7440062 <- https://images.pexels.com/photos/7440062/pexels-photo-7440062.jpeg?auto=compress&cs=tinysrgb&w=900
 28-argan-haircare.jpg <- Pexels photo 10427813 <- https://images.pexels.com/photos/10427813/pexels-photo-10427813.jpeg?auto=compress&cs=tinysrgb&w=900
 29-hair-oil-care.jpg <- Pexels photo 7428095 <- https://images.pexels.com/photos/7428095/pexels-photo-7428095.jpeg?auto=compress&cs=tinysrgb&w=900
+30-prayer-rug-quran.jpg <- Pexels photo 7957080 <- https://images.pexels.com/photos/7957080/pexels-photo-7957080.jpeg?auto=compress&cs=tinysrgb&w=900
+31-womens-wristwatch.jpg <- Pexels photo 1697569 <- https://images.pexels.com/photos/1697569/pexels-photo-1697569.jpeg?auto=compress&cs=tinysrgb&w=900
+32-sunglasses.jpg <- Pexels photo 13982238 <- https://images.pexels.com/photos/13982238/pexels-photo-13982238.jpeg?auto=compress&cs=tinysrgb&w=900
