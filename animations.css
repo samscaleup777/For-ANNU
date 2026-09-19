@@ -61,7 +61,7 @@ body.ani-on .hero:after{content:'';position:absolute;pointer-events:none;width:3
 body.page-fashion .hero{background:linear-gradient(120deg,#f8efe3 0%,#fffdf9 52%,#efe0cd 100%);padding-top:100px;padding-bottom:86px}
 body.page-fashion .hero-grid{grid-template-columns:.88fr 1.12fr;gap:68px}
 body.page-fashion .hero h1{font-size:clamp(56px,7vw,98px);letter-spacing:-.035em}
-body.page-fashion .hero-art{min-height:540px;background-image:linear-gradient(160deg,rgba(18,49,38,.20),rgba(18,49,38,.72)),url('https://images.pexels.com/photos/35344026/pexels-photo-35344026.jpeg?auto=compress&cs=tinysrgb&w=1400');background-size:cover;background-position:center;box-shadow:0 32px 90px rgba(18,49,38,.22)}
+body.page-fashion .hero-art{min-height:540px;background-image:linear-gradient(160deg,rgba(18,49,38,.20),rgba(18,49,38,.72)),url('/assets/real-fashion-03.jpg');background-size:cover;background-position:center;box-shadow:0 32px 90px rgba(18,49,38,.22)}
 body.page-fashion .hero-card{max-width:460px;background:rgba(18,49,38,.72)}
 body.page-fashion #guides .card{overflow:hidden;padding:0;min-height:420px;display:flex;flex-direction:column}
 body.page-fashion #guides .card > :not(.topic-media){margin-left:26px;margin-right:26px}
@@ -74,7 +74,7 @@ body.page-fashion .fashion-video-block video{display:block;width:100%;aspect-rat
 body.page-fashion .fashion-video-copy{position:absolute;left:28px;bottom:28px;max-width:430px;padding:20px 22px;border:1px solid rgba(255,255,255,.16);border-radius:20px;background:rgba(12,28,22,.66);backdrop-filter:blur(12px);color:#fff}
 body.page-fashion .fashion-video-copy h3{font-size:30px;margin-bottom:7px}
 body.page-fashion .fashion-video-copy p{margin:0;color:rgba(255,255,255,.75);font-size:14px}
-body.page-fashion .feature-photo{background-image:linear-gradient(135deg,rgba(18,49,38,.28),rgba(18,49,38,.76)),url('https://images.pexels.com/photos/30161477/pexels-photo-30161477.jpeg?auto=compress&cs=tinysrgb&w=1200');background-size:cover;background-position:center}
+body.page-fashion .feature-photo{background-image:linear-gradient(135deg,rgba(18,49,38,.28),rgba(18,49,38,.76)),url('/assets/real-fashion-04.jpg');background-size:cover;background-position:center}
 body.page-fashion .cta{background:linear-gradient(120deg,#173c2e,#0f241c);color:#fff}
 body.page-fashion .cta-box p{color:rgba(255,255,255,.72)}
 
@@ -104,7 +104,7 @@ body.page-safety .cta-box p{color:rgba(255,255,255,.74)}
 
 /* Lifestyle — soft journal / wellness direction */
 body.page-lifestyle .hero{background:radial-gradient(circle at 16% 18%,rgba(142,169,146,.18),transparent 24%),linear-gradient(135deg,#f4f3eb,#fbf8f0 58%,#e7eee6)}
-body.page-lifestyle .hero-art{background:linear-gradient(155deg,rgba(36,60,50,.72),rgba(101,126,108,.42)),url('https://images.pexels.com/photos/30161477/pexels-photo-30161477.jpeg?auto=compress&cs=tinysrgb&w=1200');background-size:cover;background-position:center;min-height:500px}
+body.page-lifestyle .hero-art{background:linear-gradient(155deg,rgba(36,60,50,.72),rgba(101,126,108,.42)),url('/assets/real-fashion-04.jpg');background-size:cover;background-position:center;min-height:500px}
 body.page-lifestyle .hero-card{background:rgba(250,248,240,.14);border-color:rgba(255,255,255,.22)}
 body.page-lifestyle .grid4 .card{border-radius:30px;background:rgba(255,255,255,.72)}
 body.page-lifestyle .grid4 .card:nth-child(even){transform:translateY(22px)}
