@@ -1538,7 +1538,7 @@
       "subsection": "Nails",
       "file": "assets/shop/catalog/171-nail-cutter.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-03.jpg"
+      "source_file": "assets/shop/_sources/grooming-02.jpg"
     },
     {
       "id": "172",
@@ -1547,7 +1547,7 @@
       "subsection": "Nails",
       "file": "assets/shop/catalog/172-nail-file.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-05.jpg"
+      "source_file": "assets/shop/_sources/grooming-03.jpg"
     },
     {
       "id": "173",
@@ -1556,7 +1556,7 @@
       "subsection": "Nails",
       "file": "assets/shop/catalog/173-nail-buffer.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-06.jpg"
+      "source_file": "assets/shop/_sources/grooming-04.jpg"
     },
     {
       "id": "174",
@@ -1565,7 +1565,7 @@
       "subsection": "Nails",
       "file": "assets/shop/catalog/174-cuticle-oil.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-01.jpg"
+      "source_file": "assets/shop/_sources/grooming-05.jpg"
     },
     {
       "id": "175",
@@ -1574,7 +1574,7 @@
       "subsection": "Hands",
       "file": "assets/shop/catalog/175-hand-cream.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-03.jpg"
+      "source_file": "assets/shop/_sources/grooming-06.jpg"
     },
     {
       "id": "176",
@@ -1583,7 +1583,7 @@
       "subsection": "Feet",
       "file": "assets/shop/catalog/176-foot-scrub.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-05.jpg"
+      "source_file": "assets/shop/_sources/grooming-07.jpg"
     },
     {
       "id": "177",
@@ -1592,7 +1592,7 @@
       "subsection": "Feet",
       "file": "assets/shop/catalog/177-foot-file.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-06.jpg"
+      "source_file": "assets/shop/_sources/grooming-08.jpg"
     },
     {
       "id": "178",
@@ -1610,7 +1610,7 @@
       "subsection": "Kits",
       "file": "assets/shop/catalog/179-pedicure-kit.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-03.jpg"
+      "source_file": "assets/shop/_sources/grooming-02.jpg"
     },
     {
       "id": "180",
@@ -1619,7 +1619,7 @@
       "subsection": "Kits",
       "file": "assets/shop/catalog/180-manicure-kit.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-05.jpg"
+      "source_file": "assets/shop/_sources/grooming-03.jpg"
     },
     {
       "id": "181",
@@ -1628,7 +1628,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/181-tweezers.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-06.jpg"
+      "source_file": "assets/shop/_sources/grooming-04.jpg"
     },
     {
       "id": "182",
@@ -1637,7 +1637,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/182-facial-razor.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-01.jpg"
+      "source_file": "assets/shop/_sources/grooming-05.jpg"
     },
     {
       "id": "183",
@@ -1646,7 +1646,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/183-eyebrow-razor.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-03.jpg"
+      "source_file": "assets/shop/_sources/grooming-06.jpg"
     },
     {
       "id": "184",
@@ -1655,7 +1655,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/184-body-razor.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-05.jpg"
+      "source_file": "assets/shop/_sources/grooming-07.jpg"
     },
     {
       "id": "185",
@@ -1664,7 +1664,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/185-electric-trimmer.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-06.jpg"
+      "source_file": "assets/shop/_sources/grooming-08.jpg"
     },
     {
       "id": "186",
@@ -1682,7 +1682,7 @@
       "subsection": "Hair Removal",
       "file": "assets/shop/catalog/187-epilator.jpg",
       "source_pool": "grooming",
-      "source_file": "assets/shop/_sources/grooming-03.jpg"
+      "source_file": "assets/shop/_sources/grooming-02.jpg"
     },
     {
       "id": "188",
@@ -3164,18 +3164,6 @@
       7,
       36990297,
       "404 Client Error: Not Found for url: https://images.pexels.com/photos/36990297/pexels-photo-36990297.jpeg?auto=compress&cs=tinysrgb&w=1000"
-    ],
-    [
-      "grooming",
-      2,
-      2113856,
-      "404 Client Error: Not Found for url: https://images.pexels.com/photos/2113856/pexels-photo-2113856.jpeg?auto=compress&cs=tinysrgb&w=1000"
-    ],
-    [
-      "grooming",
-      4,
-      3761478,
-      "404 Client Error: Not Found for url: https://images.pexels.com/photos/3761478/pexels-photo-3761478.jpeg?auto=compress&cs=tinysrgb&w=1000"
     ]
   ]
 }
