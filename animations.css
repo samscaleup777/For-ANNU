@@ -97,7 +97,7 @@ body.page-safety .hero-art{background:linear-gradient(155deg,rgba(15,28,24,.90),
 body.page-safety .hero-art:after{content:'READY';position:absolute;right:28px;top:28px;padding:9px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.16);color:rgba(255,255,255,.7);font-size:11px;letter-spacing:.16em;font-weight:800;animation:aniPulse 3s ease-in-out infinite}
 body.page-safety #guides .card{border-radius:18px;border-left:4px solid #b98a55;background:#fff}
 body.page-safety #guides .icon{border-radius:12px;background:#e1eadf}
-body.page-safety .feature-photo{background-image:linear-gradient(135deg,rgba(15,28,24,.25),rgba(15,28,24,.72)),url('https://images.pexels.com/photos/5615049/pexels-photo-5615049.jpeg?auto=compress&cs=tinysrgb&w=1200');background-size:cover;background-position:center}
+body.page-safety .feature-photo{background-image:linear-gradient(135deg,rgba(15,28,24,.25),rgba(15,28,24,.72)),url('/assets/real-fashion-03.jpg');background-size:cover;background-position:center}
 body.page-safety .section.alt{background:#edf1eb}
 body.page-safety .cta{background:linear-gradient(120deg,#18382b,#315847);color:#fff}
 body.page-safety .cta-box p{color:rgba(255,255,255,.74)}
@@ -109,7 +109,7 @@ body.page-lifestyle .hero-card{background:rgba(250,248,240,.14);border-color:rgb
 body.page-lifestyle .grid4 .card{border-radius:30px;background:rgba(255,255,255,.72)}
 body.page-lifestyle .grid4 .card:nth-child(even){transform:translateY(22px)}
 body.page-lifestyle .grid4 .card:nth-child(even):hover{transform:translateY(12px)}
-body.page-lifestyle .feature-photo{background-image:linear-gradient(135deg,rgba(36,60,50,.18),rgba(36,60,50,.50)),url('https://images.pexels.com/photos/9219303/pexels-photo-9219303.jpeg?auto=compress&cs=tinysrgb&w=1200');background-size:cover;background-position:center}
+body.page-lifestyle .feature-photo{background-image:linear-gradient(135deg,rgba(36,60,50,.18),rgba(36,60,50,.50)),url('/assets/real-fashion-04.jpg');background-size:cover;background-position:center}
 body.page-lifestyle .section.alt{background:#e9eee6}
 body.page-lifestyle .cta{background:linear-gradient(120deg,#e3ebdf,#f8f4ea)}
 
