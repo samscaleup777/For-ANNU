@@ -253,4 +253,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add assets/shop/catalog
           git diff --cached --quiet || git commit -m "Add 350 local real product photos for Annïka catalog"
-          git push
+          # Pull any site-code commits made while the image build was running,
+          # then replay the image commit on top so binary assets push cleanly.
+          git pull --rebase origin main
+          git push origin HEAD:main
