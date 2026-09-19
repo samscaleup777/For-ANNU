@@ -63,7 +63,7 @@ jobs:
             ("29-hair-oil-care.jpg", "7428095", False),
             ("30-prayer-rug-quran.jpg", "7957080", False),
             ("31-womens-wristwatch.jpg", "1697569", False),
-            ("32-sunglasses.jpg", "20689005", False),
+            ("32-sunglasses.jpg", "13982238", False),
           ]
 
           out = Path("assets/shop/real")
