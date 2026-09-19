@@ -97,8 +97,8 @@
       "section": "Hijab & Modest Wear",
       "subsection": "Hijab Accessories",
       "file": "assets/shop/catalog/11-safety-pins.jpg",
-      "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-11.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-01.jpg"
     },
     {
       "id": "12",
@@ -107,7 +107,7 @@
       "subsection": "Hijab Accessories",
       "file": "assets/shop/catalog/12-hijab-clips.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-12.jpg"
+      "source_file": "assets/shop/_sources/modest-11.jpg"
     },
     {
       "id": "13",
@@ -116,7 +116,7 @@
       "subsection": "Storage",
       "file": "assets/shop/catalog/13-hijab-storage-organizer.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-13.jpg"
+      "source_file": "assets/shop/_sources/modest-12.jpg"
     },
     {
       "id": "14",
@@ -125,7 +125,7 @@
       "subsection": "Storage",
       "file": "assets/shop/catalog/14-hijab-hanger.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-14.jpg"
+      "source_file": "assets/shop/_sources/modest-13.jpg"
     },
     {
       "id": "15",
@@ -134,7 +134,7 @@
       "subsection": "Hijab Accessories",
       "file": "assets/shop/catalog/15-hijab-scarf-ring.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-15.jpg"
+      "source_file": "assets/shop/_sources/modest-14.jpg"
     },
     {
       "id": "16",
@@ -143,7 +143,7 @@
       "subsection": "Dresses",
       "file": "assets/shop/catalog/16-long-modest-dresses.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-16.jpg"
+      "source_file": "assets/shop/_sources/modest-15.jpg"
     },
     {
       "id": "17",
@@ -152,7 +152,7 @@
       "subsection": "Dresses",
       "file": "assets/shop/catalog/17-maxi-dresses.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-17.jpg"
+      "source_file": "assets/shop/_sources/modest-16.jpg"
     },
     {
       "id": "18",
@@ -161,7 +161,7 @@
       "subsection": "Abaya",
       "file": "assets/shop/catalog/18-abaya.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-18.jpg"
+      "source_file": "assets/shop/_sources/modest-17.jpg"
     },
     {
       "id": "19",
@@ -170,7 +170,7 @@
       "subsection": "Abaya & Jilbab",
       "file": "assets/shop/catalog/19-jilbab.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-19.jpg"
+      "source_file": "assets/shop/_sources/modest-18.jpg"
     },
     {
       "id": "20",
@@ -179,7 +179,7 @@
       "subsection": "Prayer Wear",
       "file": "assets/shop/catalog/20-prayer-khimar.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-20.jpg"
+      "source_file": "assets/shop/_sources/modest-19.jpg"
     },
     {
       "id": "21",
@@ -188,7 +188,7 @@
       "subsection": "Prayer Wear",
       "file": "assets/shop/catalog/21-prayer-dress.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-21.jpg"
+      "source_file": "assets/shop/_sources/modest-20.jpg"
     },
     {
       "id": "22",
@@ -197,7 +197,7 @@
       "subsection": "Layering",
       "file": "assets/shop/catalog/22-long-cardigan.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-22.jpg"
+      "source_file": "assets/shop/_sources/modest-21.jpg"
     },
     {
       "id": "23",
@@ -206,7 +206,7 @@
       "subsection": "Tops",
       "file": "assets/shop/catalog/23-modest-tunics.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-23.jpg"
+      "source_file": "assets/shop/_sources/modest-22.jpg"
     },
     {
       "id": "24",
@@ -215,7 +215,7 @@
       "subsection": "Skirts",
       "file": "assets/shop/catalog/24-long-skirts.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-24.jpg"
+      "source_file": "assets/shop/_sources/modest-23.jpg"
     },
     {
       "id": "25",
@@ -224,7 +224,7 @@
       "subsection": "Trousers",
       "file": "assets/shop/catalog/25-wide-leg-trousers.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-25.jpg"
+      "source_file": "assets/shop/_sources/modest-24.jpg"
     },
     {
       "id": "26",
@@ -233,7 +233,7 @@
       "subsection": "Trousers",
       "file": "assets/shop/catalog/26-palazzo-pants.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-26.jpg"
+      "source_file": "assets/shop/_sources/modest-25.jpg"
     },
     {
       "id": "27",
@@ -242,7 +242,7 @@
       "subsection": "Salwar Kameez",
       "file": "assets/shop/catalog/27-modest-salwar-kameez.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-27.jpg"
+      "source_file": "assets/shop/_sources/modest-26.jpg"
     },
     {
       "id": "28",
@@ -251,7 +251,7 @@
       "subsection": "Salwar Kameez",
       "file": "assets/shop/catalog/28-kameez.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-28.jpg"
+      "source_file": "assets/shop/_sources/modest-27.jpg"
     },
     {
       "id": "29",
@@ -260,7 +260,7 @@
       "subsection": "Kurtis",
       "file": "assets/shop/catalog/29-long-kurti.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-29.jpg"
+      "source_file": "assets/shop/_sources/modest-28.jpg"
     },
     {
       "id": "30",
@@ -269,7 +269,7 @@
       "subsection": "Scarves",
       "file": "assets/shop/catalog/30-dupatta.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-30.jpg"
+      "source_file": "assets/shop/_sources/modest-29.jpg"
     },
     {
       "id": "31",
@@ -278,7 +278,7 @@
       "subsection": "Scarves",
       "file": "assets/shop/catalog/31-shawl.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-31.jpg"
+      "source_file": "assets/shop/_sources/modest-30.jpg"
     },
     {
       "id": "32",
@@ -287,7 +287,7 @@
       "subsection": "Full Coverage",
       "file": "assets/shop/catalog/32-burqa-niqab.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-32.jpg"
+      "source_file": "assets/shop/_sources/modest-31.jpg"
     },
     {
       "id": "33",
@@ -296,7 +296,7 @@
       "subsection": "Coverage",
       "file": "assets/shop/catalog/33-arm-sleeves.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-01.jpg"
+      "source_file": "assets/shop/_sources/modest-32.jpg"
     },
     {
       "id": "34",
@@ -305,7 +305,7 @@
       "subsection": "Coverage",
       "file": "assets/shop/catalog/34-leg-coverings-leggings.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-02.jpg"
+      "source_file": "assets/shop/_sources/modest-01.jpg"
     },
     {
       "id": "35",
@@ -314,7 +314,7 @@
       "subsection": "Homewear",
       "file": "assets/shop/catalog/35-home-dresses.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-03.jpg"
+      "source_file": "assets/shop/_sources/modest-02.jpg"
     },
     {
       "id": "36",
@@ -323,7 +323,7 @@
       "subsection": "Sets",
       "file": "assets/shop/catalog/36-salwar-kameez.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-04.jpg"
+      "source_file": "assets/shop/_sources/modest-03.jpg"
     },
     {
       "id": "37",
@@ -332,7 +332,7 @@
       "subsection": "Tops",
       "file": "assets/shop/catalog/37-long-tops.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-05.jpg"
+      "source_file": "assets/shop/_sources/modest-04.jpg"
     },
     {
       "id": "38",
@@ -341,7 +341,7 @@
       "subsection": "Tops",
       "file": "assets/shop/catalog/38-long-shirts.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-06.jpg"
+      "source_file": "assets/shop/_sources/modest-05.jpg"
     },
     {
       "id": "39",
@@ -350,7 +350,7 @@
       "subsection": "Kurtis",
       "file": "assets/shop/catalog/39-kurtis.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-07.jpg"
+      "source_file": "assets/shop/_sources/modest-06.jpg"
     },
     {
       "id": "40",
@@ -359,7 +359,7 @@
       "subsection": "Dresses",
       "file": "assets/shop/catalog/40-maxi-dresses.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-08.jpg"
+      "source_file": "assets/shop/_sources/modest-07.jpg"
     },
     {
       "id": "41",
@@ -368,7 +368,7 @@
       "subsection": "Skirts",
       "file": "assets/shop/catalog/41-long-skirts.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-09.jpg"
+      "source_file": "assets/shop/_sources/modest-08.jpg"
     },
     {
       "id": "42",
@@ -377,7 +377,7 @@
       "subsection": "Trousers",
       "file": "assets/shop/catalog/42-palazzo.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-10.jpg"
+      "source_file": "assets/shop/_sources/modest-09.jpg"
     },
     {
       "id": "43",
@@ -386,7 +386,7 @@
       "subsection": "Trousers",
       "file": "assets/shop/catalog/43-loose-trousers.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-11.jpg"
+      "source_file": "assets/shop/_sources/modest-10.jpg"
     },
     {
       "id": "44",
@@ -395,7 +395,7 @@
       "subsection": "Nightwear",
       "file": "assets/shop/catalog/44-nightwear.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-12.jpg"
+      "source_file": "assets/shop/_sources/modest-11.jpg"
     },
     {
       "id": "45",
@@ -404,7 +404,7 @@
       "subsection": "Nightwear",
       "file": "assets/shop/catalog/45-pajamas.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-13.jpg"
+      "source_file": "assets/shop/_sources/modest-12.jpg"
     },
     {
       "id": "46",
@@ -413,7 +413,7 @@
       "subsection": "Loungewear",
       "file": "assets/shop/catalog/46-loungewear.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-14.jpg"
+      "source_file": "assets/shop/_sources/modest-13.jpg"
     },
     {
       "id": "47",
@@ -422,7 +422,7 @@
       "subsection": "Winter",
       "file": "assets/shop/catalog/47-sweaters.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-15.jpg"
+      "source_file": "assets/shop/_sources/modest-14.jpg"
     },
     {
       "id": "48",
@@ -431,7 +431,7 @@
       "subsection": "Layering",
       "file": "assets/shop/catalog/48-cardigans.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-16.jpg"
+      "source_file": "assets/shop/_sources/modest-15.jpg"
     },
     {
       "id": "49",
@@ -440,7 +440,7 @@
       "subsection": "Outerwear",
       "file": "assets/shop/catalog/49-jackets.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-17.jpg"
+      "source_file": "assets/shop/_sources/modest-16.jpg"
     },
     {
       "id": "50",
@@ -449,7 +449,7 @@
       "subsection": "Outerwear",
       "file": "assets/shop/catalog/50-raincoat.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-18.jpg"
+      "source_file": "assets/shop/_sources/modest-17.jpg"
     },
     {
       "id": "51",
@@ -458,7 +458,7 @@
       "subsection": "Winter",
       "file": "assets/shop/catalog/51-winter-clothing.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-19.jpg"
+      "source_file": "assets/shop/_sources/modest-18.jpg"
     },
     {
       "id": "52",
@@ -467,7 +467,7 @@
       "subsection": "Occasion",
       "file": "assets/shop/catalog/52-eid-outfits.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-20.jpg"
+      "source_file": "assets/shop/_sources/modest-19.jpg"
     },
     {
       "id": "53",
@@ -476,7 +476,7 @@
       "subsection": "Occasion",
       "file": "assets/shop/catalog/53-wedding-occasion-outfits.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-21.jpg"
+      "source_file": "assets/shop/_sources/modest-20.jpg"
     },
     {
       "id": "54",
@@ -503,7 +503,7 @@
       "subsection": "Sports",
       "file": "assets/shop/catalog/56-sports-bra.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-04.jpg"
+      "source_file": "assets/shop/_sources/innerwear-03.jpg"
     },
     {
       "id": "57",
@@ -512,7 +512,7 @@
       "subsection": "Bras",
       "file": "assets/shop/catalog/57-seamless-bra.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-05.jpg"
+      "source_file": "assets/shop/_sources/innerwear-04.jpg"
     },
     {
       "id": "58",
@@ -521,7 +521,7 @@
       "subsection": "Bras",
       "file": "assets/shop/catalog/58-nursing-bra.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-06.jpg"
+      "source_file": "assets/shop/_sources/innerwear-05.jpg"
     },
     {
       "id": "59",
@@ -548,7 +548,7 @@
       "subsection": "Period Care",
       "file": "assets/shop/catalog/61-period-underwear.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-04.jpg"
+      "source_file": "assets/shop/_sources/innerwear-03.jpg"
     },
     {
       "id": "62",
@@ -557,7 +557,7 @@
       "subsection": "Basics",
       "file": "assets/shop/catalog/62-camisoles.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-05.jpg"
+      "source_file": "assets/shop/_sources/innerwear-04.jpg"
     },
     {
       "id": "63",
@@ -566,7 +566,7 @@
       "subsection": "Basics",
       "file": "assets/shop/catalog/63-slips.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-22.jpg"
+      "source_file": "assets/shop/_sources/modest-21.jpg"
     },
     {
       "id": "64",
@@ -575,7 +575,7 @@
       "subsection": "Basics",
       "file": "assets/shop/catalog/64-inner-tops.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-06.jpg"
+      "source_file": "assets/shop/_sources/innerwear-05.jpg"
     },
     {
       "id": "65",
@@ -602,7 +602,7 @@
       "subsection": "Basics",
       "file": "assets/shop/catalog/67-undershirts.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-04.jpg"
+      "source_file": "assets/shop/_sources/innerwear-03.jpg"
     },
     {
       "id": "68",
@@ -611,7 +611,7 @@
       "subsection": "Basics",
       "file": "assets/shop/catalog/68-socks.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-05.jpg"
+      "source_file": "assets/shop/_sources/innerwear-04.jpg"
     },
     {
       "id": "69",
@@ -620,7 +620,7 @@
       "subsection": "Winter Basics",
       "file": "assets/shop/catalog/69-thermal-innerwear.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-06.jpg"
+      "source_file": "assets/shop/_sources/innerwear-05.jpg"
     },
     {
       "id": "70",
@@ -647,7 +647,7 @@
       "subsection": "Prayer Wear",
       "file": "assets/shop/catalog/72-prayer-dress.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-23.jpg"
+      "source_file": "assets/shop/_sources/modest-22.jpg"
     },
     {
       "id": "73",
@@ -656,7 +656,7 @@
       "subsection": "Prayer Wear",
       "file": "assets/shop/catalog/73-prayer-khimar.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-24.jpg"
+      "source_file": "assets/shop/_sources/modest-23.jpg"
     },
     {
       "id": "74",
@@ -791,7 +791,7 @@
       "subsection": "Period Care",
       "file": "assets/shop/catalog/88-tampons.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+      "source_file": "assets/shop/_sources/hygiene-03.jpg"
     },
     {
       "id": "89",
@@ -800,7 +800,7 @@
       "subsection": "Period Care",
       "file": "assets/shop/catalog/89-menstrual-cup.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+      "source_file": "assets/shop/_sources/hygiene-04.jpg"
     },
     {
       "id": "90",
@@ -818,7 +818,7 @@
       "subsection": "Period Care",
       "file": "assets/shop/catalog/91-period-disposal-bags.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+      "source_file": "assets/shop/_sources/hygiene-05.jpg"
     },
     {
       "id": "92",
@@ -827,7 +827,7 @@
       "subsection": "Comfort",
       "file": "assets/shop/catalog/92-heating-pad.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+      "source_file": "assets/shop/_sources/hygiene-06.jpg"
     },
     {
       "id": "93",
@@ -836,7 +836,7 @@
       "subsection": "Comfort",
       "file": "assets/shop/catalog/93-hot-water-bag.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+      "source_file": "assets/shop/_sources/hygiene-07.jpg"
     },
     {
       "id": "94",
@@ -845,7 +845,7 @@
       "subsection": "Hygiene",
       "file": "assets/shop/catalog/94-wet-wipes.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+      "source_file": "assets/shop/_sources/hygiene-08.jpg"
     },
     {
       "id": "95",
@@ -872,7 +872,7 @@
       "subsection": "Hygiene",
       "file": "assets/shop/catalog/97-cotton-buds.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+      "source_file": "assets/shop/_sources/hygiene-03.jpg"
     },
     {
       "id": "98",
@@ -881,7 +881,7 @@
       "subsection": "Hygiene",
       "file": "assets/shop/catalog/98-intimate-hygiene-products.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+      "source_file": "assets/shop/_sources/hygiene-04.jpg"
     },
     {
       "id": "99",
@@ -890,7 +890,7 @@
       "subsection": "Bath & Body",
       "file": "assets/shop/catalog/99-body-wash.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+      "source_file": "assets/shop/_sources/hygiene-05.jpg"
     },
     {
       "id": "100",
@@ -899,7 +899,7 @@
       "subsection": "Bath & Body",
       "file": "assets/shop/catalog/100-soap.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+      "source_file": "assets/shop/_sources/hygiene-06.jpg"
     },
     {
       "id": "101",
@@ -908,7 +908,7 @@
       "subsection": "Body Care",
       "file": "assets/shop/catalog/101-deodorant.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+      "source_file": "assets/shop/_sources/hygiene-07.jpg"
     },
     {
       "id": "102",
@@ -917,7 +917,7 @@
       "subsection": "Body Care",
       "file": "assets/shop/catalog/102-antiperspirant.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+      "source_file": "assets/shop/_sources/hygiene-08.jpg"
     },
     {
       "id": "103",
@@ -944,7 +944,7 @@
       "subsection": "Storage",
       "file": "assets/shop/catalog/105-personal-hygiene-pouch.jpg",
       "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+      "source_file": "assets/shop/_sources/hygiene-03.jpg"
     },
     {
       "id": "106",
@@ -1141,8 +1141,8 @@
       "section": "Skincare",
       "subsection": "Hands",
       "file": "assets/shop/catalog/127-hand-cream.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-22.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-01.jpg"
     },
     {
       "id": "128",
@@ -1151,7 +1151,7 @@
       "subsection": "Feet",
       "file": "assets/shop/catalog/128-foot-cream.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-23.jpg"
+      "source_file": "assets/shop/_sources/beauty-22.jpg"
     },
     {
       "id": "129",
@@ -1160,7 +1160,7 @@
       "subsection": "Base",
       "file": "assets/shop/catalog/129-bb-cc-cream.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-24.jpg"
+      "source_file": "assets/shop/_sources/beauty-23.jpg"
     },
     {
       "id": "130",
@@ -1169,7 +1169,7 @@
       "subsection": "Base",
       "file": "assets/shop/catalog/130-foundation.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-25.jpg"
+      "source_file": "assets/shop/_sources/beauty-24.jpg"
     },
     {
       "id": "131",
@@ -1178,7 +1178,7 @@
       "subsection": "Base",
       "file": "assets/shop/catalog/131-concealer.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-26.jpg"
+      "source_file": "assets/shop/_sources/beauty-25.jpg"
     },
     {
       "id": "132",
@@ -1187,7 +1187,7 @@
       "subsection": "Base",
       "file": "assets/shop/catalog/132-compact-powder.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-01.jpg"
+      "source_file": "assets/shop/_sources/beauty-26.jpg"
     },
     {
       "id": "133",
@@ -1196,7 +1196,7 @@
       "subsection": "Face",
       "file": "assets/shop/catalog/133-blush.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-02.jpg"
+      "source_file": "assets/shop/_sources/beauty-01.jpg"
     },
     {
       "id": "134",
@@ -1205,7 +1205,7 @@
       "subsection": "Face",
       "file": "assets/shop/catalog/134-highlighter.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-03.jpg"
+      "source_file": "assets/shop/_sources/beauty-02.jpg"
     },
     {
       "id": "135",
@@ -1214,7 +1214,7 @@
       "subsection": "Eyes",
       "file": "assets/shop/catalog/135-eyebrow-pencil.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-04.jpg"
+      "source_file": "assets/shop/_sources/beauty-03.jpg"
     },
     {
       "id": "136",
@@ -1223,7 +1223,7 @@
       "subsection": "Eyes",
       "file": "assets/shop/catalog/136-eyeliner.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-05.jpg"
+      "source_file": "assets/shop/_sources/beauty-04.jpg"
     },
     {
       "id": "137",
@@ -1232,7 +1232,7 @@
       "subsection": "Eyes",
       "file": "assets/shop/catalog/137-kajal.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-06.jpg"
+      "source_file": "assets/shop/_sources/beauty-05.jpg"
     },
     {
       "id": "138",
@@ -1241,7 +1241,7 @@
       "subsection": "Eyes",
       "file": "assets/shop/catalog/138-mascara.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-07.jpg"
+      "source_file": "assets/shop/_sources/beauty-06.jpg"
     },
     {
       "id": "139",
@@ -1250,7 +1250,7 @@
       "subsection": "Eyes",
       "file": "assets/shop/catalog/139-eyeshadow.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-08.jpg"
+      "source_file": "assets/shop/_sources/beauty-07.jpg"
     },
     {
       "id": "140",
@@ -1259,7 +1259,7 @@
       "subsection": "Lips",
       "file": "assets/shop/catalog/140-lipstick.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-09.jpg"
+      "source_file": "assets/shop/_sources/beauty-08.jpg"
     },
     {
       "id": "141",
@@ -1268,7 +1268,7 @@
       "subsection": "Lips",
       "file": "assets/shop/catalog/141-lip-tint.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-10.jpg"
+      "source_file": "assets/shop/_sources/beauty-09.jpg"
     },
     {
       "id": "142",
@@ -1277,7 +1277,7 @@
       "subsection": "Lips",
       "file": "assets/shop/catalog/142-lip-gloss.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-11.jpg"
+      "source_file": "assets/shop/_sources/beauty-10.jpg"
     },
     {
       "id": "143",
@@ -1286,7 +1286,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/143-makeup-remover.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-12.jpg"
+      "source_file": "assets/shop/_sources/beauty-11.jpg"
     },
     {
       "id": "144",
@@ -1295,7 +1295,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/144-makeup-sponge.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-13.jpg"
+      "source_file": "assets/shop/_sources/beauty-12.jpg"
     },
     {
       "id": "145",
@@ -1304,7 +1304,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/145-makeup-brushes.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-14.jpg"
+      "source_file": "assets/shop/_sources/beauty-13.jpg"
     },
     {
       "id": "146",
@@ -1313,7 +1313,7 @@
       "subsection": "Storage",
       "file": "assets/shop/catalog/146-makeup-organizer.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-15.jpg"
+      "source_file": "assets/shop/_sources/beauty-14.jpg"
     },
     {
       "id": "147",
@@ -1322,7 +1322,7 @@
       "subsection": "Tools",
       "file": "assets/shop/catalog/147-makeup-mirror.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-16.jpg"
+      "source_file": "assets/shop/_sources/beauty-15.jpg"
     },
     {
       "id": "148",
@@ -1537,8 +1537,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Nails",
       "file": "assets/shop/catalog/171-nail-cutter.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-17.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-03.jpg"
     },
     {
       "id": "172",
@@ -1546,8 +1546,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Nails",
       "file": "assets/shop/catalog/172-nail-file.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-18.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-05.jpg"
     },
     {
       "id": "173",
@@ -1555,8 +1555,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Nails",
       "file": "assets/shop/catalog/173-nail-buffer.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-19.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-06.jpg"
     },
     {
       "id": "174",
@@ -1564,8 +1564,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Nails",
       "file": "assets/shop/catalog/174-cuticle-oil.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-20.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-01.jpg"
     },
     {
       "id": "175",
@@ -1573,8 +1573,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Hands",
       "file": "assets/shop/catalog/175-hand-cream.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-21.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-03.jpg"
     },
     {
       "id": "176",
@@ -1582,8 +1582,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Feet",
       "file": "assets/shop/catalog/176-foot-scrub.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-22.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-05.jpg"
     },
     {
       "id": "177",
@@ -1591,8 +1591,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Feet",
       "file": "assets/shop/catalog/177-foot-file.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-23.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-06.jpg"
     },
     {
       "id": "178",
@@ -1600,8 +1600,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Feet",
       "file": "assets/shop/catalog/178-heel-care-cream.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-24.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-01.jpg"
     },
     {
       "id": "179",
@@ -1609,8 +1609,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Kits",
       "file": "assets/shop/catalog/179-pedicure-kit.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-25.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-03.jpg"
     },
     {
       "id": "180",
@@ -1618,8 +1618,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Kits",
       "file": "assets/shop/catalog/180-manicure-kit.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-26.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-05.jpg"
     },
     {
       "id": "181",
@@ -1627,8 +1627,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Tools",
       "file": "assets/shop/catalog/181-tweezers.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-01.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-06.jpg"
     },
     {
       "id": "182",
@@ -1636,8 +1636,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Tools",
       "file": "assets/shop/catalog/182-facial-razor.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-02.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-01.jpg"
     },
     {
       "id": "183",
@@ -1645,8 +1645,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Tools",
       "file": "assets/shop/catalog/183-eyebrow-razor.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-03.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-03.jpg"
     },
     {
       "id": "184",
@@ -1654,8 +1654,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Tools",
       "file": "assets/shop/catalog/184-body-razor.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-04.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-05.jpg"
     },
     {
       "id": "185",
@@ -1663,8 +1663,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Tools",
       "file": "assets/shop/catalog/185-electric-trimmer.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-05.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-06.jpg"
     },
     {
       "id": "186",
@@ -1672,8 +1672,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Hair Removal",
       "file": "assets/shop/catalog/186-wax-strips.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-06.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-01.jpg"
     },
     {
       "id": "187",
@@ -1681,8 +1681,8 @@
       "section": "Hands, Feet & Grooming",
       "subsection": "Hair Removal",
       "file": "assets/shop/catalog/187-epilator.jpg",
-      "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-07.jpg"
+      "source_pool": "grooming",
+      "source_file": "assets/shop/_sources/grooming-03.jpg"
     },
     {
       "id": "188",
@@ -1691,7 +1691,7 @@
       "subsection": "Fragrance",
       "file": "assets/shop/catalog/188-attar.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-08.jpg"
+      "source_file": "assets/shop/_sources/beauty-16.jpg"
     },
     {
       "id": "189",
@@ -1700,7 +1700,7 @@
       "subsection": "Fragrance",
       "file": "assets/shop/catalog/189-perfume.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-09.jpg"
+      "source_file": "assets/shop/_sources/beauty-17.jpg"
     },
     {
       "id": "190",
@@ -1709,7 +1709,7 @@
       "subsection": "Fragrance",
       "file": "assets/shop/catalog/190-body-mist.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-10.jpg"
+      "source_file": "assets/shop/_sources/beauty-18.jpg"
     },
     {
       "id": "191",
@@ -1718,7 +1718,7 @@
       "subsection": "Fragrance",
       "file": "assets/shop/catalog/191-roll-on-fragrance.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-11.jpg"
+      "source_file": "assets/shop/_sources/beauty-19.jpg"
     },
     {
       "id": "192",
@@ -1727,7 +1727,7 @@
       "subsection": "Fragrance",
       "file": "assets/shop/catalog/192-hair-mist.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-12.jpg"
+      "source_file": "assets/shop/_sources/beauty-20.jpg"
     },
     {
       "id": "193",
@@ -1736,7 +1736,7 @@
       "subsection": "Fragrance",
       "file": "assets/shop/catalog/193-body-spray.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-13.jpg"
+      "source_file": "assets/shop/_sources/beauty-21.jpg"
     },
     {
       "id": "194",
@@ -1745,7 +1745,7 @@
       "subsection": "Body Care",
       "file": "assets/shop/catalog/194-scented-lotion.jpg",
       "source_pool": "beauty",
-      "source_file": "assets/shop/_sources/beauty-14.jpg"
+      "source_file": "assets/shop/_sources/beauty-22.jpg"
     },
     {
       "id": "195",
@@ -1853,7 +1853,7 @@
       "subsection": "Hijab Accessories",
       "file": "assets/shop/catalog/206-hijab-brooch.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-25.jpg"
+      "source_file": "assets/shop/_sources/modest-24.jpg"
     },
     {
       "id": "207",
@@ -1862,7 +1862,7 @@
       "subsection": "Hijab Accessories",
       "file": "assets/shop/catalog/207-hijab-magnets.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-26.jpg"
+      "source_file": "assets/shop/_sources/modest-25.jpg"
     },
     {
       "id": "208",
@@ -2132,7 +2132,7 @@
       "subsection": "Storage",
       "file": "assets/shop/catalog/237-hijab-organizer.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-27.jpg"
+      "source_file": "assets/shop/_sources/modest-26.jpg"
     },
     {
       "id": "238",
@@ -2177,7 +2177,7 @@
       "subsection": "Mirrors",
       "file": "assets/shop/catalog/242-dressing-mirror.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-28.jpg"
+      "source_file": "assets/shop/_sources/modest-27.jpg"
     },
     {
       "id": "243",
@@ -2402,7 +2402,7 @@
       "subsection": "Organization",
       "file": "assets/shop/catalog/267-hijab-travel-organizer.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-29.jpg"
+      "source_file": "assets/shop/_sources/modest-28.jpg"
     },
     {
       "id": "268",
@@ -2420,7 +2420,7 @@
       "subsection": "Prayer",
       "file": "assets/shop/catalog/269-travel-prayer-dress.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-30.jpg"
+      "source_file": "assets/shop/_sources/modest-29.jpg"
     },
     {
       "id": "270",
@@ -2437,8 +2437,8 @@
       "section": "Travel",
       "subsection": "Organization",
       "file": "assets/shop/catalog/271-makeup-pouch.jpg",
-      "source_pool": "travel",
-      "source_file": "assets/shop/_sources/travel-01.jpg"
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-23.jpg"
     },
     {
       "id": "272",
@@ -2446,8 +2446,8 @@
       "section": "Travel",
       "subsection": "Organization",
       "file": "assets/shop/catalog/272-jewellery-pouch.jpg",
-      "source_pool": "travel",
-      "source_file": "assets/shop/_sources/travel-02.jpg"
+      "source_pool": "jewelry",
+      "source_file": "assets/shop/_sources/jewelry-02.jpg"
     },
     {
       "id": "273",
@@ -2455,8 +2455,8 @@
       "section": "Travel",
       "subsection": "Organization",
       "file": "assets/shop/catalog/273-shoe-bag.jpg",
-      "source_pool": "travel",
-      "source_file": "assets/shop/_sources/travel-01.jpg"
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-11.jpg"
     },
     {
       "id": "274",
@@ -2465,7 +2465,7 @@
       "subsection": "Organization",
       "file": "assets/shop/catalog/274-laundry-bag.jpg",
       "source_pool": "travel",
-      "source_file": "assets/shop/_sources/travel-02.jpg"
+      "source_file": "assets/shop/_sources/travel-01.jpg"
     },
     {
       "id": "275",
@@ -2473,8 +2473,8 @@
       "section": "Travel",
       "subsection": "Toiletries",
       "file": "assets/shop/catalog/275-travel-size-bottles.jpg",
-      "source_pool": "travel",
-      "source_file": "assets/shop/_sources/travel-01.jpg"
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-24.jpg"
     },
     {
       "id": "276",
@@ -2482,8 +2482,8 @@
       "section": "Travel",
       "subsection": "Electronics",
       "file": "assets/shop/catalog/276-portable-charger.jpg",
-      "source_pool": "travel",
-      "source_file": "assets/shop/_sources/travel-02.jpg"
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-08.jpg"
     },
     {
       "id": "277",
@@ -2491,8 +2491,8 @@
       "section": "Travel",
       "subsection": "Electronics",
       "file": "assets/shop/catalog/277-universal-adapter.jpg",
-      "source_pool": "travel",
-      "source_file": "assets/shop/_sources/travel-01.jpg"
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-09.jpg"
     },
     {
       "id": "278",
@@ -2528,7 +2528,7 @@
       "subsection": "Clothing",
       "file": "assets/shop/catalog/281-sports-hijab.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-31.jpg"
+      "source_file": "assets/shop/_sources/modest-30.jpg"
     },
     {
       "id": "282",
@@ -2537,7 +2537,7 @@
       "subsection": "Clothing",
       "file": "assets/shop/catalog/282-sports-bra.jpg",
       "source_pool": "innerwear",
-      "source_file": "assets/shop/_sources/innerwear-04.jpg"
+      "source_file": "assets/shop/_sources/innerwear-03.jpg"
     },
     {
       "id": "283",
@@ -2563,8 +2563,8 @@
       "section": "Fitness",
       "subsection": "Footwear",
       "file": "assets/shop/catalog/285-sneakers.jpg",
-      "source_pool": "fitness",
-      "source_file": "assets/shop/_sources/fitness-05.jpg"
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-06.jpg"
     },
     {
       "id": "286",
@@ -2573,7 +2573,7 @@
       "subsection": "Equipment",
       "file": "assets/shop/catalog/286-yoga-mat.jpg",
       "source_pool": "fitness",
-      "source_file": "assets/shop/_sources/fitness-06.jpg"
+      "source_file": "assets/shop/_sources/fitness-05.jpg"
     },
     {
       "id": "287",
@@ -2582,7 +2582,7 @@
       "subsection": "Equipment",
       "file": "assets/shop/catalog/287-resistance-bands.jpg",
       "source_pool": "fitness",
-      "source_file": "assets/shop/_sources/fitness-08.jpg"
+      "source_file": "assets/shop/_sources/fitness-06.jpg"
     },
     {
       "id": "288",
@@ -2591,7 +2591,7 @@
       "subsection": "Equipment",
       "file": "assets/shop/catalog/288-dumbbells.jpg",
       "source_pool": "fitness",
-      "source_file": "assets/shop/_sources/fitness-09.jpg"
+      "source_file": "assets/shop/_sources/fitness-08.jpg"
     },
     {
       "id": "289",
@@ -2600,7 +2600,7 @@
       "subsection": "Accessories",
       "file": "assets/shop/catalog/289-water-bottle.jpg",
       "source_pool": "fitness",
-      "source_file": "assets/shop/_sources/fitness-10.jpg"
+      "source_file": "assets/shop/_sources/fitness-09.jpg"
     },
     {
       "id": "290",
@@ -2608,8 +2608,8 @@
       "section": "Fitness",
       "subsection": "Accessories",
       "file": "assets/shop/catalog/290-gym-bag.jpg",
-      "source_pool": "fitness",
-      "source_file": "assets/shop/_sources/fitness-11.jpg"
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-12.jpg"
     },
     {
       "id": "291",
@@ -2618,7 +2618,7 @@
       "subsection": "Electronics",
       "file": "assets/shop/catalog/291-fitness-tracker.jpg",
       "source_pool": "fitness",
-      "source_file": "assets/shop/_sources/fitness-12.jpg"
+      "source_file": "assets/shop/_sources/fitness-10.jpg"
     },
     {
       "id": "292",
@@ -2698,8 +2698,8 @@
       "section": "Emergency & Safety",
       "subsection": "Hygiene",
       "file": "assets/shop/catalog/300-hand-sanitizer.jpg",
-      "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-02.jpg"
     },
     {
       "id": "301",
@@ -2707,8 +2707,8 @@
       "section": "Emergency & Safety",
       "subsection": "Hygiene",
       "file": "assets/shop/catalog/301-tissues.jpg",
-      "source_pool": "hygiene",
-      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-03.jpg"
     },
     {
       "id": "302",
@@ -2717,7 +2717,7 @@
       "subsection": "Safety",
       "file": "assets/shop/catalog/302-emergency-contact-card.jpg",
       "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-02.jpg"
+      "source_file": "assets/shop/_sources/home-04.jpg"
     },
     {
       "id": "303",
@@ -2726,7 +2726,7 @@
       "subsection": "Safety",
       "file": "assets/shop/catalog/303-small-flashlight.jpg",
       "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-03.jpg"
+      "source_file": "assets/shop/_sources/home-05.jpg"
     },
     {
       "id": "304",
@@ -2734,8 +2734,8 @@
       "section": "Emergency & Safety",
       "subsection": "Safety",
       "file": "assets/shop/catalog/304-personal-alarm.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-04.jpg"
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-10.jpg"
     },
     {
       "id": "305",
@@ -2744,7 +2744,7 @@
       "subsection": "Safety",
       "file": "assets/shop/catalog/305-whistle.jpg",
       "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-05.jpg"
+      "source_file": "assets/shop/_sources/home-06.jpg"
     },
     {
       "id": "306",
@@ -2752,8 +2752,8 @@
       "section": "Emergency & Safety",
       "subsection": "Electronics",
       "file": "assets/shop/catalog/306-portable-power-bank.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-06.jpg"
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-01.jpg"
     },
     {
       "id": "307",
@@ -2761,8 +2761,8 @@
       "section": "Clothing Care",
       "subsection": "Repair",
       "file": "assets/shop/catalog/307-sewing-kit.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-07.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-02.jpg"
     },
     {
       "id": "308",
@@ -2770,8 +2770,8 @@
       "section": "Clothing Care",
       "subsection": "Repair",
       "file": "assets/shop/catalog/308-needles.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-08.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-03.jpg"
     },
     {
       "id": "309",
@@ -2779,8 +2779,8 @@
       "section": "Clothing Care",
       "subsection": "Repair",
       "file": "assets/shop/catalog/309-thread.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-09.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-04.jpg"
     },
     {
       "id": "310",
@@ -2788,8 +2788,8 @@
       "section": "Clothing Care",
       "subsection": "Repair",
       "file": "assets/shop/catalog/310-safety-pins.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-10.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-05.jpg"
     },
     {
       "id": "311",
@@ -2797,8 +2797,8 @@
       "section": "Clothing Care",
       "subsection": "Repair",
       "file": "assets/shop/catalog/311-mini-scissors.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-11.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-06.jpg"
     },
     {
       "id": "312",
@@ -2806,8 +2806,8 @@
       "section": "Clothing Care",
       "subsection": "Repair",
       "file": "assets/shop/catalog/312-buttons.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-12.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-07.jpg"
     },
     {
       "id": "313",
@@ -2815,8 +2815,8 @@
       "section": "Clothing Care",
       "subsection": "Repair",
       "file": "assets/shop/catalog/313-fabric-tape.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-01.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-08.jpg"
     },
     {
       "id": "314",
@@ -2824,8 +2824,8 @@
       "section": "Clothing Care",
       "subsection": "Cleaning",
       "file": "assets/shop/catalog/314-lint-roller.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-02.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-01.jpg"
     },
     {
       "id": "315",
@@ -2833,8 +2833,8 @@
       "section": "Clothing Care",
       "subsection": "Cleaning",
       "file": "assets/shop/catalog/315-stain-remover.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-03.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-02.jpg"
     },
     {
       "id": "316",
@@ -2842,8 +2842,8 @@
       "section": "Clothing Care",
       "subsection": "Cleaning",
       "file": "assets/shop/catalog/316-clothes-brush.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-04.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-03.jpg"
     },
     {
       "id": "317",
@@ -2851,8 +2851,8 @@
       "section": "Clothing Care",
       "subsection": "Laundry",
       "file": "assets/shop/catalog/317-iron.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-05.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-04.jpg"
     },
     {
       "id": "318",
@@ -2860,8 +2860,8 @@
       "section": "Clothing Care",
       "subsection": "Laundry",
       "file": "assets/shop/catalog/318-garment-steamer.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-06.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-05.jpg"
     },
     {
       "id": "319",
@@ -2869,8 +2869,8 @@
       "section": "Clothing Care",
       "subsection": "Laundry",
       "file": "assets/shop/catalog/319-laundry-bags.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-07.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-06.jpg"
     },
     {
       "id": "320",
@@ -2878,8 +2878,8 @@
       "section": "Clothing Care",
       "subsection": "Laundry",
       "file": "assets/shop/catalog/320-delicate-wash-bags.jpg",
-      "source_pool": "home",
-      "source_file": "assets/shop/_sources/home-08.jpg"
+      "source_pool": "clothing_care",
+      "source_file": "assets/shop/_sources/clothing_care-07.jpg"
     },
     {
       "id": "321",
@@ -2888,7 +2888,7 @@
       "subsection": "Devices",
       "file": "assets/shop/catalog/321-smartphone.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-08.jpg"
+      "source_file": "assets/shop/_sources/tech-02.jpg"
     },
     {
       "id": "322",
@@ -2897,7 +2897,7 @@
       "subsection": "Accessories",
       "file": "assets/shop/catalog/322-phone-case.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-09.jpg"
+      "source_file": "assets/shop/_sources/tech-03.jpg"
     },
     {
       "id": "323",
@@ -2906,7 +2906,7 @@
       "subsection": "Accessories",
       "file": "assets/shop/catalog/323-screen-protector.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-10.jpg"
+      "source_file": "assets/shop/_sources/tech-04.jpg"
     },
     {
       "id": "324",
@@ -2915,7 +2915,7 @@
       "subsection": "Power",
       "file": "assets/shop/catalog/324-charger.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-01.jpg"
+      "source_file": "assets/shop/_sources/tech-05.jpg"
     },
     {
       "id": "325",
@@ -2924,7 +2924,7 @@
       "subsection": "Power",
       "file": "assets/shop/catalog/325-charging-cable.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-02.jpg"
+      "source_file": "assets/shop/_sources/tech-06.jpg"
     },
     {
       "id": "326",
@@ -2933,7 +2933,7 @@
       "subsection": "Power",
       "file": "assets/shop/catalog/326-power-bank.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-03.jpg"
+      "source_file": "assets/shop/_sources/tech-07.jpg"
     },
     {
       "id": "327",
@@ -2942,7 +2942,7 @@
       "subsection": "Power",
       "file": "assets/shop/catalog/327-wireless-charger.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-04.jpg"
+      "source_file": "assets/shop/_sources/tech-08.jpg"
     },
     {
       "id": "328",
@@ -2951,7 +2951,7 @@
       "subsection": "Audio",
       "file": "assets/shop/catalog/328-earbuds.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-05.jpg"
+      "source_file": "assets/shop/_sources/tech-09.jpg"
     },
     {
       "id": "329",
@@ -2960,7 +2960,7 @@
       "subsection": "Wearables",
       "file": "assets/shop/catalog/329-smartwatch.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-06.jpg"
+      "source_file": "assets/shop/_sources/tech-10.jpg"
     },
     {
       "id": "330",
@@ -2969,7 +2969,7 @@
       "subsection": "Devices",
       "file": "assets/shop/catalog/330-laptop.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-07.jpg"
+      "source_file": "assets/shop/_sources/tech-01.jpg"
     },
     {
       "id": "331",
@@ -2978,7 +2978,7 @@
       "subsection": "Devices",
       "file": "assets/shop/catalog/331-tablet.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-08.jpg"
+      "source_file": "assets/shop/_sources/tech-02.jpg"
     },
     {
       "id": "332",
@@ -2987,7 +2987,7 @@
       "subsection": "Creator Gear",
       "file": "assets/shop/catalog/332-ring-light.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-09.jpg"
+      "source_file": "assets/shop/_sources/tech-03.jpg"
     },
     {
       "id": "333",
@@ -2996,7 +2996,7 @@
       "subsection": "Creator Gear",
       "file": "assets/shop/catalog/333-tripod.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-10.jpg"
+      "source_file": "assets/shop/_sources/tech-04.jpg"
     },
     {
       "id": "334",
@@ -3005,7 +3005,7 @@
       "subsection": "Power",
       "file": "assets/shop/catalog/334-extension-cord.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-01.jpg"
+      "source_file": "assets/shop/_sources/tech-05.jpg"
     },
     {
       "id": "335",
@@ -3014,7 +3014,7 @@
       "subsection": "Organization",
       "file": "assets/shop/catalog/335-cable-organizer.jpg",
       "source_pool": "tech",
-      "source_file": "assets/shop/_sources/tech-02.jpg"
+      "source_file": "assets/shop/_sources/tech-06.jpg"
     },
     {
       "id": "336",
@@ -3023,7 +3023,7 @@
       "subsection": "Eid Fashion",
       "file": "assets/shop/catalog/336-eid-outfit.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-32.jpg"
+      "source_file": "assets/shop/_sources/modest-31.jpg"
     },
     {
       "id": "337",
@@ -3032,7 +3032,7 @@
       "subsection": "Eid Fashion",
       "file": "assets/shop/catalog/337-abaya.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-01.jpg"
+      "source_file": "assets/shop/_sources/modest-32.jpg"
     },
     {
       "id": "338",
@@ -3041,7 +3041,7 @@
       "subsection": "Eid Fashion",
       "file": "assets/shop/catalog/338-hijab.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-02.jpg"
+      "source_file": "assets/shop/_sources/modest-01.jpg"
     },
     {
       "id": "339",
@@ -3050,7 +3050,7 @@
       "subsection": "Prayer",
       "file": "assets/shop/catalog/339-prayer-dress.jpg",
       "source_pool": "modest",
-      "source_file": "assets/shop/_sources/modest-03.jpg"
+      "source_file": "assets/shop/_sources/modest-02.jpg"
     },
     {
       "id": "340",
@@ -3103,8 +3103,8 @@
       "section": "Ramadan / Eid Essentials",
       "subsection": "Planner",
       "file": "assets/shop/catalog/345-ramadan-planner.jpg",
-      "source_pool": "faith",
-      "source_file": "assets/shop/_sources/faith-01.jpg"
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-11.jpg"
     },
     {
       "id": "346",
@@ -3113,7 +3113,7 @@
       "subsection": "Quran",
       "file": "assets/shop/catalog/346-quran-stand.jpg",
       "source_pool": "faith",
-      "source_file": "assets/shop/_sources/faith-02.jpg"
+      "source_file": "assets/shop/_sources/faith-01.jpg"
     },
     {
       "id": "347",
@@ -3121,8 +3121,8 @@
       "section": "Ramadan / Eid Essentials",
       "subsection": "Iftar",
       "file": "assets/shop/catalog/347-iftar-serving-essentials.jpg",
-      "source_pool": "faith",
-      "source_file": "assets/shop/_sources/faith-03.jpg"
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-07.jpg"
     },
     {
       "id": "348",
@@ -3130,8 +3130,8 @@
       "section": "Ramadan / Eid Essentials",
       "subsection": "Accessories",
       "file": "assets/shop/catalog/348-eid-handbag.jpg",
-      "source_pool": "faith",
-      "source_file": "assets/shop/_sources/faith-04.jpg"
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-01.jpg"
     },
     {
       "id": "349",
@@ -3139,8 +3139,8 @@
       "section": "Ramadan / Eid Essentials",
       "subsection": "Footwear",
       "file": "assets/shop/catalog/349-eid-footwear.jpg",
-      "source_pool": "faith",
-      "source_file": "assets/shop/_sources/faith-05.jpg"
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-01.jpg"
     },
     {
       "id": "350",
@@ -3149,16 +3149,10 @@
       "subsection": "Gifting",
       "file": "assets/shop/catalog/350-gift-packaging-items.jpg",
       "source_pool": "faith",
-      "source_file": "assets/shop/_sources/faith-01.jpg"
+      "source_file": "assets/shop/_sources/faith-02.jpg"
     }
   ],
   "download_failures": [
-    [
-      "innerwear",
-      3,
-      40901,
-      "404 Client Error: Not Found for url: https://images.pexels.com/photos/40901/pexels-photo-40901.jpeg?auto=compress&cs=tinysrgb&w=1000"
-    ],
     [
       "fitness",
       3,
@@ -3170,6 +3164,18 @@
       7,
       36990297,
       "404 Client Error: Not Found for url: https://images.pexels.com/photos/36990297/pexels-photo-36990297.jpeg?auto=compress&cs=tinysrgb&w=1000"
+    ],
+    [
+      "grooming",
+      2,
+      2113856,
+      "404 Client Error: Not Found for url: https://images.pexels.com/photos/2113856/pexels-photo-2113856.jpeg?auto=compress&cs=tinysrgb&w=1000"
+    ],
+    [
+      "grooming",
+      4,
+      3761478,
+      "404 Client Error: Not Found for url: https://images.pexels.com/photos/3761478/pexels-photo-3761478.jpeg?auto=compress&cs=tinysrgb&w=1000"
     ]
   ]
 }
