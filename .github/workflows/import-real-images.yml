@@ -24,7 +24,7 @@ jobs:
       - name: Install image tools
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 pillow opencv-python-headless
+          pip install requests beautifulsoup4 pillow opencv-python-headless==4.10.0.84
 
       - name: Download, blur faces and save locally
         run: |
