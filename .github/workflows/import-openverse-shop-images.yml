@@ -94,12 +94,15 @@ jobs:
           used_pool=set()
           for section,q in section_queries.items():
               candidates=[]
-              # First broad pages, then a smaller number of product-specific pages.
-              for page in range(1,9):
+              # Fetch only the number of pages needed for this section. This avoids
+              # hammering the public API while still building a large unique pool.
+              section_count=sum(1 for x in items if x["section"]==section)
+              pages=min(4,max(2,(section_count+14)//15))
+              for page in range(1,pages+1):
                   try:candidates.extend(api_search(q,page))
                   except Exception as exc: print("pool",section,page,exc)
                   time.sleep(.15)
-              for item in [x for x in items if x["section"]==section][:12]:
+              for item in [x for x in items if x["section"]==section][:6]:
                   try:candidates.extend(api_search(item["query"],1))
                   except Exception as exc: print("specific pool",item["name"],exc)
                   time.sleep(.15)
