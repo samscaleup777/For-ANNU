@@ -120,7 +120,7 @@ jobs:
                   metadata.append({
                       "id":item["id"],"name":item["name"],"section":item["section"],
                       "subsection":item["subsection"],"query":query,
-                      "file":str(target).replace("\","/"),
+                      "file":str(target),
                       "identifier":chosen.get("_ident"),
                       "title":chosen.get("title"),
                       "creator":chosen.get("creator"),
