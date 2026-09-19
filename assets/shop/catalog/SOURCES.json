@@ -1,0 +1,3175 @@
+{
+  "note": "Product images are local copies stored in the Git repository. Source photography was downloaded from Pexels direct CDN URLs and processed locally to blur detected faces.",
+  "products": [
+    {
+      "id": "01",
+      "name": "Hijab — Chiffon",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab",
+      "file": "assets/shop/catalog/01-hijab-chiffon.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-01.jpg"
+    },
+    {
+      "id": "02",
+      "name": "Hijab — Cotton",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab",
+      "file": "assets/shop/catalog/02-hijab-cotton.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-02.jpg"
+    },
+    {
+      "id": "03",
+      "name": "Hijab — Jersey",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab",
+      "file": "assets/shop/catalog/03-hijab-jersey.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-03.jpg"
+    },
+    {
+      "id": "04",
+      "name": "Hijab — Georgette",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab",
+      "file": "assets/shop/catalog/04-hijab-georgette.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-04.jpg"
+    },
+    {
+      "id": "05",
+      "name": "Instant Hijab",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab",
+      "file": "assets/shop/catalog/05-instant-hijab.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-05.jpg"
+    },
+    {
+      "id": "06",
+      "name": "Khimar",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab",
+      "file": "assets/shop/catalog/06-khimar.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-06.jpg"
+    },
+    {
+      "id": "07",
+      "name": "Hijab Undercap",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/07-hijab-undercap.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-07.jpg"
+    },
+    {
+      "id": "08",
+      "name": "Hijab Inner",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/08-hijab-inner.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-08.jpg"
+    },
+    {
+      "id": "09",
+      "name": "Hijab Magnets",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/09-hijab-magnets.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-09.jpg"
+    },
+    {
+      "id": "10",
+      "name": "Hijab Pins",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/10-hijab-pins.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-10.jpg"
+    },
+    {
+      "id": "11",
+      "name": "Safety Pins",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/11-safety-pins.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-11.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Hijab Clips",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/12-hijab-clips.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-12.jpg"
+    },
+    {
+      "id": "13",
+      "name": "Hijab Storage Organizer",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/13-hijab-storage-organizer.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-13.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Hijab Hanger",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/14-hijab-hanger.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-14.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Hijab Scarf Ring",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/15-hijab-scarf-ring.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-15.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Long Modest Dresses",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Dresses",
+      "file": "assets/shop/catalog/16-long-modest-dresses.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-16.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Maxi Dresses",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Dresses",
+      "file": "assets/shop/catalog/17-maxi-dresses.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-17.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Abaya",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Abaya",
+      "file": "assets/shop/catalog/18-abaya.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-18.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Jilbab",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Abaya & Jilbab",
+      "file": "assets/shop/catalog/19-jilbab.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-19.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Prayer Khimar",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Prayer Wear",
+      "file": "assets/shop/catalog/20-prayer-khimar.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-20.jpg"
+    },
+    {
+      "id": "21",
+      "name": "Prayer Dress",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Prayer Wear",
+      "file": "assets/shop/catalog/21-prayer-dress.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-21.jpg"
+    },
+    {
+      "id": "22",
+      "name": "Long Cardigan",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Layering",
+      "file": "assets/shop/catalog/22-long-cardigan.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-22.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Modest Tunics",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Tops",
+      "file": "assets/shop/catalog/23-modest-tunics.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-23.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Long Skirts",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Skirts",
+      "file": "assets/shop/catalog/24-long-skirts.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-24.jpg"
+    },
+    {
+      "id": "25",
+      "name": "Wide-Leg Trousers",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Trousers",
+      "file": "assets/shop/catalog/25-wide-leg-trousers.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-25.jpg"
+    },
+    {
+      "id": "26",
+      "name": "Palazzo Pants",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Trousers",
+      "file": "assets/shop/catalog/26-palazzo-pants.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-26.jpg"
+    },
+    {
+      "id": "27",
+      "name": "Modest Salwar Kameez",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Salwar Kameez",
+      "file": "assets/shop/catalog/27-modest-salwar-kameez.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-27.jpg"
+    },
+    {
+      "id": "28",
+      "name": "Kameez",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Salwar Kameez",
+      "file": "assets/shop/catalog/28-kameez.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-28.jpg"
+    },
+    {
+      "id": "29",
+      "name": "Long Kurti",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Kurtis",
+      "file": "assets/shop/catalog/29-long-kurti.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-29.jpg"
+    },
+    {
+      "id": "30",
+      "name": "Dupatta",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Scarves",
+      "file": "assets/shop/catalog/30-dupatta.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-30.jpg"
+    },
+    {
+      "id": "31",
+      "name": "Shawl",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Scarves",
+      "file": "assets/shop/catalog/31-shawl.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-31.jpg"
+    },
+    {
+      "id": "32",
+      "name": "Burqa / Niqab",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Full Coverage",
+      "file": "assets/shop/catalog/32-burqa-niqab.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-32.jpg"
+    },
+    {
+      "id": "33",
+      "name": "Arm Sleeves",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Coverage",
+      "file": "assets/shop/catalog/33-arm-sleeves.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-01.jpg"
+    },
+    {
+      "id": "34",
+      "name": "Leg Coverings / Leggings",
+      "section": "Hijab & Modest Wear",
+      "subsection": "Coverage",
+      "file": "assets/shop/catalog/34-leg-coverings-leggings.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-02.jpg"
+    },
+    {
+      "id": "35",
+      "name": "Home Dresses",
+      "section": "Everyday Clothing",
+      "subsection": "Homewear",
+      "file": "assets/shop/catalog/35-home-dresses.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-03.jpg"
+    },
+    {
+      "id": "36",
+      "name": "Salwar Kameez",
+      "section": "Everyday Clothing",
+      "subsection": "Sets",
+      "file": "assets/shop/catalog/36-salwar-kameez.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-04.jpg"
+    },
+    {
+      "id": "37",
+      "name": "Long Tops",
+      "section": "Everyday Clothing",
+      "subsection": "Tops",
+      "file": "assets/shop/catalog/37-long-tops.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-05.jpg"
+    },
+    {
+      "id": "38",
+      "name": "Long Shirts",
+      "section": "Everyday Clothing",
+      "subsection": "Tops",
+      "file": "assets/shop/catalog/38-long-shirts.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-06.jpg"
+    },
+    {
+      "id": "39",
+      "name": "Kurtis",
+      "section": "Everyday Clothing",
+      "subsection": "Kurtis",
+      "file": "assets/shop/catalog/39-kurtis.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-07.jpg"
+    },
+    {
+      "id": "40",
+      "name": "Maxi Dresses",
+      "section": "Everyday Clothing",
+      "subsection": "Dresses",
+      "file": "assets/shop/catalog/40-maxi-dresses.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-08.jpg"
+    },
+    {
+      "id": "41",
+      "name": "Long Skirts",
+      "section": "Everyday Clothing",
+      "subsection": "Skirts",
+      "file": "assets/shop/catalog/41-long-skirts.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-09.jpg"
+    },
+    {
+      "id": "42",
+      "name": "Palazzo",
+      "section": "Everyday Clothing",
+      "subsection": "Trousers",
+      "file": "assets/shop/catalog/42-palazzo.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-10.jpg"
+    },
+    {
+      "id": "43",
+      "name": "Loose Trousers",
+      "section": "Everyday Clothing",
+      "subsection": "Trousers",
+      "file": "assets/shop/catalog/43-loose-trousers.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-11.jpg"
+    },
+    {
+      "id": "44",
+      "name": "Nightwear",
+      "section": "Everyday Clothing",
+      "subsection": "Nightwear",
+      "file": "assets/shop/catalog/44-nightwear.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-12.jpg"
+    },
+    {
+      "id": "45",
+      "name": "Pajamas",
+      "section": "Everyday Clothing",
+      "subsection": "Nightwear",
+      "file": "assets/shop/catalog/45-pajamas.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-13.jpg"
+    },
+    {
+      "id": "46",
+      "name": "Loungewear",
+      "section": "Everyday Clothing",
+      "subsection": "Loungewear",
+      "file": "assets/shop/catalog/46-loungewear.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-14.jpg"
+    },
+    {
+      "id": "47",
+      "name": "Sweaters",
+      "section": "Everyday Clothing",
+      "subsection": "Winter",
+      "file": "assets/shop/catalog/47-sweaters.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-15.jpg"
+    },
+    {
+      "id": "48",
+      "name": "Cardigans",
+      "section": "Everyday Clothing",
+      "subsection": "Layering",
+      "file": "assets/shop/catalog/48-cardigans.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-16.jpg"
+    },
+    {
+      "id": "49",
+      "name": "Jackets",
+      "section": "Everyday Clothing",
+      "subsection": "Outerwear",
+      "file": "assets/shop/catalog/49-jackets.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-17.jpg"
+    },
+    {
+      "id": "50",
+      "name": "Raincoat",
+      "section": "Everyday Clothing",
+      "subsection": "Outerwear",
+      "file": "assets/shop/catalog/50-raincoat.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-18.jpg"
+    },
+    {
+      "id": "51",
+      "name": "Winter Clothing",
+      "section": "Everyday Clothing",
+      "subsection": "Winter",
+      "file": "assets/shop/catalog/51-winter-clothing.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-19.jpg"
+    },
+    {
+      "id": "52",
+      "name": "Eid Outfits",
+      "section": "Everyday Clothing",
+      "subsection": "Occasion",
+      "file": "assets/shop/catalog/52-eid-outfits.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-20.jpg"
+    },
+    {
+      "id": "53",
+      "name": "Wedding / Occasion Outfits",
+      "section": "Everyday Clothing",
+      "subsection": "Occasion",
+      "file": "assets/shop/catalog/53-wedding-occasion-outfits.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-21.jpg"
+    },
+    {
+      "id": "54",
+      "name": "Everyday Bra",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Bras",
+      "file": "assets/shop/catalog/54-everyday-bra.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-01.jpg"
+    },
+    {
+      "id": "55",
+      "name": "Comfortable Bra",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Bras",
+      "file": "assets/shop/catalog/55-comfortable-bra.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-02.jpg"
+    },
+    {
+      "id": "56",
+      "name": "Sports Bra",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Sports",
+      "file": "assets/shop/catalog/56-sports-bra.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-04.jpg"
+    },
+    {
+      "id": "57",
+      "name": "Seamless Bra",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Bras",
+      "file": "assets/shop/catalog/57-seamless-bra.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-05.jpg"
+    },
+    {
+      "id": "58",
+      "name": "Nursing Bra",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Bras",
+      "file": "assets/shop/catalog/58-nursing-bra.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-06.jpg"
+    },
+    {
+      "id": "59",
+      "name": "Everyday Underwear",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Underwear",
+      "file": "assets/shop/catalog/59-everyday-underwear.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-01.jpg"
+    },
+    {
+      "id": "60",
+      "name": "Seamless Underwear",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Underwear",
+      "file": "assets/shop/catalog/60-seamless-underwear.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-02.jpg"
+    },
+    {
+      "id": "61",
+      "name": "Period Underwear",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Period Care",
+      "file": "assets/shop/catalog/61-period-underwear.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-04.jpg"
+    },
+    {
+      "id": "62",
+      "name": "Camisoles",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Basics",
+      "file": "assets/shop/catalog/62-camisoles.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-05.jpg"
+    },
+    {
+      "id": "63",
+      "name": "Slips",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Basics",
+      "file": "assets/shop/catalog/63-slips.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-22.jpg"
+    },
+    {
+      "id": "64",
+      "name": "Inner Tops",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Basics",
+      "file": "assets/shop/catalog/64-inner-tops.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-06.jpg"
+    },
+    {
+      "id": "65",
+      "name": "Inner Pants",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Basics",
+      "file": "assets/shop/catalog/65-inner-pants.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-01.jpg"
+    },
+    {
+      "id": "66",
+      "name": "Shapewear",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Shapewear",
+      "file": "assets/shop/catalog/66-shapewear.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-02.jpg"
+    },
+    {
+      "id": "67",
+      "name": "Undershirts",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Basics",
+      "file": "assets/shop/catalog/67-undershirts.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-04.jpg"
+    },
+    {
+      "id": "68",
+      "name": "Socks",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Basics",
+      "file": "assets/shop/catalog/68-socks.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-05.jpg"
+    },
+    {
+      "id": "69",
+      "name": "Thermal Innerwear",
+      "section": "Innerwear & Undergarments",
+      "subsection": "Winter Basics",
+      "file": "assets/shop/catalog/69-thermal-innerwear.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-06.jpg"
+    },
+    {
+      "id": "70",
+      "name": "Prayer Mat / Janamaz",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Prayer",
+      "file": "assets/shop/catalog/70-prayer-mat-janamaz.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-01.jpg"
+    },
+    {
+      "id": "71",
+      "name": "Foldable Travel Prayer Mat",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Prayer",
+      "file": "assets/shop/catalog/71-foldable-travel-prayer-mat.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-02.jpg"
+    },
+    {
+      "id": "72",
+      "name": "Prayer Dress",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Prayer Wear",
+      "file": "assets/shop/catalog/72-prayer-dress.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-23.jpg"
+    },
+    {
+      "id": "73",
+      "name": "Prayer Khimar",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Prayer Wear",
+      "file": "assets/shop/catalog/73-prayer-khimar.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-24.jpg"
+    },
+    {
+      "id": "74",
+      "name": "Tasbih",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Dhikr",
+      "file": "assets/shop/catalog/74-tasbih.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-03.jpg"
+    },
+    {
+      "id": "75",
+      "name": "Digital Tasbih / Counter",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Dhikr",
+      "file": "assets/shop/catalog/75-digital-tasbih-counter.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-04.jpg"
+    },
+    {
+      "id": "76",
+      "name": "Quran",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Quran",
+      "file": "assets/shop/catalog/76-quran.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-05.jpg"
+    },
+    {
+      "id": "77",
+      "name": "Quran Stand",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Quran",
+      "file": "assets/shop/catalog/77-quran-stand.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-01.jpg"
+    },
+    {
+      "id": "78",
+      "name": "Quran Cover",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Quran",
+      "file": "assets/shop/catalog/78-quran-cover.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-02.jpg"
+    },
+    {
+      "id": "79",
+      "name": "Quran Bookmark",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Quran",
+      "file": "assets/shop/catalog/79-quran-bookmark.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-03.jpg"
+    },
+    {
+      "id": "80",
+      "name": "Islamic Books",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Books",
+      "file": "assets/shop/catalog/80-islamic-books.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-04.jpg"
+    },
+    {
+      "id": "81",
+      "name": "Dua Book",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Books",
+      "file": "assets/shop/catalog/81-dua-book.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-05.jpg"
+    },
+    {
+      "id": "82",
+      "name": "Prayer-Time Clock",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Prayer Tech",
+      "file": "assets/shop/catalog/82-prayer-time-clock.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-01.jpg"
+    },
+    {
+      "id": "83",
+      "name": "Qibla Compass",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Prayer Tech",
+      "file": "assets/shop/catalog/83-qibla-compass.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-02.jpg"
+    },
+    {
+      "id": "84",
+      "name": "Islamic Wall Calendar",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Home",
+      "file": "assets/shop/catalog/84-islamic-wall-calendar.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-03.jpg"
+    },
+    {
+      "id": "85",
+      "name": "Prayer Garment Storage Bag",
+      "section": "Salah / Prayer Essentials",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/85-prayer-garment-storage-bag.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-04.jpg"
+    },
+    {
+      "id": "86",
+      "name": "Sanitary Pads",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Period Care",
+      "file": "assets/shop/catalog/86-sanitary-pads.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "87",
+      "name": "Pantyliners",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Period Care",
+      "file": "assets/shop/catalog/87-pantyliners.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "88",
+      "name": "Tampons",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Period Care",
+      "file": "assets/shop/catalog/88-tampons.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "89",
+      "name": "Menstrual Cup",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Period Care",
+      "file": "assets/shop/catalog/89-menstrual-cup.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "90",
+      "name": "Period Underwear",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Period Care",
+      "file": "assets/shop/catalog/90-period-underwear.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-01.jpg"
+    },
+    {
+      "id": "91",
+      "name": "Period Disposal Bags",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Period Care",
+      "file": "assets/shop/catalog/91-period-disposal-bags.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "92",
+      "name": "Heating Pad",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Comfort",
+      "file": "assets/shop/catalog/92-heating-pad.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "93",
+      "name": "Hot-Water Bag",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Comfort",
+      "file": "assets/shop/catalog/93-hot-water-bag.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "94",
+      "name": "Wet Wipes",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Hygiene",
+      "file": "assets/shop/catalog/94-wet-wipes.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "95",
+      "name": "Tissues",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Hygiene",
+      "file": "assets/shop/catalog/95-tissues.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "96",
+      "name": "Cotton Pads",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Hygiene",
+      "file": "assets/shop/catalog/96-cotton-pads.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "97",
+      "name": "Cotton Buds",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Hygiene",
+      "file": "assets/shop/catalog/97-cotton-buds.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "98",
+      "name": "Intimate Hygiene Products",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Hygiene",
+      "file": "assets/shop/catalog/98-intimate-hygiene-products.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "99",
+      "name": "Body Wash",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Bath & Body",
+      "file": "assets/shop/catalog/99-body-wash.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "100",
+      "name": "Soap",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Bath & Body",
+      "file": "assets/shop/catalog/100-soap.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "101",
+      "name": "Deodorant",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Body Care",
+      "file": "assets/shop/catalog/101-deodorant.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "102",
+      "name": "Antiperspirant",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Body Care",
+      "file": "assets/shop/catalog/102-antiperspirant.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "103",
+      "name": "Body Lotion",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Body Care",
+      "file": "assets/shop/catalog/103-body-lotion.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "104",
+      "name": "Hand Sanitizer",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Hygiene",
+      "file": "assets/shop/catalog/104-hand-sanitizer.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "105",
+      "name": "Personal Hygiene Pouch",
+      "section": "Menstrual & Personal Hygiene",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/105-personal-hygiene-pouch.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "106",
+      "name": "Face Wash",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/106-face-wash.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-01.jpg"
+    },
+    {
+      "id": "107",
+      "name": "Cleansing Balm / Oil",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/107-cleansing-balm-oil.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-02.jpg"
+    },
+    {
+      "id": "108",
+      "name": "Micellar Water",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/108-micellar-water.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-03.jpg"
+    },
+    {
+      "id": "109",
+      "name": "Toner",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/109-toner.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-04.jpg"
+    },
+    {
+      "id": "110",
+      "name": "Serum",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/110-serum.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-05.jpg"
+    },
+    {
+      "id": "111",
+      "name": "Moisturizer",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/111-moisturizer.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-06.jpg"
+    },
+    {
+      "id": "112",
+      "name": "Sunscreen",
+      "section": "Skincare",
+      "subsection": "Sun Care",
+      "file": "assets/shop/catalog/112-sunscreen.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-07.jpg"
+    },
+    {
+      "id": "113",
+      "name": "Lip Balm",
+      "section": "Skincare",
+      "subsection": "Lips",
+      "file": "assets/shop/catalog/113-lip-balm.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-08.jpg"
+    },
+    {
+      "id": "114",
+      "name": "SPF Lip Balm",
+      "section": "Skincare",
+      "subsection": "Lips",
+      "file": "assets/shop/catalog/114-spf-lip-balm.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-09.jpg"
+    },
+    {
+      "id": "115",
+      "name": "Face Mask",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/115-face-mask.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-10.jpg"
+    },
+    {
+      "id": "116",
+      "name": "Sheet Mask",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/116-sheet-mask.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-11.jpg"
+    },
+    {
+      "id": "117",
+      "name": "Exfoliator",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/117-exfoliator.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-12.jpg"
+    },
+    {
+      "id": "118",
+      "name": "Acne Patches",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/118-acne-patches.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-13.jpg"
+    },
+    {
+      "id": "119",
+      "name": "Pimple Treatment",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/119-pimple-treatment.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-14.jpg"
+    },
+    {
+      "id": "120",
+      "name": "Eye Cream",
+      "section": "Skincare",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/120-eye-cream.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-15.jpg"
+    },
+    {
+      "id": "121",
+      "name": "Lip Scrub",
+      "section": "Skincare",
+      "subsection": "Lips",
+      "file": "assets/shop/catalog/121-lip-scrub.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-16.jpg"
+    },
+    {
+      "id": "122",
+      "name": "Lip Mask",
+      "section": "Skincare",
+      "subsection": "Lips",
+      "file": "assets/shop/catalog/122-lip-mask.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-17.jpg"
+    },
+    {
+      "id": "123",
+      "name": "Petroleum Jelly",
+      "section": "Skincare",
+      "subsection": "Body",
+      "file": "assets/shop/catalog/123-petroleum-jelly.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-18.jpg"
+    },
+    {
+      "id": "124",
+      "name": "Body Scrub",
+      "section": "Skincare",
+      "subsection": "Body",
+      "file": "assets/shop/catalog/124-body-scrub.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-19.jpg"
+    },
+    {
+      "id": "125",
+      "name": "Body Lotion",
+      "section": "Skincare",
+      "subsection": "Body",
+      "file": "assets/shop/catalog/125-body-lotion.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-20.jpg"
+    },
+    {
+      "id": "126",
+      "name": "Body Oil",
+      "section": "Skincare",
+      "subsection": "Body",
+      "file": "assets/shop/catalog/126-body-oil.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-21.jpg"
+    },
+    {
+      "id": "127",
+      "name": "Hand Cream",
+      "section": "Skincare",
+      "subsection": "Hands",
+      "file": "assets/shop/catalog/127-hand-cream.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-22.jpg"
+    },
+    {
+      "id": "128",
+      "name": "Foot Cream",
+      "section": "Skincare",
+      "subsection": "Feet",
+      "file": "assets/shop/catalog/128-foot-cream.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-23.jpg"
+    },
+    {
+      "id": "129",
+      "name": "BB / CC Cream",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Base",
+      "file": "assets/shop/catalog/129-bb-cc-cream.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-24.jpg"
+    },
+    {
+      "id": "130",
+      "name": "Foundation",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Base",
+      "file": "assets/shop/catalog/130-foundation.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-25.jpg"
+    },
+    {
+      "id": "131",
+      "name": "Concealer",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Base",
+      "file": "assets/shop/catalog/131-concealer.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-26.jpg"
+    },
+    {
+      "id": "132",
+      "name": "Compact Powder",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Base",
+      "file": "assets/shop/catalog/132-compact-powder.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-01.jpg"
+    },
+    {
+      "id": "133",
+      "name": "Blush",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/133-blush.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-02.jpg"
+    },
+    {
+      "id": "134",
+      "name": "Highlighter",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Face",
+      "file": "assets/shop/catalog/134-highlighter.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-03.jpg"
+    },
+    {
+      "id": "135",
+      "name": "Eyebrow Pencil",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Eyes",
+      "file": "assets/shop/catalog/135-eyebrow-pencil.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-04.jpg"
+    },
+    {
+      "id": "136",
+      "name": "Eyeliner",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Eyes",
+      "file": "assets/shop/catalog/136-eyeliner.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-05.jpg"
+    },
+    {
+      "id": "137",
+      "name": "Kajal",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Eyes",
+      "file": "assets/shop/catalog/137-kajal.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-06.jpg"
+    },
+    {
+      "id": "138",
+      "name": "Mascara",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Eyes",
+      "file": "assets/shop/catalog/138-mascara.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-07.jpg"
+    },
+    {
+      "id": "139",
+      "name": "Eyeshadow",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Eyes",
+      "file": "assets/shop/catalog/139-eyeshadow.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-08.jpg"
+    },
+    {
+      "id": "140",
+      "name": "Lipstick",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Lips",
+      "file": "assets/shop/catalog/140-lipstick.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-09.jpg"
+    },
+    {
+      "id": "141",
+      "name": "Lip Tint",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Lips",
+      "file": "assets/shop/catalog/141-lip-tint.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-10.jpg"
+    },
+    {
+      "id": "142",
+      "name": "Lip Gloss",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Lips",
+      "file": "assets/shop/catalog/142-lip-gloss.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-11.jpg"
+    },
+    {
+      "id": "143",
+      "name": "Makeup Remover",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/143-makeup-remover.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-12.jpg"
+    },
+    {
+      "id": "144",
+      "name": "Makeup Sponge",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/144-makeup-sponge.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-13.jpg"
+    },
+    {
+      "id": "145",
+      "name": "Makeup Brushes",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/145-makeup-brushes.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-14.jpg"
+    },
+    {
+      "id": "146",
+      "name": "Makeup Organizer",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/146-makeup-organizer.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-15.jpg"
+    },
+    {
+      "id": "147",
+      "name": "Makeup Mirror",
+      "section": "Modest Everyday Makeup",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/147-makeup-mirror.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-16.jpg"
+    },
+    {
+      "id": "148",
+      "name": "Shampoo",
+      "section": "Haircare",
+      "subsection": "Wash",
+      "file": "assets/shop/catalog/148-shampoo.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-01.jpg"
+    },
+    {
+      "id": "149",
+      "name": "Conditioner",
+      "section": "Haircare",
+      "subsection": "Wash",
+      "file": "assets/shop/catalog/149-conditioner.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-02.jpg"
+    },
+    {
+      "id": "150",
+      "name": "Hair Mask",
+      "section": "Haircare",
+      "subsection": "Treatment",
+      "file": "assets/shop/catalog/150-hair-mask.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-03.jpg"
+    },
+    {
+      "id": "151",
+      "name": "Hair Oil",
+      "section": "Haircare",
+      "subsection": "Treatment",
+      "file": "assets/shop/catalog/151-hair-oil.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-04.jpg"
+    },
+    {
+      "id": "152",
+      "name": "Hair Serum",
+      "section": "Haircare",
+      "subsection": "Treatment",
+      "file": "assets/shop/catalog/152-hair-serum.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-05.jpg"
+    },
+    {
+      "id": "153",
+      "name": "Leave-In Conditioner",
+      "section": "Haircare",
+      "subsection": "Treatment",
+      "file": "assets/shop/catalog/153-leave-in-conditioner.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-06.jpg"
+    },
+    {
+      "id": "154",
+      "name": "Hair Brush",
+      "section": "Haircare",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/154-hair-brush.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-01.jpg"
+    },
+    {
+      "id": "155",
+      "name": "Comb",
+      "section": "Haircare",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/155-comb.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-02.jpg"
+    },
+    {
+      "id": "156",
+      "name": "Wide-Tooth Comb",
+      "section": "Haircare",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/156-wide-tooth-comb.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-03.jpg"
+    },
+    {
+      "id": "157",
+      "name": "Hair Ties",
+      "section": "Haircare",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/157-hair-ties.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-04.jpg"
+    },
+    {
+      "id": "158",
+      "name": "Scrunchies",
+      "section": "Haircare",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/158-scrunchies.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-05.jpg"
+    },
+    {
+      "id": "159",
+      "name": "Hair Clips",
+      "section": "Haircare",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/159-hair-clips.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-06.jpg"
+    },
+    {
+      "id": "160",
+      "name": "Claw Clips",
+      "section": "Haircare",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/160-claw-clips.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-01.jpg"
+    },
+    {
+      "id": "161",
+      "name": "Bobby Pins",
+      "section": "Haircare",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/161-bobby-pins.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-02.jpg"
+    },
+    {
+      "id": "162",
+      "name": "Hair Pins",
+      "section": "Haircare",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/162-hair-pins.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-03.jpg"
+    },
+    {
+      "id": "163",
+      "name": "Headbands",
+      "section": "Haircare",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/163-headbands.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-04.jpg"
+    },
+    {
+      "id": "164",
+      "name": "Hair Bands",
+      "section": "Haircare",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/164-hair-bands.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-05.jpg"
+    },
+    {
+      "id": "165",
+      "name": "Hair Dryer",
+      "section": "Haircare",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/165-hair-dryer.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-06.jpg"
+    },
+    {
+      "id": "166",
+      "name": "Hair Straightener",
+      "section": "Haircare",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/166-hair-straightener.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-01.jpg"
+    },
+    {
+      "id": "167",
+      "name": "Curling Tool",
+      "section": "Haircare",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/167-curling-tool.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-02.jpg"
+    },
+    {
+      "id": "168",
+      "name": "Heat Protectant",
+      "section": "Haircare",
+      "subsection": "Treatment",
+      "file": "assets/shop/catalog/168-heat-protectant.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-03.jpg"
+    },
+    {
+      "id": "169",
+      "name": "Satin / Silk Bonnet",
+      "section": "Haircare",
+      "subsection": "Night Care",
+      "file": "assets/shop/catalog/169-satin-silk-bonnet.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-04.jpg"
+    },
+    {
+      "id": "170",
+      "name": "Satin Pillowcase",
+      "section": "Haircare",
+      "subsection": "Night Care",
+      "file": "assets/shop/catalog/170-satin-pillowcase.jpg",
+      "source_pool": "hair",
+      "source_file": "assets/shop/_sources/hair-05.jpg"
+    },
+    {
+      "id": "171",
+      "name": "Nail Cutter",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Nails",
+      "file": "assets/shop/catalog/171-nail-cutter.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-17.jpg"
+    },
+    {
+      "id": "172",
+      "name": "Nail File",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Nails",
+      "file": "assets/shop/catalog/172-nail-file.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-18.jpg"
+    },
+    {
+      "id": "173",
+      "name": "Nail Buffer",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Nails",
+      "file": "assets/shop/catalog/173-nail-buffer.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-19.jpg"
+    },
+    {
+      "id": "174",
+      "name": "Cuticle Oil",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Nails",
+      "file": "assets/shop/catalog/174-cuticle-oil.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-20.jpg"
+    },
+    {
+      "id": "175",
+      "name": "Hand Cream",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Hands",
+      "file": "assets/shop/catalog/175-hand-cream.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-21.jpg"
+    },
+    {
+      "id": "176",
+      "name": "Foot Scrub",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Feet",
+      "file": "assets/shop/catalog/176-foot-scrub.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-22.jpg"
+    },
+    {
+      "id": "177",
+      "name": "Foot File",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Feet",
+      "file": "assets/shop/catalog/177-foot-file.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-23.jpg"
+    },
+    {
+      "id": "178",
+      "name": "Heel-Care Cream",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Feet",
+      "file": "assets/shop/catalog/178-heel-care-cream.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-24.jpg"
+    },
+    {
+      "id": "179",
+      "name": "Pedicure Kit",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Kits",
+      "file": "assets/shop/catalog/179-pedicure-kit.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-25.jpg"
+    },
+    {
+      "id": "180",
+      "name": "Manicure Kit",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Kits",
+      "file": "assets/shop/catalog/180-manicure-kit.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-26.jpg"
+    },
+    {
+      "id": "181",
+      "name": "Tweezers",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/181-tweezers.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-01.jpg"
+    },
+    {
+      "id": "182",
+      "name": "Facial Razor",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/182-facial-razor.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-02.jpg"
+    },
+    {
+      "id": "183",
+      "name": "Eyebrow Razor",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/183-eyebrow-razor.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-03.jpg"
+    },
+    {
+      "id": "184",
+      "name": "Body Razor",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/184-body-razor.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-04.jpg"
+    },
+    {
+      "id": "185",
+      "name": "Electric Trimmer",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Tools",
+      "file": "assets/shop/catalog/185-electric-trimmer.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-05.jpg"
+    },
+    {
+      "id": "186",
+      "name": "Wax Strips",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Hair Removal",
+      "file": "assets/shop/catalog/186-wax-strips.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-06.jpg"
+    },
+    {
+      "id": "187",
+      "name": "Epilator",
+      "section": "Hands, Feet & Grooming",
+      "subsection": "Hair Removal",
+      "file": "assets/shop/catalog/187-epilator.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-07.jpg"
+    },
+    {
+      "id": "188",
+      "name": "Attar",
+      "section": "Fragrance",
+      "subsection": "Fragrance",
+      "file": "assets/shop/catalog/188-attar.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-08.jpg"
+    },
+    {
+      "id": "189",
+      "name": "Perfume",
+      "section": "Fragrance",
+      "subsection": "Fragrance",
+      "file": "assets/shop/catalog/189-perfume.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-09.jpg"
+    },
+    {
+      "id": "190",
+      "name": "Body Mist",
+      "section": "Fragrance",
+      "subsection": "Fragrance",
+      "file": "assets/shop/catalog/190-body-mist.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-10.jpg"
+    },
+    {
+      "id": "191",
+      "name": "Roll-On Fragrance",
+      "section": "Fragrance",
+      "subsection": "Fragrance",
+      "file": "assets/shop/catalog/191-roll-on-fragrance.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-11.jpg"
+    },
+    {
+      "id": "192",
+      "name": "Hair Mist",
+      "section": "Fragrance",
+      "subsection": "Fragrance",
+      "file": "assets/shop/catalog/192-hair-mist.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-12.jpg"
+    },
+    {
+      "id": "193",
+      "name": "Body Spray",
+      "section": "Fragrance",
+      "subsection": "Fragrance",
+      "file": "assets/shop/catalog/193-body-spray.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-13.jpg"
+    },
+    {
+      "id": "194",
+      "name": "Scented Lotion",
+      "section": "Fragrance",
+      "subsection": "Body Care",
+      "file": "assets/shop/catalog/194-scented-lotion.jpg",
+      "source_pool": "beauty",
+      "source_file": "assets/shop/_sources/beauty-14.jpg"
+    },
+    {
+      "id": "195",
+      "name": "Simple Earrings",
+      "section": "Jewellery & Accessories",
+      "subsection": "Jewelry",
+      "file": "assets/shop/catalog/195-simple-earrings.jpg",
+      "source_pool": "jewelry",
+      "source_file": "assets/shop/_sources/jewelry-01.jpg"
+    },
+    {
+      "id": "196",
+      "name": "Stud Earrings",
+      "section": "Jewellery & Accessories",
+      "subsection": "Jewelry",
+      "file": "assets/shop/catalog/196-stud-earrings.jpg",
+      "source_pool": "jewelry",
+      "source_file": "assets/shop/_sources/jewelry-02.jpg"
+    },
+    {
+      "id": "197",
+      "name": "Necklace",
+      "section": "Jewellery & Accessories",
+      "subsection": "Jewelry",
+      "file": "assets/shop/catalog/197-necklace.jpg",
+      "source_pool": "jewelry",
+      "source_file": "assets/shop/_sources/jewelry-03.jpg"
+    },
+    {
+      "id": "198",
+      "name": "Pendant",
+      "section": "Jewellery & Accessories",
+      "subsection": "Jewelry",
+      "file": "assets/shop/catalog/198-pendant.jpg",
+      "source_pool": "jewelry",
+      "source_file": "assets/shop/_sources/jewelry-04.jpg"
+    },
+    {
+      "id": "199",
+      "name": "Bracelet",
+      "section": "Jewellery & Accessories",
+      "subsection": "Jewelry",
+      "file": "assets/shop/catalog/199-bracelet.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-02.jpg"
+    },
+    {
+      "id": "200",
+      "name": "Bangles",
+      "section": "Jewellery & Accessories",
+      "subsection": "Jewelry",
+      "file": "assets/shop/catalog/200-bangles.jpg",
+      "source_pool": "jewelry",
+      "source_file": "assets/shop/_sources/jewelry-05.jpg"
+    },
+    {
+      "id": "201",
+      "name": "Rings",
+      "section": "Jewellery & Accessories",
+      "subsection": "Jewelry",
+      "file": "assets/shop/catalog/201-rings.jpg",
+      "source_pool": "jewelry",
+      "source_file": "assets/shop/_sources/jewelry-06.jpg"
+    },
+    {
+      "id": "202",
+      "name": "Anklet",
+      "section": "Jewellery & Accessories",
+      "subsection": "Jewelry",
+      "file": "assets/shop/catalog/202-anklet.jpg",
+      "source_pool": "jewelry",
+      "source_file": "assets/shop/_sources/jewelry-01.jpg"
+    },
+    {
+      "id": "203",
+      "name": "Watch",
+      "section": "Jewellery & Accessories",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/203-watch.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-01.jpg"
+    },
+    {
+      "id": "204",
+      "name": "Sunglasses",
+      "section": "Jewellery & Accessories",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/204-sunglasses.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-02.jpg"
+    },
+    {
+      "id": "205",
+      "name": "Brooch",
+      "section": "Jewellery & Accessories",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/205-brooch.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-03.jpg"
+    },
+    {
+      "id": "206",
+      "name": "Hijab Brooch",
+      "section": "Jewellery & Accessories",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/206-hijab-brooch.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-25.jpg"
+    },
+    {
+      "id": "207",
+      "name": "Hijab Magnets",
+      "section": "Jewellery & Accessories",
+      "subsection": "Hijab Accessories",
+      "file": "assets/shop/catalog/207-hijab-magnets.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-26.jpg"
+    },
+    {
+      "id": "208",
+      "name": "Handbag",
+      "section": "Jewellery & Accessories",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/208-handbag.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-04.jpg"
+    },
+    {
+      "id": "209",
+      "name": "Crossbody Bag",
+      "section": "Jewellery & Accessories",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/209-crossbody-bag.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-05.jpg"
+    },
+    {
+      "id": "210",
+      "name": "Tote Bag",
+      "section": "Jewellery & Accessories",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/210-tote-bag.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-06.jpg"
+    },
+    {
+      "id": "211",
+      "name": "Wallet",
+      "section": "Jewellery & Accessories",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/211-wallet.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-07.jpg"
+    },
+    {
+      "id": "212",
+      "name": "Card Holder",
+      "section": "Jewellery & Accessories",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/212-card-holder.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-08.jpg"
+    },
+    {
+      "id": "213",
+      "name": "Clutch",
+      "section": "Jewellery & Accessories",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/213-clutch.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-09.jpg"
+    },
+    {
+      "id": "214",
+      "name": "Backpack",
+      "section": "Jewellery & Accessories",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/214-backpack.jpg",
+      "source_pool": "bags",
+      "source_file": "assets/shop/_sources/bags-10.jpg"
+    },
+    {
+      "id": "215",
+      "name": "Comfortable Sandals",
+      "section": "Footwear",
+      "subsection": "Daily",
+      "file": "assets/shop/catalog/215-comfortable-sandals.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-01.jpg"
+    },
+    {
+      "id": "216",
+      "name": "Flats",
+      "section": "Footwear",
+      "subsection": "Daily",
+      "file": "assets/shop/catalog/216-flats.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-02.jpg"
+    },
+    {
+      "id": "217",
+      "name": "Sneakers",
+      "section": "Footwear",
+      "subsection": "Daily",
+      "file": "assets/shop/catalog/217-sneakers.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-03.jpg"
+    },
+    {
+      "id": "218",
+      "name": "Walking Shoes",
+      "section": "Footwear",
+      "subsection": "Daily",
+      "file": "assets/shop/catalog/218-walking-shoes.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-04.jpg"
+    },
+    {
+      "id": "219",
+      "name": "Running Shoes",
+      "section": "Footwear",
+      "subsection": "Fitness",
+      "file": "assets/shop/catalog/219-running-shoes.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-05.jpg"
+    },
+    {
+      "id": "220",
+      "name": "Formal Shoes",
+      "section": "Footwear",
+      "subsection": "Formal",
+      "file": "assets/shop/catalog/220-formal-shoes.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-06.jpg"
+    },
+    {
+      "id": "221",
+      "name": "Occasion Shoes",
+      "section": "Footwear",
+      "subsection": "Occasion",
+      "file": "assets/shop/catalog/221-occasion-shoes.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-01.jpg"
+    },
+    {
+      "id": "222",
+      "name": "Heels",
+      "section": "Footwear",
+      "subsection": "Occasion",
+      "file": "assets/shop/catalog/222-heels.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-02.jpg"
+    },
+    {
+      "id": "223",
+      "name": "House Slippers",
+      "section": "Footwear",
+      "subsection": "Home",
+      "file": "assets/shop/catalog/223-house-slippers.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-03.jpg"
+    },
+    {
+      "id": "224",
+      "name": "Bathroom Slippers",
+      "section": "Footwear",
+      "subsection": "Home",
+      "file": "assets/shop/catalog/224-bathroom-slippers.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-04.jpg"
+    },
+    {
+      "id": "225",
+      "name": "Winter Shoes / Boots",
+      "section": "Footwear",
+      "subsection": "Winter",
+      "file": "assets/shop/catalog/225-winter-shoes-boots.jpg",
+      "source_pool": "shoes",
+      "source_file": "assets/shop/_sources/shoes-05.jpg"
+    },
+    {
+      "id": "226",
+      "name": "Bedsheets",
+      "section": "Home & Personal Room",
+      "subsection": "Bedroom",
+      "file": "assets/shop/catalog/226-bedsheets.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-01.jpg"
+    },
+    {
+      "id": "227",
+      "name": "Pillow",
+      "section": "Home & Personal Room",
+      "subsection": "Bedroom",
+      "file": "assets/shop/catalog/227-pillow.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-02.jpg"
+    },
+    {
+      "id": "228",
+      "name": "Pillowcases",
+      "section": "Home & Personal Room",
+      "subsection": "Bedroom",
+      "file": "assets/shop/catalog/228-pillowcases.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-03.jpg"
+    },
+    {
+      "id": "229",
+      "name": "Blanket",
+      "section": "Home & Personal Room",
+      "subsection": "Bedroom",
+      "file": "assets/shop/catalog/229-blanket.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-04.jpg"
+    },
+    {
+      "id": "230",
+      "name": "Comforter",
+      "section": "Home & Personal Room",
+      "subsection": "Bedroom",
+      "file": "assets/shop/catalog/230-comforter.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-05.jpg"
+    },
+    {
+      "id": "231",
+      "name": "Mattress Protector",
+      "section": "Home & Personal Room",
+      "subsection": "Bedroom",
+      "file": "assets/shop/catalog/231-mattress-protector.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-06.jpg"
+    },
+    {
+      "id": "232",
+      "name": "Towels",
+      "section": "Home & Personal Room",
+      "subsection": "Bath",
+      "file": "assets/shop/catalog/232-towels.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-07.jpg"
+    },
+    {
+      "id": "233",
+      "name": "Bathrobe",
+      "section": "Home & Personal Room",
+      "subsection": "Bath",
+      "file": "assets/shop/catalog/233-bathrobe.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-08.jpg"
+    },
+    {
+      "id": "234",
+      "name": "Laundry Basket",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/234-laundry-basket.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-09.jpg"
+    },
+    {
+      "id": "235",
+      "name": "Clothes Hangers",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/235-clothes-hangers.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-10.jpg"
+    },
+    {
+      "id": "236",
+      "name": "Wardrobe Organizers",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/236-wardrobe-organizers.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-11.jpg"
+    },
+    {
+      "id": "237",
+      "name": "Hijab Organizer",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/237-hijab-organizer.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-27.jpg"
+    },
+    {
+      "id": "238",
+      "name": "Jewelry Organizer",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/238-jewelry-organizer.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-12.jpg"
+    },
+    {
+      "id": "239",
+      "name": "Makeup Organizer",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/239-makeup-organizer.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-01.jpg"
+    },
+    {
+      "id": "240",
+      "name": "Skincare Organizer",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/240-skincare-organizer.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-02.jpg"
+    },
+    {
+      "id": "241",
+      "name": "Full-Length Mirror",
+      "section": "Home & Personal Room",
+      "subsection": "Mirrors",
+      "file": "assets/shop/catalog/241-full-length-mirror.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-03.jpg"
+    },
+    {
+      "id": "242",
+      "name": "Dressing Mirror",
+      "section": "Home & Personal Room",
+      "subsection": "Mirrors",
+      "file": "assets/shop/catalog/242-dressing-mirror.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-28.jpg"
+    },
+    {
+      "id": "243",
+      "name": "Storage Boxes",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/243-storage-boxes.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-04.jpg"
+    },
+    {
+      "id": "244",
+      "name": "Shoe Organizer",
+      "section": "Home & Personal Room",
+      "subsection": "Storage",
+      "file": "assets/shop/catalog/244-shoe-organizer.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-05.jpg"
+    },
+    {
+      "id": "245",
+      "name": "Handbag",
+      "section": "Work / Study",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/245-handbag.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-01.jpg"
+    },
+    {
+      "id": "246",
+      "name": "Backpack",
+      "section": "Work / Study",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/246-backpack.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-02.jpg"
+    },
+    {
+      "id": "247",
+      "name": "Laptop Bag",
+      "section": "Work / Study",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/247-laptop-bag.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-01.jpg"
+    },
+    {
+      "id": "248",
+      "name": "Laptop Sleeve",
+      "section": "Work / Study",
+      "subsection": "Bags",
+      "file": "assets/shop/catalog/248-laptop-sleeve.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-02.jpg"
+    },
+    {
+      "id": "249",
+      "name": "Notebook",
+      "section": "Work / Study",
+      "subsection": "Stationery",
+      "file": "assets/shop/catalog/249-notebook.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-03.jpg"
+    },
+    {
+      "id": "250",
+      "name": "Planner",
+      "section": "Work / Study",
+      "subsection": "Stationery",
+      "file": "assets/shop/catalog/250-planner.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-04.jpg"
+    },
+    {
+      "id": "251",
+      "name": "Diary",
+      "section": "Work / Study",
+      "subsection": "Stationery",
+      "file": "assets/shop/catalog/251-diary.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-05.jpg"
+    },
+    {
+      "id": "252",
+      "name": "Pens",
+      "section": "Work / Study",
+      "subsection": "Stationery",
+      "file": "assets/shop/catalog/252-pens.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-06.jpg"
+    },
+    {
+      "id": "253",
+      "name": "Highlighters",
+      "section": "Work / Study",
+      "subsection": "Stationery",
+      "file": "assets/shop/catalog/253-highlighters.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-07.jpg"
+    },
+    {
+      "id": "254",
+      "name": "Water Bottle",
+      "section": "Work / Study",
+      "subsection": "Lifestyle",
+      "file": "assets/shop/catalog/254-water-bottle.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-08.jpg"
+    },
+    {
+      "id": "255",
+      "name": "Lunch Box",
+      "section": "Work / Study",
+      "subsection": "Lifestyle",
+      "file": "assets/shop/catalog/255-lunch-box.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-09.jpg"
+    },
+    {
+      "id": "256",
+      "name": "ID-Card Holder",
+      "section": "Work / Study",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/256-id-card-holder.jpg",
+      "source_pool": "stationery",
+      "source_file": "assets/shop/_sources/stationery-10.jpg"
+    },
+    {
+      "id": "257",
+      "name": "Laptop",
+      "section": "Work / Study",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/257-laptop.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-03.jpg"
+    },
+    {
+      "id": "258",
+      "name": "Tablet",
+      "section": "Work / Study",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/258-tablet.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-04.jpg"
+    },
+    {
+      "id": "259",
+      "name": "Power Bank",
+      "section": "Work / Study",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/259-power-bank.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-05.jpg"
+    },
+    {
+      "id": "260",
+      "name": "Earbuds / Headphones",
+      "section": "Work / Study",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/260-earbuds-headphones.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-06.jpg"
+    },
+    {
+      "id": "261",
+      "name": "Phone Stand",
+      "section": "Work / Study",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/261-phone-stand.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-07.jpg"
+    },
+    {
+      "id": "262",
+      "name": "Suitcase",
+      "section": "Travel",
+      "subsection": "Luggage",
+      "file": "assets/shop/catalog/262-suitcase.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-01.jpg"
+    },
+    {
+      "id": "263",
+      "name": "Travel Backpack",
+      "section": "Travel",
+      "subsection": "Luggage",
+      "file": "assets/shop/catalog/263-travel-backpack.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-02.jpg"
+    },
+    {
+      "id": "264",
+      "name": "Passport Holder",
+      "section": "Travel",
+      "subsection": "Travel Accessories",
+      "file": "assets/shop/catalog/264-passport-holder.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-01.jpg"
+    },
+    {
+      "id": "265",
+      "name": "Travel Wallet",
+      "section": "Travel",
+      "subsection": "Travel Accessories",
+      "file": "assets/shop/catalog/265-travel-wallet.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-02.jpg"
+    },
+    {
+      "id": "266",
+      "name": "Packing Cubes",
+      "section": "Travel",
+      "subsection": "Organization",
+      "file": "assets/shop/catalog/266-packing-cubes.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-01.jpg"
+    },
+    {
+      "id": "267",
+      "name": "Hijab Travel Organizer",
+      "section": "Travel",
+      "subsection": "Organization",
+      "file": "assets/shop/catalog/267-hijab-travel-organizer.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-29.jpg"
+    },
+    {
+      "id": "268",
+      "name": "Travel Prayer Mat",
+      "section": "Travel",
+      "subsection": "Prayer",
+      "file": "assets/shop/catalog/268-travel-prayer-mat.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-05.jpg"
+    },
+    {
+      "id": "269",
+      "name": "Travel Prayer Dress",
+      "section": "Travel",
+      "subsection": "Prayer",
+      "file": "assets/shop/catalog/269-travel-prayer-dress.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-30.jpg"
+    },
+    {
+      "id": "270",
+      "name": "Toiletry Bag",
+      "section": "Travel",
+      "subsection": "Organization",
+      "file": "assets/shop/catalog/270-toiletry-bag.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-02.jpg"
+    },
+    {
+      "id": "271",
+      "name": "Makeup Pouch",
+      "section": "Travel",
+      "subsection": "Organization",
+      "file": "assets/shop/catalog/271-makeup-pouch.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-01.jpg"
+    },
+    {
+      "id": "272",
+      "name": "Jewellery Pouch",
+      "section": "Travel",
+      "subsection": "Organization",
+      "file": "assets/shop/catalog/272-jewellery-pouch.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-02.jpg"
+    },
+    {
+      "id": "273",
+      "name": "Shoe Bag",
+      "section": "Travel",
+      "subsection": "Organization",
+      "file": "assets/shop/catalog/273-shoe-bag.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-01.jpg"
+    },
+    {
+      "id": "274",
+      "name": "Laundry Bag",
+      "section": "Travel",
+      "subsection": "Organization",
+      "file": "assets/shop/catalog/274-laundry-bag.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-02.jpg"
+    },
+    {
+      "id": "275",
+      "name": "Travel-Size Bottles",
+      "section": "Travel",
+      "subsection": "Toiletries",
+      "file": "assets/shop/catalog/275-travel-size-bottles.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-01.jpg"
+    },
+    {
+      "id": "276",
+      "name": "Portable Charger",
+      "section": "Travel",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/276-portable-charger.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-02.jpg"
+    },
+    {
+      "id": "277",
+      "name": "Universal Adapter",
+      "section": "Travel",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/277-universal-adapter.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-01.jpg"
+    },
+    {
+      "id": "278",
+      "name": "Neck Pillow",
+      "section": "Travel",
+      "subsection": "Comfort",
+      "file": "assets/shop/catalog/278-neck-pillow.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-02.jpg"
+    },
+    {
+      "id": "279",
+      "name": "Eye Mask",
+      "section": "Travel",
+      "subsection": "Comfort",
+      "file": "assets/shop/catalog/279-eye-mask.jpg",
+      "source_pool": "travel",
+      "source_file": "assets/shop/_sources/travel-01.jpg"
+    },
+    {
+      "id": "280",
+      "name": "Modest Workout Clothes",
+      "section": "Fitness",
+      "subsection": "Clothing",
+      "file": "assets/shop/catalog/280-modest-workout-clothes.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-01.jpg"
+    },
+    {
+      "id": "281",
+      "name": "Sports Hijab",
+      "section": "Fitness",
+      "subsection": "Clothing",
+      "file": "assets/shop/catalog/281-sports-hijab.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-31.jpg"
+    },
+    {
+      "id": "282",
+      "name": "Sports Bra",
+      "section": "Fitness",
+      "subsection": "Clothing",
+      "file": "assets/shop/catalog/282-sports-bra.jpg",
+      "source_pool": "innerwear",
+      "source_file": "assets/shop/_sources/innerwear-04.jpg"
+    },
+    {
+      "id": "283",
+      "name": "Joggers",
+      "section": "Fitness",
+      "subsection": "Clothing",
+      "file": "assets/shop/catalog/283-joggers.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-02.jpg"
+    },
+    {
+      "id": "284",
+      "name": "Loose Workout Top",
+      "section": "Fitness",
+      "subsection": "Clothing",
+      "file": "assets/shop/catalog/284-loose-workout-top.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-04.jpg"
+    },
+    {
+      "id": "285",
+      "name": "Sneakers",
+      "section": "Fitness",
+      "subsection": "Footwear",
+      "file": "assets/shop/catalog/285-sneakers.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-05.jpg"
+    },
+    {
+      "id": "286",
+      "name": "Yoga Mat",
+      "section": "Fitness",
+      "subsection": "Equipment",
+      "file": "assets/shop/catalog/286-yoga-mat.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-06.jpg"
+    },
+    {
+      "id": "287",
+      "name": "Resistance Bands",
+      "section": "Fitness",
+      "subsection": "Equipment",
+      "file": "assets/shop/catalog/287-resistance-bands.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-08.jpg"
+    },
+    {
+      "id": "288",
+      "name": "Dumbbells",
+      "section": "Fitness",
+      "subsection": "Equipment",
+      "file": "assets/shop/catalog/288-dumbbells.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-09.jpg"
+    },
+    {
+      "id": "289",
+      "name": "Water Bottle",
+      "section": "Fitness",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/289-water-bottle.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-10.jpg"
+    },
+    {
+      "id": "290",
+      "name": "Gym Bag",
+      "section": "Fitness",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/290-gym-bag.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-11.jpg"
+    },
+    {
+      "id": "291",
+      "name": "Fitness Tracker",
+      "section": "Fitness",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/291-fitness-tracker.jpg",
+      "source_pool": "fitness",
+      "source_file": "assets/shop/_sources/fitness-12.jpg"
+    },
+    {
+      "id": "292",
+      "name": "First-Aid Box",
+      "section": "Emergency & Safety",
+      "subsection": "First Aid",
+      "file": "assets/shop/catalog/292-first-aid-box.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-06.jpg"
+    },
+    {
+      "id": "293",
+      "name": "Bandages",
+      "section": "Emergency & Safety",
+      "subsection": "First Aid",
+      "file": "assets/shop/catalog/293-bandages.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-07.jpg"
+    },
+    {
+      "id": "294",
+      "name": "Antiseptic",
+      "section": "Emergency & Safety",
+      "subsection": "First Aid",
+      "file": "assets/shop/catalog/294-antiseptic.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-08.jpg"
+    },
+    {
+      "id": "295",
+      "name": "Gauze",
+      "section": "Emergency & Safety",
+      "subsection": "First Aid",
+      "file": "assets/shop/catalog/295-gauze.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-09.jpg"
+    },
+    {
+      "id": "296",
+      "name": "Medical Tape",
+      "section": "Emergency & Safety",
+      "subsection": "First Aid",
+      "file": "assets/shop/catalog/296-medical-tape.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-10.jpg"
+    },
+    {
+      "id": "297",
+      "name": "Digital Thermometer",
+      "section": "Emergency & Safety",
+      "subsection": "Health",
+      "file": "assets/shop/catalog/297-digital-thermometer.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-11.jpg"
+    },
+    {
+      "id": "298",
+      "name": "Personal Medicines",
+      "section": "Emergency & Safety",
+      "subsection": "Health",
+      "file": "assets/shop/catalog/298-personal-medicines.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-12.jpg"
+    },
+    {
+      "id": "299",
+      "name": "Prescription Medicines",
+      "section": "Emergency & Safety",
+      "subsection": "Health",
+      "file": "assets/shop/catalog/299-prescription-medicines.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-01.jpg"
+    },
+    {
+      "id": "300",
+      "name": "Hand Sanitizer",
+      "section": "Emergency & Safety",
+      "subsection": "Hygiene",
+      "file": "assets/shop/catalog/300-hand-sanitizer.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-02.jpg"
+    },
+    {
+      "id": "301",
+      "name": "Tissues",
+      "section": "Emergency & Safety",
+      "subsection": "Hygiene",
+      "file": "assets/shop/catalog/301-tissues.jpg",
+      "source_pool": "hygiene",
+      "source_file": "assets/shop/_sources/hygiene-01.jpg"
+    },
+    {
+      "id": "302",
+      "name": "Emergency Contact Card",
+      "section": "Emergency & Safety",
+      "subsection": "Safety",
+      "file": "assets/shop/catalog/302-emergency-contact-card.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-02.jpg"
+    },
+    {
+      "id": "303",
+      "name": "Small Flashlight",
+      "section": "Emergency & Safety",
+      "subsection": "Safety",
+      "file": "assets/shop/catalog/303-small-flashlight.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-03.jpg"
+    },
+    {
+      "id": "304",
+      "name": "Personal Alarm",
+      "section": "Emergency & Safety",
+      "subsection": "Safety",
+      "file": "assets/shop/catalog/304-personal-alarm.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-04.jpg"
+    },
+    {
+      "id": "305",
+      "name": "Whistle",
+      "section": "Emergency & Safety",
+      "subsection": "Safety",
+      "file": "assets/shop/catalog/305-whistle.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-05.jpg"
+    },
+    {
+      "id": "306",
+      "name": "Portable Power Bank",
+      "section": "Emergency & Safety",
+      "subsection": "Electronics",
+      "file": "assets/shop/catalog/306-portable-power-bank.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-06.jpg"
+    },
+    {
+      "id": "307",
+      "name": "Sewing Kit",
+      "section": "Clothing Care",
+      "subsection": "Repair",
+      "file": "assets/shop/catalog/307-sewing-kit.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-07.jpg"
+    },
+    {
+      "id": "308",
+      "name": "Needles",
+      "section": "Clothing Care",
+      "subsection": "Repair",
+      "file": "assets/shop/catalog/308-needles.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-08.jpg"
+    },
+    {
+      "id": "309",
+      "name": "Thread",
+      "section": "Clothing Care",
+      "subsection": "Repair",
+      "file": "assets/shop/catalog/309-thread.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-09.jpg"
+    },
+    {
+      "id": "310",
+      "name": "Safety Pins",
+      "section": "Clothing Care",
+      "subsection": "Repair",
+      "file": "assets/shop/catalog/310-safety-pins.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-10.jpg"
+    },
+    {
+      "id": "311",
+      "name": "Mini Scissors",
+      "section": "Clothing Care",
+      "subsection": "Repair",
+      "file": "assets/shop/catalog/311-mini-scissors.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-11.jpg"
+    },
+    {
+      "id": "312",
+      "name": "Buttons",
+      "section": "Clothing Care",
+      "subsection": "Repair",
+      "file": "assets/shop/catalog/312-buttons.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-12.jpg"
+    },
+    {
+      "id": "313",
+      "name": "Fabric Tape",
+      "section": "Clothing Care",
+      "subsection": "Repair",
+      "file": "assets/shop/catalog/313-fabric-tape.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-01.jpg"
+    },
+    {
+      "id": "314",
+      "name": "Lint Roller",
+      "section": "Clothing Care",
+      "subsection": "Cleaning",
+      "file": "assets/shop/catalog/314-lint-roller.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-02.jpg"
+    },
+    {
+      "id": "315",
+      "name": "Stain Remover",
+      "section": "Clothing Care",
+      "subsection": "Cleaning",
+      "file": "assets/shop/catalog/315-stain-remover.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-03.jpg"
+    },
+    {
+      "id": "316",
+      "name": "Clothes Brush",
+      "section": "Clothing Care",
+      "subsection": "Cleaning",
+      "file": "assets/shop/catalog/316-clothes-brush.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-04.jpg"
+    },
+    {
+      "id": "317",
+      "name": "Iron",
+      "section": "Clothing Care",
+      "subsection": "Laundry",
+      "file": "assets/shop/catalog/317-iron.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-05.jpg"
+    },
+    {
+      "id": "318",
+      "name": "Garment Steamer",
+      "section": "Clothing Care",
+      "subsection": "Laundry",
+      "file": "assets/shop/catalog/318-garment-steamer.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-06.jpg"
+    },
+    {
+      "id": "319",
+      "name": "Laundry Bags",
+      "section": "Clothing Care",
+      "subsection": "Laundry",
+      "file": "assets/shop/catalog/319-laundry-bags.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-07.jpg"
+    },
+    {
+      "id": "320",
+      "name": "Delicate-Wash Bags",
+      "section": "Clothing Care",
+      "subsection": "Laundry",
+      "file": "assets/shop/catalog/320-delicate-wash-bags.jpg",
+      "source_pool": "home",
+      "source_file": "assets/shop/_sources/home-08.jpg"
+    },
+    {
+      "id": "321",
+      "name": "Smartphone",
+      "section": "Personal Electronics",
+      "subsection": "Devices",
+      "file": "assets/shop/catalog/321-smartphone.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-08.jpg"
+    },
+    {
+      "id": "322",
+      "name": "Phone Case",
+      "section": "Personal Electronics",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/322-phone-case.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-09.jpg"
+    },
+    {
+      "id": "323",
+      "name": "Screen Protector",
+      "section": "Personal Electronics",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/323-screen-protector.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-10.jpg"
+    },
+    {
+      "id": "324",
+      "name": "Charger",
+      "section": "Personal Electronics",
+      "subsection": "Power",
+      "file": "assets/shop/catalog/324-charger.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-01.jpg"
+    },
+    {
+      "id": "325",
+      "name": "Charging Cable",
+      "section": "Personal Electronics",
+      "subsection": "Power",
+      "file": "assets/shop/catalog/325-charging-cable.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-02.jpg"
+    },
+    {
+      "id": "326",
+      "name": "Power Bank",
+      "section": "Personal Electronics",
+      "subsection": "Power",
+      "file": "assets/shop/catalog/326-power-bank.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-03.jpg"
+    },
+    {
+      "id": "327",
+      "name": "Wireless Charger",
+      "section": "Personal Electronics",
+      "subsection": "Power",
+      "file": "assets/shop/catalog/327-wireless-charger.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-04.jpg"
+    },
+    {
+      "id": "328",
+      "name": "Earbuds",
+      "section": "Personal Electronics",
+      "subsection": "Audio",
+      "file": "assets/shop/catalog/328-earbuds.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-05.jpg"
+    },
+    {
+      "id": "329",
+      "name": "Smartwatch",
+      "section": "Personal Electronics",
+      "subsection": "Wearables",
+      "file": "assets/shop/catalog/329-smartwatch.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-06.jpg"
+    },
+    {
+      "id": "330",
+      "name": "Laptop",
+      "section": "Personal Electronics",
+      "subsection": "Devices",
+      "file": "assets/shop/catalog/330-laptop.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-07.jpg"
+    },
+    {
+      "id": "331",
+      "name": "Tablet",
+      "section": "Personal Electronics",
+      "subsection": "Devices",
+      "file": "assets/shop/catalog/331-tablet.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-08.jpg"
+    },
+    {
+      "id": "332",
+      "name": "Ring Light",
+      "section": "Personal Electronics",
+      "subsection": "Creator Gear",
+      "file": "assets/shop/catalog/332-ring-light.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-09.jpg"
+    },
+    {
+      "id": "333",
+      "name": "Tripod",
+      "section": "Personal Electronics",
+      "subsection": "Creator Gear",
+      "file": "assets/shop/catalog/333-tripod.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-10.jpg"
+    },
+    {
+      "id": "334",
+      "name": "Extension Cord",
+      "section": "Personal Electronics",
+      "subsection": "Power",
+      "file": "assets/shop/catalog/334-extension-cord.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-01.jpg"
+    },
+    {
+      "id": "335",
+      "name": "Cable Organizer",
+      "section": "Personal Electronics",
+      "subsection": "Organization",
+      "file": "assets/shop/catalog/335-cable-organizer.jpg",
+      "source_pool": "tech",
+      "source_file": "assets/shop/_sources/tech-02.jpg"
+    },
+    {
+      "id": "336",
+      "name": "Eid Outfit",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Eid Fashion",
+      "file": "assets/shop/catalog/336-eid-outfit.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-32.jpg"
+    },
+    {
+      "id": "337",
+      "name": "Abaya",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Eid Fashion",
+      "file": "assets/shop/catalog/337-abaya.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-01.jpg"
+    },
+    {
+      "id": "338",
+      "name": "Hijab",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Eid Fashion",
+      "file": "assets/shop/catalog/338-hijab.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-02.jpg"
+    },
+    {
+      "id": "339",
+      "name": "Prayer Dress",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Prayer",
+      "file": "assets/shop/catalog/339-prayer-dress.jpg",
+      "source_pool": "modest",
+      "source_file": "assets/shop/_sources/modest-03.jpg"
+    },
+    {
+      "id": "340",
+      "name": "New Prayer Mat",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Prayer",
+      "file": "assets/shop/catalog/340-new-prayer-mat.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-01.jpg"
+    },
+    {
+      "id": "341",
+      "name": "Quran",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Quran",
+      "file": "assets/shop/catalog/341-quran.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-02.jpg"
+    },
+    {
+      "id": "342",
+      "name": "Tasbih",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Dhikr",
+      "file": "assets/shop/catalog/342-tasbih.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-03.jpg"
+    },
+    {
+      "id": "343",
+      "name": "Dua Book",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Books",
+      "file": "assets/shop/catalog/343-dua-book.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-04.jpg"
+    },
+    {
+      "id": "344",
+      "name": "Islamic Books",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Books",
+      "file": "assets/shop/catalog/344-islamic-books.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-05.jpg"
+    },
+    {
+      "id": "345",
+      "name": "Ramadan Planner",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Planner",
+      "file": "assets/shop/catalog/345-ramadan-planner.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-01.jpg"
+    },
+    {
+      "id": "346",
+      "name": "Quran Stand",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Quran",
+      "file": "assets/shop/catalog/346-quran-stand.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-02.jpg"
+    },
+    {
+      "id": "347",
+      "name": "Iftar Serving Essentials",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Iftar",
+      "file": "assets/shop/catalog/347-iftar-serving-essentials.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-03.jpg"
+    },
+    {
+      "id": "348",
+      "name": "Eid Handbag",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Accessories",
+      "file": "assets/shop/catalog/348-eid-handbag.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-04.jpg"
+    },
+    {
+      "id": "349",
+      "name": "Eid Footwear",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Footwear",
+      "file": "assets/shop/catalog/349-eid-footwear.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-05.jpg"
+    },
+    {
+      "id": "350",
+      "name": "Gift Packaging Items",
+      "section": "Ramadan / Eid Essentials",
+      "subsection": "Gifting",
+      "file": "assets/shop/catalog/350-gift-packaging-items.jpg",
+      "source_pool": "faith",
+      "source_file": "assets/shop/_sources/faith-01.jpg"
+    }
+  ],
+  "download_failures": [
+    [
+      "innerwear",
+      3,
+      40901,
+      "404 Client Error: Not Found for url: https://images.pexels.com/photos/40901/pexels-photo-40901.jpeg?auto=compress&cs=tinysrgb&w=1000"
+    ],
+    [
+      "fitness",
+      3,
+      36990304,
+      "404 Client Error: Not Found for url: https://images.pexels.com/photos/36990304/pexels-photo-36990304.jpeg?auto=compress&cs=tinysrgb&w=1000"
+    ],
+    [
+      "fitness",
+      7,
+      36990297,
+      "404 Client Error: Not Found for url: https://images.pexels.com/photos/36990297/pexels-photo-36990297.jpeg?auto=compress&cs=tinysrgb&w=1000"
+    ]
+  ]
+}
