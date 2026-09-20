@@ -45,7 +45,6 @@ async function commons(q){
       foreign_landing_url:'https://commons.wikimedia.org/wiki/'+encodeURIComponent((p.title||'').replace(/ /g,'_'))
     };
     }).filter(x=>/^(CC|Public domain|PD|CC0)/i.test(x.license||''));
-    return pages;
   }catch(e){return []}
 }
 module.exports=async(req,res)=>{
