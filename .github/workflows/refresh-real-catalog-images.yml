@@ -1,6 +1,7 @@
 name: Deep refresh real catalog photos
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
