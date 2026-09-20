@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-# Final catalog pass: source-specific, region-aware, no blur/AI/illustration assets.
+# Deep catalog pass: product-specific, region-aware, real photographs only; no blur/AI/illustration assets.
 import io,json,re,sys,time,hashlib
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from pathlib import Path
@@ -30,11 +30,11 @@ def queries(p):
     sec=(p.get("section","")+" "+p.get("subsection","")).lower()
     qs=[base, p["name"]+" "+p.get("subsection","")]
     if any(x in sec for x in ["hijab","clothing","footwear","jewellery","fragrance"]):
-        qs += [base+" Bangladesh",base+" Pakistan",base+" Arab",base+" Saudi Arabia",base+" Gulf",base+" South Asia"]
+        qs += [base+" Bangladesh",base+" Pakistan",base+" Saudi Arabia",base+" United Arab Emirates",base+" Gulf",base+" South Asia",base+" Malaysia",base+" Indonesia",base+" Turkey",base+" Morocco",base+" Egypt"]
     elif any(x in sec for x in ["prayer","ramadan"]):
-        qs += [base+" Islamic",base+" Quran",base+" prayer",base+" Arab"]
+        qs += [base+" Islamic",base+" Quran",base+" prayer",base+" Bangladesh Ramadan",base+" Saudi Arabia Ramadan",base+" Arab world"]
     else:
-        qs += [base+" Bangladesh",base+" Pakistan",base+" Arab"]
+        qs += [base+" Bangladesh",base+" Pakistan",base+" Arab world",base+" South Asia"]
     return list(dict.fromkeys(q.strip() for q in qs if q.strip()))[:6]
 
 def blob(x):
@@ -48,16 +48,17 @@ def score(x,p,q):
     for w in words(p["name"]): s += 4 if w in h else 0
     for w in words(p.get("subsection","")): s += 1.5 if w in h else 0
     sec=p.get("section","").lower()
-    if "hijab" in sec and re.search(r"hijab|abaya|khimar|jilbab",h): s+=4
-    if "prayer" in sec and re.search(r"quran|prayer|salah|muslim|mosque|tasbih|mat",h): s+=4
-    if "skincare" in sec and re.search(r"skin|cream|serum|face|cosmetic",h): s+=3
-    if "haircare" in sec and re.search(r"hair|shampoo|comb|brush|bonnet",h): s+=3
-    if "fitness" in sec and re.search(r"fitness|gym|exercise|running|yoga",h): s+=3
-    if "travel" in sec and re.search(r"travel|suitcase|backpack|passport|luggage",h): s+=3
+    if any(x in sec for x in ["hijab","clothing","footwear"]) and re.search(r"hijab|abaya|khimar|jilbab|modest|shalwar|kameez",h): s+=5
+    if "prayer" in sec and re.search(r"quran|prayer|salah|muslim|mosque|tasbih|mat|sajdah|sajadah",h): s+=5
+    if "skincare" in sec and re.search(r"skin|cream|serum|face|cosmetic|cleanser|lotion",h): s+=4
+    if "haircare" in sec and re.search(r"hair|shampoo|conditioner|comb|brush|bonnet|serum|oil",h): s+=4
+    if "fitness" in sec and re.search(r"fitness|gym|exercise|running|yoga|sport|workout|hijab",h): s+=4
+    if "travel" in sec and re.search(r"travel|suitcase|backpack|passport|luggage|organizer|pouch",h): s+=4
     if "bangladesh" in q.lower() and "bangladesh" in h:s+=5
     if "pakistan" in q.lower() and "pakistan" in h:s+=5
     if any(x in q.lower() for x in ["arab","saudi","gulf","dubai","qatar","kuwait"]) and re.search(r"arab|saudi|gulf|dubai|qatar|kuwait",h):s+=5
-    if BAD.search(h): s-=30
+    if BAD.search(h): s-=40
+    if re.search(r"screenshot|poster|diagram|chart|logo|watermark|collage|illustration|drawing|painting",h): s-=25
     if x.get("license_url"):s+=2
     if x.get("width",0) and x.get("height",0) and min(x["width"],x["height"])>=700:s+=2
     return s
@@ -104,13 +105,13 @@ def search_product(p):
             k=c.get("id") or c.get("url") or c.get("foreign_landing_url")
             if not k or k in seen:continue
             c["_q"]=q;seen.add(k);allc.append(c)
-        if len(allc)>=90:break
-    if len(allc)<15:
-        for q in queries(p)[:3]:
-            for c in commons(q):
-                k=c.get("url") or c.get("foreign_landing_url")
-                if not k or k in seen:continue
-                c["_q"]=q;seen.add(k);allc.append(c)
+        if len(allc)>=120:break
+    for q in queries(p)[:6]:
+        for c in commons(q):
+            k=c.get("url") or c.get("foreign_landing_url")
+            if not k or k in seen:continue
+            c["_q"]=q;seen.add(k);allc.append(c)
+        if len(allc)>=180:break
     return sorted(allc,key=lambda x:score(x,p,x.get("_q","")),reverse=True)
 
 def download(url):
@@ -178,7 +179,7 @@ def main():
     CREDITS.write_text(json.dumps({
       "generatedAt":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),
       "providers":provider_counts,"images":credits,"missing":missing,
-      "policy":"Open-license/public-domain media only; per-file source and license metadata retained. Commercial Facebook/e-commerce photos are not copied without permission."
+      "policy":"Open-license/public-domain media only; each file keeps source, author and license metadata. Openverse is used as a broad multi-provider index; Wikimedia Commons is used directly as a second source. Commercial Facebook/e-commerce photos are not copied without permission."
     },ensure_ascii=False,indent=2),encoding="utf-8")
     if missing:
         raise SystemExit(f"Missing {len(missing)} products: {','.join(missing)}")
