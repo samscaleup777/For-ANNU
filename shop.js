@@ -3,7 +3,13 @@ const DATA_URL="/data/shop-catalog.json";
 const state={products:[],cart:JSON.parse(localStorage.getItem("annikaCart")||"[]"),section:"all",query:"",payment:"bkash"};
 const photoCache=new Map(),usedPhotoUrls=new Set();
 const BAD_PHOTO=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred)/i;
-const openverseQuery=(p)=>[p.query,p.name+" "+(p.subsection||""),p.query+" Bangladesh",p.query+" Pakistan",p.query+" Arab"].filter(Boolean);
+const openverseQuery=(p)=>{
+  const base=p.query||p.name, sec=(p.section||"")+" "+(p.subsection||"");
+  const regionTerms=/Hijab|Clothing|Footwear|Jewellery|Fragrance|Ramadan|Prayer/i.test(sec)
+    ? ["Bangladesh","Pakistan","Arab","Saudi Arabia","Dubai","Qatar","Kuwait","South Asia","Gulf"]
+    : ["Bangladesh","Pakistan","Arab"];
+  return [base,p.name+" "+(p.subsection||""),...regionTerms.map(x=>base+" "+x)].filter(Boolean);
+};
 
 const money=n=>"৳"+Number(n||0).toLocaleString("en-BD");
 const slug=s=>String(s).toLowerCase().replace(/&/g,"and").replace(/[/]/g," ").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
@@ -149,6 +155,11 @@ async function fetchBetterPhoto(p,img,credit){
       usedPhotoUrls.add(url);
       const rec={url,landing:pick.foreign_landing_url||pick.detail_url||url};
       photoCache.set(cacheKey,rec);
+      img.onerror=()=>{
+        img.onerror=null;
+        img.src="/assets/shop/catalog/"+p.slug+".jpg";
+        if(credit)credit.hidden=true;
+      };
       img.src=url;
       if(credit){credit.href=rec.landing;credit.hidden=false}
       img.dataset.photoLoaded="1";
