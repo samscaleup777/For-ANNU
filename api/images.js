@@ -9,11 +9,16 @@ function json(res,status,body){
 }
 function score(item,q){
   const text=[item.title,item.creator,item.description,item.provider,item.source,(item.tags||[]).map(t=>typeof t==='string'?t:t?.name||'').join(' ')].join(' ').toLowerCase();
-  const words=String(q).toLowerCase().split(/[^a-z0-9]+/).filter(w=>w.length>2);
+  const qText=String(q).toLowerCase().trim();
+  const words=qText.split(/[^a-z0-9]+/).filter(w=>w.length>2);
   let s=0;
+  if(text.includes(qText)) s+=10;
   for(const w of words) if(text.includes(w)) s+=1;
-  if(BAD.test(text)) s-=20;
-  if(item.license_url) s+=1;
+  if(/product|catalog|studio|real photo|photograph|photo/.test(text)) s+=2;
+  if(/illustration|drawing|painting|poster|logo|screenshot|diagram|collage/.test(text)) s-=10;
+  if(BAD.test(text)) s-=30;
+  if(item.license_url) s+=2;
+  if(/^cc0$/i.test(String(item.license||""))) s+=2;
   return s;
 }
 async function fetchJson(url,params){
@@ -25,7 +30,7 @@ async function fetchJson(url,params){
 }
 async function openverse(q){
   try{
-    const j=await fetchJson('https://api.openverse.org/v1/images/',{q,page_size:30,mature:'false',license_type:'commercial'});
+    const j=await fetchJson('https://api.openverse.org/v1/images/',{q,page_size:40,mature:'false',license_type:'commercial'});
     return j?.results||[];
   }catch(e){return []}
 }
@@ -53,14 +58,15 @@ module.exports=async(req,res)=>{
   if(!q)return json(res,400,{error:'q is required'});
   try{
     let results=await openverse(q);
-    if(results.length<8) results=results.concat(await commons(q));
+    results=results.concat(await commons(q));
     const seen=new Set();
     results=results.filter(x=>{
       const key=x.id||x.url||x.foreign_landing_url;
       if(!key||seen.has(key))return false;
       seen.add(key);
       const txt=[x.title,x.creator,x.description,x.provider,x.source].join(' ');
-      return (x.url||x.thumbnail)&&!BAD.test(txt)&&(x.license||x.license_url);
+      return (x.url||x.thumbnail)&&!BAD.test(txt)&&(x.license||x.license_url)&&
+        !/illustration|drawing|painting|poster|logo|screenshot|diagram|collage/i.test(txt);
     }).sort((a,b)=>score(b,q)-score(a,q)).slice(0,10);
     return json(res,200,{query:q,results:results.map(x=>({
       url:x.url||x.thumbnail,
