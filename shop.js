@@ -53,7 +53,7 @@ const priceFor=(p,i)=>{
 
 function productCard(p,i){
   const saved=savedPhotos[p.id];
-  const image=p.image||saved?.url||fallbackFor(p,i);
+  const image=saved?.url||("/assets/shop/catalog/"+p.slug+".jpg");
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
     '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — catalog product photo" loading="lazy" data-photo-query="'+(p.query||p.name).replace(/"/g,'&quot;')+'"><a class="photo-credit" target="_blank" rel="noopener" hidden>Photo source</a></div>'+
@@ -123,7 +123,7 @@ function add(id){
   const existing=state.cart.find(x=>x.id===id);
   if(existing)existing.qty+=1;else {
     const currentImg=document.querySelector('.product-card[data-id="'+CSS.escape(p.id)+'"] img');
-    state.cart.push({id:p.id,name:p.name,price,image:currentImg?.src||savedPhotos[p.id]?.url||fallbackFor(p,i),qty:1,section:p.section});
+    state.cart.push({id:p.id,name:p.name,price,image:currentImg?.src||savedPhotos[p.id]?.url||("/assets/shop/catalog/"+p.slug+".jpg"),qty:1,section:p.section});
   }
   saveCart();renderCart();updateBadges();
 }
