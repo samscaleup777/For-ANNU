@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+
+# Final catalog pass: source-specific, region-aware, no blur/AI/illustration assets.
 import io,json,re,sys,time,hashlib
 from concurrent.futures import ThreadPoolExecutor,as_completed
 from pathlib import Path
