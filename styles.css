@@ -57,3 +57,8 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
 @media(max-width:620px){.brand-logo-exact{width:32px;height:40px}.brand{gap:9px}}
  
 .credits-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}.credits-item{border:1px solid var(--line);background:rgba(255,255,255,.68);border-radius:18px;padding:15px 17px}.credits-item strong{display:block;font-family:'Playfair Display',serif;margin-bottom:6px}.credits-item div{font-size:12px;color:var(--muted);margin-top:3px}.credits-item a{display:inline-block;margin-top:9px;font-size:12px;font-weight:800;color:var(--forest);text-decoration:underline}@media(max-width:720px){.credits-list{grid-template-columns:1fr}}
+.hero-art.has-real-visual{isolation:isolate}
+.hero-art.has-real-visual>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.78;mix-blend-mode:screen}
+.hero-art.has-real-visual:after{z-index:1;background:linear-gradient(180deg,rgba(18,49,38,.05),rgba(18,49,38,.66))}
+.hero-art.has-real-visual .hero-card{z-index:2;background:rgba(18,49,38,.66)}
+.photo-credit{display:inline-block;margin:8px 0 0;font-size:10px;color:var(--muted);text-decoration:underline}
