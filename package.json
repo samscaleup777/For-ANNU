@@ -1,9 +1,0 @@
-{
-  "private": true,
-  "scripts": {
-    "build": "node scripts/build_catalog_images.mjs"
-  },
-  "engines": {
-    "node": "20.x"
-  }
-}
