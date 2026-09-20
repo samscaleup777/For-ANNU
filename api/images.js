@@ -24,11 +24,14 @@ async function fetchJson(url,params){
   return r.json();
 }
 async function openverse(q){
-  const j=await fetchJson('https://api.openverse.org/v1/images/',{q,page_size:30,mature:'false',license_type:'commercial'});
-  return j?.results||[];
+  try{
+    const j=await fetchJson('https://api.openverse.org/v1/images/',{q,page_size:30,mature:'false',license_type:'commercial'});
+    return j?.results||[];
+  }catch(e){return []}
 }
 async function commons(q){
-  const j=await fetchJson('https://commons.wikimedia.org/w/api.php',{
+  try{
+    const j=await fetchJson('https://commons.wikimedia.org/w/api.php',{
     action:'query',generator:'search',gsrsearch:q+' filetype:bitmap',gsrnamespace:'6',gsrlimit:'24',
     prop:'imageinfo|info',iiprop:'url|size|mime|extmetadata',iiurlwidth:'1400',format:'json',formatversion:'2'
   });
@@ -41,7 +44,9 @@ async function commons(q){
       provider:'Wikimedia Commons',source:'wikimedia',tags:[],
       foreign_landing_url:'https://commons.wikimedia.org/wiki/'+encodeURIComponent((p.title||'').replace(/ /g,'_'))
     };
-  }).filter(x=>/^(CC|Public domain|PD|CC0)/i.test(x.license||''));
+    }).filter(x=>/^(CC|Public domain|PD|CC0)/i.test(x.license||''));
+    return pages;
+  }catch(e){return []}
 }
 module.exports=async(req,res)=>{
   if(req.method!=='GET')return json(res,405,{error:'Method not allowed'});
