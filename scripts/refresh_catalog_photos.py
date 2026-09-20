@@ -3,6 +3,7 @@ from __future__ import annotations
 import io,json,os,re,sys,time
 from pathlib import Path
 from urllib.parse import quote
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import requests
 from PIL import Image
 import imagehash
@@ -99,25 +100,43 @@ def jpeg(im):
     im.thumbnail((1800,1800),Image.Resampling.LANCZOS); b=io.BytesIO()
     im.save(b,"JPEG",quality=88,optimize=True,progressive=True); return b.getvalue()
 
+def fetch_candidates(p):
+    out=[]; seen=set()
+    qs=queries(p)[:3]
+    for q in qs:
+        for raw in openverse(q):
+            key=raw.get("id") or raw.get("url") or raw.get("foreign_landing_url")
+            if key and key not in seen:
+                raw["_q"]=q; seen.add(key); out.append(raw)
+        if len(out)>=60: break
+    if len(out)<12:
+        for q in qs[:2]:
+            for raw in commons(q):
+                key=raw.get("url") or raw.get("foreign_landing_url")
+                if key and key not in seen:
+                    raw["_q"]=q; seen.add(key); out.append(raw)
+    return out
+
 def main():
     products=json.loads(CATALOG.read_text(encoding="utf-8"))["products"]
     OUT.mkdir(parents=True,exist_ok=True)
     for p in OUT.glob("*.jpg"): p.unlink()
     credits=[]; used_hash=[]; used_urls=set(); providers={}
+    all_candidates={}
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futs={pool.submit(fetch_candidates,p):p for p in products}
+        for n,f in enumerate(as_completed(futs),1):
+            p=futs[f]
+            try: all_candidates[p["id"]]=f.result()
+            except Exception: all_candidates[p["id"]]=[]
+            print(f"[search {n}/{len(products)}] {p['id']} {p['name']} candidates={len(all_candidates[p['id']])}",flush=True)
     for i,p in enumerate(products,1):
-        cand=[]; seen=set()
-        for q in queries(p):
-            for raw in openverse(q)+commons(q):
-                raw["_q"]=q
-                key=raw.get("id") or raw.get("url") or raw.get("foreign_landing_url")
-                if key and key not in seen: seen.add(key); cand.append(raw)
-            if len(cand)>=100: break
-        ranked=sorted(cand,key=lambda x:score(x,p),reverse=True)
+        ranked=sorted(all_candidates.get(p["id"],[]),key=lambda x:score(x,p),reverse=True)
         chosen=None
         for x in ranked[:150]:
             if BAD.search(blob(x)): continue
             u=x.get("url") or x.get("thumbnail")
-            if not u or u in used_urls or score(x,p)<4: continue
+            if not u or u in used_urls or score(x,p)<3: continue
             got=dl(u)
             if not got: continue
             data,im=got; ph=imagehash.phash(im)
@@ -130,7 +149,7 @@ def main():
         provider=x.get("provider") or x.get("source") or "Open source"; providers[provider]=providers.get(provider,0)+1
         credits.append({"id":p["id"],"name":p["name"],"slug":p["slug"],"query":x.get("_q"),"provider":provider,"source":x.get("source"),"license":x.get("license"),"license_version":x.get("license_version"),"license_url":x.get("license_url"),"creator":x.get("creator"),"creator_url":x.get("creator_url"),"landing_url":x.get("foreign_landing_url") or x.get("detail_url"),"original_url":x.get("url")})
         print(f"[{i}/{len(products)}] {p['id']} {p['name']} <- {provider} / {x.get('license')}",flush=True)
-        time.sleep(.12)
+        time.sleep(.04)
     CREDITS.write_text(json.dumps({"generatedAt":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),"purpose":"Annïka catalog image credits and provenance","policy":"Only openly licensed/public-domain results selected; license metadata is recorded. Commercial Facebook/e-commerce pages are not scraped.","providers":providers,"images":credits},ensure_ascii=False,indent=2),encoding="utf-8")
     missing=[p["id"] for p in products if not (OUT/(p["slug"]+".jpg")).exists()]
     print(f"Selected {len(credits)}/{len(products)} unique catalog photos; missing={len(missing)}",flush=True)
