@@ -1,4 +1,4 @@
-const BAD=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred)/i;
+const BAD=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic)/i;
 const UA='AnnikaImageSearch/1.0 (+https://annika-website-one.vercel.app/)';
 
 function json(res,status,body){
@@ -56,7 +56,7 @@ module.exports=async(req,res)=>{
       if(!key||seen.has(key))return false;
       seen.add(key);
       const txt=[x.title,x.creator,x.description,x.provider,x.source].join(' ');
-      return (x.url||x.thumbnail)&&!BAD.test(txt);
+      return (x.url||x.thumbnail)&&!BAD.test(txt)&&(x.license||x.license_url);
     }).sort((a,b)=>score(b,q)-score(a,q)).slice(0,10);
     return json(res,200,{query:q,results:results.map(x=>({
       url:x.url||x.thumbnail,
