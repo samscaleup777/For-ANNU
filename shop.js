@@ -30,7 +30,7 @@ function productCard(p,i){
   const image="/assets/shop/catalog/"+p.slug+".jpg";
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
-    '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — real local photo" loading="lazy"></div>'+
+    '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — catalog product photo" loading="lazy"></div>'+
     '<div class="product-body"><div class="product-category">'+p.section+'</div><h3 class="product-title">'+p.name+'</h3>'+
     '<p class="product-desc">'+p.subsection+' · real-photo product listing for the Annïka A–Z store.</p>'+
     '<div class="product-price"><strong>'+money(price)+'</strong><span class="product-sample">sample</span></div>'+
