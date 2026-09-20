@@ -3,13 +3,28 @@ const DATA_URL="/data/shop-catalog.json";
 const state={products:[],cart:JSON.parse(localStorage.getItem("annikaCart")||"[]"),section:"all",query:"",payment:"bkash"};
 const photoCache=new Map(),usedPhotoUrls=new Set();
 let photoObserver=null;
+const PHOTO_STORE_KEY="annikaRemotePhotoMapV2";
+const savedPhotos=(()=>{try{return JSON.parse(localStorage.getItem(PHOTO_STORE_KEY)||"{}")}catch(e){return {}}})();
+const REGIONAL_TERMS=["Bangladesh","Pakistan","Saudi Arabia","United Arab Emirates","Arab world","Middle East","South Asia","Malaysia","Indonesia","Turkey","Morocco","Egypt"];
+const COMMONS_FALLBACKS={"Hijab & Modest Wear":["Pink hijab libya.jpg","Islamic-fashion-hijab.jpg","Saudi in niqab.jpg","Women Wearing Islamic Clothing Hijab in Comilla, Bangladesh, 24 April 2014.jpg","Shalwar kameez.jpg","Girl in Dupatta.jpg"],"Everyday Clothing":["Girl in Dupatta.jpg","Shalwar kameez.jpg","Women Wearing Islamic Clothing Hijab in Comilla, Bangladesh, 24 April 2014.jpg"],"Salah / Prayer Essentials":["Open Quran on Blue Embroidered Prayer Rug with Tasbih.jpg","Quran with tasbih.jpg","Ramadan lantern with quran.jpg"],"Ramadan / Eid Essentials":["Ramadan lantern with quran.jpg","Ramadan lantern.jpg","Ramadan decorations.jpg","Ramadan table decoration.jpg","The Ramadan Crescent Shining in the Sky with a Lantern.jpg"],"Skincare":["Skin care cosmetics.jpg","Skin care products.jpg"],"Modest Everyday Makeup":["Makeup cosmetics.jpg","Skin care cosmetics.jpg"],"Haircare":["Skin care products.jpg","Skin care cosmetics.jpg"],"Fragrance":["Attar(1).jpg","Attar(5).jpg","Attar - Al Haramain Perfumes.jpg","Minyak atar (attar) yang dijual di dataran puncak Jabal Rahmah, Mekah.jpg"],"Jewellery & Accessories":["Necklace and earrings.jpg","Necklace and bracelet.jpg","Bracelet women.jpg","BLW Jewellery.jpg","Khasi Jewellery.jpg"],"Home & Personal Room":["Bedsheet s.jpg","Pillow and Towel.jpg"],"Clothing Care":["Seamstress 02.jpg","Needles (for sewing).jpg","Needle & Thread..jpg","Sewing threads.jpg","Box Full of Buttons For Sewing (42958527870).jpg"],"Fitness":["A hijabi girl in sport.png","Woman exercising with resistance band in a gym setting.jpg","Woman exercising on a yoga mat at home in morning light.jpg","Woman doing workouts in a home gym during the morning hours.jpg"],"Personal Electronics":["IMG of power bank.jpg"],"Work / Study":["Muslim lady at Station.jpg"],"Travel":["Muslim lady at Station.jpg"],"Footwear":["Girl in Dupatta.jpg"],"Innerwear & Undergarments":["Girl in Dupatta.jpg"],"Menstrual & Personal Hygiene":["Skin care products.jpg"],"Hands, Feet & Grooming":["Skin care products.jpg","Makeup cosmetics.jpg"],"Emergency & Safety":["Skin care products.jpg"]};
+function commonsFile(name){return "https://commons.wikimedia.org/wiki/Special:Redirect/file/"+encodeURIComponent(name)}
+function fallbackFor(p,index){
+  const pool=COMMONS_FALLBACKS[p.section]||COMMONS_FALLBACKS["Hijab & Modest Wear"];
+  return commonsFile(pool[(Number(p.id||index)||index)%pool.length]);
+}
+function persistPhoto(id,rec){try{savedPhotos[id]=rec;localStorage.setItem(PHOTO_STORE_KEY,JSON.stringify(savedPhotos))}catch(e){}}
 const BAD_PHOTO=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic)/i;
 const openverseQuery=(p)=>{
-  const base=p.query||p.name, sec=(p.section||"")+" "+(p.subsection||"");
-  const regionTerms=/Hijab|Clothing|Footwear|Jewellery|Fragrance|Ramadan|Prayer/i.test(sec)
-    ? ["Bangladesh","Pakistan","Arab","Saudi Arabia","Dubai","Qatar","Kuwait","South Asia","Gulf"]
-    : ["Bangladesh","Pakistan","Arab"];
-  return [base,p.name+" "+(p.subsection||""),...regionTerms.map(x=>base+" "+x)].filter(Boolean);
+  const base=(p.query||p.name||"").trim(), sec=((p.section||"")+" "+(p.subsection||"")).toLowerCase();
+  const regionTerms=/hijab|modest|abaya|jilbab|khimar|clothing|footwear|jewellery|fragrance|ramadan|prayer|travel|fitness/i.test(sec)
+    ? REGIONAL_TERMS
+    : ["Bangladesh","Pakistan","Arab world"];
+  const queries=[base+" product photo",base+" real photo",base+" "+(p.subsection||"")];
+  if(/hijab|abaya|jilbab|khimar|salwar|kurti|dress|clothing|sports hijab/i.test(sec)){
+    queries.push(base+" modest Muslim woman",base+" hijab abaya",base+" full length modest fashion");
+  }
+  for(const region of regionTerms.slice(0,6)) queries.push(base+" "+region);
+  return [...new Set(queries.filter(Boolean))].slice(0,10);
 };
 
 const money=n=>"৳"+Number(n||0).toLocaleString("en-BD");
@@ -37,13 +52,14 @@ const priceFor=(p,i)=>{
 };
 
 function productCard(p,i){
-  const image=p.image||("/assets/shop/catalog/"+p.slug+".jpg");
+  const saved=savedPhotos[p.id];
+  const image=p.image||saved?.url||fallbackFor(p,i);
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
     '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — catalog product photo" loading="lazy" data-photo-query="'+(p.query||p.name).replace(/"/g,'&quot;')+'"><a class="photo-credit" target="_blank" rel="noopener" hidden>Photo source</a></div>'+
     '<div class="product-body"><div class="product-category">'+p.section+'</div><h3 class="product-title">'+p.name+'</h3>'+
     '<p class="product-desc">'+p.subsection+' · real-photo product listing for the Annïka A–Z store.</p>'+
-    '<div class="product-price"><strong>'+money(price)+'</strong><span class="product-sample">sample</span></div>'+
+    '<div class="product-price"><strong>'+money(price)+'</strong><span class="product-sample">indicative</span></div>'+
     '<div class="product-actions"><button class="add" type="button" data-add="'+p.id+'">Add to cart</button><button type="button" data-buy="'+p.id+'">Buy now</button></div></div></article>';
 }
 
@@ -105,7 +121,10 @@ function add(id){
   const p=state.products.find(x=>x.id===id);if(!p)return;
   const i=state.products.indexOf(p),price=priceFor(p,i);
   const existing=state.cart.find(x=>x.id===id);
-  if(existing)existing.qty+=1;else state.cart.push({id:p.id,name:p.name,price,image:"/assets/shop/catalog/"+p.slug+".jpg",qty:1,section:p.section});
+  if(existing)existing.qty+=1;else {
+    const currentImg=document.querySelector('.product-card[data-id="'+CSS.escape(p.id)+'"] img');
+    state.cart.push({id:p.id,name:p.name,price,image:currentImg?.src||savedPhotos[p.id]?.url||fallbackFor(p,i),qty:1,section:p.section});
+  }
   saveCart();renderCart();updateBadges();
 }
 function saveCart(){localStorage.setItem("annikaCart",JSON.stringify(state.cart))}
@@ -133,6 +152,16 @@ async function fetchBetterPhoto(p,img,credit){
   if(!p||!img||img.dataset.photoLoaded==="1"||img.dataset.photoLoading==="1")return;
   img.dataset.photoLoading="1";
   const cacheKey=p.id;
+  if(savedPhotos[cacheKey]){
+    const c=savedPhotos[cacheKey];
+    photoCache.set(cacheKey,c);
+    usedPhotoUrls.add(c.url);
+    img.src=c.url;
+    if(credit){credit.href=c.landing||c.url;credit.textContent="Photo source";credit.hidden=false}
+    img.dataset.photoLoaded="1";
+    delete img.dataset.photoLoading;
+    return;
+  }
   if(photoCache.has(cacheKey)){
     const c=photoCache.get(cacheKey);
     img.src=c.url;
@@ -157,8 +186,16 @@ async function fetchBetterPhoto(p,img,credit){
       if(!pick)continue;
       const url=pick.url||pick.thumbnail;
       usedPhotoUrls.add(url);
-      const rec={url,landing:pick.foreign_landing_url||pick.detail_url||url};
+      const rec={
+        url,
+        landing:pick.foreign_landing_url||pick.detail_url||url,
+        creator:pick.creator||"",
+        provider:pick.provider||pick.source||"Open source",
+        license:pick.license||"",
+        license_url:pick.license_url||""
+      };
       photoCache.set(cacheKey,rec);
+      persistPhoto(cacheKey,rec);
       img.onerror=()=>{
         img.onerror=null;
         img.src="/assets/shop/catalog/"+p.slug+".jpg";
@@ -194,6 +231,20 @@ function enableRemotePhotoRefinement(){
   },{rootMargin:"500px"});
   photoObserver=io;
   imgs.forEach(img=>io.observe(img));
+  if(!window.__annikaPhotoWarmup){
+    window.__annikaPhotoWarmup=true;
+    const queue=imgs.filter(img=>!savedPhotos[img.closest(".product-card")?.dataset.id]);
+    let cursor=0;
+    const worker=async()=>{
+      while(cursor<queue.length){
+        const img=queue[cursor++];
+        const card=img.closest(".product-card"),p=state.products.find(x=>x.id===card?.dataset.id);
+        if(p) await fetchBetterPhoto(p,img,img.parentElement.querySelector(".photo-credit"));
+        await new Promise(r=>setTimeout(r,180));
+      }
+    };
+    Promise.all([worker(),worker(),worker()]).catch(()=>{});
+  }
 }
 
 async function init(){
