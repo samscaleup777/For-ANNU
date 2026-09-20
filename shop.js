@@ -139,7 +139,7 @@ async function fetchBetterPhoto(p,img,credit){
   }
   for(const q of openverseQuery(p)){
     try{
-      const r=await fetch("https://api.openverse.org/v1/images/?q="+encodeURIComponent(q)+"&page_size=12&mature=false&license_type=commercial",{headers:{Accept:"application/json"}});
+      const r=await fetch("/api/images?q="+encodeURIComponent(q),{});
       if(!r.ok)continue;
       const data=await r.json();
       const candidates=(data.results||[]).filter(x=>{
