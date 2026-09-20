@@ -2,7 +2,7 @@
 const DATA_URL="/data/shop-catalog.json";
 const state={products:[],cart:JSON.parse(localStorage.getItem("annikaCart")||"[]"),section:"all",query:"",payment:"bkash"};
 const photoCache=new Map(),usedPhotoUrls=new Set();
-const BAD_PHOTO=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred)/i;
+const BAD_PHOTO=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic)/i;
 const openverseQuery=(p)=>{
   const base=p.query||p.name, sec=(p.section||"")+" "+(p.subsection||"");
   const regionTerms=/Hijab|Clothing|Footwear|Jewellery|Fragrance|Ramadan|Prayer/i.test(sec)
@@ -161,7 +161,7 @@ async function fetchBetterPhoto(p,img,credit){
         if(credit)credit.hidden=true;
       };
       img.src=url;
-      if(credit){credit.href=rec.landing;credit.hidden=false}
+      if(credit){credit.href=rec.landing;credit.textContent='Photo source'+(pick.provider?' · '+pick.provider:'')+(pick.license?' · '+pick.license:'');credit.hidden=false}
       img.dataset.photoLoaded="1";
       return;
     }catch(e){}
