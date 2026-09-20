@@ -121,6 +121,62 @@ enableRemotePhotoRefinement();
   const grid=document.getElementById("shop-products");if(grid&&state.section!=="all")grid.scrollIntoView({behavior:"smooth",block:"start"});
 };
 
+async function fetchBetterPhoto(p,img,credit){
+  if(!p||!img||img.dataset.photoLoaded==="1")return;
+  const cacheKey=p.id;
+  if(photoCache.has(cacheKey)){
+    const c=photoCache.get(cacheKey);
+    img.src=c.url;
+    if(credit){credit.href=c.landing||c.url;credit.hidden=false}
+    img.dataset.photoLoaded="1";
+    return;
+  }
+  for(const q of openverseQuery(p)){
+    try{
+      const r=await fetch("https://api.openverse.org/v1/images/?q="+encodeURIComponent(q)+"&page_size=12&mature=false&license_type=commercial",{headers:{Accept:"application/json"}});
+      if(!r.ok)continue;
+      const data=await r.json();
+      const candidates=(data.results||[]).filter(x=>{
+        const txt=[x.title,x.creator,x.description,x.provider,x.source,(x.tags||[]).map(t=>typeof t==="string"?t:t?.name||"").join(" ")].join(" ");
+        return (x.url||x.thumbnail)&&!BAD_PHOTO.test(txt)&&!usedPhotoUrls.has(x.url||x.thumbnail);
+      });
+      const words=(p.name+" "+p.subsection).toLowerCase().split(/[^a-z0-9]+/).filter(w=>w.length>2);
+      const score=x=>words.reduce((n,w)=>n+((String(x.title||"")+" "+String(x.tags||"")).toLowerCase().includes(w)?1:0),0);
+      candidates.sort((a,b)=>score(b)-score(a));
+      const pick=candidates[0];
+      if(!pick)continue;
+      const url=pick.url||pick.thumbnail;
+      usedPhotoUrls.add(url);
+      const rec={url,landing:pick.foreign_landing_url||pick.detail_url||url};
+      photoCache.set(cacheKey,rec);
+      img.src=url;
+      if(credit){credit.href=rec.landing;credit.hidden=false}
+      img.dataset.photoLoaded="1";
+      return;
+    }catch(e){}
+  }
+}
+function enableRemotePhotoRefinement(){
+  const imgs=[...document.querySelectorAll(".product-card img[data-photo-query]")];
+  if(!("IntersectionObserver" in window)){
+    imgs.slice(0,24).forEach(img=>{
+      const card=img.closest(".product-card"),p=state.products.find(x=>x.id===card?.dataset.id),c=img.parentElement.querySelector(".photo-credit");
+      fetchBetterPhoto(p,img,c);
+    });
+    return;
+  }
+  const io=new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
+      if(!entry.isIntersecting)return;
+      const img=entry.target,card=img.closest(".product-card");
+      const p=state.products.find(x=>x.id===card?.dataset.id),c=img.parentElement.querySelector(".photo-credit");
+      fetchBetterPhoto(p,img,c);
+      io.unobserve(img);
+    });
+  },{rootMargin:"500px"});
+  imgs.forEach(img=>io.observe(img));
+}
+
 async function init(){
   try{
     const res=await fetch(DATA_URL,{cache:"no-store"});if(!res.ok)throw new Error("Catalog data failed");
@@ -160,43 +216,3 @@ function updatePaymentInstructions(method){
 
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",init,{once:true});else init();
 })();
-async function fetchBetterPhoto(p,img,credit){
-  if(!p||!img||img.dataset.photoLoaded==="1")return;
-  const cacheKey=p.id;
-  if(photoCache.has(cacheKey)){const c=photoCache.get(cacheKey);img.src=c.url;credit.href=c.landing||c.url;credit.hidden=false;img.dataset.photoLoaded="1";return}
-  for(const q of openverseQuery(p)){
-    try{
-      const u="/v1/images/?q="+encodeURIComponent(q)+"&page_size=12&mature=false&license_type=commercial";
-      const r=await fetch("https://api.openverse.org"+u,{headers:{Accept:"application/json"}});
-      if(!r.ok)continue;
-      const data=await r.json();
-      const candidates=(data.results||[]).filter(x=>{
-        const txt=[x.title,x.creator,x.description,x.provider,x.source,(x.tags||[]).map(t=>typeof t==="string"?t:t?.name||"").join(" ")].join(" ");
-        return (x.url||x.thumbnail)&&!BAD_PHOTO.test(txt)&&!usedPhotoUrls.has(x.url||x.thumbnail);
-      });
-      const words=(p.name+" "+p.subsection).toLowerCase().split(/[^a-z0-9]+/).filter(w=>w.length>2);
-      candidates.sort((a,b)=>{
-        const sc=x=>words.reduce((n,w)=>n+((String(x.title||"")+" "+String(x.tags||"")).toLowerCase().includes(w)?1:0),0);
-        return sc(b)-sc(a);
-      });
-      const pick=candidates[0]; if(!pick)continue;
-      const url=pick.url||pick.thumbnail;
-      usedPhotoUrls.add(url);
-      const rec={url,landing:pick.foreign_landing_url||pick.detail_url||url};
-      photoCache.set(cacheKey,rec); img.src=url; img.dataset.photoLoaded="1";
-      credit.href=rec.landing; credit.hidden=false; return;
-    }catch(e){}
-  }
-}
-function enableRemotePhotoRefinement(){
-  const imgs=[...document.querySelectorAll(".product-card img[data-photo-query]")];
-  if(!("IntersectionObserver" in window)){imgs.slice(0,24).forEach(img=>{const p=state.products.find(x=>x.id===img.closest(".product-card")?.dataset.id);const c=img.parentElement.querySelector(".photo-credit");fetchBetterPhoto(p,img,c)}) ;return}
-  const io=new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-      if(!entry.isIntersecting)return;
-      const img=entry.target, card=img.closest(".product-card"), p=state.products.find(x=>x.id===card?.dataset.id), c=img.parentElement.querySelector(".photo-credit");
-      fetchBetterPhoto(p,img,c); io.unobserve(img);
-    });
-  },{rootMargin:"500px"});
-  imgs.forEach(img=>io.observe(img));
-}
