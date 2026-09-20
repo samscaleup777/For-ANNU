@@ -27,7 +27,7 @@ const priceFor=(p,i)=>{
 };
 
 function productCard(p,i){
-  const image="/assets/shop/catalog/"+p.slug+".jpg";
+  const image=p.image||("/assets/shop/catalog/"+p.slug+".jpg");
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
     '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — catalog product photo" loading="lazy"></div>'+
