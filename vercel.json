@@ -53,6 +53,5 @@
         }
       ]
     }
-  ],
-  "buildCommand": "node scripts/build_catalog_images.cjs"
+  ]
 }
