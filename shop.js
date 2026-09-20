@@ -2,6 +2,7 @@
 const DATA_URL="/data/shop-catalog.json";
 const state={products:[],cart:JSON.parse(localStorage.getItem("annikaCart")||"[]"),section:"all",query:"",payment:"bkash"};
 const photoCache=new Map(),usedPhotoUrls=new Set();
+let photoObserver=null;
 const BAD_PHOTO=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic)/i;
 const openverseQuery=(p)=>{
   const base=p.query||p.name, sec=(p.section||"")+" "+(p.subsection||"");
@@ -93,6 +94,7 @@ function render(){
   document.querySelectorAll(".shop-cat").forEach(b=>b.classList.toggle("active",(b.dataset.jump||"all")===state.section));
   bindProductButtons();
   updateBadges();
+  enableRemotePhotoRefinement();
 }
 
 function bindProductButtons(){
@@ -128,13 +130,15 @@ enableRemotePhotoRefinement();
 };
 
 async function fetchBetterPhoto(p,img,credit){
-  if(!p||!img||img.dataset.photoLoaded==="1")return;
+  if(!p||!img||img.dataset.photoLoaded==="1"||img.dataset.photoLoading==="1")return;
+  img.dataset.photoLoading="1";
   const cacheKey=p.id;
   if(photoCache.has(cacheKey)){
     const c=photoCache.get(cacheKey);
     img.src=c.url;
     if(credit){credit.href=c.landing||c.url;credit.hidden=false}
     img.dataset.photoLoaded="1";
+    delete img.dataset.photoLoading;
     return;
   }
   for(const q of openverseQuery(p)){
@@ -163,11 +167,14 @@ async function fetchBetterPhoto(p,img,credit){
       img.src=url;
       if(credit){credit.href=rec.landing;credit.textContent='Photo source'+(pick.provider?' · '+pick.provider:'')+(pick.license?' · '+pick.license:'');credit.hidden=false}
       img.dataset.photoLoaded="1";
+      delete img.dataset.photoLoading;
       return;
     }catch(e){}
   }
 }
 function enableRemotePhotoRefinement(){
+  if(photoObserver)photoObserver.disconnect();
+  photoObserver=null;
   const imgs=[...document.querySelectorAll(".product-card img[data-photo-query]")];
   if(!("IntersectionObserver" in window)){
     imgs.slice(0,24).forEach(img=>{
@@ -185,6 +192,7 @@ function enableRemotePhotoRefinement(){
       io.unobserve(img);
     });
   },{rootMargin:"500px"});
+  photoObserver=io;
   imgs.forEach(img=>io.observe(img));
 }
 
