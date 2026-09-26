@@ -55,7 +55,7 @@
     }
   ],
   "git": {
-    "deploymentEnabled": false
+    "deploymentEnabled": true
   },
   "$schema": "https://openapi.vercel.sh/vercel.json"
 }
