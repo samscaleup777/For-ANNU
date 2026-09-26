@@ -161,7 +161,10 @@ module.exports = async (req, res) => {
       return json(res, 200, { answer: fallbackAnswer(message), mode: 'fallback', sources: [] });
     }
 
-    const history = cleanHistory(body.history);
+    let history = cleanHistory(body.history);
+    if (history.length && history[history.length - 1].role === 'user' && history[history.length - 1].content === message) {
+      history = history.slice(0, -1);
+    }
     const page = typeof body.page === 'string' ? body.page.slice(0, 120) : '/';
     const model = process.env.OPENAI_MODEL || 'gpt-5.6-sol';
     const input = [
