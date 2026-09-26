@@ -158,7 +158,11 @@ module.exports = async (req, res) => {
     if (!message) return json(res, 400, { error: 'Message is required.' });
 
     if (!process.env.OPENAI_API_KEY) {
-      return json(res, 200, { answer: fallbackAnswer(message), mode: 'fallback', sources: [] });
+      console.error('Annïka Companion is not configured: OPENAI_API_KEY is missing in the Vercel environment.');
+      return json(res, 503, {
+        error: 'Annïka Companion AI is not configured on this deployment.',
+        code: 'OPENAI_API_KEY_MISSING'
+      });
     }
 
     let history = cleanHistory(body.history);
@@ -166,7 +170,7 @@ module.exports = async (req, res) => {
       history = history.slice(0, -1);
     }
     const page = typeof body.page === 'string' ? body.page.slice(0, 120) : '/';
-    const model = process.env.OPENAI_MODEL || 'gpt-5.6-sol';
+    const model = process.env.OPENAI_MODEL || 'gpt-5.6-luna';
     const input = [
       { role: 'developer', content: buildContext(message, page) },
       ...history,
