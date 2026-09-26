@@ -158,11 +158,26 @@ module.exports = async (req, res) => {
     if (!message) return json(res, 400, { error: 'Message is required.' });
 
     if (!process.env.OPENAI_API_KEY) {
-      console.error('Annïka Companion is not configured: OPENAI_API_KEY is missing in the Vercel environment.');
-      return json(res, 503, {
-        error: 'Annïka Companion AI is not configured on this deployment.',
-        code: 'OPENAI_API_KEY_MISSING'
-      });
+      // Keep the companion usable even before an OpenAI key is connected.
+      // This local mode answers site-navigation/catalog questions without exposing secrets.
+      const q = message.toLowerCase();
+      let answer = fallbackAnswer(message);
+      const sources = [];
+      if (/shop|fashion|hijab|abaya|dress|catalog|product|buy|cart/i.test(q)) {
+        answer = 'You can explore the Annïka Shop for hijabs, abayas, modest clothing, prayer essentials, skincare, haircare, accessories, footwear, travel, fitness, safety items, electronics and Ramadan/Eid essentials. The shop is here: /fashion.html';
+        sources.push({url:'https://annika-website-one.vercel.app/fashion.html',title:'Annïka Shop'});
+      } else if (/quran|hadith|dua|salah|prayer|islam/i.test(q)) {
+        answer = 'Annïka has a dedicated Quran & Hadith area for faith-focused educational resources and reminders. Open: /quran-hadith.html';
+        sources.push({url:'https://annika-website-one.vercel.app/quran-hadith.html',title:'Quran & Hadith'});
+      } else if (/safety|emergency|privacy|security/i.test(q)) {
+        answer = 'Annïka includes practical safety guidance and privacy information. Start with /safety.html or /privacy.html.';
+        sources.push({url:'https://annika-website-one.vercel.app/safety.html',title:'Safety'});
+        sources.push({url:'https://annika-website-one.vercel.app/privacy.html',title:'Privacy'});
+      } else if (/lifestyle|routine|ramadan|family|wellbeing/i.test(q)) {
+        answer = 'Annïka Lifestyle covers practical faith-in-life topics, routines, wellbeing, family, learning and Ramadan-related resources. Open: /lifestyle.html';
+        sources.push({url:'https://annika-website-one.vercel.app/lifestyle.html',title:'Lifestyle'});
+      }
+      return json(res, 200, {answer, mode:'local-fallback', model:'local-site-assistant', sources});
     }
 
     let history = cleanHistory(body.history);
