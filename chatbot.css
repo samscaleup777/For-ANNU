@@ -13,3 +13,9 @@
   .annika-chat-launcher{width:62px;height:62px}
   .annika-chat-shell{position:absolute;left:0;right:auto;top:auto;bottom:86px;width:min(390px,calc(100vw - 28px));height:min(72vh,690px)}
 }
+
+.annika-chat-sources{display:flex;flex-direction:column;gap:5px;margin:7px 0 0 6px;max-width:84%}
+.annika-chat-sources-label{font-size:9px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:var(--annika-chat-muted)}
+.annika-chat-source{display:block;width:fit-content;max-width:100%;padding:5px 8px;border:1px solid var(--annika-chat-line);border-radius:9px;background:rgba(255,255,255,.72);color:var(--annika-chat-forest);font-size:9px;line-height:1.25;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.annika-chat-source:hover{border-color:rgba(201,130,79,.55);background:#fff}
+@media(max-width:620px){.annika-chat-sources{max-width:90%}}
