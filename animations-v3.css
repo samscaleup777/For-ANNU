@@ -36,7 +36,7 @@ body.ani-on .links a:hover:after{right:0}
 /* Exact user-provided emblem: hide the screenshot background and show the extracted exact shape in a visible gold tone. */
 .brand-logo-crop{position:relative;overflow:visible!important;background:transparent!important;border:0!important;box-shadow:none!important}
 .brand-logo-crop img{opacity:0!important;width:100%!important;height:100%!important;pointer-events:none}
-.brand-logo-crop:after{content:'';position:absolute;inset:1px;background:url('/assets/annika-mark-exact-visible.png') center/contain no-repeat;animation:aDrift 5.2s ease-in-out infinite,aGlow 5s ease-in-out infinite;filter:drop-shadow(0 3px 7px rgba(201,130,79,.30))}
+.brand-logo-crop:after{content:'';position:absolute;inset:1px;background:url('./assets/annika-mark-exact-visible.png') center/contain no-repeat;animation:aDrift 5.2s ease-in-out infinite,aGlow 5s ease-in-out infinite;filter:drop-shadow(0 3px 7px rgba(201,130,79,.30))}
 .brand:hover .brand-logo-crop:after{transform:translateY(-2px) rotate(-2deg) scale(1.08);filter:drop-shadow(0 7px 12px rgba(201,130,79,.42))}
 
 /* Context visuals */
