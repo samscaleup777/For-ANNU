@@ -29,19 +29,6 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Faroese_Shawl.jpg",
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Faroese_Shawl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "42",
-      "name": "Palazzo",
-      "slug": "42-palazzo",
-      "query": "Palazzo product photo",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Brdlgu&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Brdlgu (page does not exist)\">Brdlgu</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Parma%2C_piazza_garibaldi%2C_palazzo_del_Comune_visto_dal_palazzo_del_Governatore.jpg",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Parma%2C_piazza_garibaldi%2C_palazzo_del_Comune_visto_dal_palazzo_del_Governatore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     }
   ],
   "missing": [
@@ -2126,7 +2113,13 @@
       "name": "Gift Packaging Items",
       "section": "Ramadan / Eid Essentials",
       "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "42",
+      "name": "Palazzo",
+      "section": "Hijab & Modest Wear",
+      "reason": "Rejected ambiguous non-product result; needs a verified trouser/product image."
     }
   ],
-  "policy": "Commercial-use open-license/public-domain results only. Every changed photo must contain the product's meaningful name terms in searchable metadata; sensitive/non-apparel listings reject person/model metadata. Existing photos remain unchanged when no high-confidence match exists."
+  "policy": "Commercial-use open-license/public-domain results only. Every changed photo must contain the product's meaningful name terms in searchable metadata; sensitive/non-apparel listings reject person/model metadata. Existing photos remain unchanged when no high-confidence match exists. Palazzo building photo rejected because it was not a clothing product."
 }
