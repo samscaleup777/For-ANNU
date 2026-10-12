@@ -25,6 +25,8 @@ TIMEOUT=20
 BAD=re.compile(r"(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic|screenshot|poster|diagram|chart|logo|collage|drawing|painting)",re.I)
 PERSON=re.compile(r"\b(woman|women|man|men|girl|boy|child|children|person|people|model|portrait|face|human|patient|nurse|doctor|wearing|posing|standing|sitting|holding|selfie|personnel)\b",re.I)
 STOP={"a","an","and","the","for","of","to","with","from","real","photo","photos","product","image","images","set","item","items","essentials","women","woman","womens","men","mens","muslim","modest","fashion","catalog","daily","everyday","comfortable","premium","classic","simple","new"}
+QUERY_STOP={"real","photo","product","image","images","item","items","catalog","high","quality","commercial","license","licensed","bangladesh","bangladeshi","pakistan","pakistani","saudi","arabia","uae","gulf","south","asia","global","middle","east","arab","world","muslim","modest","fashion","women","woman","mens","womens","man","men","full","length","studio","isolated","white","background","open","new","classic","premium","simple"}
+AMBIGUOUS_REQUIREMENTS={"palazzo":{"pants","trouser","trousers"},"watch":{"wrist","wristwatch"},"flats":{"shoe","shoes","footwear"},"flat":{"shoe","shoes","footwear"},"sari":{"saree","sari"},"sweater":{"clothing","garment","wear","fashion"}}
 ALIASES={
  "hot-water bag":["hot water bottle","hot-water bag","heating bag"],
  "hot water bag":["hot water bottle","hot-water bag","heating bag"],
@@ -94,12 +96,25 @@ def exact_name_match(item,p):
     # A documented synonym phrase may replace name tokens, but unrelated keywords
     # never count as a match.
     name=(p.get("name","")+" "+p.get("query","")).lower()
+    alias_match=False
     for alias_key,phrases in ALIASES.items():
         if alias_key in name:
             if not any(phrase in text for phrase in phrases):return False
             remaining=[t for t in tokens if t not in normalized_tokens(alias_key)]
-            return all(t in text for t in remaining)
-    return all(t in text for t in tokens)
+            if not all(t in text for t in remaining):return False
+            alias_match=True
+            break
+    if not alias_match and not all(t in text for t in tokens):return False
+
+    # Single-word product names can be ambiguous in ordinary text (e.g. "Palazzo"
+    # may mean a building). Require its item-type context from the catalog query.
+    if len(tokens)==1:
+        key=tokens[0]
+        allowed=AMBIGUOUS_REQUIREMENTS.get(key)
+        if allowed and not any(term in text for term in allowed):return False
+        query_tokens=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP and t not in tokens]
+        if query_tokens and not any(term in text for term in query_tokens):return False
+    return True
 
 def score(item,p):
     text=metadata(item).lower()
@@ -118,13 +133,18 @@ def score(item,p):
     return s
 
 def get_json(url,params):
-    try:
-        r=SESSION.get(url,params=params,timeout=TIMEOUT)
-        if r.status_code==429:return {}
-        if not r.ok:return {}
-        return r.json()
-    except Exception:
-        return {}
+    for attempt in range(3):
+        try:
+            r=SESSION.get(url,params=params,timeout=TIMEOUT)
+            if r.status_code==429:
+                time.sleep(2*(attempt+1))
+                continue
+            if not r.ok:
+                return {}
+            return r.json()
+        except Exception:
+            if attempt<2:time.sleep(1)
+    return {}
 
 def openverse(q):
     return get_json("https://api.openverse.org/v1/images/",{"q":q,"page_size":30,"mature":"false","license_type":"commercial"}).get("results",[])
@@ -147,9 +167,13 @@ def commons(q):
     return out
 
 def queries(p):
-    base=(p.get("query") or p.get("name","")).strip()
     name=p.get("name","").strip()
-    return list(dict.fromkeys(q for q in (base,name+" product photo",name+" "+p.get("subsection","")) if q.strip()))[:3]
+    query_terms=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP]
+    cleaned=" ".join(query_terms)
+    # Do not append generic words like "real photo" to the main search; they hide
+    # actual product results. Search product name first, then its useful item terms.
+    options=(name,cleaned,name+" "+p.get("subsection",""))
+    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:3]
 
 def search_product(p):
     items=[];seen=set()
