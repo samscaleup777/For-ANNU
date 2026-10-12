@@ -23,7 +23,7 @@ CREDITS=ROOT/"data/image-credits.json"
 UA="AnnikaCatalogRefresh/3.0 (+https://annika-website-one.vercel.app/)"
 TIMEOUT=20
 BAD=re.compile(r"(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic|screenshot|poster|diagram|chart|logo|collage|drawing|painting)",re.I)
-PERSON=re.compile(r"\\b(woman|women|man|men|girl|boy|child|children|person|people|model|portrait|face|human|patient|nurse|doctor|wearing|posing|standing|sitting|holding|selfie|personnel)\\b",re.I)
+PERSON=re.compile(r"\b(woman|women|man|men|girl|boy|child|children|person|people|model|portrait|face|human|patient|nurse|doctor|wearing|posing|standing|sitting|holding|selfie|personnel)\b",re.I)
 STOP={"a","an","and","the","for","of","to","with","from","real","photo","photos","product","image","images","set","item","items","essentials","women","woman","womens","men","mens","muslim","modest","fashion","catalog","daily","everyday","comfortable","premium","classic","simple","new"}
 ALIASES={
  "hot-water bag":["hot water bottle","hot-water bag","heating bag"],
@@ -53,7 +53,7 @@ ALIASES={
  "wireless earbuds":["wireless earbuds","bluetooth earbuds","ear buds"],
 }
 OBJ_ONLY_SECTION={"Innerwear & Undergarments","Menstrual & Personal Hygiene","Skincare","Modest Everyday Makeup","Haircare","Hands, Feet & Grooming","Fragrance","Jewellery & Accessories","Footwear","Home & Personal Room","Work / Study","Travel","Emergency & Safety","Clothing Care","Personal Electronics"}
-WEARABLE_WORDS=re.compile(r"(\\b(hijab|khimar|jilbab|abaya|burqa|burka|borkha|niqab|salwar|shalwar|kameez|qameez|kurti|dress|gown|tunic|shirt|top|skirt|trouser|palazzo|pants|jogger|leggings|outerwear|garment|clothing|sleeve|kaftan|thobe|jubba|shawl|scarf|dupatta|sweater|cardigan|coat|jacket|nightwear|pajama|pajamas|robe|blouse|maxi|saree|sari|eid outfit)\\b)",re.I)
+WEARABLE_WORDS=re.compile(r"(\b(hijab|khimar|jilbab|abaya|burqa|burka|borkha|niqab|salwar|shalwar|kameez|qameez|kurti|dress|gown|tunic|shirt|top|skirt|trouser|palazzo|pants|jogger|leggings|outerwear|garment|clothing|sleeve|kaftan|thobe|jubba|shawl|scarf|dupatta|sweater|cardigan|coat|jacket|nightwear|pajama|pajamas|robe|blouse|maxi|saree|sari|eid outfit)\b)",re.I)
 ACCESSORY_WORDS=re.compile(r"(pin|magnet|clip|undercap|inner cap|bonnet|organizer|storage|hanger|ring|brush|bag|holder|accessor|case|pouch|belt|socks|glove|brooch|scarf ring)",re.I)
 SESSION=requests.Session()
 SESSION.headers.update({"User-Agent":UA,"Accept":"application/json"})
