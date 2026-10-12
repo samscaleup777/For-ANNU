@@ -67,13 +67,21 @@ function objectOnlyProduct(p){
   // skincare, makeup, medical, electronics and all other catalog products are object-only.
   return !(garments && garmentSection && !accessory);
 }
+const AMBIGUOUS_PRODUCT_CONTEXT={
+  palazzo:["pants","trouser","trousers"],
+  watch:["wristwatch","wrist watch"],
+  flats:["shoes","footwear","flat shoes"],
+  flat:["shoes","footwear","flat shoes"],
+  brush:["hair brush","hairbrush","brush hair"],
+  sari:["sari","saree"]
+};
 function photoRelevance(item,p){
   const text=imageText(item);
   const terms=productTerms(p);
   const key=(String(p?.name||"")).toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
   let score=0,matched=0;
   for(const term of terms){
-    if(text.includes(term)){matched++;score+=/title/i.test(String(item.title||""))&&String(item.title||"").toLowerCase().includes(term)?4:2}
+    if(text.includes(term)){matched++;score+=String(item.title||"").toLowerCase().includes(term)?4:2}
   }
   const aliases=Object.entries(ITEM_SYNONYMS).find(([aliasKey])=>p.name.toLowerCase().includes(aliasKey));
   if(aliases){
@@ -88,6 +96,13 @@ function photoRelevance(item,p){
   }
   const required=terms.length;
   if(matched<required)return 0;
+  // Disambiguate generic words using the catalog's intended item type.
+  if(terms.length===1){
+    const contexts=AMBIGUOUS_PRODUCT_CONTEXT[terms[0]];
+    if(contexts&&!contexts.some(term=>text.includes(term)))return 0;
+    const queryTerms=normalizedTokens(p.query||"").filter(term=>!NON_PRODUCT_TERMS.has(term)&&!terms.includes(term));
+    if(queryTerms.length&&!queryTerms.some(term=>text.includes(term)))return 0;
+  }
   if(key && text.includes(key))score+=6;
   return score;
 }
