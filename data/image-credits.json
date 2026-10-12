@@ -1,0 +1,2132 @@
+{
+  "generatedAt": "2026-10-12T23:08:36Z",
+  "providers": {
+    "Wikimedia Commons": 3
+  },
+  "images": [
+    {
+      "id": "11",
+      "name": "Safety Pins",
+      "slug": "11-safety-pins",
+      "query": "Safety Pins product photo",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "creator": "",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Display_set_of_six_safety_pins%2C_England%2C_1910-1937_Wellcome_L0057713.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/69/Display_set_of_six_safety_pins%2C_England%2C_1910-1937_Wellcome_L0057713.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "31",
+      "name": "Shawl",
+      "slug": "31-shawl",
+      "query": "Shawl product photo",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/68978695@N00\">Lisa Risager</a>",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Faroese_Shawl.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Faroese_Shawl.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "42",
+      "name": "Palazzo",
+      "slug": "42-palazzo",
+      "query": "Palazzo product photo",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Brdlgu&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Brdlgu (page does not exist)\">Brdlgu</a>",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Parma%2C_piazza_garibaldi%2C_palazzo_del_Comune_visto_dal_palazzo_del_Governatore.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Parma%2C_piazza_garibaldi%2C_palazzo_del_Comune_visto_dal_palazzo_del_Governatore.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    }
+  ],
+  "missing": [
+    {
+      "id": "01",
+      "name": "Hijab — Chiffon",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "02",
+      "name": "Hijab — Cotton",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "03",
+      "name": "Hijab — Jersey",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "04",
+      "name": "Hijab — Georgette",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "05",
+      "name": "Instant Hijab",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "06",
+      "name": "Khimar",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "07",
+      "name": "Hijab Undercap",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "08",
+      "name": "Hijab Inner",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "09",
+      "name": "Hijab Magnets",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "10",
+      "name": "Hijab Pins",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "12",
+      "name": "Hijab Clips",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "13",
+      "name": "Hijab Storage Organizer",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "14",
+      "name": "Hijab Hanger",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "15",
+      "name": "Hijab Scarf Ring",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "16",
+      "name": "Long Modest Dresses",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "17",
+      "name": "Maxi Dresses",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "18",
+      "name": "Abaya",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "19",
+      "name": "Jilbab",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "20",
+      "name": "Prayer Khimar",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "21",
+      "name": "Prayer Dress",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "22",
+      "name": "Long Cardigan",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "23",
+      "name": "Modest Tunics",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "24",
+      "name": "Long Skirts",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "25",
+      "name": "Wide-Leg Trousers",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "26",
+      "name": "Palazzo Pants",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "27",
+      "name": "Modest Salwar Kameez",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "28",
+      "name": "Kameez",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "29",
+      "name": "Long Kurti",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "30",
+      "name": "Dupatta",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "32",
+      "name": "Burqa / Niqab",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "33",
+      "name": "Arm Sleeves",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "34",
+      "name": "Leg Coverings / Leggings",
+      "section": "Hijab & Modest Wear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "35",
+      "name": "Home Dresses",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "36",
+      "name": "Salwar Kameez",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "37",
+      "name": "Long Tops",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "38",
+      "name": "Long Shirts",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "39",
+      "name": "Kurtis",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "40",
+      "name": "Maxi Dresses",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "41",
+      "name": "Long Skirts",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "43",
+      "name": "Loose Trousers",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "44",
+      "name": "Nightwear",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "45",
+      "name": "Pajamas",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "46",
+      "name": "Loungewear",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "47",
+      "name": "Sweaters",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "48",
+      "name": "Cardigans",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "49",
+      "name": "Jackets",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "50",
+      "name": "Raincoat",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "51",
+      "name": "Winter Clothing",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "52",
+      "name": "Eid Outfits",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "53",
+      "name": "Wedding / Occasion Outfits",
+      "section": "Everyday Clothing",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "54",
+      "name": "Everyday Bra",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "55",
+      "name": "Comfortable Bra",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "56",
+      "name": "Sports Bra",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "57",
+      "name": "Seamless Bra",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "58",
+      "name": "Nursing Bra",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "59",
+      "name": "Everyday Underwear",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "60",
+      "name": "Seamless Underwear",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "61",
+      "name": "Period Underwear",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "62",
+      "name": "Camisoles",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "63",
+      "name": "Slips",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "64",
+      "name": "Inner Tops",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "65",
+      "name": "Inner Pants",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "66",
+      "name": "Shapewear",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "67",
+      "name": "Undershirts",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "68",
+      "name": "Socks",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "69",
+      "name": "Thermal Innerwear",
+      "section": "Innerwear & Undergarments",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "70",
+      "name": "Prayer Mat / Janamaz",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "71",
+      "name": "Foldable Travel Prayer Mat",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "72",
+      "name": "Prayer Dress",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "73",
+      "name": "Prayer Khimar",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "74",
+      "name": "Tasbih",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "75",
+      "name": "Digital Tasbih / Counter",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "76",
+      "name": "Quran",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "77",
+      "name": "Quran Stand",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "78",
+      "name": "Quran Cover",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "79",
+      "name": "Quran Bookmark",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "80",
+      "name": "Islamic Books",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "81",
+      "name": "Dua Book",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "82",
+      "name": "Prayer-Time Clock",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "83",
+      "name": "Qibla Compass",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "84",
+      "name": "Islamic Wall Calendar",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "85",
+      "name": "Prayer Garment Storage Bag",
+      "section": "Salah / Prayer Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "86",
+      "name": "Sanitary Pads",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "87",
+      "name": "Pantyliners",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "88",
+      "name": "Tampons",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "89",
+      "name": "Menstrual Cup",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "90",
+      "name": "Period Underwear",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "91",
+      "name": "Period Disposal Bags",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "92",
+      "name": "Heating Pad",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "93",
+      "name": "Hot-Water Bag",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "94",
+      "name": "Wet Wipes",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "95",
+      "name": "Tissues",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "96",
+      "name": "Cotton Pads",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "97",
+      "name": "Cotton Buds",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "98",
+      "name": "Intimate Hygiene Products",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "99",
+      "name": "Body Wash",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "100",
+      "name": "Soap",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "101",
+      "name": "Deodorant",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "102",
+      "name": "Antiperspirant",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "103",
+      "name": "Body Lotion",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "104",
+      "name": "Hand Sanitizer",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "105",
+      "name": "Personal Hygiene Pouch",
+      "section": "Menstrual & Personal Hygiene",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "106",
+      "name": "Face Wash",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "107",
+      "name": "Cleansing Balm / Oil",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "108",
+      "name": "Micellar Water",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "109",
+      "name": "Toner",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "110",
+      "name": "Serum",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "111",
+      "name": "Moisturizer",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "112",
+      "name": "Sunscreen",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "113",
+      "name": "Lip Balm",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "114",
+      "name": "SPF Lip Balm",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "115",
+      "name": "Face Mask",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "116",
+      "name": "Sheet Mask",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "117",
+      "name": "Exfoliator",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "118",
+      "name": "Acne Patches",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "119",
+      "name": "Pimple Treatment",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "120",
+      "name": "Eye Cream",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "121",
+      "name": "Lip Scrub",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "122",
+      "name": "Lip Mask",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "123",
+      "name": "Petroleum Jelly",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "124",
+      "name": "Body Scrub",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "125",
+      "name": "Body Lotion",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "126",
+      "name": "Body Oil",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "127",
+      "name": "Hand Cream",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "128",
+      "name": "Foot Cream",
+      "section": "Skincare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "129",
+      "name": "BB / CC Cream",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "130",
+      "name": "Foundation",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "131",
+      "name": "Concealer",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "132",
+      "name": "Compact Powder",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "133",
+      "name": "Blush",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "134",
+      "name": "Highlighter",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "135",
+      "name": "Eyebrow Pencil",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "136",
+      "name": "Eyeliner",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "137",
+      "name": "Kajal",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "138",
+      "name": "Mascara",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "139",
+      "name": "Eyeshadow",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "140",
+      "name": "Lipstick",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "141",
+      "name": "Lip Tint",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "142",
+      "name": "Lip Gloss",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "143",
+      "name": "Makeup Remover",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "144",
+      "name": "Makeup Sponge",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "145",
+      "name": "Makeup Brushes",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "146",
+      "name": "Makeup Organizer",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "147",
+      "name": "Makeup Mirror",
+      "section": "Modest Everyday Makeup",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "148",
+      "name": "Shampoo",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "149",
+      "name": "Conditioner",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "150",
+      "name": "Hair Mask",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "151",
+      "name": "Hair Oil",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "152",
+      "name": "Hair Serum",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "153",
+      "name": "Leave-In Conditioner",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "154",
+      "name": "Hair Brush",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "155",
+      "name": "Comb",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "156",
+      "name": "Wide-Tooth Comb",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "157",
+      "name": "Hair Ties",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "158",
+      "name": "Scrunchies",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "159",
+      "name": "Hair Clips",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "160",
+      "name": "Claw Clips",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "161",
+      "name": "Bobby Pins",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "162",
+      "name": "Hair Pins",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "163",
+      "name": "Headbands",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "164",
+      "name": "Hair Bands",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "165",
+      "name": "Hair Dryer",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "166",
+      "name": "Hair Straightener",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "167",
+      "name": "Curling Tool",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "168",
+      "name": "Heat Protectant",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "169",
+      "name": "Satin / Silk Bonnet",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "170",
+      "name": "Satin Pillowcase",
+      "section": "Haircare",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "171",
+      "name": "Nail Cutter",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "172",
+      "name": "Nail File",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "173",
+      "name": "Nail Buffer",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "174",
+      "name": "Cuticle Oil",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "175",
+      "name": "Hand Cream",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "176",
+      "name": "Foot Scrub",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "177",
+      "name": "Foot File",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "178",
+      "name": "Heel-Care Cream",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "179",
+      "name": "Pedicure Kit",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "180",
+      "name": "Manicure Kit",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "181",
+      "name": "Tweezers",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "182",
+      "name": "Facial Razor",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "183",
+      "name": "Eyebrow Razor",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "184",
+      "name": "Body Razor",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "185",
+      "name": "Electric Trimmer",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "186",
+      "name": "Wax Strips",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "187",
+      "name": "Epilator",
+      "section": "Hands, Feet & Grooming",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "188",
+      "name": "Attar",
+      "section": "Fragrance",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "189",
+      "name": "Perfume",
+      "section": "Fragrance",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "190",
+      "name": "Body Mist",
+      "section": "Fragrance",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "191",
+      "name": "Roll-On Fragrance",
+      "section": "Fragrance",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "192",
+      "name": "Hair Mist",
+      "section": "Fragrance",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "193",
+      "name": "Body Spray",
+      "section": "Fragrance",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "194",
+      "name": "Scented Lotion",
+      "section": "Fragrance",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "195",
+      "name": "Simple Earrings",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "196",
+      "name": "Stud Earrings",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "197",
+      "name": "Necklace",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "198",
+      "name": "Pendant",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "199",
+      "name": "Bracelet",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "200",
+      "name": "Bangles",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "201",
+      "name": "Rings",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "202",
+      "name": "Anklet",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "203",
+      "name": "Watch",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "204",
+      "name": "Sunglasses",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "205",
+      "name": "Brooch",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "206",
+      "name": "Hijab Brooch",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "207",
+      "name": "Hijab Magnets",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "208",
+      "name": "Handbag",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "209",
+      "name": "Crossbody Bag",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "210",
+      "name": "Tote Bag",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "211",
+      "name": "Wallet",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "212",
+      "name": "Card Holder",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "213",
+      "name": "Clutch",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "214",
+      "name": "Backpack",
+      "section": "Jewellery & Accessories",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "215",
+      "name": "Comfortable Sandals",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "216",
+      "name": "Flats",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "217",
+      "name": "Sneakers",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "218",
+      "name": "Walking Shoes",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "219",
+      "name": "Running Shoes",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "220",
+      "name": "Formal Shoes",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "221",
+      "name": "Occasion Shoes",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "222",
+      "name": "Heels",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "223",
+      "name": "House Slippers",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "224",
+      "name": "Bathroom Slippers",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "225",
+      "name": "Winter Shoes / Boots",
+      "section": "Footwear",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "226",
+      "name": "Bedsheets",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "227",
+      "name": "Pillow",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "228",
+      "name": "Pillowcases",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "229",
+      "name": "Blanket",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "230",
+      "name": "Comforter",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "231",
+      "name": "Mattress Protector",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "232",
+      "name": "Towels",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "233",
+      "name": "Bathrobe",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "234",
+      "name": "Laundry Basket",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "235",
+      "name": "Clothes Hangers",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "236",
+      "name": "Wardrobe Organizers",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "237",
+      "name": "Hijab Organizer",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "238",
+      "name": "Jewelry Organizer",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "239",
+      "name": "Makeup Organizer",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "240",
+      "name": "Skincare Organizer",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "241",
+      "name": "Full-Length Mirror",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "242",
+      "name": "Dressing Mirror",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "243",
+      "name": "Storage Boxes",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "244",
+      "name": "Shoe Organizer",
+      "section": "Home & Personal Room",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "245",
+      "name": "Handbag",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "246",
+      "name": "Backpack",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "247",
+      "name": "Laptop Bag",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "248",
+      "name": "Laptop Sleeve",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "249",
+      "name": "Notebook",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "250",
+      "name": "Planner",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "251",
+      "name": "Diary",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "252",
+      "name": "Pens",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "253",
+      "name": "Highlighters",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "254",
+      "name": "Water Bottle",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "255",
+      "name": "Lunch Box",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "256",
+      "name": "ID-Card Holder",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "257",
+      "name": "Laptop",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "258",
+      "name": "Tablet",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "259",
+      "name": "Power Bank",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "260",
+      "name": "Earbuds / Headphones",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "261",
+      "name": "Phone Stand",
+      "section": "Work / Study",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "262",
+      "name": "Suitcase",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "263",
+      "name": "Travel Backpack",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "264",
+      "name": "Passport Holder",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "265",
+      "name": "Travel Wallet",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "266",
+      "name": "Packing Cubes",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "267",
+      "name": "Hijab Travel Organizer",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "268",
+      "name": "Travel Prayer Mat",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "269",
+      "name": "Travel Prayer Dress",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "270",
+      "name": "Toiletry Bag",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "271",
+      "name": "Makeup Pouch",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "272",
+      "name": "Jewellery Pouch",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "273",
+      "name": "Shoe Bag",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "274",
+      "name": "Laundry Bag",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "275",
+      "name": "Travel-Size Bottles",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "276",
+      "name": "Portable Charger",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "277",
+      "name": "Universal Adapter",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "278",
+      "name": "Neck Pillow",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "279",
+      "name": "Eye Mask",
+      "section": "Travel",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "280",
+      "name": "Modest Workout Clothes",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "281",
+      "name": "Sports Hijab",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "282",
+      "name": "Sports Bra",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "283",
+      "name": "Joggers",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "284",
+      "name": "Loose Workout Top",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "285",
+      "name": "Sneakers",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "286",
+      "name": "Yoga Mat",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "287",
+      "name": "Resistance Bands",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "288",
+      "name": "Dumbbells",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "289",
+      "name": "Water Bottle",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "290",
+      "name": "Gym Bag",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "291",
+      "name": "Fitness Tracker",
+      "section": "Fitness",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "292",
+      "name": "First-Aid Box",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "293",
+      "name": "Bandages",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "294",
+      "name": "Antiseptic",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "295",
+      "name": "Gauze",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "296",
+      "name": "Medical Tape",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "297",
+      "name": "Digital Thermometer",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "298",
+      "name": "Personal Medicines",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "299",
+      "name": "Prescription Medicines",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "300",
+      "name": "Hand Sanitizer",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "301",
+      "name": "Tissues",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "302",
+      "name": "Emergency Contact Card",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "303",
+      "name": "Small Flashlight",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "304",
+      "name": "Personal Alarm",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "305",
+      "name": "Whistle",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "306",
+      "name": "Portable Power Bank",
+      "section": "Emergency & Safety",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "307",
+      "name": "Sewing Kit",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "308",
+      "name": "Needles",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "309",
+      "name": "Thread",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "310",
+      "name": "Safety Pins",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "311",
+      "name": "Mini Scissors",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "312",
+      "name": "Buttons",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "313",
+      "name": "Fabric Tape",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "314",
+      "name": "Lint Roller",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "315",
+      "name": "Stain Remover",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "316",
+      "name": "Clothes Brush",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "317",
+      "name": "Iron",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "318",
+      "name": "Garment Steamer",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "319",
+      "name": "Laundry Bags",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "320",
+      "name": "Delicate-Wash Bags",
+      "section": "Clothing Care",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "321",
+      "name": "Smartphone",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "322",
+      "name": "Phone Case",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "323",
+      "name": "Screen Protector",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "324",
+      "name": "Charger",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "325",
+      "name": "Charging Cable",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "326",
+      "name": "Power Bank",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "327",
+      "name": "Wireless Charger",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "328",
+      "name": "Earbuds",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "329",
+      "name": "Smartwatch",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "330",
+      "name": "Laptop",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "331",
+      "name": "Tablet",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "332",
+      "name": "Ring Light",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "333",
+      "name": "Tripod",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "334",
+      "name": "Extension Cord",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "335",
+      "name": "Cable Organizer",
+      "section": "Personal Electronics",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "336",
+      "name": "Eid Outfit",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "337",
+      "name": "Abaya",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "338",
+      "name": "Hijab",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "339",
+      "name": "Prayer Dress",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "340",
+      "name": "New Prayer Mat",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "341",
+      "name": "Quran",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "342",
+      "name": "Tasbih",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "343",
+      "name": "Dua Book",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "344",
+      "name": "Islamic Books",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "345",
+      "name": "Ramadan Planner",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "346",
+      "name": "Quran Stand",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "347",
+      "name": "Iftar Serving Essentials",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "348",
+      "name": "Eid Handbag",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "349",
+      "name": "Eid Footwear",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "350",
+      "name": "Gift Packaging Items",
+      "section": "Ramadan / Eid Essentials",
+      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    }
+  ],
+  "policy": "Commercial-use open-license/public-domain results only. Every changed photo must contain the product's meaningful name terms in searchable metadata; sensitive/non-apparel listings reject person/model metadata. Existing photos remain unchanged when no high-confidence match exists."
+}
