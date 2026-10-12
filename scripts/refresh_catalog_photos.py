@@ -159,7 +159,7 @@ def commons(q):
         license_name=clean_text((ext.get("LicenseShortName") or {}).get("value",""))
         license_url=clean_text((ext.get("LicenseUrl") or {}).get("value",""))
         # Commercial reuse only: exclude every NonCommercial/NC license.
-        if re.search(r"\\bNC\\b|non[- ]commercial|noncommercial",license_name,re.I):continue
+        if re.search(r"\bNC\b|non[- ]commercial|noncommercial",license_name,re.I):continue
         if not re.match(r"^(CC0|Public domain|PD|CC BY)",license_name,re.I):continue
         out.append({"title":page.get("title",""),"url":img.get("url"),"thumbnail":img.get("thumburl") or img.get("url"),
           "width":img.get("width",0),"height":img.get("height",0),"license":license_name,"license_url":license_url,
