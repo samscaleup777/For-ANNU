@@ -15,19 +15,51 @@ from urllib.parse import quote
 import requests
 from PIL import Image
 import imagehash
+import cv2
+import numpy as np
 
 ROOT=Path(__file__).resolve().parents[1]
 CATALOG=ROOT/"data/shop-catalog.json"
 OUT=ROOT/"assets/shop/catalog"
 CREDITS=ROOT/"data/image-credits.json"
 UA="AnnikaCatalogRefresh/3.0 (+https://annika-website-one.vercel.app/)"
-TIMEOUT=20
+TIMEOUT=12
 BAD=re.compile(r"(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic|screenshot|poster|diagram|chart|logo|collage|drawing|painting)",re.I)
 PERSON=re.compile(r"\b(woman|women|man|men|girl|boy|child|children|person|people|model|portrait|face|human|patient|nurse|doctor|wearing|posing|standing|sitting|holding|selfie|personnel)\b",re.I)
 STOP={"a","an","and","the","for","of","to","with","from","real","photo","photos","product","image","images","set","item","items","essentials","women","woman","womens","men","mens","muslim","modest","fashion","catalog","daily","everyday","comfortable","premium","classic","simple","new"}
 QUERY_STOP={"real","photo","product","image","images","item","items","catalog","high","quality","commercial","license","licensed","bangladesh","bangladeshi","pakistan","pakistani","saudi","arabia","uae","gulf","south","asia","global","middle","east","arab","world","muslim","modest","fashion","women","woman","mens","womens","man","men","full","length","studio","isolated","white","background","open","new","classic","premium","simple"}
 AMBIGUOUS_REQUIREMENTS={"palazzo":{"pants","trouser","trousers"},"watch":{"wrist","wristwatch"},"flats":{"shoe","shoes","footwear"},"flat":{"shoe","shoes","footwear"},"sari":{"saree","sari"},"sweater":{"clothing","garment","wear","fashion"}}
 ALIASES={
+ "hijab — chiffon":["chiffon hijab","hijab chiffon","chiffon scarf","chiffon headscarf","chiffon head scarf"],
+ "hijab — cotton":["cotton hijab","hijab cotton","cotton scarf","cotton headscarf","cotton head scarf"],
+ "hijab — jersey":["jersey hijab","hijab jersey","jersey scarf","jersey headscarf"],
+ "hijab — georgette":["georgette hijab","hijab georgette","georgette scarf","georgette headscarf"],
+ "instant hijab":["instant hijab","ready hijab","ready-to-wear hijab","one loop hijab"],
+ "hijab undercap":["hijab undercap","undercap","inner cap","underscarf"],
+ "hijab inner":["hijab inner","inner cap","undercap","underscarf"],
+ "hijab magnets":["hijab magnets","hijab magnet","magnetic hijab pins","hijab pin magnets"],
+ "hijab pins":["hijab pins","hijab pin","scarf pins"],
+ "hijab clips":["hijab clips","hijab clip","scarf clips"],
+ "hijab storage organizer":["hijab storage organizer","hijab organizer","scarf organizer"],
+ "hijab hanger":["hijab hanger","scarf hanger","scarf ring hanger"],
+ "hijab scarf ring":["hijab scarf ring","scarf ring","hijab ring"],
+ "long modest dresses":["long modest dress","modest maxi dress","long dress"],
+ "maxi dresses":["maxi dress","maxi dresses","long maxi gown"],
+ "prayer khimar":["prayer khimar","salat khimar","full length khimar"],
+ "prayer dress":["prayer dress","salah dress","salat dress","prayer garment"],
+ "long cardigan":["long cardigan","longline cardigan"],
+ "modest tunics":["modest tunic","long tunic","longline tunic"],
+ "wide-leg trousers":["wide-leg trousers","wide leg pants","palazzo trousers"],
+ "palazzo pants":["palazzo pants","palazzo trousers","palazzo pant"],
+ "palazzo":["palazzo pants","palazzo trousers","palazzo pant"],
+ "modest salwar kameez":["salwar kameez","shalwar kameez","salwar suit"],
+ "salwar kameez":["salwar kameez","shalwar kameez","salwar suit"],
+ "long kurti":["long kurti","kurti","long kurta"],
+ "dupatta":["dupatta","dupatta scarf","shalwar scarf"],
+ "shawl":["shawl","wrap shawl","women's shawl"],
+ "burqa / niqab":["burqa","burka","borkha","niqab","face veil","burqa niqab"],
+ "arm sleeves":["arm sleeves","sleeve covers","modest arm covers"],
+ "leg coverings / leggings":["leggings","leg coverings","modest leggings"],
  "hot-water bag":["hot water bottle","hot-water bag","heating bag"],
  "hot water bag":["hot water bottle","hot-water bag","heating bag"],
  "quran":["quran","koran","al quran"],
@@ -35,18 +67,14 @@ ALIASES={
  "sanitary pads":["sanitary pads","menstrual pads","period pads"],
  "pantyliners":["pantyliners","panty liners"],
  "menstrual cup":["menstrual cup"],
- "hijab undercap":["hijab undercap","undercap","inner cap"],
- "hijab inner":["hijab inner","inner cap","undercap"],
  "prayer mat / janamaz":["prayer mat","janamaz","prayer rug","sajadah"],
  "quran stand":["quran stand","rehal","book stand"],
  "abaya":["abaya","abāya"],
- "burqa / niqab":["burqa","burka","borkha","niqab","face veil"],
  "burqa":["burqa","burka","borkha"],
  "niqab":["niqab","face veil"],
  "khimar":["khimar","khimaar"],
  "jilbab":["jilbab","jilbaab"],
  "kameez":["kameez","qameez"],
- "salwar kameez":["salwar kameez","shalwar kameez"],
  "face wash":["face wash","facial cleanser","cleanser"],
  "sunscreen":["sunscreen","sun cream","sunblock"],
  "power bank":["power bank","portable charger"],
@@ -93,21 +121,21 @@ def exact_name_match(item,p):
     text=metadata(item).lower()
     tokens=product_tokens(p)
     if not tokens:return False
-    # A documented synonym phrase may replace name tokens, but unrelated keywords
-    # never count as a match.
     name=(p.get("name","")+" "+p.get("query","")).lower()
+    # Prefer the most specific alias first: "hijab — chiffon" must match chiffon
+    # hijab/scarf, not just any generic hijab image.
+    aliases=sorted(ALIASES.items(),key=lambda pair:len(pair[0]),reverse=True)
     alias_match=False
-    for alias_key,phrases in ALIASES.items():
+    for alias_key,phrases in aliases:
         if alias_key in name:
-            if not any(phrase in text for phrase in phrases):return False
+            if not any(phrase in text for phrase in phrases):continue
             remaining=[t for t in tokens if t not in normalized_tokens(alias_key)]
-            if not all(t in text for t in remaining):return False
+            if not all(t in text for t in remaining):continue
             alias_match=True
             break
     if not alias_match and not all(t in text for t in tokens):return False
 
-    # Single-word product names can be ambiguous in ordinary text (e.g. "Palazzo"
-    # may mean a building). Require its item-type context from the catalog query.
+    # Single-word product names may have unrelated meanings ("Palazzo" can be a building).
     if len(tokens)==1:
         key=tokens[0]
         allowed=AMBIGUOUS_REQUIREMENTS.get(key)
@@ -172,13 +200,14 @@ def queries(p):
     name=p.get("name","").strip()
     query_terms=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP]
     cleaned=" ".join(query_terms)
-    # Avoid generic suffixes that drown out the product identity.
-    options=[name,cleaned,name+" "+p.get("subsection","")]
+    # Keep queries tightly tied to the catalog item, but include the niche context
+    # that helps open-license photo indexes find the correct variant.
+    options=[name,cleaned]
     if object_only(p):
-        options += [name+" packaging",name+" isolated product"]
+        options.append(name+" product packshot")
     elif p.get("section") in {"Hijab & Modest Wear","Everyday Clothing","Ramadan / Eid Essentials","Fitness"}:
-        options += [name+" Bangladesh",name+" hijab abaya"]
-    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:5]
+        options.append(name+" Bangladesh")
+    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:3]
 
 def search_product(p):
     items=[];seen=set()
@@ -213,13 +242,34 @@ def download(url):
         return data,im
     except Exception:return None
 
+_FACE_CASCADE=cv2.CascadeClassifier(cv2.data.haarcascades+"haarcascade_frontalface_default.xml")
+_HOG=cv2.HOGDescriptor()
+_HOG.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
+def person_detected(im):
+    """Content-based guard for people in sensitive/object-only product photos."""
+    try:
+        arr=np.asarray(im)
+        h,w=arr.shape[:2]
+        scale=min(640.0/max(w,h),1.0)
+        if scale<1.0:
+            arr=cv2.resize(arr,(max(1,int(w*scale)),max(1,int(h*scale))),interpolation=cv2.INTER_AREA)
+        gray=cv2.cvtColor(arr,cv2.COLOR_RGB2GRAY)
+        faces=_FACE_CASCADE.detectMultiScale(gray,scaleFactor=1.1,minNeighbors=5,minSize=(24,24))
+        if len(faces):return True
+        # HOG catches full-body people even when face detection is not possible.
+        rectangles,weights=_HOG.detectMultiScale(arr,winStride=(8,8),padding=(8,8),scale=1.05)
+        return any(float(weight)>=0.55 for weight in weights)
+    except Exception:
+        # If visual screening fails, be conservative for sensitive products.
+        return True
+
 def main():
     catalog=json.loads(CATALOG.read_text(encoding="utf-8"))
     products=catalog["products"]
     OUT.mkdir(parents=True,exist_ok=True)
     # Keep every existing asset while searching. No delete-first behavior.
     candidates={}
-    with ThreadPoolExecutor(max_workers=4) as pool:
+    with ThreadPoolExecutor(max_workers=6) as pool:
         futures={pool.submit(search_product,p):p for p in products}
         for i,f in enumerate(as_completed(futures),1):
             p=futures[f]
@@ -238,6 +288,7 @@ def main():
                 got=download(url)
                 if not got:continue
                 data,im=got
+                if object_only(p) and person_detected(im):continue
                 ph=imagehash.phash(im)
                 if any(ph-old<8 for old in used_hashes):continue
                 chosen=(candidate,url,data,im,ph);break
