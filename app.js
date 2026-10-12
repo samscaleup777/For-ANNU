@@ -22,7 +22,32 @@ document.addEventListener('DOMContentLoaded',()=>{
   const visuals=visualMap[pageClass]||visualMap['page-home'];
   document.querySelectorAll('.hero-art').forEach(hero=>{if(hero.querySelector('img'))return;const img=document.createElement('img');img.src=heroVisualMap[pageClass]||heroVisualMap['page-home'];img.alt='Annïka real category visual';img.loading='eager';hero.prepend(img);hero.classList.add('has-real-visual')});
 
-  document.querySelectorAll('.grid4 .card').forEach((card,index)=>{if(card.querySelector('img,.context-media'))return;const media=document.createElement('div');media.className='context-media';const img=document.createElement('img');img.src=visuals[index%visuals.length];img.onerror=()=>{img.onerror=null;img.src='/assets/shop/catalog/01-hijab-chiffon.jpg'};img.alt='Annïka visual for '+((card.querySelector('h3')?.textContent||'this topic').trim());img.loading='lazy';media.appendChild(img);card.prepend(media);card.classList.add('has-context-media')});
+  const cardPhotoRules=[
+    {re:/modest fashion|hijab|abaya|burqa|niqab|dress|clothing|fashion/i,src:'https://cdn.manfarebd.com/glamtouch/media/lg/175147059281181215939_gt_1421_a.webp'},
+    {re:/quran|hadith|faith|dua|worship|prayer|islamic|read|reflect|knowledge|learn|study/i,src:'/assets/shop/catalog/76-quran.jpg'},
+    {re:/safety|safe|emergency|first aid|awareness|digital security|protect/i,src:'/assets/shop/catalog/292-first-aid-box.jpg'},
+    {re:/lifestyle|wellbeing|wellness|self care|rest|routine|skin|beauty/i,src:'/assets/shop/catalog/111-moisturizer.jpg'},
+    {re:/hair|shampoo|conditioner|comb|brush/i,src:'/assets/shop/catalog/148-shampoo.jpg'},
+    {re:/home|bed|sleep|family|room|linen/i,src:'/assets/shop/catalog/226-bedsheets.jpg'},
+    {re:/travel|journey|passport|luggage|packing/i,src:'/assets/shop/catalog/267-hijab-travel-organizer.jpg'},
+    {re:/fitness|sports|workout|exercise/i,src:'/assets/shop/catalog/281-sports-hijab.jpg'},
+    {re:/hygiene|period|menstrual|sanitary|personal care/i,src:'/assets/shop/catalog/86-sanitary-pads.jpg'},
+    {re:/makeup|cosmetic|lipstick|foundation/i,src:'/assets/shop/catalog/130-foundation.jpg'},
+    {re:/shoe|sandal|footwear/i,src:'/assets/shop/catalog/215-comfortable-sandals.jpg'},
+    {re:/bag|wallet|handbag|purse/i,src:'/assets/shop/catalog/245-handbag.jpg'}
+  ];
+  document.querySelectorAll('.grid4 .card').forEach((card,index)=>{
+    if(card.querySelector('img,.context-media'))return;
+    const heading=(card.querySelector('h3')?.textContent||'').trim();
+    const text=heading+' '+(card.querySelector('p')?.textContent||'');
+    const matched=cardPhotoRules.find(rule=>rule.re.test(text));
+    const media=document.createElement('div');media.className='context-media';
+    const img=document.createElement('img');
+    img.src=matched?.src||visuals[index%visuals.length];
+    img.onerror=()=>{img.onerror=null;img.src='/assets/shop/catalog/76-quran.jpg'};
+    img.alt='Annïka visual for '+(heading||'this topic');
+    img.loading='lazy';media.appendChild(img);card.prepend(media);card.classList.add('has-context-media')
+  });
   const feature=document.querySelector('.feature-photo');
   if(feature&&!feature.querySelector('img')){const featureImages={'page-home':'https://cdn.manfarebd.com/glamtouch/media/lg/175118641210460316973_gt_1645_1.webp','page-quran':'/assets/shop/catalog/76-quran.jpg','page-safety':'/assets/shop/catalog/267-hijab-travel-organizer.jpg','page-lifestyle':'/assets/shop/catalog/106-face-wash.jpg','page-blog':'/assets/shop/catalog/203-watch.jpg','page-about':'https://cdn.manfarebd.com/glamtouch/media/lg/175147059281181215939_gt_1421_a.webp','page-contact':'/assets/shop/catalog/208-handbag.jpg'};feature.style.backgroundImage=`linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.32)),url('${featureImages[pageClass]||'/assets/shop/catalog/01-hijab-chiffon.jpg'}')`;feature.setAttribute('aria-label','Annïka section visual')}
   const search=document.querySelector('[data-search]'),cards=[...document.querySelectorAll('[data-searchable]')];
