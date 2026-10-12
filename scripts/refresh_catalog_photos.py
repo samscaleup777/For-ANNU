@@ -158,7 +158,9 @@ def commons(q):
         img=(page.get("imageinfo") or [{}])[0]; ext=img.get("extmetadata") or {}
         license_name=clean_text((ext.get("LicenseShortName") or {}).get("value",""))
         license_url=clean_text((ext.get("LicenseUrl") or {}).get("value",""))
-        if not re.match(r"^(CC|Public domain|PD|CC0)",license_name,re.I):continue
+        # Commercial reuse only: exclude every NonCommercial/NC license.
+        if re.search(r"\\bNC\\b|non[- ]commercial|noncommercial",license_name,re.I):continue
+        if not re.match(r"^(CC0|Public domain|PD|CC BY)",license_name,re.I):continue
         out.append({"title":page.get("title",""),"url":img.get("url"),"thumbnail":img.get("thumburl") or img.get("url"),
           "width":img.get("width",0),"height":img.get("height",0),"license":license_name,"license_url":license_url,
           "creator":clean_text((ext.get("Artist") or {}).get("value","")),
@@ -170,10 +172,13 @@ def queries(p):
     name=p.get("name","").strip()
     query_terms=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP]
     cleaned=" ".join(query_terms)
-    # Do not append generic words like "real photo" to the main search; they hide
-    # actual product results. Search product name first, then its useful item terms.
-    options=(name,cleaned,name+" "+p.get("subsection",""))
-    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:3]
+    # Avoid generic suffixes that drown out the product identity.
+    options=[name,cleaned,name+" "+p.get("subsection","")]
+    if object_only(p):
+        options += [name+" packaging",name+" isolated product"]
+    elif p.get("section") in {"Hijab & Modest Wear","Everyday Clothing","Ramadan / Eid Essentials","Fitness"}:
+        options += [name+" Bangladesh",name+" hijab abaya"]
+    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:5]
 
 def search_product(p):
     items=[];seen=set()
