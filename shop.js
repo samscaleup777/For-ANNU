@@ -59,7 +59,7 @@ function productTerms(p){
 function objectOnlyProduct(p){
   const name=(String(p?.name||"")+" "+String(p?.subsection||"")).toLowerCase();
   const section=String(p?.section||"");
-  const garments=/niqab|abaya|burqa|borkha|khimar|jilbab|salwar|kameez|kurti|dress|gown|tunic|shirt|top|skirt|trouser|palazzo|pants|jogger|leggings|outerwear|garment|clothing|sleeve|kaftan|thobe|jubba|shawl|scarf|dupatta|prayer dress|sports hijab|modest workout clothes|eid outfit|\\bhijab\\b/i.test(name);
+  const garments=/niqab|abaya|burqa|borkha|khimar|jilbab|salwar|kameez|kurti|dress|gown|tunic|shirt|top|skirt|trouser|palazzo|pants|jogger|leggings|outerwear|garment|clothing|sleeve|kaftan|thobe|jubba|shawl|scarf|dupatta|prayer dress|sports hijab|modest workout clothes|eid outfit|\bhijab\b/i.test(name);
   const accessory=/pin|magnet|clip|undercap|inner cap|bonnet|organizer|storage|ring|brush|bag|holder|accessor|case|pouch|belt|belt|socks|glove/i.test(name);
   const garmentSection=["Hijab & Modest Wear","Everyday Clothing","Fitness"].includes(section) ||
     (section==="Ramadan / Eid Essentials" && /outfit|abaya|hijab|prayer dress|clothing/i.test(name));
