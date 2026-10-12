@@ -62,3 +62,19 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
 .hero-art.has-real-visual:after{z-index:1;background:linear-gradient(180deg,rgba(18,49,38,.05),rgba(18,49,38,.66))}
 .hero-art.has-real-visual .hero-card{z-index:2;background:rgba(18,49,38,.66)}
 .photo-credit{display:inline-block;margin:8px 0 0;font-size:10px;color:var(--muted);text-decoration:underline}
+
+
+/* Clear, regionally relevant modest-fashion photography */
+.hero-art{
+  background-image:linear-gradient(180deg,rgba(18,49,38,.04) 0%,rgba(18,49,38,.18) 45%,rgba(18,49,38,.56) 100%),url("https://images.pexels.com/photos/36455783/pexels-photo-36455783.jpeg?auto=compress&cs=tinysrgb&w=1400");
+  background-size:cover;
+  background-position:center 28%;
+}
+.hero-card{
+  -webkit-backdrop-filter:none;
+  backdrop-filter:none;
+  background:rgba(18,49,38,.84);
+}
+.feature-photo{
+  background:linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.12)),url("https://images.pexels.com/photos/32835719/pexels-photo-32835719.jpeg?auto=compress&cs=tinysrgb&w=1400") center 45%/cover no-repeat;
+}
