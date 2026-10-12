@@ -3,7 +3,7 @@ const DATA_URL="/data/shop-catalog.json";
 const state={products:[],cart:JSON.parse(localStorage.getItem("annikaCart")||"[]"),section:"all",query:"",payment:"bkash"};
 const photoCache=new Map(),usedPhotoUrls=new Set();
 let photoObserver=null;
-const PHOTO_STORE_KEY="annikaRemotePhotoMapV2";
+const PHOTO_STORE_KEY="annikaCuratedPhotoMapV3";
 const savedPhotos=(()=>{try{return JSON.parse(localStorage.getItem(PHOTO_STORE_KEY)||"{}")}catch(e){return {}}})();
 const REGIONAL_TERMS=["Bangladesh","Pakistan","Saudi Arabia","United Arab Emirates","Arab world","Middle East","South Asia","Malaysia","Indonesia","Turkey","Morocco","Egypt"];
 const COMMONS_FALLBACKS={"Hijab & Modest Wear":["Pink hijab libya.jpg","Islamic-fashion-hijab.jpg","Saudi in niqab.jpg","Women Wearing Islamic Clothing Hijab in Comilla, Bangladesh, 24 April 2014.jpg","Shalwar kameez.jpg","Girl in Dupatta.jpg"],"Everyday Clothing":["Girl in Dupatta.jpg","Shalwar kameez.jpg","Women Wearing Islamic Clothing Hijab in Comilla, Bangladesh, 24 April 2014.jpg"],"Salah / Prayer Essentials":["Open Quran on Blue Embroidered Prayer Rug with Tasbih.jpg","Quran with tasbih.jpg","Ramadan lantern with quran.jpg"],"Ramadan / Eid Essentials":["Ramadan lantern with quran.jpg","Ramadan lantern.jpg","Ramadan decorations.jpg","Ramadan table decoration.jpg","The Ramadan Crescent Shining in the Sky with a Lantern.jpg"],"Skincare":["Skin care cosmetics.jpg","Skin care products.jpg"],"Modest Everyday Makeup":["Makeup cosmetics.jpg","Skin care cosmetics.jpg"],"Haircare":["Skin care products.jpg","Skin care cosmetics.jpg"],"Fragrance":["Attar(1).jpg","Attar(5).jpg","Attar - Al Haramain Perfumes.jpg","Minyak atar (attar) yang dijual di dataran puncak Jabal Rahmah, Mekah.jpg"],"Jewellery & Accessories":["Necklace and earrings.jpg","Necklace and bracelet.jpg","Bracelet women.jpg","BLW Jewellery.jpg","Khasi Jewellery.jpg"],"Home & Personal Room":["Bedsheet s.jpg","Pillow and Towel.jpg"],"Clothing Care":["Seamstress 02.jpg","Needles (for sewing).jpg","Needle & Thread..jpg","Sewing threads.jpg","Box Full of Buttons For Sewing (42958527870).jpg"],"Fitness":["A hijabi girl in sport.png","Woman exercising with resistance band in a gym setting.jpg","Woman exercising on a yoga mat at home in morning light.jpg","Woman doing workouts in a home gym during the morning hours.jpg"],"Personal Electronics":["IMG of power bank.jpg"],"Work / Study":["Muslim lady at Station.jpg"],"Travel":["Muslim lady at Station.jpg"],"Footwear":["Girl in Dupatta.jpg"],"Innerwear & Undergarments":["Girl in Dupatta.jpg"],"Menstrual & Personal Hygiene":["Skin care products.jpg"],"Hands, Feet & Grooming":["Skin care products.jpg","Makeup cosmetics.jpg"],"Emergency & Safety":["Skin care products.jpg"]};
@@ -14,17 +14,102 @@ function fallbackFor(p,index){
 }
 function persistPhoto(id,rec){try{savedPhotos[id]=rec;localStorage.setItem(PHOTO_STORE_KEY,JSON.stringify(savedPhotos))}catch(e){}}
 const BAD_PHOTO=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic)/i;
-const openverseQuery=(p)=>{
-  const base=(p.query||p.name||"").trim(), sec=((p.section||"")+" "+(p.subsection||"")).toLowerCase();
-  const regionTerms=/hijab|modest|abaya|jilbab|khimar|clothing|footwear|jewellery|fragrance|ramadan|prayer|travel|fitness/i.test(sec)
-    ? REGIONAL_TERMS
-    : ["Bangladesh","Pakistan","Arab world"];
-  const queries=[base+" product photo",base+" real photo",base+" "+(p.subsection||"")];
-  if(/hijab|abaya|jilbab|khimar|salwar|kurti|dress|clothing|sports hijab/i.test(sec)){
-    queries.push(base+" modest Muslim woman",base+" hijab abaya",base+" full length modest fashion");
+const NON_PRODUCT_TERMS=new Set([
+  "a","an","and","the","for","of","to","with","from","real","photo","photos","image","images",
+  "product","products","item","items","catalog","picture","pictures","high","quality","official",
+  "bangladesh","bangladeshi","south","asia","pakistan","saudi","arabia","uae","gulf","middle",
+  "east","global","modest","fashion","muslim","muslimah","woman","women","womens","men","mens",
+  "lady","ladies","person","people","wearing","studio","isolated","white","background"
+]);
+const PERSON_SCENE=/(\\b(?:woman|women|man|men|girl|boy|child|children|person|people|model|portrait|face|human|patient|nurse|doctor)\\b|\\b(?:wearing|posing|standing|sitting|holding|looking at|looking into)\\b)/i;
+const ITEM_SYNONYMS={
+  "hot-water bag":["hot water bottle","hot-water bag","heating bag"],
+  "heating pad":["heating pad","heat pad"],
+  "quran":["quran","koran"],
+  "tasbih":["tasbih","misbaha","prayer beads"],
+  "sanitary pads":["sanitary pads","menstrual pads","period pads"],
+  "pantyliners":["pantyliners","panty liners"],
+  "menstrual cup":["menstrual cup"],
+  "hair mask":["hair mask","hair treatment mask"],
+  "face wash":["face wash","facial cleanser","cleanser"],
+  "sunscreen":["sunscreen","sun cream","sunblock"],
+  "safety pins":["safety pins"],
+  "hijab undercap":["hijab undercap","undercap","inner cap"],
+  "hijab inner":["hijab inner","inner cap","undercap"],
+  "prayer mat / janamaz":["prayer mat","janamaz","prayer rug"],
+  "quran stand":["quran stand","rehal"],
+  "abaya":["abaya","abāya"],
+  "burqa":["burqa","burqa","borkha","burka"],
+  "niqab":["niqab","face veil"],
+  "khimar":["khimar","khimaar"],
+  "jilbab":["jilbab","jilbaab"]
+};
+function imageText(item){
+  return [item.title,item.creator,item.description,item.provider,item.source,(item.tags||[]).map(t=>typeof t==="string"?t:t?.name||"").join(" ")].join(" ").toLowerCase();
+}
+function normalizedTokens(text){
+  return [...new Set(String(text||"").toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g," ").split(/\\s+/).filter(w=>w.length>2&&!NON_PRODUCT_TERMS.has(w)))];
+}
+function productTerms(p){
+  const name=String(p?.name||"").replace(/[—–]/g," ");
+  let terms=normalizedTokens(name);
+  if(!terms.length)terms=normalizedTokens(p?.query||"");
+  return terms;
+}
+function objectOnlyProduct(p){
+  const name=(String(p?.name||"")+" "+String(p?.subsection||"")).toLowerCase();
+  const section=String(p?.section||"");
+  const garments=/hijab|niqab|abaya|burqa|borkha|khimar|jilbab|salwar|kameez|kurti|dress|gown|tunic|shirt|top|skirt|trouser|palazzo|pants|jogger|leggings|outerwear|garment|clothing|sleeve|kaftan|thobe|jubba|shawl|scarf|dupatta|khimar|prayer dress|sports hijab|modest workout clothes|eid outfit/i.test(name);
+  const garmentSection=["Hijab & Modest Wear","Everyday Clothing","Fitness"].includes(section) ||
+    (section==="Ramadan / Eid Essentials" && /outfit|abaya|hijab|prayer dress|clothing/i.test(name));
+  // Only actual apparel may use a model photo. Accessories, hygiene, innerwear,
+  // skincare, makeup, medical, electronics and all other catalog products must be object-only.
+  return !(garments && garmentSection);
+}
+function photoRelevance(item,p){
+  const text=imageText(item);
+  const terms=productTerms(p);
+  const key=(String(p?.name||"")).toLowerCase().replace(/[^a-z0-9]+/g," ").trim();
+  let score=0,matched=0;
+  for(const term of terms){
+    if(text.includes(term)){matched++;score+=/title/i.test(String(item.title||""))&&String(item.title||"").toLowerCase().includes(term)?4:2}
   }
-  for(const region of regionTerms.slice(0,6)) queries.push(base+" "+region);
-  return [...new Set(queries.filter(Boolean))].slice(0,10);
+  const aliases=Object.entries(ITEM_SYNONYMS).find(([key])=>p.name.toLowerCase().includes(key));
+  if(aliases){
+    const found=aliases[1].some(alias=>text.includes(alias));
+    if(found){matched=Math.max(matched,Math.min(terms.length,2));score+=5}
+    else return 0;
+  }
+  const required=terms.length<2?1:Math.min(2,terms.length);
+  if(matched<required)return 0;
+  if(key && text.includes(key))score+=6;
+  return score;
+}
+function isUsablePhoto(item,p){
+  const text=imageText(item);
+  if(!(item.url||item.thumbnail)||BAD_PHOTO.test(text))return false;
+  if(!(item.license||item.license_url))return false;
+  if(objectOnlyProduct(p)&&PERSON_SCENE.test(text))return false;
+  return photoRelevance(item,p)>0;
+}
+const openverseQuery=(p)=>{
+  const name=String(p?.name||"").trim();
+  const exact=String(p?.query||name).trim();
+  const objectOnly=objectOnlyProduct(p);
+  const queries=[
+    exact,
+    name+" product photo",
+    name+" product packshot",
+    name+" product isolated photo"
+  ];
+  if(!objectOnly){
+    queries.push(name+" Bangladesh hijab abaya product photo");
+    queries.push(name+" Bangladeshi modest fashion");
+  }else{
+    queries.push(name+" packaging product photo");
+    queries.push(name+" item on white background");
+  }
+  return [...new Set(queries.filter(Boolean))].slice(0,6);
 };
 
 const money=n=>"৳"+Number(n||0).toLocaleString("en-BD");
@@ -53,7 +138,7 @@ const priceFor=(p,i)=>{
 
 function productCard(p,i){
   const saved=savedPhotos[p.id];
-  const image=saved?.url||("/assets/shop/catalog/"+p.slug+".jpg");
+  const image=saved?.url||(p.image||("/assets/shop/catalog/"+p.slug+".jpg"));
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
     '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — catalog product photo" loading="lazy" data-photo-query="'+(p.query||p.name).replace(/"/g,'&quot;')+'"><a class="photo-credit" target="_blank" rel="noopener" hidden>Photo source</a></div>'+
@@ -152,62 +237,67 @@ async function fetchBetterPhoto(p,img,credit){
   if(!p||!img||img.dataset.photoLoaded==="1"||img.dataset.photoLoading==="1")return;
   img.dataset.photoLoading="1";
   const cacheKey=p.id;
-  if(savedPhotos[cacheKey]){
-    const c=savedPhotos[cacheKey];
-    photoCache.set(cacheKey,c);
-    usedPhotoUrls.add(c.url);
-    img.src=c.url;
-    if(credit){credit.href=c.landing||c.url;credit.textContent="Photo source";credit.hidden=false}
+  const localImage=p.image||("/assets/shop/catalog/"+p.slug+".jpg");
+  const applyRecord=(rec)=>{
+    img.src=rec.url;
+    if(credit){credit.href=rec.landing||rec.url;credit.textContent="Photo source"+(rec.provider?" · "+rec.provider:"")+(rec.license?" · "+rec.license:"");credit.hidden=false}
     img.dataset.photoLoaded="1";
     delete img.dataset.photoLoading;
-    return;
-  }
-  if(photoCache.has(cacheKey)){
-    const c=photoCache.get(cacheKey);
-    img.src=c.url;
-    if(credit){credit.href=c.landing||c.url;credit.hidden=false}
-    img.dataset.photoLoaded="1";
-    delete img.dataset.photoLoading;
-    return;
+  };
+  // Old localStorage entries were selected by a loose keyword match. Never
+  // reuse them; V3 only stores images that pass product-name and sensitivity checks.
+  const existing=savedPhotos[cacheKey];
+  if(existing && existing.url && existing.license && existing.landing){
+    const rec={...existing,title:existing.title||""};
+    const synthetic={title:rec.title||"",description:rec.description||"",url:rec.url,license:rec.license,license_url:rec.license_url,provider:rec.provider,creator:rec.creator};
+    if(isUsablePhoto(synthetic,p) && !usedPhotoUrls.has(rec.url)){
+      usedPhotoUrls.add(rec.url);photoCache.set(cacheKey,rec);applyRecord(rec);return;
+    }
+    delete savedPhotos[cacheKey];
+    try{localStorage.setItem(PHOTO_STORE_KEY,JSON.stringify(savedPhotos))}catch(e){}
   }
   for(const q of openverseQuery(p)){
     try{
       const r=await fetch("/api/images?q="+encodeURIComponent(q),{});
       if(!r.ok)continue;
       const data=await r.json();
-      const candidates=(data.results||[]).filter(x=>{
-        const txt=[x.title,x.creator,x.description,x.provider,x.source,(x.tags||[]).map(t=>typeof t==="string"?t:t?.name||"").join(" ")].join(" ");
-        return (x.url||x.thumbnail)&&!BAD_PHOTO.test(txt)&&!usedPhotoUrls.has(x.url||x.thumbnail);
-      });
-      const words=(p.name+" "+p.subsection).toLowerCase().split(/[^a-z0-9]+/).filter(w=>w.length>2);
-      const score=x=>words.reduce((n,w)=>n+((String(x.title||"")+" "+String(x.tags||"")).toLowerCase().includes(w)?1:0),0);
-      candidates.sort((a,b)=>score(b)-score(a));
+      const candidates=(data.results||[])
+        .filter(x=>isUsablePhoto(x,p)&&!usedPhotoUrls.has(x.url||x.thumbnail))
+        .map(x=>({...x,_relevance:photoRelevance(x,p)}))
+        .sort((a,b)=>b._relevance-a._relevance);
       const pick=candidates[0];
+      // No low-confidence image substitutions. Keep this product's own local
+      // catalog file rather than showing a different item or a person on a
+      // sensitive-product card.
       if(!pick)continue;
       const url=pick.url||pick.thumbnail;
-      usedPhotoUrls.add(url);
       const rec={
         url,
         landing:pick.foreign_landing_url||pick.detail_url||url,
         creator:pick.creator||"",
         provider:pick.provider||pick.source||"Open source",
         license:pick.license||"",
-        license_url:pick.license_url||""
+        license_url:pick.license_url||"",
+        title:pick.title||"",
+        description:pick.description||""
       };
+      usedPhotoUrls.add(url);
       photoCache.set(cacheKey,rec);
       persistPhoto(cacheKey,rec);
       img.onerror=()=>{
         img.onerror=null;
-        img.src="/assets/shop/catalog/"+p.slug+".jpg";
+        img.src=localImage;
         if(credit)credit.hidden=true;
+        delete img.dataset.photoLoading;
       };
-      img.src=url;
-      if(credit){credit.href=rec.landing;credit.textContent='Photo source'+(pick.provider?' · '+pick.provider:'')+(pick.license?' · '+pick.license:'');credit.hidden=false}
-      img.dataset.photoLoaded="1";
-      delete img.dataset.photoLoading;
+      applyRecord(rec);
       return;
     }catch(e){}
   }
+  img.src=localImage;
+  if(credit)credit.hidden=true;
+  img.dataset.photoLoaded="1";
+  delete img.dataset.photoLoading;
 }
 function enableRemotePhotoRefinement(){
   if(photoObserver)photoObserver.disconnect();
