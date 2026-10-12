@@ -75,13 +75,18 @@ function photoRelevance(item,p){
   for(const term of terms){
     if(text.includes(term)){matched++;score+=/title/i.test(String(item.title||""))&&String(item.title||"").toLowerCase().includes(term)?4:2}
   }
-  const aliases=Object.entries(ITEM_SYNONYMS).find(([key])=>p.name.toLowerCase().includes(key));
+  const aliases=Object.entries(ITEM_SYNONYMS).find(([aliasKey])=>p.name.toLowerCase().includes(aliasKey));
   if(aliases){
     const found=aliases[1].some(alias=>text.includes(alias));
-    if(found){matched=Math.max(matched,Math.min(terms.length,2));score+=5}
-    else return 0;
+    if(!found)return 0;
+    const synonymTokens=normalizedTokens(aliases[0]);
+    const missing=terms.filter(term=>!text.includes(term));
+    // Only words in the alias itself may be replaced by its documented synonym.
+    if(missing.some(term=>!synonymTokens.includes(term)))return 0;
+    score+=5;
+    matched=terms.length;
   }
-  const required=terms.length<2?1:Math.min(2,terms.length);
+  const required=terms.length;
   if(matched<required)return 0;
   if(key && text.includes(key))score+=6;
   return score;
@@ -342,6 +347,11 @@ async function init(){
   try{
     const res=await fetch(DATA_URL,{cache:"no-store"});if(!res.ok)throw new Error("Catalog data failed");
     const data=await res.json();state.products=data.products||[];
+    state.cart=state.cart.map(item=>{
+      const product=state.products.find(p=>p.id===item.id);
+      return product?{...item,image:product.image||("/assets/shop/catalog/"+product.slug+".jpg")}:item;
+    });
+    saveCart();
     render();
   }catch(e){
     const grid=document.getElementById("productGrid");if(grid)grid.innerHTML='<div class="catalog-empty"><h3>Catalog loading failed.</h3><p>Please refresh the page.</p></div>';
