@@ -1,0 +1,53 @@
+name: Catalog photo search diagnostics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/catalog-photo-diagnostic.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Probe image sources for exact catalog queries
+        run: |
+          python - <<'PY'
+          import requests
+          headers={"User-Agent":"AnnikaImageSearch/1.0","Accept":"application/json"}
+          tests=[
+            "chiffon hijab scarf",
+            "palazzo pants",
+            "sanitary pads product",
+            "digital thermometer product"
+          ]
+          for q in tests:
+            try:
+              r=requests.get("https://api.openverse.org/v1/images/",params={"q":q,"page_size":10,"mature":"false","license_type":"commercial"},headers=headers,timeout=15)
+              print("OPENVERSE",q,"status=",r.status_code,"bytes=",len(r.content))
+              if r.ok:
+                data=r.json()
+                print("COUNT",len(data.get("results",[])))
+                for item in data.get("results",[])[:5]:
+                  print("ITEM",item.get("title"),"|",item.get("license"),"|",item.get("url"))
+            except Exception as e:
+              print("OPENVERSE_ERROR",q,repr(e))
+          q="palazzo pants filetype:bitmap"
+          try:
+            r=requests.get("https://commons.wikimedia.org/w/api.php",params={"action":"query","generator":"search","gsrsearch":q,"gsrnamespace":"6","gsrlimit":"10","prop":"imageinfo|info","iiprop":"url|size|mime|extmetadata","iiurlwidth":"1400","format":"json","formatversion":"2"},headers=headers,timeout=15)
+            print("COMMONS status=",r.status_code,"bytes=",len(r.content))
+            if r.ok:
+              pages=r.json().get("query",{}).get("pages",[])
+              print("COMMONS_COUNT",len(pages))
+              for item in pages[:10]:
+                print("COMMONS_ITEM",item.get("title"))
+          except Exception as e:
+            print("COMMONS_ERROR",repr(e))
+          PY
