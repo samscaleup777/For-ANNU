@@ -17,6 +17,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Install request client
+        run: python -m pip install requests
       - name: Probe image sources for exact catalog queries
         run: |
           python - <<'PY'
