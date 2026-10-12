@@ -21,7 +21,7 @@ const NON_PRODUCT_TERMS=new Set([
   "east","global","modest","fashion","muslim","muslimah","woman","women","womens","men","mens",
   "lady","ladies","person","people","wearing","studio","isolated","white","background"
 ]);
-const PERSON_SCENE=/(\\b(?:woman|women|man|men|girl|boy|child|children|person|people|model|portrait|face|human|patient|nurse|doctor)\\b|\\b(?:wearing|posing|standing|sitting|holding|looking at|looking into)\\b)/i;
+const PERSON_SCENE=/(\b(?:woman|women|man|men|girl|boy|child|children|person|people|model|portrait|face|human|patient|nurse|doctor)\b|\b(?:wearing|posing|standing|sitting|holding|looking at|looking into)\b)/i;
 const ITEM_SYNONYMS={
   "hot-water bag":["hot water bottle","hot-water bag","heating bag"],
   "heating pad":["heating pad","heat pad"],
@@ -48,7 +48,7 @@ function imageText(item){
   return [item.title,item.creator,item.description,item.provider,item.source,(item.tags||[]).map(t=>typeof t==="string"?t:t?.name||"").join(" ")].join(" ").toLowerCase();
 }
 function normalizedTokens(text){
-  return [...new Set(String(text||"").toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g," ").split(/\\s+/).filter(w=>w.length>2&&!NON_PRODUCT_TERMS.has(w)))];
+  return [...new Set(String(text||"").toLowerCase().replace(/&/g," and ").replace(/[^a-z0-9]+/g," ").split(/\s+/).filter(w=>w.length>2&&!NON_PRODUCT_TERMS.has(w)))];
 }
 function productTerms(p){
   const name=String(p?.name||"").replace(/[—–]/g," ");
@@ -59,12 +59,13 @@ function productTerms(p){
 function objectOnlyProduct(p){
   const name=(String(p?.name||"")+" "+String(p?.subsection||"")).toLowerCase();
   const section=String(p?.section||"");
-  const garments=/hijab|niqab|abaya|burqa|borkha|khimar|jilbab|salwar|kameez|kurti|dress|gown|tunic|shirt|top|skirt|trouser|palazzo|pants|jogger|leggings|outerwear|garment|clothing|sleeve|kaftan|thobe|jubba|shawl|scarf|dupatta|khimar|prayer dress|sports hijab|modest workout clothes|eid outfit/i.test(name);
+  const garments=/niqab|abaya|burqa|borkha|khimar|jilbab|salwar|kameez|kurti|dress|gown|tunic|shirt|top|skirt|trouser|palazzo|pants|jogger|leggings|outerwear|garment|clothing|sleeve|kaftan|thobe|jubba|shawl|scarf|dupatta|prayer dress|sports hijab|modest workout clothes|eid outfit|\\bhijab\\b/i.test(name);
+  const accessory=/pin|magnet|clip|undercap|inner cap|bonnet|organizer|storage|ring|brush|bag|holder|accessor|case|pouch|belt|belt|socks|glove/i.test(name);
   const garmentSection=["Hijab & Modest Wear","Everyday Clothing","Fitness"].includes(section) ||
     (section==="Ramadan / Eid Essentials" && /outfit|abaya|hijab|prayer dress|clothing/i.test(name));
-  // Only actual apparel may use a model photo. Accessories, hygiene, innerwear,
-  // skincare, makeup, medical, electronics and all other catalog products must be object-only.
-  return !(garments && garmentSection);
+  // Only wearable apparel may show a model. Accessories, all hygiene/innerwear,
+  // skincare, makeup, medical, electronics and all other catalog products are object-only.
+  return !(garments && garmentSection && !accessory);
 }
 function photoRelevance(item,p){
   const text=imageText(item);
