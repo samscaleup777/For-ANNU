@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: annika-catalog-photo-refresh
+  group: annika-catalog-photo-refresh-v2
   cancel-in-progress: true
 
 jobs:
