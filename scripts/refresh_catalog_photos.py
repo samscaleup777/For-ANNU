@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""Strict, non-destructive catalog photo refresh for Annïka.
+"""Strict catalog photo reset for Annïka.
 
-Only replaces an existing product image when search metadata strongly matches the
-product's meaningful name tokens, the image is open-licensed/commercial-use eligible,
-the file is a real high-resolution photograph, and the candidate passes sensitive-
-product people-image exclusion. Failed matches preserve the current local asset and
-are recorded in data/image-credits.json for review.
-"""
+Replace legacy catalog photos only with exact-name, openly licensed, high-resolution
+product-only photos that pass face/person detection and duplicate checks. If no safe
+exact match is found, delete the old photo and make a labeled product-only SVG graphic.
+The maintenance audit lists products still needing an exact licensed photo.
 from __future__ import annotations
 import io, json, re, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -203,13 +201,14 @@ def queries(p):
     name=p.get("name","").strip()
     query_terms=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP]
     cleaned=" ".join(query_terms)
-    # Search for flat-lay/isolated product-only photography, never people or models.
-    options=[name,cleaned]
+    # Never search for a model, wearer, portrait, or human. Keep candidate metadata
+    # tied to the exact item, but try multiple product-photography query styles.
+    options=[name,cleaned,name+" isolated product photo",name+" flat lay product photo"]
     if p.get("section") in {"Hijab & Modest Wear","Everyday Clothing","Fitness","Ramadan / Eid Essentials"}:
-        options.extend([name+" folded garment product photo",name+" flat lay isolated product"])
+        options.extend([name+" folded garment flat lay",name+" product only no model"])
     else:
-        options.extend([name+" product packshot",name+" isolated product photo"])
-    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:4]
+        options.extend([name+" object-only product photo",name+" product packaging photo"])
+    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:6]
 
 def search_product(p):
     items=[];seen=set()
@@ -222,7 +221,7 @@ def search_product(p):
         # Exact-match results are enough; do not broaden to unrelated general terms.
         if len(items)>=12:break
     if len(items)<2:
-        for q in queries(p)[:2]:
+        for q in queries(p)[:4]:
             for c in commons(q):
                 key=c.get("url") or c.get("foreign_landing_url")
                 if not key or key in seen:continue
@@ -238,7 +237,7 @@ def download(url):
         r.raise_for_status()
         if not r.headers.get("content-type","").lower().startswith("image/"):return None
         data=r.content
-        if len(data)<12000 or len(data)>10000000:return None
+        if len(data)<5000 or len(data)>10000000:return None
         im=Image.open(io.BytesIO(data)).convert("RGB");im.load()
         if min(im.size)<700:return None
         return data,im
@@ -358,6 +357,17 @@ def main():
           "creator":c.get("creator",""),"landing_url":c.get("foreign_landing_url") or c.get("detail_url") or url,
           "original_url":url,"quality_check":"exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check"})
         print(f"UPDATED {i}/{len(products)} {p['id']} {p['name']} <- {provider}",flush=True)
+
+    # Remove every unreferenced/legacy image from the product-photo storage folder.
+    # Only exact verified JPEGs and currently referenced product-only SVG placeholders stay.
+    active_jpgs={p["slug"]+".jpg" for p in products if str(p.get("image","")).endswith(".jpg")}
+    for legacy in OUT.iterdir():
+        if legacy.is_file() and legacy.suffix.lower() in {".jpg",".jpeg",".png",".webp",".gif"} and legacy.name not in active_jpgs:
+            legacy.unlink(missing_ok=True)
+    active_placeholders={p["slug"]+".svg" for p in products if "/placeholders/" in str(p.get("image",""))}
+    for legacy in PLACEHOLDERS.glob("*.svg"):
+        if legacy.name not in active_placeholders:
+            legacy.unlink(missing_ok=True)
 
     catalog["image_strategy"]="Use a locally stored open-licensed product-only photo only after exact product-name matching, >=700px resolution, face/person screening and duplicate checks. If no safe exact match exists, remove the old photograph and show a named object-only reference graphic until a suitable photo is verified."
     CATALOG.write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding="utf-8")
