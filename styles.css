@@ -66,7 +66,7 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
 
 /* Clear, regionally relevant modest-fashion photography */
 .hero-art{
-  background-image:linear-gradient(180deg,rgba(18,49,38,.04) 0%,rgba(18,49,38,.18) 45%,rgba(18,49,38,.56) 100%),url("https://funnelbuilder.sgp1.cdn.digitaloceanspaces.com/products/01K8567SRB8G4M9NC2THD16AZT.jpg");
+  background-image:linear-gradient(180deg,rgba(18,49,38,.04) 0%,rgba(18,49,38,.18) 45%,rgba(18,49,38,.56) 100%);
   background-size:cover;
   background-position:center 28%;
 }
@@ -76,7 +76,7 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
   background:rgba(18,49,38,.84);
 }
 .feature-photo{
-  background:linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.12)),url("https://cdn.manfarebd.com/glamtouch/media/lg/175118641210460316973_gt_1645_1.webp") center 45%/cover no-repeat;
+  background:linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.12));
 }
 
 /* Keep actual photographs crisp: no blend, opacity wash or backdrop blur. */
@@ -86,8 +86,8 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
 
 
 /* Bangladesh modest-fashion photo styling */
-.hero-art{background-image:linear-gradient(180deg,rgba(18,49,38,.04),rgba(18,49,38,.48)),url("https://funnelbuilder.sgp1.cdn.digitaloceanspaces.com/products/01K8567SRB8G4M9NC2THD16AZT.jpg");background-size:cover;background-position:center 28%}
-.feature-photo{background:linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.12)),url("https://cdn.manfarebd.com/glamtouch/media/lg/175118641210460316973_gt_1645_1.webp") center 45%/cover no-repeat}
+.hero-art{background-image:linear-gradient(180deg,rgba(18,49,38,.04),rgba(18,49,38,.48));background-size:cover;background-position:center 28%}
+.feature-photo{background:linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.12))}
 /* Clear product and modest-fashion imagery; never blur the picture itself. */
 .hero-art.has-real-visual>img{opacity:1;mix-blend-mode:normal;filter:none}
 .hero-card{-webkit-backdrop-filter:none;backdrop-filter:none}
