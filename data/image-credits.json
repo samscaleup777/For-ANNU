@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-13T00:02:47Z",
+  "generatedAt": "2026-10-13T22:50:40Z",
   "providers": {
-    "Wikimedia Commons": 199
+    "Wikimedia Commons": 196
   },
   "images": [
     {
@@ -200,6 +200,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "46",
+      "name": "Loungewear",
+      "slug": "46-loungewear",
+      "query": "Loungewear",
+      "provider": "Wikimedia Commons",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "creator": "<bdi><a href=\"https://en.wikipedia.org/wiki/en:Callot_Soeurs\" class=\"extiw\" title=\"w:en:Callot Soeurs\"><span title=\"French fashion house\">Callot Soeurs</span></a></bdi>",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Loungewear_MET_CI44.64.16b_F.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Loungewear_MET_CI44.64.16b_F.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/46-loungewear.jpg"
+    },
+    {
       "id": "47",
       "name": "Sweaters",
       "slug": "47-sweaters",
@@ -369,6 +383,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "67",
+      "name": "Undershirts",
+      "slug": "67-undershirts",
+      "query": "Undershirts",
+      "provider": "Wikimedia Commons",
+      "license": "Public domain",
+      "license_url": "",
+      "creator": "Department of the Interior. Patent Office. (1849 - 1925)",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:O._P._Flynt_Undershirts_-_DPLA_-_755d20a88778c3d5342d04979c28559c_%28page_2%29.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/O._P._Flynt_Undershirts_-_DPLA_-_755d20a88778c3d5342d04979c28559c_%28page_2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/67-undershirts.jpg"
+    },
+    {
       "id": "68",
       "name": "Socks",
       "slug": "68-socks",
@@ -406,6 +434,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Tasbih_or_prayer_beads.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Tasbih_or_prayer_beads.jpg/1920px-Tasbih_or_prayer_beads.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "76",
+      "name": "Quran",
+      "slug": "76-quran",
+      "query": "quran book",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Umarkairanvi\" title=\"User:Umarkairanvi\">Umarkairanvi</a>",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Quran_Hindi_works_book_display_on_shop_4.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Quran_Hindi_works_book_display_on_shop_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/76-quran.jpg"
     },
     {
       "id": "77",
@@ -1994,6 +2036,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "288",
+      "name": "Dumbbells",
+      "slug": "288-dumbbells",
+      "query": "dumbbells fitness",
+      "provider": "Wikimedia Commons",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Shixart1985\" title=\"User:Shixart1985\">Shixart1985</a>",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Strength_training_and_fitness_workout_in_a_home_gym_setting_with_dumbbells_and_exercise_gear.jpg",
+      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Strength_training_and_fitness_workout_in_a_home_gym_setting_with_dumbbells_and_exercise_gear.jpg/1920px-Strength_training_and_fitness_workout_in_a_home_gym_setting_with_dumbbells_and_exercise_gear.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/288-dumbbells.jpg"
+    },
+    {
       "id": "289",
       "name": "Water Bottle",
       "slug": "289-water-bottle",
@@ -2501,5 +2557,5 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     }
   ],
-  "policy": "Only photo attribution records for sourced photos are shown here. Unmatched products and photo checks are stored in maintenance/catalog-photo-audit.json and are not served by the production site."
+  "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG."
 }

@@ -783,7 +783,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/46-loungewear.svg"
+      "image": "/assets/shop/catalog/46-loungewear.jpg"
     },
     {
       "id": "47",
@@ -1098,7 +1098,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/67-undershirts.svg"
+      "image": "/assets/shop/catalog/67-undershirts.jpg"
     },
     {
       "id": "68",
@@ -1245,7 +1245,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/76-quran.svg"
+      "image": "/assets/shop/catalog/76-quran.jpg"
     },
     {
       "id": "77",
@@ -4321,7 +4321,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/288-dumbbells.svg"
+      "image": "/assets/shop/catalog/288-dumbbells.jpg"
     },
     {
       "id": "289",
@@ -5252,8 +5252,8 @@
       "Openverse",
       "Wikimedia Commons"
     ],
-    "verifiedPhotoCount": 192,
-    "namedObjectOnlyPlaceholderCount": 158,
-    "policy": "Only locally stored, source-credited photos whose metadata matches the product name and which passed face/person detection are shown as photos. Unverified legacy photos were removed. Products without an exact approved photo use a labeled product-only SVG illustration with no people."
+    "verifiedPhotoCount": 196,
+    "namedObjectOnlyPlaceholderCount": 154,
+    "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG."
   }
 }
