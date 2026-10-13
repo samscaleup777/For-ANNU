@@ -8,950 +8,1108 @@
       "id": "01",
       "name": "Hijab — Chiffon",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/01-hijab-chiffon.svg"
     },
     {
       "id": "02",
       "name": "Hijab — Cotton",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/02-hijab-cotton.svg"
     },
     {
       "id": "03",
       "name": "Hijab — Jersey",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/03-hijab-jersey.svg"
     },
     {
       "id": "04",
       "name": "Hijab — Georgette",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/04-hijab-georgette.svg"
     },
     {
       "id": "05",
       "name": "Instant Hijab",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/05-instant-hijab.svg"
     },
     {
       "id": "06",
       "name": "Khimar",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/06-khimar.svg"
     },
     {
       "id": "07",
       "name": "Hijab Undercap",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/07-hijab-undercap.svg"
     },
     {
       "id": "08",
       "name": "Hijab Inner",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/08-hijab-inner.svg"
     },
     {
       "id": "09",
       "name": "Hijab Magnets",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/09-hijab-magnets.svg"
     },
     {
       "id": "12",
       "name": "Hijab Clips",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/12-hijab-clips.svg"
     },
     {
       "id": "13",
       "name": "Hijab Storage Organizer",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/13-hijab-storage-organizer.svg"
     },
     {
       "id": "14",
       "name": "Hijab Hanger",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/14-hijab-hanger.svg"
     },
     {
       "id": "15",
       "name": "Hijab Scarf Ring",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/15-hijab-scarf-ring.svg"
     },
     {
       "id": "16",
       "name": "Long Modest Dresses",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/16-long-modest-dresses.svg"
     },
     {
       "id": "20",
       "name": "Prayer Khimar",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/20-prayer-khimar.svg"
     },
     {
       "id": "23",
       "name": "Modest Tunics",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/23-modest-tunics.svg"
     },
     {
       "id": "25",
       "name": "Wide-Leg Trousers",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/25-wide-leg-trousers.svg"
     },
     {
       "id": "28",
       "name": "Kameez",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/28-kameez.svg"
     },
     {
       "id": "30",
       "name": "Dupatta",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/30-dupatta.svg"
     },
     {
       "id": "33",
       "name": "Arm Sleeves",
       "section": "Hijab & Modest Wear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/33-arm-sleeves.svg"
     },
     {
       "id": "35",
       "name": "Home Dresses",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/35-home-dresses.svg"
     },
     {
       "id": "38",
       "name": "Long Shirts",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/38-long-shirts.svg"
     },
     {
       "id": "41",
       "name": "Long Skirts",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/41-long-skirts.svg"
     },
     {
       "id": "42",
       "name": "Palazzo",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/42-palazzo.svg"
     },
     {
       "id": "43",
       "name": "Loose Trousers",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/43-loose-trousers.svg"
     },
     {
       "id": "44",
       "name": "Nightwear",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/44-nightwear.svg"
     },
     {
       "id": "46",
       "name": "Loungewear",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/46-loungewear.svg"
     },
     {
       "id": "48",
       "name": "Cardigans",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/48-cardigans.svg"
     },
     {
       "id": "52",
       "name": "Eid Outfits",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/52-eid-outfits.svg"
     },
     {
       "id": "53",
       "name": "Wedding / Occasion Outfits",
       "section": "Everyday Clothing",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/53-wedding-occasion-outfits.svg"
     },
     {
       "id": "60",
       "name": "Seamless Underwear",
       "section": "Innerwear & Undergarments",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/60-seamless-underwear.svg"
     },
     {
       "id": "62",
       "name": "Camisoles",
       "section": "Innerwear & Undergarments",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/62-camisoles.svg"
     },
     {
       "id": "64",
       "name": "Inner Tops",
       "section": "Innerwear & Undergarments",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/64-inner-tops.svg"
     },
     {
       "id": "65",
       "name": "Inner Pants",
       "section": "Innerwear & Undergarments",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/65-inner-pants.svg"
     },
     {
       "id": "69",
       "name": "Thermal Innerwear",
       "section": "Innerwear & Undergarments",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/69-thermal-innerwear.svg"
     },
     {
       "id": "71",
       "name": "Foldable Travel Prayer Mat",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/71-foldable-travel-prayer-mat.svg"
     },
     {
       "id": "72",
       "name": "Prayer Dress",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/72-prayer-dress.svg"
     },
     {
       "id": "73",
       "name": "Prayer Khimar",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/73-prayer-khimar.svg"
     },
     {
       "id": "75",
       "name": "Digital Tasbih / Counter",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/75-digital-tasbih-counter.svg"
     },
     {
       "id": "76",
       "name": "Quran",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/76-quran.svg"
     },
     {
       "id": "79",
       "name": "Quran Bookmark",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/79-quran-bookmark.svg"
     },
     {
       "id": "81",
       "name": "Dua Book",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/81-dua-book.svg"
     },
     {
       "id": "82",
       "name": "Prayer-Time Clock",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/82-prayer-time-clock.svg"
     },
     {
       "id": "83",
       "name": "Qibla Compass",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/83-qibla-compass.svg"
     },
     {
       "id": "84",
       "name": "Islamic Wall Calendar",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/84-islamic-wall-calendar.svg"
     },
     {
       "id": "85",
       "name": "Prayer Garment Storage Bag",
       "section": "Salah / Prayer Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/85-prayer-garment-storage-bag.svg"
     },
     {
       "id": "87",
       "name": "Pantyliners",
       "section": "Menstrual & Personal Hygiene",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/87-pantyliners.svg"
     },
     {
       "id": "88",
       "name": "Tampons",
       "section": "Menstrual & Personal Hygiene",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/88-tampons.svg"
     },
     {
       "id": "91",
       "name": "Period Disposal Bags",
       "section": "Menstrual & Personal Hygiene",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/91-period-disposal-bags.svg"
     },
     {
       "id": "98",
       "name": "Intimate Hygiene Products",
       "section": "Menstrual & Personal Hygiene",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/98-intimate-hygiene-products.svg"
     },
     {
       "id": "99",
       "name": "Body Wash",
       "section": "Menstrual & Personal Hygiene",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/99-body-wash.svg"
     },
     {
       "id": "105",
       "name": "Personal Hygiene Pouch",
       "section": "Menstrual & Personal Hygiene",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/105-personal-hygiene-pouch.svg"
     },
     {
       "id": "106",
       "name": "Face Wash",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/106-face-wash.svg"
     },
     {
       "id": "107",
       "name": "Cleansing Balm / Oil",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/107-cleansing-balm-oil.svg"
     },
     {
       "id": "108",
       "name": "Micellar Water",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/108-micellar-water.svg"
     },
     {
       "id": "109",
       "name": "Toner",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/109-toner.svg"
     },
     {
       "id": "110",
       "name": "Serum",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/110-serum.svg"
     },
     {
       "id": "111",
       "name": "Moisturizer",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/111-moisturizer.svg"
     },
     {
       "id": "114",
       "name": "SPF Lip Balm",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/114-spf-lip-balm.svg"
     },
     {
       "id": "115",
       "name": "Face Mask",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/115-face-mask.svg"
     },
     {
       "id": "116",
       "name": "Sheet Mask",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/116-sheet-mask.svg"
     },
     {
       "id": "117",
       "name": "Exfoliator",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/117-exfoliator.svg"
     },
     {
       "id": "118",
       "name": "Acne Patches",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/118-acne-patches.svg"
     },
     {
       "id": "119",
       "name": "Pimple Treatment",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/119-pimple-treatment.svg"
     },
     {
       "id": "121",
       "name": "Lip Scrub",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/121-lip-scrub.svg"
     },
     {
       "id": "122",
       "name": "Lip Mask",
       "section": "Skincare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/122-lip-mask.svg"
     },
     {
       "id": "129",
       "name": "BB / CC Cream",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/129-bb-cc-cream.svg"
     },
     {
       "id": "130",
       "name": "Foundation",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/130-foundation.svg"
     },
     {
       "id": "131",
       "name": "Concealer",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/131-concealer.svg"
     },
     {
       "id": "134",
       "name": "Highlighter",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/134-highlighter.svg"
     },
     {
       "id": "135",
       "name": "Eyebrow Pencil",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/135-eyebrow-pencil.svg"
     },
     {
       "id": "136",
       "name": "Eyeliner",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/136-eyeliner.svg"
     },
     {
       "id": "137",
       "name": "Kajal",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/137-kajal.svg"
     },
     {
       "id": "138",
       "name": "Mascara",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/138-mascara.svg"
     },
     {
       "id": "143",
       "name": "Makeup Remover",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/143-makeup-remover.svg"
     },
     {
       "id": "146",
       "name": "Makeup Organizer",
       "section": "Modest Everyday Makeup",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/146-makeup-organizer.svg"
     },
     {
       "id": "152",
       "name": "Hair Serum",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/152-hair-serum.svg"
     },
     {
       "id": "153",
       "name": "Leave-In Conditioner",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/153-leave-in-conditioner.svg"
     },
     {
       "id": "156",
       "name": "Wide-Tooth Comb",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/156-wide-tooth-comb.svg"
     },
     {
       "id": "158",
       "name": "Scrunchies",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/158-scrunchies.svg"
     },
     {
       "id": "160",
       "name": "Claw Clips",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/160-claw-clips.svg"
     },
     {
       "id": "167",
       "name": "Curling Tool",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/167-curling-tool.svg"
     },
     {
       "id": "168",
       "name": "Heat Protectant",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/168-heat-protectant.svg"
     },
     {
       "id": "169",
       "name": "Satin / Silk Bonnet",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/169-satin-silk-bonnet.svg"
     },
     {
       "id": "170",
       "name": "Satin Pillowcase",
       "section": "Haircare",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/170-satin-pillowcase.svg"
     },
     {
       "id": "174",
       "name": "Cuticle Oil",
       "section": "Hands, Feet & Grooming",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/174-cuticle-oil.svg"
     },
     {
       "id": "178",
       "name": "Heel-Care Cream",
       "section": "Hands, Feet & Grooming",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/178-heel-care-cream.svg"
     },
     {
       "id": "179",
       "name": "Pedicure Kit",
       "section": "Hands, Feet & Grooming",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/179-pedicure-kit.svg"
     },
     {
       "id": "181",
       "name": "Tweezers",
       "section": "Hands, Feet & Grooming",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/181-tweezers.svg"
     },
     {
       "id": "182",
       "name": "Facial Razor",
       "section": "Hands, Feet & Grooming",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/182-facial-razor.svg"
     },
     {
       "id": "184",
       "name": "Body Razor",
       "section": "Hands, Feet & Grooming",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/184-body-razor.svg"
     },
     {
       "id": "188",
       "name": "Attar",
       "section": "Fragrance",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/188-attar.svg"
     },
     {
       "id": "190",
       "name": "Body Mist",
       "section": "Fragrance",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/190-body-mist.svg"
     },
     {
       "id": "191",
       "name": "Roll-On Fragrance",
       "section": "Fragrance",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/191-roll-on-fragrance.svg"
     },
     {
       "id": "192",
       "name": "Hair Mist",
       "section": "Fragrance",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/192-hair-mist.svg"
     },
     {
       "id": "206",
       "name": "Hijab Brooch",
       "section": "Jewellery & Accessories",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/206-hijab-brooch.svg"
     },
     {
       "id": "207",
       "name": "Hijab Magnets",
       "section": "Jewellery & Accessories",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/207-hijab-magnets.svg"
     },
     {
       "id": "213",
       "name": "Clutch",
       "section": "Jewellery & Accessories",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/213-clutch.svg"
     },
     {
       "id": "218",
       "name": "Walking Shoes",
       "section": "Footwear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/218-walking-shoes.svg"
     },
     {
       "id": "220",
       "name": "Formal Shoes",
       "section": "Footwear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/220-formal-shoes.svg"
     },
     {
       "id": "221",
       "name": "Occasion Shoes",
       "section": "Footwear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/221-occasion-shoes.svg"
     },
     {
       "id": "225",
       "name": "Winter Shoes / Boots",
       "section": "Footwear",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/225-winter-shoes-boots.svg"
     },
     {
       "id": "226",
       "name": "Bedsheets",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/226-bedsheets.svg"
     },
     {
       "id": "228",
       "name": "Pillowcases",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/228-pillowcases.svg"
     },
     {
       "id": "230",
       "name": "Comforter",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/230-comforter.svg"
     },
     {
       "id": "231",
       "name": "Mattress Protector",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/231-mattress-protector.svg"
     },
     {
       "id": "236",
       "name": "Wardrobe Organizers",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/236-wardrobe-organizers.svg"
     },
     {
       "id": "237",
       "name": "Hijab Organizer",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/237-hijab-organizer.svg"
     },
     {
       "id": "238",
       "name": "Jewelry Organizer",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/238-jewelry-organizer.svg"
     },
     {
       "id": "239",
       "name": "Makeup Organizer",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/239-makeup-organizer.svg"
     },
     {
       "id": "240",
       "name": "Skincare Organizer",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/240-skincare-organizer.svg"
     },
     {
       "id": "241",
       "name": "Full-Length Mirror",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/241-full-length-mirror.svg"
     },
     {
       "id": "244",
       "name": "Shoe Organizer",
       "section": "Home & Personal Room",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/244-shoe-organizer.svg"
     },
     {
       "id": "245",
       "name": "Handbag",
       "section": "Work / Study",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/245-handbag.svg"
     },
     {
       "id": "246",
       "name": "Backpack",
       "section": "Work / Study",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/246-backpack.svg"
     },
     {
       "id": "248",
       "name": "Laptop Sleeve",
       "section": "Work / Study",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/248-laptop-sleeve.svg"
     },
     {
       "id": "260",
       "name": "Earbuds / Headphones",
       "section": "Work / Study",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/260-earbuds-headphones.svg"
     },
     {
       "id": "266",
       "name": "Packing Cubes",
       "section": "Travel",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/266-packing-cubes.svg"
     },
     {
       "id": "267",
       "name": "Hijab Travel Organizer",
       "section": "Travel",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/267-hijab-travel-organizer.svg"
     },
     {
       "id": "268",
       "name": "Travel Prayer Mat",
       "section": "Travel",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/268-travel-prayer-mat.svg"
     },
     {
       "id": "269",
       "name": "Travel Prayer Dress",
       "section": "Travel",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/269-travel-prayer-dress.svg"
     },
     {
       "id": "270",
       "name": "Toiletry Bag",
       "section": "Travel",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/270-toiletry-bag.svg"
     },
     {
       "id": "271",
       "name": "Makeup Pouch",
       "section": "Travel",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/271-makeup-pouch.svg"
     },
     {
       "id": "272",
       "name": "Jewellery Pouch",
       "section": "Travel",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/272-jewellery-pouch.svg"
     },
     {
       "id": "275",
       "name": "Travel-Size Bottles",
       "section": "Travel",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/275-travel-size-bottles.svg"
     },
     {
       "id": "281",
       "name": "Sports Hijab",
       "section": "Fitness",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/281-sports-hijab.svg"
     },
     {
       "id": "284",
       "name": "Loose Workout Top",
       "section": "Fitness",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/284-loose-workout-top.svg"
     },
     {
       "id": "285",
       "name": "Sneakers",
       "section": "Fitness",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/285-sneakers.svg"
     },
     {
       "id": "298",
       "name": "Personal Medicines",
       "section": "Emergency & Safety",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/298-personal-medicines.svg"
     },
     {
       "id": "302",
       "name": "Emergency Contact Card",
       "section": "Emergency & Safety",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/302-emergency-contact-card.svg"
     },
     {
       "id": "303",
       "name": "Small Flashlight",
       "section": "Emergency & Safety",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/303-small-flashlight.svg"
     },
     {
       "id": "306",
       "name": "Portable Power Bank",
       "section": "Emergency & Safety",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/306-portable-power-bank.svg"
     },
     {
       "id": "311",
       "name": "Mini Scissors",
       "section": "Clothing Care",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/311-mini-scissors.svg"
     },
     {
       "id": "313",
       "name": "Fabric Tape",
       "section": "Clothing Care",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/313-fabric-tape.svg"
     },
     {
       "id": "315",
       "name": "Stain Remover",
       "section": "Clothing Care",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/315-stain-remover.svg"
     },
     {
       "id": "318",
       "name": "Garment Steamer",
       "section": "Clothing Care",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/318-garment-steamer.svg"
     },
     {
       "id": "320",
       "name": "Delicate-Wash Bags",
       "section": "Clothing Care",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/320-delicate-wash-bags.svg"
     },
     {
       "id": "321",
       "name": "Smartphone",
       "section": "Personal Electronics",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/321-smartphone.svg"
     },
     {
       "id": "335",
       "name": "Cable Organizer",
       "section": "Personal Electronics",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/335-cable-organizer.svg"
     },
     {
       "id": "336",
       "name": "Eid Outfit",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/336-eid-outfit.svg"
     },
     {
       "id": "337",
       "name": "Abaya",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/337-abaya.svg"
     },
     {
       "id": "338",
       "name": "Hijab",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/338-hijab.svg"
     },
     {
       "id": "339",
       "name": "Prayer Dress",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/339-prayer-dress.svg"
     },
     {
       "id": "341",
       "name": "Quran",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/341-quran.svg"
     },
     {
       "id": "342",
       "name": "Tasbih",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/342-tasbih.svg"
     },
     {
       "id": "343",
       "name": "Dua Book",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/343-dua-book.svg"
     },
     {
       "id": "345",
       "name": "Ramadan Planner",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/345-ramadan-planner.svg"
     },
     {
       "id": "347",
       "name": "Iftar Serving Essentials",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/347-iftar-serving-essentials.svg"
     },
     {
       "id": "348",
       "name": "Eid Handbag",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/348-eid-handbag.svg"
     },
     {
       "id": "349",
       "name": "Eid Footwear",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/349-eid-footwear.svg"
     },
     {
       "id": "350",
       "name": "Gift Packaging Items",
       "section": "Ramadan / Eid Essentials",
-      "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/350-gift-packaging-items.svg"
     },
     {
       "id": "17",
       "name": "Maxi Dresses",
       "section": "Hijab & Modest Wear",
-      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/17-maxi-dresses.svg"
     },
     {
       "id": "18",
       "name": "Abaya",
       "section": "Hijab & Modest Wear",
-      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/18-abaya.svg"
     },
     {
       "id": "21",
       "name": "Prayer Dress",
       "section": "Hijab & Modest Wear",
-      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/21-prayer-dress.svg"
     },
     {
       "id": "40",
       "name": "Maxi Dresses",
       "section": "Everyday Clothing",
-      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/40-maxi-dresses.svg"
     },
     {
       "id": "67",
       "name": "Undershirts",
       "section": "Innerwear & Undergarments",
-      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/67-undershirts.svg"
     },
     {
       "id": "193",
       "name": "Body Spray",
       "section": "Fragrance",
-      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/193-body-spray.svg"
     },
     {
       "id": "288",
       "name": "Dumbbells",
       "section": "Fitness",
-      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+      "reason": "No exact licensed photo passed the product-name, resolution, people/face and duplicate checks. The legacy photo has been removed; a product-only SVG reference image is shown.",
+      "placeholder": "/assets/shop/catalog/placeholders/288-dumbbells.svg"
     }
   ],
-  "policy": "Commercial-use open-license/public-domain results only. Every changed photo must contain the product's meaningful name terms in searchable metadata; sensitive/non-apparel listings reject person/model metadata. Existing photos remain unchanged when no high-confidence match exists."
+  "policy": "Verified, source-credited photo only. Legacy unmatched photos have been removed. A named product-only SVG placeholder is used until a suitable exact, openly licensed image passes person/face screening."
 }
