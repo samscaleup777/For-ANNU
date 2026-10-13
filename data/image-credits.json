@@ -31,32 +31,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "17",
-      "name": "Maxi Dresses",
-      "slug": "17-maxi-dresses",
-      "query": "Maxi Dresses",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Dr._Thomas_Liptak\" title=\"User:Dr. Thomas Liptak\">Dr. Thomas Liptak</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Must_have_2020_-_Maxi_dress_made_of_face_masks_-_1.jpg",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Must_have_2020_-_Maxi_dress_made_of_face_masks_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "18",
-      "name": "Abaya",
-      "slug": "18-abaya",
-      "query": "Abaya",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "creator": "me, Bamse",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Lake_Abaya.jpg",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Lake_Abaya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "19",
       "name": "Jilbab",
       "slug": "19-jilbab",
@@ -67,19 +41,6 @@
       "creator": "<a href=\"//commons.wikimedia.org/wiki/User:JV022Ekawati\" title=\"User:JV022Ekawati\">JV022Ekawati</a>",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Jilbab_ungu.jpg",
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Jilbab_ungu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "21",
-      "name": "Prayer Dress",
-      "slug": "21-prayer-dress",
-      "query": "Prayer Dress",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Redhatstudiophotography&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Redhatstudiophotography (page does not exist)\">Redhatstudiophotography</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Greek_Tradition_Detail_%E2%80%93_Hands_Holding_Prayer_Beads_in_Cultural_Dress.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Greek_Tradition_Detail_%E2%80%93_Hands_Holding_Prayer_Beads_in_Cultural_Dress.jpg/1920px-Greek_Tradition_Detail_%E2%80%93_Hands_Holding_Prayer_Beads_in_Cultural_Dress.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -223,19 +184,6 @@
       "creator": "<a href=\"//commons.wikimedia.org/wiki/User:In_Vitrio\" title=\"User:In Vitrio\">In Vitrio</a>",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Kurtis_Kraft_car_badge.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Kurtis_Kraft_car_badge.jpg/1920px-Kurtis_Kraft_car_badge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "40",
-      "name": "Maxi Dresses",
-      "slug": "40-maxi-dresses",
-      "query": "Maxi Dresses",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Dr._Thomas_Liptak\" title=\"User:Dr. Thomas Liptak\">Dr. Thomas Liptak</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Must_have_2020_-_Maxi_dress_made_of_face_masks_-_2.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Must_have_2020_-_Maxi_dress_made_of_face_masks_-_2.jpg/1920px-Must_have_2020_-_Maxi_dress_made_of_face_masks_-_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -418,19 +366,6 @@
       "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Tobias_ToMar_Maier\" title=\"User:Tobias ToMar Maier\">Tobias ToMar Maier</a>",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Shapewear_bodysuit_-_pose_2_-_Modelled_by_Lady_Alexi.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Shapewear_bodysuit_-_pose_2_-_Modelled_by_Lady_Alexi.jpg/1920px-Shapewear_bodysuit_-_pose_2_-_Modelled_by_Lady_Alexi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "67",
-      "name": "Undershirts",
-      "slug": "67-undershirts",
-      "query": "Undershirts",
-      "provider": "Wikimedia Commons",
-      "license": "Public domain",
-      "license_url": "",
-      "creator": "<div class=\"fn value\">\nUnknown author<span style=\"display: none;\">Unknown author</span> or not provided</div>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Industries_of_War_-_Uniforms_-_Underwear_-_MANUFACTURING_ARMY_UNDERSHIRTS._Ribbed_knitting_machines_operating_on_army_undershirts_at_the_John_Blood_%26_co.%2C_Plant%2C_N.Y._City_-_NARA_-_45490573.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Industries_of_War_-_Uniforms_-_Underwear_-_MANUFACTURING_ARMY_UNDERSHIRTS._Ribbed_knitting_machines_operating_on_army_undershirts_at_the_John_Blood_%26_co.%2C_Plant%2C_N.Y._City_-_NARA_-_45490573.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -1266,19 +1201,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "193",
-      "name": "Body Spray",
-      "slug": "193-body-spray",
-      "query": "Body Spray",
-      "provider": "Wikimedia Commons",
-      "license": "CC0",
-      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Daderot\" title=\"User:Daderot\">Daderot</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Dish_with_a_spray_of_two_saz_leaves_and_scale_pattern%2C_Turkey%2C_Iznik%2C_17th_century_AD%2C_composite_body%2C_underglaze-painted_-_Huntington_Museum_of_Art_-_DSC05018.JPG",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Dish_with_a_spray_of_two_saz_leaves_and_scale_pattern%2C_Turkey%2C_Iznik%2C_17th_century_AD%2C_composite_body%2C_underglaze-painted_-_Huntington_Museum_of_Art_-_DSC05018.JPG/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "194",
       "name": "Scented Lotion",
       "slug": "194-scented-lotion",
@@ -2069,19 +1991,6 @@
       "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Oleg_Yunakov&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Oleg Yunakov (page does not exist)\">Oleg Yunakov</a>",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Grid_Layout_of_Blue_Barry%27s_Exercise_Mats_and_Resistance_Bands.jpg",
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Grid_Layout_of_Blue_Barry%27s_Exercise_Mats_and_Resistance_Bands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "288",
-      "name": "Dumbbells",
-      "slug": "288-dumbbells",
-      "query": "dumbbells fitness",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Shixart1985\" title=\"User:Shixart1985\">Shixart1985</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Fitness_enthusiast_training_with_dumbbells_in_an_abandoned_building.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Fitness_enthusiast_training_with_dumbbells_in_an_abandoned_building.jpg/1920px-Fitness_enthusiast_training_with_dumbbells_in_an_abandoned_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -3498,6 +3407,48 @@
       "name": "Gift Packaging Items",
       "section": "Ramadan / Eid Essentials",
       "reason": "No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."
+    },
+    {
+      "id": "17",
+      "name": "Maxi Dresses",
+      "section": "Hijab & Modest Wear",
+      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+    },
+    {
+      "id": "18",
+      "name": "Abaya",
+      "section": "Hijab & Modest Wear",
+      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+    },
+    {
+      "id": "21",
+      "name": "Prayer Dress",
+      "section": "Hijab & Modest Wear",
+      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+    },
+    {
+      "id": "40",
+      "name": "Maxi Dresses",
+      "section": "Everyday Clothing",
+      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+    },
+    {
+      "id": "67",
+      "name": "Undershirts",
+      "section": "Innerwear & Undergarments",
+      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+    },
+    {
+      "id": "193",
+      "name": "Body Spray",
+      "section": "Fragrance",
+      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
+    },
+    {
+      "id": "288",
+      "name": "Dumbbells",
+      "section": "Fitness",
+      "reason": "Candidate rejected during manual title/category check; previous local image restored pending an exact product match."
     }
   ],
   "policy": "Commercial-use open-license/public-domain results only. Every changed photo must contain the product's meaningful name terms in searchable metadata; sensitive/non-apparel listings reject person/model metadata. Existing photos remain unchanged when no high-confidence match exists."
