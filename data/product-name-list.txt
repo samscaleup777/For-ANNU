@@ -1,0 +1,355 @@
+ANNÏKA — COMPLETE PRODUCT NAME LIST
+Catalog entries: 350
+Source: data/shop-catalog.json
+Note: This is a listing, not confirmation of live stock or prices. Repeated names are preserved when they are separate catalog entries.
+
+001. [ID 01] Hijab — Chiffon | Hijab & Modest Wear
+002. [ID 02] Hijab — Cotton | Hijab & Modest Wear
+003. [ID 03] Hijab — Jersey | Hijab & Modest Wear
+004. [ID 04] Hijab — Georgette | Hijab & Modest Wear
+005. [ID 05] Instant Hijab | Hijab & Modest Wear
+006. [ID 06] Khimar | Hijab & Modest Wear
+007. [ID 07] Hijab Undercap | Hijab & Modest Wear
+008. [ID 08] Hijab Inner | Hijab & Modest Wear
+009. [ID 09] Hijab Magnets | Hijab & Modest Wear
+010. [ID 10] Hijab Pins | Hijab & Modest Wear
+011. [ID 11] Safety Pins | Hijab & Modest Wear
+012. [ID 12] Hijab Clips | Hijab & Modest Wear
+013. [ID 13] Hijab Storage Organizer | Hijab & Modest Wear
+014. [ID 14] Hijab Hanger | Hijab & Modest Wear
+015. [ID 15] Hijab Scarf Ring | Hijab & Modest Wear
+016. [ID 16] Long Modest Dresses | Hijab & Modest Wear
+017. [ID 17] Maxi Dresses | Hijab & Modest Wear
+018. [ID 18] Abaya | Hijab & Modest Wear
+019. [ID 19] Jilbab | Hijab & Modest Wear
+020. [ID 20] Prayer Khimar | Hijab & Modest Wear
+021. [ID 21] Prayer Dress | Hijab & Modest Wear
+022. [ID 22] Long Cardigan | Hijab & Modest Wear
+023. [ID 23] Modest Tunics | Hijab & Modest Wear
+024. [ID 24] Long Skirts | Hijab & Modest Wear
+025. [ID 25] Wide-Leg Trousers | Hijab & Modest Wear
+026. [ID 26] Palazzo Pants | Hijab & Modest Wear
+027. [ID 27] Modest Salwar Kameez | Hijab & Modest Wear
+028. [ID 28] Kameez | Hijab & Modest Wear
+029. [ID 29] Long Kurti | Hijab & Modest Wear
+030. [ID 30] Dupatta | Hijab & Modest Wear
+031. [ID 31] Shawl | Hijab & Modest Wear
+032. [ID 32] Burqa / Niqab | Hijab & Modest Wear
+033. [ID 33] Arm Sleeves | Hijab & Modest Wear
+034. [ID 34] Leg Coverings / Leggings | Hijab & Modest Wear
+035. [ID 35] Home Dresses | Everyday Clothing
+036. [ID 36] Salwar Kameez | Everyday Clothing
+037. [ID 37] Long Tops | Everyday Clothing
+038. [ID 38] Long Shirts | Everyday Clothing
+039. [ID 39] Kurtis | Everyday Clothing
+040. [ID 40] Maxi Dresses | Everyday Clothing
+041. [ID 41] Long Skirts | Everyday Clothing
+042. [ID 42] Palazzo | Everyday Clothing
+043. [ID 43] Loose Trousers | Everyday Clothing
+044. [ID 44] Nightwear | Everyday Clothing
+045. [ID 45] Pajamas | Everyday Clothing
+046. [ID 46] Loungewear | Everyday Clothing
+047. [ID 47] Sweaters | Everyday Clothing
+048. [ID 48] Cardigans | Everyday Clothing
+049. [ID 49] Jackets | Everyday Clothing
+050. [ID 50] Raincoat | Everyday Clothing
+051. [ID 51] Winter Clothing | Everyday Clothing
+052. [ID 52] Eid Outfits | Everyday Clothing
+053. [ID 53] Wedding / Occasion Outfits | Everyday Clothing
+054. [ID 54] Everyday Bra | Innerwear & Undergarments
+055. [ID 55] Comfortable Bra | Innerwear & Undergarments
+056. [ID 56] Sports Bra | Innerwear & Undergarments
+057. [ID 57] Seamless Bra | Innerwear & Undergarments
+058. [ID 58] Nursing Bra | Innerwear & Undergarments
+059. [ID 59] Everyday Underwear | Innerwear & Undergarments
+060. [ID 60] Seamless Underwear | Innerwear & Undergarments
+061. [ID 61] Period Underwear | Innerwear & Undergarments
+062. [ID 62] Camisoles | Innerwear & Undergarments
+063. [ID 63] Slips | Innerwear & Undergarments
+064. [ID 64] Inner Tops | Innerwear & Undergarments
+065. [ID 65] Inner Pants | Innerwear & Undergarments
+066. [ID 66] Shapewear | Innerwear & Undergarments
+067. [ID 67] Undershirts | Innerwear & Undergarments
+068. [ID 68] Socks | Innerwear & Undergarments
+069. [ID 69] Thermal Innerwear | Innerwear & Undergarments
+070. [ID 70] Prayer Mat / Janamaz | Salah / Prayer Essentials
+071. [ID 71] Foldable Travel Prayer Mat | Salah / Prayer Essentials
+072. [ID 72] Prayer Dress | Salah / Prayer Essentials
+073. [ID 73] Prayer Khimar | Salah / Prayer Essentials
+074. [ID 74] Tasbih | Salah / Prayer Essentials
+075. [ID 75] Digital Tasbih / Counter | Salah / Prayer Essentials
+076. [ID 76] Quran | Salah / Prayer Essentials
+077. [ID 77] Quran Stand | Salah / Prayer Essentials
+078. [ID 78] Quran Cover | Salah / Prayer Essentials
+079. [ID 79] Quran Bookmark | Salah / Prayer Essentials
+080. [ID 80] Islamic Books | Salah / Prayer Essentials
+081. [ID 81] Dua Book | Salah / Prayer Essentials
+082. [ID 82] Prayer-Time Clock | Salah / Prayer Essentials
+083. [ID 83] Qibla Compass | Salah / Prayer Essentials
+084. [ID 84] Islamic Wall Calendar | Salah / Prayer Essentials
+085. [ID 85] Prayer Garment Storage Bag | Salah / Prayer Essentials
+086. [ID 86] Sanitary Pads | Menstrual & Personal Hygiene
+087. [ID 87] Pantyliners | Menstrual & Personal Hygiene
+088. [ID 88] Tampons | Menstrual & Personal Hygiene
+089. [ID 89] Menstrual Cup | Menstrual & Personal Hygiene
+090. [ID 90] Period Underwear | Menstrual & Personal Hygiene
+091. [ID 91] Period Disposal Bags | Menstrual & Personal Hygiene
+092. [ID 92] Heating Pad | Menstrual & Personal Hygiene
+093. [ID 93] Hot-Water Bag | Menstrual & Personal Hygiene
+094. [ID 94] Wet Wipes | Menstrual & Personal Hygiene
+095. [ID 95] Tissues | Menstrual & Personal Hygiene
+096. [ID 96] Cotton Pads | Menstrual & Personal Hygiene
+097. [ID 97] Cotton Buds | Menstrual & Personal Hygiene
+098. [ID 98] Intimate Hygiene Products | Menstrual & Personal Hygiene
+099. [ID 99] Body Wash | Menstrual & Personal Hygiene
+100. [ID 100] Soap | Menstrual & Personal Hygiene
+101. [ID 101] Deodorant | Menstrual & Personal Hygiene
+102. [ID 102] Antiperspirant | Menstrual & Personal Hygiene
+103. [ID 103] Body Lotion | Menstrual & Personal Hygiene
+104. [ID 104] Hand Sanitizer | Menstrual & Personal Hygiene
+105. [ID 105] Personal Hygiene Pouch | Menstrual & Personal Hygiene
+106. [ID 106] Face Wash | Skincare
+107. [ID 107] Cleansing Balm / Oil | Skincare
+108. [ID 108] Micellar Water | Skincare
+109. [ID 109] Toner | Skincare
+110. [ID 110] Serum | Skincare
+111. [ID 111] Moisturizer | Skincare
+112. [ID 112] Sunscreen | Skincare
+113. [ID 113] Lip Balm | Skincare
+114. [ID 114] SPF Lip Balm | Skincare
+115. [ID 115] Face Mask | Skincare
+116. [ID 116] Sheet Mask | Skincare
+117. [ID 117] Exfoliator | Skincare
+118. [ID 118] Acne Patches | Skincare
+119. [ID 119] Pimple Treatment | Skincare
+120. [ID 120] Eye Cream | Skincare
+121. [ID 121] Lip Scrub | Skincare
+122. [ID 122] Lip Mask | Skincare
+123. [ID 123] Petroleum Jelly | Skincare
+124. [ID 124] Body Scrub | Skincare
+125. [ID 125] Body Lotion | Skincare
+126. [ID 126] Body Oil | Skincare
+127. [ID 127] Hand Cream | Skincare
+128. [ID 128] Foot Cream | Skincare
+129. [ID 129] BB / CC Cream | Modest Everyday Makeup
+130. [ID 130] Foundation | Modest Everyday Makeup
+131. [ID 131] Concealer | Modest Everyday Makeup
+132. [ID 132] Compact Powder | Modest Everyday Makeup
+133. [ID 133] Blush | Modest Everyday Makeup
+134. [ID 134] Highlighter | Modest Everyday Makeup
+135. [ID 135] Eyebrow Pencil | Modest Everyday Makeup
+136. [ID 136] Eyeliner | Modest Everyday Makeup
+137. [ID 137] Kajal | Modest Everyday Makeup
+138. [ID 138] Mascara | Modest Everyday Makeup
+139. [ID 139] Eyeshadow | Modest Everyday Makeup
+140. [ID 140] Lipstick | Modest Everyday Makeup
+141. [ID 141] Lip Tint | Modest Everyday Makeup
+142. [ID 142] Lip Gloss | Modest Everyday Makeup
+143. [ID 143] Makeup Remover | Modest Everyday Makeup
+144. [ID 144] Makeup Sponge | Modest Everyday Makeup
+145. [ID 145] Makeup Brushes | Modest Everyday Makeup
+146. [ID 146] Makeup Organizer | Modest Everyday Makeup
+147. [ID 147] Makeup Mirror | Modest Everyday Makeup
+148. [ID 148] Shampoo | Haircare
+149. [ID 149] Conditioner | Haircare
+150. [ID 150] Hair Mask | Haircare
+151. [ID 151] Hair Oil | Haircare
+152. [ID 152] Hair Serum | Haircare
+153. [ID 153] Leave-In Conditioner | Haircare
+154. [ID 154] Hair Brush | Haircare
+155. [ID 155] Comb | Haircare
+156. [ID 156] Wide-Tooth Comb | Haircare
+157. [ID 157] Hair Ties | Haircare
+158. [ID 158] Scrunchies | Haircare
+159. [ID 159] Hair Clips | Haircare
+160. [ID 160] Claw Clips | Haircare
+161. [ID 161] Bobby Pins | Haircare
+162. [ID 162] Hair Pins | Haircare
+163. [ID 163] Headbands | Haircare
+164. [ID 164] Hair Bands | Haircare
+165. [ID 165] Hair Dryer | Haircare
+166. [ID 166] Hair Straightener | Haircare
+167. [ID 167] Curling Tool | Haircare
+168. [ID 168] Heat Protectant | Haircare
+169. [ID 169] Satin / Silk Bonnet | Haircare
+170. [ID 170] Satin Pillowcase | Haircare
+171. [ID 171] Nail Cutter | Hands, Feet & Grooming
+172. [ID 172] Nail File | Hands, Feet & Grooming
+173. [ID 173] Nail Buffer | Hands, Feet & Grooming
+174. [ID 174] Cuticle Oil | Hands, Feet & Grooming
+175. [ID 175] Hand Cream | Hands, Feet & Grooming
+176. [ID 176] Foot Scrub | Hands, Feet & Grooming
+177. [ID 177] Foot File | Hands, Feet & Grooming
+178. [ID 178] Heel-Care Cream | Hands, Feet & Grooming
+179. [ID 179] Pedicure Kit | Hands, Feet & Grooming
+180. [ID 180] Manicure Kit | Hands, Feet & Grooming
+181. [ID 181] Tweezers | Hands, Feet & Grooming
+182. [ID 182] Facial Razor | Hands, Feet & Grooming
+183. [ID 183] Eyebrow Razor | Hands, Feet & Grooming
+184. [ID 184] Body Razor | Hands, Feet & Grooming
+185. [ID 185] Electric Trimmer | Hands, Feet & Grooming
+186. [ID 186] Wax Strips | Hands, Feet & Grooming
+187. [ID 187] Epilator | Hands, Feet & Grooming
+188. [ID 188] Attar | Fragrance
+189. [ID 189] Perfume | Fragrance
+190. [ID 190] Body Mist | Fragrance
+191. [ID 191] Roll-On Fragrance | Fragrance
+192. [ID 192] Hair Mist | Fragrance
+193. [ID 193] Body Spray | Fragrance
+194. [ID 194] Scented Lotion | Fragrance
+195. [ID 195] Simple Earrings | Jewellery & Accessories
+196. [ID 196] Stud Earrings | Jewellery & Accessories
+197. [ID 197] Necklace | Jewellery & Accessories
+198. [ID 198] Pendant | Jewellery & Accessories
+199. [ID 199] Bracelet | Jewellery & Accessories
+200. [ID 200] Bangles | Jewellery & Accessories
+201. [ID 201] Rings | Jewellery & Accessories
+202. [ID 202] Anklet | Jewellery & Accessories
+203. [ID 203] Watch | Jewellery & Accessories
+204. [ID 204] Sunglasses | Jewellery & Accessories
+205. [ID 205] Brooch | Jewellery & Accessories
+206. [ID 206] Hijab Brooch | Jewellery & Accessories
+207. [ID 207] Hijab Magnets | Jewellery & Accessories
+208. [ID 208] Handbag | Jewellery & Accessories
+209. [ID 209] Crossbody Bag | Jewellery & Accessories
+210. [ID 210] Tote Bag | Jewellery & Accessories
+211. [ID 211] Wallet | Jewellery & Accessories
+212. [ID 212] Card Holder | Jewellery & Accessories
+213. [ID 213] Clutch | Jewellery & Accessories
+214. [ID 214] Backpack | Jewellery & Accessories
+215. [ID 215] Comfortable Sandals | Footwear
+216. [ID 216] Flats | Footwear
+217. [ID 217] Sneakers | Footwear
+218. [ID 218] Walking Shoes | Footwear
+219. [ID 219] Running Shoes | Footwear
+220. [ID 220] Formal Shoes | Footwear
+221. [ID 221] Occasion Shoes | Footwear
+222. [ID 222] Heels | Footwear
+223. [ID 223] House Slippers | Footwear
+224. [ID 224] Bathroom Slippers | Footwear
+225. [ID 225] Winter Shoes / Boots | Footwear
+226. [ID 226] Bedsheets | Home & Personal Room
+227. [ID 227] Pillow | Home & Personal Room
+228. [ID 228] Pillowcases | Home & Personal Room
+229. [ID 229] Blanket | Home & Personal Room
+230. [ID 230] Comforter | Home & Personal Room
+231. [ID 231] Mattress Protector | Home & Personal Room
+232. [ID 232] Towels | Home & Personal Room
+233. [ID 233] Bathrobe | Home & Personal Room
+234. [ID 234] Laundry Basket | Home & Personal Room
+235. [ID 235] Clothes Hangers | Home & Personal Room
+236. [ID 236] Wardrobe Organizers | Home & Personal Room
+237. [ID 237] Hijab Organizer | Home & Personal Room
+238. [ID 238] Jewelry Organizer | Home & Personal Room
+239. [ID 239] Makeup Organizer | Home & Personal Room
+240. [ID 240] Skincare Organizer | Home & Personal Room
+241. [ID 241] Full-Length Mirror | Home & Personal Room
+242. [ID 242] Dressing Mirror | Home & Personal Room
+243. [ID 243] Storage Boxes | Home & Personal Room
+244. [ID 244] Shoe Organizer | Home & Personal Room
+245. [ID 245] Handbag | Work / Study
+246. [ID 246] Backpack | Work / Study
+247. [ID 247] Laptop Bag | Work / Study
+248. [ID 248] Laptop Sleeve | Work / Study
+249. [ID 249] Notebook | Work / Study
+250. [ID 250] Planner | Work / Study
+251. [ID 251] Diary | Work / Study
+252. [ID 252] Pens | Work / Study
+253. [ID 253] Highlighters | Work / Study
+254. [ID 254] Water Bottle | Work / Study
+255. [ID 255] Lunch Box | Work / Study
+256. [ID 256] ID-Card Holder | Work / Study
+257. [ID 257] Laptop | Work / Study
+258. [ID 258] Tablet | Work / Study
+259. [ID 259] Power Bank | Work / Study
+260. [ID 260] Earbuds / Headphones | Work / Study
+261. [ID 261] Phone Stand | Work / Study
+262. [ID 262] Suitcase | Travel
+263. [ID 263] Travel Backpack | Travel
+264. [ID 264] Passport Holder | Travel
+265. [ID 265] Travel Wallet | Travel
+266. [ID 266] Packing Cubes | Travel
+267. [ID 267] Hijab Travel Organizer | Travel
+268. [ID 268] Travel Prayer Mat | Travel
+269. [ID 269] Travel Prayer Dress | Travel
+270. [ID 270] Toiletry Bag | Travel
+271. [ID 271] Makeup Pouch | Travel
+272. [ID 272] Jewellery Pouch | Travel
+273. [ID 273] Shoe Bag | Travel
+274. [ID 274] Laundry Bag | Travel
+275. [ID 275] Travel-Size Bottles | Travel
+276. [ID 276] Portable Charger | Travel
+277. [ID 277] Universal Adapter | Travel
+278. [ID 278] Neck Pillow | Travel
+279. [ID 279] Eye Mask | Travel
+280. [ID 280] Modest Workout Clothes | Fitness
+281. [ID 281] Sports Hijab | Fitness
+282. [ID 282] Sports Bra | Fitness
+283. [ID 283] Joggers | Fitness
+284. [ID 284] Loose Workout Top | Fitness
+285. [ID 285] Sneakers | Fitness
+286. [ID 286] Yoga Mat | Fitness
+287. [ID 287] Resistance Bands | Fitness
+288. [ID 288] Dumbbells | Fitness
+289. [ID 289] Water Bottle | Fitness
+290. [ID 290] Gym Bag | Fitness
+291. [ID 291] Fitness Tracker | Fitness
+292. [ID 292] First-Aid Box | Emergency & Safety
+293. [ID 293] Bandages | Emergency & Safety
+294. [ID 294] Antiseptic | Emergency & Safety
+295. [ID 295] Gauze | Emergency & Safety
+296. [ID 296] Medical Tape | Emergency & Safety
+297. [ID 297] Digital Thermometer | Emergency & Safety
+298. [ID 298] Personal Medicines | Emergency & Safety
+299. [ID 299] Prescription Medicines | Emergency & Safety
+300. [ID 300] Hand Sanitizer | Emergency & Safety
+301. [ID 301] Tissues | Emergency & Safety
+302. [ID 302] Emergency Contact Card | Emergency & Safety
+303. [ID 303] Small Flashlight | Emergency & Safety
+304. [ID 304] Personal Alarm | Emergency & Safety
+305. [ID 305] Whistle | Emergency & Safety
+306. [ID 306] Portable Power Bank | Emergency & Safety
+307. [ID 307] Sewing Kit | Clothing Care
+308. [ID 308] Needles | Clothing Care
+309. [ID 309] Thread | Clothing Care
+310. [ID 310] Safety Pins | Clothing Care
+311. [ID 311] Mini Scissors | Clothing Care
+312. [ID 312] Buttons | Clothing Care
+313. [ID 313] Fabric Tape | Clothing Care
+314. [ID 314] Lint Roller | Clothing Care
+315. [ID 315] Stain Remover | Clothing Care
+316. [ID 316] Clothes Brush | Clothing Care
+317. [ID 317] Iron | Clothing Care
+318. [ID 318] Garment Steamer | Clothing Care
+319. [ID 319] Laundry Bags | Clothing Care
+320. [ID 320] Delicate-Wash Bags | Clothing Care
+321. [ID 321] Smartphone | Personal Electronics
+322. [ID 322] Phone Case | Personal Electronics
+323. [ID 323] Screen Protector | Personal Electronics
+324. [ID 324] Charger | Personal Electronics
+325. [ID 325] Charging Cable | Personal Electronics
+326. [ID 326] Power Bank | Personal Electronics
+327. [ID 327] Wireless Charger | Personal Electronics
+328. [ID 328] Earbuds | Personal Electronics
+329. [ID 329] Smartwatch | Personal Electronics
+330. [ID 330] Laptop | Personal Electronics
+331. [ID 331] Tablet | Personal Electronics
+332. [ID 332] Ring Light | Personal Electronics
+333. [ID 333] Tripod | Personal Electronics
+334. [ID 334] Extension Cord | Personal Electronics
+335. [ID 335] Cable Organizer | Personal Electronics
+336. [ID 336] Eid Outfit | Ramadan / Eid Essentials
+337. [ID 337] Abaya | Ramadan / Eid Essentials
+338. [ID 338] Hijab | Ramadan / Eid Essentials
+339. [ID 339] Prayer Dress | Ramadan / Eid Essentials
+340. [ID 340] New Prayer Mat | Ramadan / Eid Essentials
+341. [ID 341] Quran | Ramadan / Eid Essentials
+342. [ID 342] Tasbih | Ramadan / Eid Essentials
+343. [ID 343] Dua Book | Ramadan / Eid Essentials
+344. [ID 344] Islamic Books | Ramadan / Eid Essentials
+345. [ID 345] Ramadan Planner | Ramadan / Eid Essentials
+346. [ID 346] Quran Stand | Ramadan / Eid Essentials
+347. [ID 347] Iftar Serving Essentials | Ramadan / Eid Essentials
+348. [ID 348] Eid Handbag | Ramadan / Eid Essentials
+349. [ID 349] Eid Footwear | Ramadan / Eid Essentials
+350. [ID 350] Gift Packaging Items | Ramadan / Eid Essentials
