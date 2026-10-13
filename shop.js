@@ -156,9 +156,9 @@ function productCard(p,i){
   const image=saved?.url||((p.image||("/assets/shop/catalog/"+p.slug+".jpg"))+"?v=17");
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
-    '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — catalog product photo" loading="lazy" data-photo-query="'+(p.query||p.name).replace(/"/g,'&quot;')+'"><a class="photo-credit" target="_blank" rel="noopener" hidden>Photo source</a></div>'+
+    '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — product reference image" loading="lazy" data-photo-query="'+(p.query||p.name).replace(/"/g,'&quot;')+'"><a class="photo-credit" target="_blank" rel="noopener" hidden>Photo source</a></div>'+
     '<div class="product-body"><div class="product-category">'+p.section+'</div><h3 class="product-title">'+p.name+'</h3>'+
-    '<p class="product-desc">'+p.subsection+' · real-photo product listing for the Annïka A–Z store.</p>'+
+    '<p class="product-desc">'+p.subsection+' · product listing for the Annïka A–Z store.</p>'+
     '<div class="product-price"><strong>'+money(price)+'</strong><span class="product-sample">indicative</span></div>'+
     '<div class="product-actions"><button class="add" type="button" data-add="'+p.id+'">Add to cart</button><button type="button" data-buy="'+p.id+'">Buy now</button></div></div></article>';
 }
