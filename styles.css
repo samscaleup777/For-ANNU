@@ -121,6 +121,6 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
 .hero-grid{grid-template-columns:1.1fr .9fr!important}
 .shop-hero-grid{grid-template-columns:1.05fr .95fr!important}
 .story,.shop-feature-grid{grid-template-columns:1fr 1fr!important}
-img.brand-logo-exact{display:block!important;width:36px;height:36px;object-fit:contain;flex:0 0 auto}
+img.brand-logo-exact{display:block!important;width:36px;height:44px;object-fit:contain;flex:0 0 auto}@media(max-width:620px){img.brand-logo-exact{width:32px;height:40px}}
 .chat-brand-mark{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--forest);color:#fff;font-weight:800;flex:0 0 auto}
 @media(max-width:980px){.hero-grid,.shop-hero-grid,.story,.shop-feature-grid{grid-template-columns:1fr!important}}
