@@ -5,6 +5,7 @@ Replace legacy catalog photos only with exact-name, openly licensed, high-resolu
 product-only photos that pass face/person detection and duplicate checks. If no safe
 exact match is found, delete the old photo and make a labeled product-only SVG graphic.
 The maintenance audit lists products still needing an exact licensed photo.
+"""
 from __future__ import annotations
 import io, json, re, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
