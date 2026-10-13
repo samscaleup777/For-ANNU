@@ -4,10 +4,10 @@
     const css=document.createElement('link');css.rel='stylesheet';css.href='/chatbot.css?v=4';document.head.appendChild(css);
     const root=document.createElement('div');root.className='annika-chat-root';root.innerHTML=''+
       '<button class="annika-chat-launcher" type="button" aria-label="Open Annïka Companion" aria-expanded="false" data-open="false" title="Drag to move • Click to chat">'+
-      '<span class="annika-chat-orbit"></span><span class="annika-chat-drag-badge" aria-hidden="true">↗</span><img src="/assets/annika-mark-exact-visible.png" alt="Annïka"></button>'+
+      '<span class="annika-chat-orbit"></span><span class="annika-chat-drag-badge" aria-hidden="true">↗</span><span class="chat-brand-mark" aria-hidden="true">A</span></button>'+
       '<section class="annika-chat-shell" aria-label="Annïka AI Companion" data-open="false" aria-hidden="true">'+
       '<header class="annika-chat-top" data-chat-drag><div class="annika-chat-top-inner">'+
-      '<div class="annika-chat-avatar"><img src="/assets/annika-mark-exact-visible.png" alt=""></div>'+
+      '<div class="annika-chat-avatar"><span class="chat-brand-mark" aria-hidden="true">A</span></div>'+
       '<div><div class="annika-chat-title">Annïka Companion</div><div class="annika-chat-status">A calm guide to the Annïka library</div></div>'+
       '<button class="annika-chat-close" type="button" aria-label="Close chat">×</button></div></header>'+
       '<div class="annika-chat-body"><div class="annika-chat-messages" aria-live="polite"></div>'+

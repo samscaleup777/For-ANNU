@@ -38,7 +38,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/shop/catalog data/image-credits.json
+          git add -A assets/shop/catalog data/shop-catalog.json data/image-credits.json maintenance
           if git diff --cached --quiet; then
             echo "No verified photo replacements found."
           else

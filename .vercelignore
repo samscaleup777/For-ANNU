@@ -1,0 +1,9 @@
+# Maintenance-only workflows, scripts, archived assets and photo audit are not part of the live website
+/.github/
+/scripts/
+/maintenance/
+/animations-v2.css
+/assets/annika-logo.png
+/assets/annika-mark-exact-visible.png
+/assets/shop/catalog/SOURCES.json
+/api/images.js

@@ -11,6 +11,7 @@ from __future__ import annotations
 import io, json, re, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+from xml.sax.saxutils import escape as xml_escape
 from urllib.parse import quote
 import requests
 from PIL import Image
@@ -22,6 +23,8 @@ ROOT=Path(__file__).resolve().parents[1]
 CATALOG=ROOT/"data/shop-catalog.json"
 OUT=ROOT/"assets/shop/catalog"
 CREDITS=ROOT/"data/image-credits.json"
+AUDIT=ROOT/"maintenance/catalog-photo-audit.json"
+PLACEHOLDERS=OUT/"placeholders"
 UA="AnnikaCatalogRefresh/3.0 (+https://annika-website-one.vercel.app/)"
 TIMEOUT=12
 BAD=re.compile(r"(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic|screenshot|poster|diagram|chart|logo|collage|drawing|painting)",re.I)
@@ -154,7 +157,7 @@ def score(item,p):
     if item.get("license_url"):s+=2
     if item.get("width",0) and item.get("height",0) and min(item["width"],item["height"])>=1000:s+=4
     elif item.get("width",0) and item.get("height",0) and min(item["width"],item["height"])>=700:s+=2
-    if object_only(p) and PERSON.search(text):return -100
+    if PERSON.search(text):return -100
     if BAD.search(text):return -100
     q=str(item.get("_q","")).lower()
     if "bangladesh" in q and "bangladesh" in text:s+=1
@@ -200,14 +203,13 @@ def queries(p):
     name=p.get("name","").strip()
     query_terms=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP]
     cleaned=" ".join(query_terms)
-    # Keep queries tightly tied to the catalog item, but include the niche context
-    # that helps open-license photo indexes find the correct variant.
+    # Search for flat-lay/isolated product-only photography, never people or models.
     options=[name,cleaned]
-    if object_only(p):
-        options.append(name+" product packshot")
-    elif p.get("section") in {"Hijab & Modest Wear","Everyday Clothing","Ramadan / Eid Essentials","Fitness"}:
-        options.append(name+" Bangladesh")
-    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:3]
+    if p.get("section") in {"Hijab & Modest Wear","Everyday Clothing","Fitness","Ramadan / Eid Essentials"}:
+        options.extend([name+" folded garment product photo",name+" flat lay isolated product"])
+    else:
+        options.extend([name+" product packshot",name+" isolated product photo"])
+    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:4]
 
 def search_product(p):
     items=[];seen=set()
@@ -242,32 +244,69 @@ def download(url):
         return data,im
     except Exception:return None
 
-_FACE_CASCADE=cv2.CascadeClassifier(cv2.data.haarcascades+"haarcascade_frontalface_default.xml")
+_FACE_CASCADES=[cv2.CascadeClassifier(cv2.data.haarcascades+name) for name in ("haarcascade_frontalface_default.xml","haarcascade_frontalface_alt.xml","haarcascade_profileface.xml")]
 _HOG=cv2.HOGDescriptor()
 _HOG.setSVMDetector(cv2.HOGDescriptor_getDefaultPeopleDetector())
 def person_detected(im):
-    """Content-based guard for people in sensitive/object-only product photos."""
+    """Reject visible faces and full-body people for every product photo."""
     try:
         arr=np.asarray(im)
         h,w=arr.shape[:2]
-        scale=min(640.0/max(w,h),1.0)
+        scale=min(800.0/max(w,h),1.0)
         if scale<1.0:
             arr=cv2.resize(arr,(max(1,int(w*scale)),max(1,int(h*scale))),interpolation=cv2.INTER_AREA)
         gray=cv2.cvtColor(arr,cv2.COLOR_RGB2GRAY)
-        faces=_FACE_CASCADE.detectMultiScale(gray,scaleFactor=1.1,minNeighbors=5,minSize=(24,24))
-        if len(faces):return True
-        # HOG catches full-body people even when face detection is not possible.
-        rectangles,weights=_HOG.detectMultiScale(arr,winStride=(8,8),padding=(8,8),scale=1.05)
-        return any(float(weight)>=0.55 for weight in weights)
+        for cascade in _FACE_CASCADES:
+            if cascade.empty():
+                continue
+            for view in (gray,cv2.flip(gray,1)):
+                faces=cascade.detectMultiScale(view,scaleFactor=1.08,minNeighbors=4,minSize=(18,18))
+                if len(faces):
+                    return True
+        rectangles,weights=_HOG.detectMultiScale(arr,winStride=(8,8),padding=(8,8),scale=1.04)
+        return any(float(weight)>=0.45 for weight in weights)
     except Exception:
-        # If visual screening fails, be conservative for sensitive products.
+        # If screening fails, do not publish a possibly people-containing photo.
         return True
+
+def product_placeholder_svg(p):
+    """Draw a named object-only placeholder if an exact, safe licensed photo is unavailable."""
+    name=str(p.get("name","Product"))
+    lower=name.lower()
+    apparel=bool(re.search(r"hijab|abaya|burqa|borkha|niqab|khimar|jilbab|dress|gown|tunic|shirt|top|skirt|trouser|palazzo|pants|kurti|kameez|saree|sari|shawl|dupatta|cardigan|sweater|jacket|coat|robe|pajama|leggings|sleeve|wear|outfit|clothing|underwear|bra|camisole|sock",lower))
+    footwear=bool(re.search(r"shoe|sandal|slipper|heels|flats|sneaker|footwear|boot",lower))
+    book=bool(re.search(r"quran|book|dua|calendar|planner|diary|notebook|prayer mat|janamaz|sajadah|bookmark",lower))
+    electronics=bool(re.search(r"phone|laptop|tablet|power bank|charger|cable|earbud|headphone|watch|clock|compass|thermometer|flashlight|tripod|adapter|electronic|device|screen|battery",lower))
+    accessory=bool(re.search(r"ring|earring|necklace|bracelet|bangle|jewellery|jewelry|brooch|magnet|pin|clip|comb|brush|tweezer|razor|scissors|needle|thread|button|tape|scrunchie|headband|pen|highlighter|makeup sponge",lower))
+    bag=bool(re.search(r"bag|pouch|organizer|holder|case|wallet|backpack|suitcase|box|basket|storage|packaging|pillow|bedsheet|blanket|towel|linen|mask|pad|tissue|wipe|bottle|serum|cream|oil|wash|shampoo|conditioner|perfume|attar|spray|sanitizer|medicine|cosmetic|foundation|lipstick|sunscreen|hygiene|disposal",lower))
+    if apparel:
+        shape='<path d="M340 255 L285 295 L235 385 L300 415 L335 365 L335 560 L465 560 L465 365 L500 415 L565 385 L515 295 L460 255 L430 300 L370 300 Z" fill="#d8b596" stroke="#805f47" stroke-width="9" stroke-linejoin="round"/><path d="M335 365 L365 398 L435 398 L465 365" fill="none" stroke="#805f47" stroke-width="8"/>'
+    elif footwear:
+        shape='<path d="M230 445 Q280 430 325 350 L390 390 Q430 445 525 450 Q580 455 585 505 L245 505 Q205 490 230 445 Z" fill="#d8b596" stroke="#805f47" stroke-width="10" stroke-linejoin="round"/><path d="M245 485 L575 485" stroke="#805f47" stroke-width="9"/>'
+    elif book:
+        shape='<path d="M235 320 Q320 290 400 340 Q480 290 565 320 L565 540 Q480 510 400 558 Q320 510 235 540 Z" fill="#d8b596" stroke="#805f47" stroke-width="10" stroke-linejoin="round"/><path d="M400 340 L400 558" stroke="#805f47" stroke-width="8"/><path d="M270 365 Q330 350 365 375 M270 415 Q330 400 365 425 M435 375 Q485 350 535 365 M435 425 Q485 400 535 415" stroke="#805f47" stroke-width="7" fill="none"/>'
+    elif electronics:
+        shape='<rect x="300" y="280" width="200" height="280" rx="22" fill="#d8b596" stroke="#805f47" stroke-width="10"/><rect x="322" y="310" width="156" height="210" rx="8" fill="#fbf7ef" stroke="#805f47" stroke-width="6"/><circle cx="400" cy="540" r="8" fill="#805f47"/>'
+    elif accessory:
+        shape='<circle cx="400" cy="415" r="112" fill="none" stroke="#d8b596" stroke-width="38"/><circle cx="400" cy="415" r="112" fill="none" stroke="#805f47" stroke-width="9"/><circle cx="400" cy="415" r="62" fill="none" stroke="#805f47" stroke-width="5"/>'
+    elif bag:
+        shape='<path d="M270 360 L530 360 L555 565 L245 565 Z" fill="#d8b596" stroke="#805f47" stroke-width="10" stroke-linejoin="round"/><path d="M330 360 L330 320 Q330 265 400 265 Q470 265 470 320 L470 360" fill="none" stroke="#805f47" stroke-width="12"/><path d="M300 415 L500 415" stroke="#805f47" stroke-width="7"/>'
+    else:
+        shape='<path d="M315 300 L485 300 L520 355 L520 545 Q520 565 500 565 L300 565 Q280 565 280 545 L280 355 Z" fill="#d8b596" stroke="#805f47" stroke-width="10" stroke-linejoin="round"/><rect x="345" y="250" width="110" height="50" rx="10" fill="#c9824f" stroke="#805f47" stroke-width="8"/>'
+    label=xml_escape(name[:52])
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="800" height="960" viewBox="0 0 800 960" role="img" aria-label="{label} product reference">
+<rect width="800" height="960" fill="#fbf7ef"/><rect x="34" y="34" width="732" height="892" rx="38" fill="#f2e7d6" stroke="#dfd5c2" stroke-width="3"/>
+<circle cx="400" cy="410" r="205" fill="#ead8bd"/>{shape}
+<text x="400" y="690" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#17231d">{label}</text>
+<text x="400" y="750" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#625d54">Product-only reference graphic</text>
+<text x="400" y="790" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#625d54">Exact licensed photo not verified</text>
+</svg>'''
 
 def main():
     catalog=json.loads(CATALOG.read_text(encoding="utf-8"))
     products=catalog["products"]
     OUT.mkdir(parents=True,exist_ok=True)
-    # Keep every existing asset while searching. No delete-first behavior.
+    PLACEHOLDERS.mkdir(parents=True,exist_ok=True)
     candidates={}
     with ThreadPoolExecutor(max_workers=6) as pool:
         futures={pool.submit(search_product,p):p for p in products}
@@ -277,8 +316,7 @@ def main():
             except Exception:candidates[p["id"]]=[]
             print(f"searched {i}/{len(products)} {p['id']} candidates={len(candidates[p['id']])}",flush=True)
 
-    used_hashes=[];used_urls=set();credits=[];providers={}
-    missing=[]
+    used_hashes=[];used_urls=set();credits=[];providers={};missing=[]
     for i,p in enumerate(products,1):
         chosen=None
         for candidate in candidates.get(p["id"],[]):
@@ -288,32 +326,49 @@ def main():
                 got=download(url)
                 if not got:continue
                 data,im=got
-                if object_only(p) and person_detected(im):continue
+                if person_detected(im):continue
                 ph=imagehash.phash(im)
                 if any(ph-old<8 for old in used_hashes):continue
                 chosen=(candidate,url,data,im,ph);break
             if chosen:break
-        if not chosen:
-            missing.append({"id":p["id"],"name":p["name"],"section":p.get("section",""),"reason":"No high-confidence, licensed, name-matched photo passed filters; existing local image preserved."})
-            print(f"UNMATCHED {i}/{len(products)} {p['id']} {p['name']}",flush=True)
-            continue
-        c,url,data,im,ph=chosen
+
         out=OUT/(p["slug"]+".jpg")
+        placeholder=PLACEHOLDERS/(p["slug"]+".svg")
+        if not chosen:
+            # Delete the unverified legacy photo to avoid unrelated products or faces/models.
+            out.unlink(missing_ok=True)
+            placeholder.write_text(product_placeholder_svg(p),encoding="utf-8")
+            p["image"]="/assets/shop/catalog/placeholders/"+p["slug"]+".svg"
+            missing.append({"id":p["id"],"name":p["name"],"section":p.get("section",""),
+              "reason":"No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."})
+            print(f"PLACEHOLDER {i}/{len(products)} {p['id']} {p['name']}",flush=True)
+            continue
+
+        c,url,data,im,ph=chosen
         im.thumbnail((1600,1600),Image.Resampling.LANCZOS)
         buf=io.BytesIO();im.save(buf,"JPEG",quality=90,optimize=True,progressive=True)
         out.write_bytes(buf.getvalue())
+        placeholder.unlink(missing_ok=True)
+        p["image"]="/assets/shop/catalog/"+p["slug"]+".jpg"
         used_hashes.append(ph);used_urls.add(url)
         provider=c.get("provider") or c.get("source") or "Open source"
         providers[provider]=providers.get(provider,0)+1
         credits.append({"id":p["id"],"name":p["name"],"slug":p["slug"],"query":c.get("_q",p.get("query","")),
           "provider":provider,"license":c.get("license",""),"license_url":c.get("license_url",""),
           "creator":c.get("creator",""),"landing_url":c.get("foreign_landing_url") or c.get("detail_url") or url,
-          "original_url":url,"quality_check":"metadata-name match + resolution >= 700px + sensitive people-photo exclusion"})
+          "original_url":url,"quality_check":"exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check"})
         print(f"UPDATED {i}/{len(products)} {p['id']} {p['name']} <- {provider}",flush=True)
+
+    catalog["image_strategy"]="Use a locally stored open-licensed product-only photo only after exact product-name matching, >=700px resolution, face/person screening and duplicate checks. If no safe exact match exists, remove the old photograph and show a named object-only reference graphic until a suitable photo is verified."
+    CATALOG.write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding="utf-8")
     credit_doc={"generatedAt":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),
-      "providers":providers,"images":credits,"missing":missing,
-      "policy":"Commercial-use open-license/public-domain results only. Every changed photo must contain the product's meaningful name terms in searchable metadata; sensitive/non-apparel listings reject person/model metadata. Existing photos remain unchanged when no high-confidence match exists."}
+      "providers":providers,"images":credits,
+      "policy":"Only open-licensed/public-domain photos with exact product-name metadata and no detected face/person are included. Products without an approved exact match use named object-only graphics; see the maintenance audit for outstanding matches."}
     CREDITS.write_text(json.dumps(credit_doc,ensure_ascii=False,indent=2),encoding="utf-8")
-    print(f"REFRESH SUMMARY: updated={len(credits)} unmatched={len(missing)} total={len(products)}",flush=True)
+    audit={"generatedAt":credit_doc["generatedAt"],"totalProducts":len(products),"verifiedInternetPhotos":len(credits),
+      "namedObjectOnlyPlaceholders":len(missing),"missing":missing,"policy":credit_doc["policy"]}
+    AUDIT.parent.mkdir(parents=True,exist_ok=True)
+    AUDIT.write_text(json.dumps(audit,ensure_ascii=False,indent=2),encoding="utf-8")
+    print(f"REFRESH SUMMARY: verified_photos={len(credits)} placeholders={len(missing)} total={len(products)}",flush=True)
 
 if __name__=="__main__":main()

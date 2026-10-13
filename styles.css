@@ -92,3 +92,10 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
 .hero-art.has-real-visual>img{opacity:1;mix-blend-mode:normal;filter:none}
 .hero-card{-webkit-backdrop-filter:none;backdrop-filter:none}
 .feature-photo{filter:none}
+
+
+/* Photo policy: retain only locally curated product photos inside catalogue cards. */
+.hero-art,.feature-photo,.context-media,.shop-hero-art,.shop-image-panel{display:none!important;background-image:none!important}
+.hero-grid,.shop-hero-grid,.story,.shop-feature-grid{grid-template-columns:1fr!important}
+img.brand-logo-exact{display:none!important}
+.chat-brand-mark{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--forest);color:#fff;font-weight:800;flex:0 0 auto}
