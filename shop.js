@@ -151,9 +151,35 @@ const priceFor=(p,i)=>{
   return 490+(i%10)*190;
 };
 
+let verifiedPhotoIds=new Set();
+function svgText(value){
+  return String(value||"Product").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&apos;");
+}
+function productOnlyPlaceholder(p){
+  const name=String(p&&p.name||"Product");
+  const lower=(name+" "+(p&&p.section||"")+" "+(p&&p.subsection||"")).toLowerCase();
+  let shape='<path d="M300 320 L500 320 L535 375 L535 565 Q535 585 515 585 L285 585 Q265 585 265 565 L265 375 Z" fill="#d8b596" stroke="#805f47" stroke-width="10"/><rect x="350" y="260" width="100" height="60" rx="12" fill="#c9824f" stroke="#805f47" stroke-width="8"/>';
+  if(/hijab|scarf|khimar|abaya|burqa|niqab|jilbab|dress|gown|tunic|shirt|skirt|trouser|palazzo|pants|kurti|kameez|saree|sari|shawl|dupatta|cardigan|sweater|jacket|coat|robe|pajama|leggings|sleeve|underwear|camisole|sock/.test(lower)){
+    shape='<path d="M225 330 Q310 280 400 310 Q490 280 575 330 L525 560 Q400 590 275 560 Z" fill="#d8b596" stroke="#805f47" stroke-width="10" stroke-linejoin="round"/><path d="M275 375 Q400 435 525 375" fill="none" stroke="#805f47" stroke-width="8"/>';
+  }else if(/shoe|sandal|slipper|heel|flat|sneaker|footwear|boot/.test(lower)){
+    shape='<path d="M210 455 Q275 440 335 350 L405 395 Q445 450 560 455 Q605 460 610 515 L230 515 Q190 500 210 455 Z" fill="#d8b596" stroke="#805f47" stroke-width="10" stroke-linejoin="round"/><path d="M230 493 L600 493" stroke="#805f47" stroke-width="8"/>';
+  }else if(/quran|book|dua|calendar|planner|diary|notebook|prayer mat|janamaz|sajadah|bookmark/.test(lower)){
+    shape='<path d="M230 325 Q315 292 400 345 Q485 292 570 325 L570 550 Q485 515 400 568 Q315 515 230 550 Z" fill="#d8b596" stroke="#805f47" stroke-width="10"/><path d="M400 345 L400 568" stroke="#805f47" stroke-width="8"/><path d="M265 375 L365 395 M265 425 L365 445 M435 395 L535 375 M435 445 L535 425" stroke="#805f47" stroke-width="7"/>';
+  }else if(/phone|laptop|tablet|power bank|charger|cable|earbud|headphone|watch|clock|compass|thermometer|flashlight|tripod|adapter|electronic|device|battery/.test(lower)){
+    shape='<rect x="300" y="265" width="200" height="325" rx="24" fill="#d8b596" stroke="#805f47" stroke-width="10"/><rect x="322" y="290" width="156" height="255" rx="8" fill="#fbf7ef" stroke="#805f47" stroke-width="6"/><circle cx="400" cy="565" r="8" fill="#805f47"/>';
+  }else if(/ring|earring|necklace|bracelet|bangle|jewell|brooch|magnet|pin|clip|comb|brush|tweezer|razor|scissor|needle|thread|button|tape|scrunchie|headband/.test(lower)){
+    shape='<circle cx="400" cy="425" r="118" fill="none" stroke="#d8b596" stroke-width="38"/><circle cx="400" cy="425" r="118" fill="none" stroke="#805f47" stroke-width="9"/><circle cx="400" cy="425" r="62" fill="none" stroke="#805f47" stroke-width="5"/>';
+  }else if(/bag|pouch|organizer|holder|case|wallet|backpack|suitcase|box|basket|storage/.test(lower)){
+    shape='<path d="M260 350 L540 350 L565 575 L235 575 Z" fill="#d8b596" stroke="#805f47" stroke-width="10" stroke-linejoin="round"/><path d="M330 350 L330 310 Q330 260 400 260 Q470 260 470 310 L470 350" fill="none" stroke="#805f47" stroke-width="12"/><path d="M285 425 L515 425" stroke="#805f47" stroke-width="7"/>';
+  }
+  const label=svgText(name.length>45?name.slice(0,42)+"…":name);
+  const svg='<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-label="'+label+' product-only reference"><rect width="800" height="1000" fill="#fbf7ef"/><rect x="34" y="34" width="732" height="932" rx="38" fill="#f2e7d6" stroke="#dfd5c2" stroke-width="3"/><circle cx="400" cy="425" r="205" fill="#ead8bd"/>'+shape+'<text x="400" y="710" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" font-weight="700" fill="#17231d">'+label+'</text><text x="400" y="765" text-anchor="middle" font-family="Arial,sans-serif" font-size="20" fill="#625d54">Product-only reference</text><text x="400" y="808" text-anchor="middle" font-family="Arial,sans-serif" font-size="17" fill="#625d54">Exact photo not yet verified</text></svg>';
+  return "data:image/svg+xml;charset=UTF-8,"+encodeURIComponent(svg);
+}
 function productCard(p,i){
   const saved=savedPhotos[p.id];
-  const image=saved?.url||((p.image||("/assets/shop/catalog/"+p.slug+".jpg"))+"?v=17");
+  const imagePath=p.image||("/assets/shop/catalog/"+p.slug+".jpg");
+  const image=saved?.url||(imagePath.startsWith("data:")?imagePath:imagePath+"?v=17");
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
     '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — product reference image" loading="lazy" data-photo-query="'+(p.query||p.name).replace(/"/g,'&quot;')+'"><a class="photo-credit" target="_blank" rel="noopener" hidden>Photo source</a></div>'+
@@ -324,10 +350,16 @@ function enableRemotePhotoRefinement(){
 async function init(){
   try{
     const res=await fetch(DATA_URL,{cache:"no-store"});if(!res.ok)throw new Error("Catalog data failed");
-    const data=await res.json();state.products=data.products||[];
+    const data=await res.json();
+    const creditsRes=await fetch("/data/image-credits.json?photo-v=17",{cache:"no-store"}).catch(()=>null);
+    let credits={images:[]};try{if(creditsRes&&creditsRes.ok)credits=await creditsRes.json()}catch(e){}
+    verifiedPhotoIds=new Set((credits.images||[]).map(x=>String(x.id)));
+    state.products=(data.products||[]).map(p=>verifiedPhotoIds.has(String(p.id))?p:{...p,image:productOnlyPlaceholder(p)});
     state.cart=state.cart.map(item=>{
       const product=state.products.find(p=>p.id===item.id);
-      return product?{...item,image:(product.image||("/assets/shop/catalog/"+product.slug+".jpg"))+"?v=17"}:item;
+      if(!product)return item;
+      const image=product.image||("/assets/shop/catalog/"+product.slug+".jpg");
+      return {...item,image:image.startsWith("data:")?image:image+"?v=17"};
     });
     saveCart();
     render();
