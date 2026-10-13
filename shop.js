@@ -4,7 +4,7 @@ const state={products:[],cart:JSON.parse(localStorage.getItem("annikaCart")||"[]
 const photoCache=new Map(),usedPhotoUrls=new Set();
 let photoObserver=null;
 const PHOTO_STORE_KEY="annikaCuratedPhotoMapV6";
-const savedPhotos=(()=>{try{["annikaCuratedPhotoMapV6","annikaCuratedPhotoMapV5","annikaCuratedPhotoMapV4","annikaCuratedPhotoMapV3","annikaCuratedPhotoMapV2","annikaCuratedPhotoMapV1"].forEach(k=>localStorage.removeItem(k))}catch(e){}return {}})();
+const savedPhotos=(()=>{try{["annikaCuratedPhotoMapV5","annikaCuratedPhotoMapV4","annikaCuratedPhotoMapV3","annikaCuratedPhotoMapV2","annikaCuratedPhotoMapV1"].forEach(k=>localStorage.removeItem(k));const data=JSON.parse(localStorage.getItem(PHOTO_STORE_KEY)||"{}");return data&&typeof data==="object"?data:{}}catch(e){return {}}})();
 const REGIONAL_TERMS=["Bangladesh","Pakistan","Saudi Arabia","United Arab Emirates","Arab world","Middle East","South Asia","Malaysia","Indonesia","Turkey","Morocco","Egypt"];
 function persistPhoto(id,rec){try{savedPhotos[id]=rec;localStorage.setItem(PHOTO_STORE_KEY,JSON.stringify(savedPhotos))}catch(e){}}
 const BAD_PHOTO=/(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic)/i;
@@ -104,7 +104,7 @@ function isUsablePhoto(item,p){
   const text=imageText(item);
   if(!(item.url||item.thumbnail)||BAD_PHOTO.test(text))return false;
   if(!(item.license||item.license_url))return false;
-  if(objectOnlyProduct(p)&&PERSON_SCENE.test(text))return false;
+  if(PERSON_SCENE.test(text))return false;
   return photoRelevance(item,p)>0;
 }
 const openverseQuery=(p)=>{
@@ -112,17 +112,18 @@ const openverseQuery=(p)=>{
   const exact=String(p?.query||name).trim();
   const objectOnly=objectOnlyProduct(p);
   const queries=[
-    exact,
     name+" product photo",
-    name+" product packshot",
-    name+" product isolated photo"
+    exact+" product photo",
+    name+" flat lay product",
+    name+" isolated item on white background",
+    name+" folded product no model"
   ];
   if(!objectOnly){
-    queries.push(name+" Bangladesh hijab abaya product photo");
-    queries.push(name+" Bangladeshi modest fashion");
+    queries.push(name+" folded garment flat lay");
+    queries.push(name+" modest clothing product only");
   }else{
+    queries.push(name+" product packshot");
     queries.push(name+" packaging product photo");
-    queries.push(name+" item on white background");
   }
   return [...new Set(queries.filter(Boolean))].slice(0,6);
 };
@@ -179,7 +180,7 @@ function productOnlyPlaceholder(p){
 function productCard(p,i){
   const saved=savedPhotos[p.id];
   const imagePath=p.image||("/assets/shop/catalog/"+p.slug+".jpg");
-  const image=saved?.url||(imagePath.startsWith("data:")?imagePath:imagePath+"?v=17");
+  const image=saved?.url||(imagePath.startsWith("data:")?imagePath:imagePath+"?v=18");
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
     '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — product reference image" loading="lazy" data-photo-query="'+(p.query||p.name).replace(/"/g,'&quot;')+'"><a class="photo-credit" target="_blank" rel="noopener" hidden>Photo source</a></div>'+
@@ -278,7 +279,8 @@ async function fetchBetterPhoto(p,img,credit){
   if(!p||!img||img.dataset.photoLoaded==="1"||img.dataset.photoLoading==="1")return;
   img.dataset.photoLoading="1";
   const cacheKey=p.id;
-  const localImage=(p.image||("/assets/shop/catalog/"+p.slug+".jpg"))+"?v=17";
+  const rawLocalImage=p.image||("/assets/shop/catalog/"+p.slug+".jpg");
+  const localImage=rawLocalImage.startsWith("data:")?rawLocalImage:rawLocalImage+(rawLocalImage.includes("?")?"&":"?")+"v=18";
   const applyRecord=(rec)=>{
     img.src=rec.url;
     if(credit){credit.href=rec.landing||rec.url;credit.textContent="Photo source"+(rec.provider?" · "+rec.provider:"")+(rec.license?" · "+rec.license:"");credit.hidden=false}
@@ -341,10 +343,28 @@ async function fetchBetterPhoto(p,img,credit){
   delete img.dataset.photoLoading;
 }
 function enableRemotePhotoRefinement(){
-  // Product photos are curated locally after product-name and people/face checks.
-  // Do not request unverified image replacements in the browser.
   if(photoObserver){photoObserver.disconnect();photoObserver=null;}
-  return;
+  const images=[...document.querySelectorAll("#productGrid .product-card img")];
+  if(!images.length)return;
+  const lookup=(img)=>{
+    const card=img.closest(".product-card");
+    const product=state.products.find(p=>String(p.id)===String(card?.dataset.id));
+    if(!product)return;
+    const credit=img.closest(".product-media")?.querySelector(".photo-credit");
+    fetchBetterPhoto(product,img,credit);
+  };
+  if("IntersectionObserver" in window){
+    photoObserver=new IntersectionObserver(entries=>{
+      for(const entry of entries){
+        if(!entry.isIntersecting)continue;
+        photoObserver.unobserve(entry.target);
+        lookup(entry.target);
+      }
+    },{rootMargin:"320px 0px"});
+    images.forEach(img=>photoObserver.observe(img));
+  }else{
+    images.slice(0,18).forEach(lookup);
+  }
 }
 
 async function init(){
@@ -359,7 +379,7 @@ async function init(){
       const product=state.products.find(p=>p.id===item.id);
       if(!product)return item;
       const image=product.image||("/assets/shop/catalog/"+product.slug+".jpg");
-      return {...item,image:image.startsWith("data:")?image:image+"?v=17"};
+      return {...item,image:image.startsWith("data:")?image:image+"?v=18"};
     });
     saveCart();
     render();
