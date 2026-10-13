@@ -181,7 +181,7 @@ function productOnlyPlaceholder(p){
 function productCard(p,i){
   const saved=savedPhotos[p.id];
   const imagePath=p.image||("/assets/shop/catalog/"+p.slug+".jpg");
-  const image=saved?.url||(imagePath.startsWith("data:")?imagePath:imagePath+"?v=18");
+  const image=saved?.url||(imagePath.startsWith("data:")?imagePath:imagePath+"?v=19");
   const price=priceFor(p,i);
   return '<article class="product-card" data-section="'+p.section+'" data-name="'+p.name+'" data-price="'+price+'" data-id="'+p.id+'">'+
     '<div class="product-media"><span class="product-badge">'+p.subsection+'</span><img src="'+image+'" alt="'+p.name+' — product reference image" loading="lazy" data-photo-query="'+(p.query||p.name).replace(/"/g,'&quot;')+'"><a class="photo-credit" target="_blank" rel="noopener" hidden>Photo source</a></div>'+
@@ -381,7 +381,7 @@ async function init(){
       const product=state.products.find(p=>p.id===item.id);
       if(!product)return item;
       const image=product.image||("/assets/shop/catalog/"+product.slug+".jpg");
-      return {...item,image:image.startsWith("data:")?image:image+"?v=18"};
+      return {...item,image:image.startsWith("data:")?image:image+"?v=19"};
     });
     saveCart();
     render();
