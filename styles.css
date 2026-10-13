@@ -124,3 +124,23 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
 img.brand-logo-exact{display:block!important;width:36px;height:44px;object-fit:contain;flex:0 0 auto}@media(max-width:620px){img.brand-logo-exact{width:32px;height:40px}}
 .chat-brand-mark{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--forest);color:#fff;font-weight:800;flex:0 0 auto}
 @media(max-width:980px){.hero-grid,.shop-hero-grid,.story,.shop-feature-grid{grid-template-columns:1fr!important}}
+
+/* Page-specific editorial imagery, all sourced from locally screened product photos. */
+body.quran-page .hero-art{
+  background-image:linear-gradient(180deg,rgba(18,49,38,.05),rgba(18,49,38,.48)),url("/assets/shop/catalog/78-quran-cover.jpg")!important;
+}
+body.quran-page .feature-photo{
+  background-image:linear-gradient(135deg,rgba(18,49,38,.06),rgba(18,49,38,.14)),url("/assets/shop/catalog/70-prayer-mat-janamaz.jpg")!important;
+}
+body.safety-page .hero-art{
+  background-image:linear-gradient(180deg,rgba(18,49,38,.05),rgba(18,49,38,.48)),url("/assets/shop/catalog/292-first-aid-box.jpg")!important;
+}
+body.safety-page .feature-photo{
+  background-image:linear-gradient(135deg,rgba(18,49,38,.06),rgba(18,49,38,.14)),url("/assets/shop/catalog/304-personal-alarm.jpg")!important;
+}
+body.lifestyle-page .hero-art{
+  background-image:linear-gradient(180deg,rgba(18,49,38,.05),rgba(18,49,38,.48)),url("/assets/shop/catalog/74-tasbih.jpg")!important;
+}
+body.lifestyle-page .feature-photo{
+  background-image:linear-gradient(135deg,rgba(18,49,38,.06),rgba(18,49,38,.14)),url("/assets/shop/catalog/80-islamic-books.jpg")!important;
+}
