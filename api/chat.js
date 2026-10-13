@@ -78,24 +78,95 @@ function getCatalog() {
   return catalogCache;
 }
 
-function getRelevantCatalog(message) {
+function normalizeSearchText(value) {
+  return String(value || '').toLowerCase().normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9\u0980-\u09ff]+/g, ' ').trim();
+}
+
+const SEARCH_STOP_WORDS = new Set([
+  'the','and','for','with','what','where','when','which','show','find','help','please','can','you',
+  'me','some','any','are','is','how','do','i','my','to','of','a','an','in','on','from','all',
+  'want','need','looking','look','browse','recommend','suggest','give','list','name','names','product',
+  'products','item','items','catalog','shop','buy','price','best','about','annika','annïka'
+]);
+
+function isFullCatalogRequest(message) {
+  const q = normalizeSearchText(message);
+  return /(all product names|all products|full product list|complete product list|product name list|full catalog|complete catalog|show every product|every product name|সব পণ্যের নাম|সব প্রোডাক্ট|সব প্রোডাক্টের নাম|পুরো প্রোডাক্ট|পণ্যের তালিকা|সব আইটেম)/i.test(q);
+}
+
+function isShoppingIntent(message) {
+  return /(shop|fashion|hijab|abaya|dress|catalog|product|products|item|items|buy|cart|price|skincare|makeup|haircare|hair care|travel|travel kit|accessor|footwear|quran stand|prayer mat|tasbih|water bottle|হিজাব|আবায়া|আবায়া|পণ্য|প্রোডাক্ট|কেনাকাটা|দাম|ব্যাগ|জায়নামাজ|জায়নামাজ|কুরআন)/i.test(String(message || ''));
+}
+
+function getSearchTerms(message) {
+  const raw = String(message || '').toLowerCase();
+  const terms = normalizeSearchText(raw).split(/\s+/).filter(w => w.length > 1 && !SEARCH_STOP_WORDS.has(w));
+  const add = (...items) => { for (const item of items) if (!terms.includes(item)) terms.push(item); };
+  if (/(hijab|হিজাব|orna|ওড়না|ওড়না|head scarf)/i.test(raw)) add('hijab','scarf','dupatta','khimar');
+  if (/(abaya|আবায়া|আবায়া|burqa|বোরকা)/i.test(raw)) add('abaya','burqa','niqab','jilbab');
+  if (/(quran|কুরআন|কোরআন|কোরান)/i.test(raw)) add('quran','islamic','dua','bookmark','stand');
+  if (/(prayer|namaz|salah|নামাজ|জায়নামাজ|জায়নামাজ)/i.test(raw)) add('prayer','mat','janamaz','dress','khimar');
+  if (/(skin care|skincare|ত্বক|স্কিনকেয়ার|স্কিনকেয়ার)/i.test(raw)) add('skincare','face','serum','moisturizer','sunscreen');
+  if (/(hair care|haircare|চুল|হেয়ার|হেয়ার)/i.test(raw)) add('hair','shampoo','conditioner','comb','oil');
+  if (/(bag|ব্যাগ|backpack)/i.test(raw)) add('bag','handbag','backpack','tote','travel');
+  if (/(travel|ভ্রমণ|ট্রাভেল)/i.test(raw)) add('travel','packing','suitcase','organizer','portable');
+  if (/(makeup|মেকআপ)/i.test(raw)) add('makeup','lipstick','foundation','brush','mascara');
+  return [...new Set(terms)];
+}
+
+function toChatProduct(p) {
+  return {
+    id: String(p.id || ''),
+    name: String(p.name || 'Catalog item'),
+    section: String(p.section || 'Annïka catalog'),
+    url: '/fashion.html?search=' + encodeURIComponent(String(p.name || '')) + '#shop-products'
+  };
+}
+
+function getRelevantProducts(message, limit = 8) {
   const products = Array.isArray(getCatalog().products) ? getCatalog().products : [];
-  const words = String(message).toLowerCase().split(/[^a-z0-9]+/).filter(w => w.length > 2);
-  if (!words.length) return '';
-  const ranked = products.map(p => {
-    const text = [p.name, p.section, p.subsection, p.query].join(' ').toLowerCase();
+  if (!products.length || isFullCatalogRequest(message)) return [];
+  const raw = String(message || '');
+  const terms = getSearchTerms(raw);
+  const q = normalizeSearchText(raw);
+  if (!terms.length) {
+    if (isShoppingIntent(raw)) return products.slice(0, limit).map(toChatProduct);
+    return [];
+  }
+  const ranked = products.map((p, index) => {
+    const name = normalizeSearchText(p.name);
+    const section = normalizeSearchText(p.section);
+    const subsection = normalizeSearchText(p.subsection);
+    const query = normalizeSearchText(p.query);
     let score = 0;
-    for (const word of words) if (text.includes(word)) score += 1;
-    return { p, score };
-  }).filter(x => x.score > 0).sort((a,b) => b.score - a.score).slice(0, 12);
-  if (!ranked.length) return '';
-  return ranked.map(({p}) => '- '+p.name+' | section: '+p.section+' | subsection: '+p.subsection+' | indicative BDT catalog price: available in current UI | search phrase: '+p.query).join('\n');
+    if (name && q.includes(name)) score += 14;
+    for (const term of terms) {
+      if (name.split(/\s+/).includes(term)) score += 5;
+      else if (name.includes(term)) score += 3;
+      if (subsection && subsection.split(/\s+/).includes(term)) score += 2.5;
+      if (section && section.includes(term)) score += 2;
+      if (query && query.includes(term)) score += 0.5;
+    }
+    return { p, index, score };
+  }).filter(x => x.score > 0).sort((a, b) => b.score - a.score || a.index - b.index);
+  if (!ranked.length && isShoppingIntent(raw)) return products.slice(0, limit).map(toChatProduct);
+  return ranked.slice(0, limit).map(x => toChatProduct(x.p));
+}
+
+function getRelevantCatalog(message) {
+  const relevant = getRelevantProducts(message, 10);
+  if (!relevant.length) return '';
+  return relevant.map(p => '- ' + p.name + ' | section: ' + p.section + ' | indicative catalog listing only; stock/price must be checked on the shop').join('\n');
 }
 
 function buildContext(message, page) {
   const catalog = getRelevantCatalog(message);
   return SITE_KNOWLEDGE
     + '\nCURRENT PAGE: ' + (page || '/')
+    + '\nPRODUCT NAME LIST: https://annika-website-one.vercel.app/data/product-name-list.txt'
+    + '\nIMPORTANT SHOPPING LIMITATION: prices shown in the current catalog are prototype examples; do not represent them as verified live prices, stock, supplier facts, completed orders, or real payment configuration.'
     + (catalog ? '\nRELEVANT CURRENT CATALOG ITEMS:\n' + catalog : '');
 }
 
@@ -146,7 +217,7 @@ async function callOpenAI({model, input, useWeb}) {
 }
 
 function fallbackAnswer(message) {
-  return 'I can help with Annïka, general questions, shopping guidance, modest fashion, Quran & Hadith learning, safety and lifestyle topics. For a current or highly specific fact, please ask me to verify it and I will use reliable sources when the AI connection is available.';
+  return 'I can guide you through Annïka and its product catalog. For open-ended or live questions, I will be clear when the connected AI service is unavailable rather than guessing.';
 }
 
 module.exports = async (req, res) => {
@@ -158,26 +229,49 @@ module.exports = async (req, res) => {
     if (!message) return json(res, 400, { error: 'Message is required.' });
 
     if (!process.env.OPENAI_API_KEY) {
-      // Keep the companion usable even before an OpenAI key is connected.
-      // This local mode answers site-navigation/catalog questions without exposing secrets.
       const q = message.toLowerCase();
+      const bangla = /[\u0980-\u09ff]/.test(message);
+      const fullList = isFullCatalogRequest(message);
+      const shopping = isShoppingIntent(message);
+      const matchedProducts = shopping ? getRelevantProducts(message, 8) : [];
       let answer = fallbackAnswer(message);
       const sources = [];
-      if (/shop|fashion|hijab|abaya|dress|catalog|product|buy|cart/i.test(q)) {
-        answer = 'You can explore the Annïka Shop for hijabs, abayas, modest clothing, prayer essentials, skincare, haircare, accessories, footwear, travel, fitness, safety items, electronics and Ramadan/Eid essentials. The shop is here: /fashion.html';
+
+      if (fullList) {
+        answer = bangla
+          ? 'Annïka catalog-এ ৩৫০টি product listing আছে। সম্পূর্ণ numbered product-name list এখানে: https://annika-website-one.vercel.app/data/product-name-list.txt । একই নামের একাধিক item আলাদা catalog entry হলে সেগুলো তালিকায় আলাদা রাখা হয়েছে।'
+          : 'The Annïka prototype catalog contains 350 product listings. Open the complete numbered product-name list here: https://annika-website-one.vercel.app/data/product-name-list.txt. Repeated names remain separate when they are separate catalog entries.';
+        sources.push({url:'https://annika-website-one.vercel.app/data/product-name-list.txt',title:'Complete product-name list (350 listings)'});
+      } else if (shopping) {
+        answer = matchedProducts.length
+          ? (bangla
+            ? 'তোমার প্রশ্নের সঙ্গে মিলে এমন কিছু catalog item পেয়েছি। এগুলো prototype listing—চূড়ান্ত stock, supplier বা real-time price নিশ্চিত করে না। কোনো item চাপলে shop-এ সেটি খুঁজে দেখাবে।'
+            : 'I found matching items in the Annïka catalog. These are prototype listings, not confirmation of live stock, supplier identity or current prices. Select an item to find it in the shop.')
+          : (bangla
+            ? 'এই কথার সঙ্গে মেলা product নির্ভরযোগ্যভাবে খুঁজে পেলাম না। Shop-এ গিয়ে আরও ছোট keyword দিয়ে search করো।'
+            : 'I could not find a reliable catalog match for that wording. Try a shorter product name in the shop search.');
         sources.push({url:'https://annika-website-one.vercel.app/fashion.html',title:'Annïka Shop'});
-      } else if (/quran|hadith|dua|salah|prayer|islam/i.test(q)) {
-        answer = 'Annïka has a dedicated Quran & Hadith area for faith-focused educational resources and reminders. Open: /quran-hadith.html';
+      } else if (/quran|hadith|dua|salah|prayer|islam|কুরআন|কোরআন|হাদিস|দোয়া|দুয়া|নামাজ/i.test(q)) {
+        answer = bangla
+          ? 'Annïka-র Quran & Hadith বিভাগে faith-focused educational resources এবং reminders আছে। গুরুত্বপূর্ণ ব্যক্তিগত religious ruling-এর জন্য যোগ্য আলেমের সঙ্গে মিলিয়ে নিও।'
+          : 'The Quran & Hadith section provides faith-focused educational resources and reminders. For a personal religious ruling, confirm with a qualified scholar.';
         sources.push({url:'https://annika-website-one.vercel.app/quran-hadith.html',title:'Quran & Hadith'});
-      } else if (/safety|emergency|privacy|security/i.test(q)) {
-        answer = 'Annïka includes practical safety guidance and privacy information. Start with /safety.html or /privacy.html.';
-        sources.push({url:'https://annika-website-one.vercel.app/safety.html',title:'Safety'});
+      } else if (/safety|emergency|privacy|security|নিরাপত্তা|জরুরি/i.test(q)) {
+        answer = bangla
+          ? 'Annïka-তে practical safety guidance এবং privacy resources আছে। জরুরি বিপদে স্থানীয় emergency service বা trusted professional-এর সাহায্য নাও।'
+          : 'Annïka includes practical safety guidance and privacy resources. In an urgent situation, contact appropriate local emergency services or a trusted professional.';
+        sources.push({url:'https://annika-website-one.vercel.app/safety.html',title:'Safety resources'});
         sources.push({url:'https://annika-website-one.vercel.app/privacy.html',title:'Privacy'});
-      } else if (/lifestyle|routine|ramadan|family|wellbeing/i.test(q)) {
-        answer = 'Annïka Lifestyle covers practical faith-in-life topics, routines, wellbeing, family, learning and Ramadan-related resources. Open: /lifestyle.html';
+      } else if (/lifestyle|routine|ramadan|family|wellbeing|লাইফস্টাইল|রমজান/i.test(q)) {
+        answer = 'Annïka Lifestyle covers practical routines, wellbeing, family, learning and Ramadan-related resources.';
         sources.push({url:'https://annika-website-one.vercel.app/lifestyle.html',title:'Lifestyle'});
+      } else if (/what is annika|what can i do|about annika|annïka কী|annika ki/i.test(q)) {
+        answer = 'Annïka is a digital concept for Muslim women, bringing together modest fashion and a product catalog, Quran & Hadith learning, practical safety guidance, lifestyle resources and educational articles.';
+        sources.push({url:'https://annika-website-one.vercel.app/',title:'Annïka home'});
+        sources.push({url:'https://annika-website-one.vercel.app/fashion.html',title:'Shop and catalog'});
       }
-      return json(res, 200, {answer, mode:'local-fallback', model:'local-site-assistant', sources});
+
+      return json(res, 200, {answer, mode:'catalog-guide', model:'local-site-assistant', sources, products:matchedProducts});
     }
 
     let history = cleanHistory(body.history);
@@ -229,7 +323,8 @@ module.exports = async (req, res) => {
       answer,
       mode: 'ai',
       model,
-      sources: extractSources(data)
+      sources: extractSources(data),
+      products: isShoppingIntent(message) && !isFullCatalogRequest(message) ? getRelevantProducts(message, 8) : []
     });
   } catch (error) {
     console.error('Annïka chat error', error);
