@@ -94,8 +94,33 @@ body.animation-ready .tag:hover{transform:translateY(-2px);background:#f0e3cf;bo
 .feature-photo{filter:none}
 
 
-/* Photo policy: retain only locally curated product photos inside catalogue cards. */
-.hero-art,.feature-photo,.context-media,.shop-hero-art,.shop-image-panel{display:none!important;background-image:none!important}
-.hero-grid,.shop-hero-grid,.story,.shop-feature-grid{grid-template-columns:1fr!important}
-img.brand-logo-exact{display:none!important}
+/* Restore all intended visual sections and the Annïka brand mark.
+   Page photos use locally stored product-only images; product card photos are validated separately. */
+.hero-art,.feature-photo,.context-media,.shop-hero-art,.shop-image-panel{
+  display:block!important;
+  background-repeat:no-repeat!important;
+}
+.hero-art{
+  min-height:420px;
+  background-image:linear-gradient(180deg,rgba(18,49,38,.08),rgba(18,49,38,.48)),url("/assets/shop/catalog/32-burqa-niqab.jpg")!important;
+  background-size:cover!important;background-position:center!important;
+}
+.feature-photo{
+  background-image:linear-gradient(135deg,rgba(18,49,38,.08),rgba(18,49,38,.14)),url("/assets/shop/catalog/70-prayer-mat-janamaz.jpg")!important;
+  background-size:cover!important;background-position:center!important;
+}
+.shop-hero-art{
+  min-height:390px;
+  background-image:linear-gradient(180deg,rgba(18,49,38,.04),rgba(18,49,38,.44)),url("/assets/shop/catalog/32-burqa-niqab.jpg")!important;
+  background-size:cover!important;background-position:center!important;
+}
+.shop-image-panel{
+  background-image:url("/assets/shop/catalog/70-prayer-mat-janamaz.jpg")!important;
+  background-size:cover!important;background-position:center!important;
+}
+.hero-grid{grid-template-columns:1.1fr .9fr!important}
+.shop-hero-grid{grid-template-columns:1.05fr .95fr!important}
+.story,.shop-feature-grid{grid-template-columns:1fr 1fr!important}
+img.brand-logo-exact{display:block!important;width:36px;height:36px;object-fit:contain;flex:0 0 auto}
 .chat-brand-mark{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--forest);color:#fff;font-weight:800;flex:0 0 auto}
+@media(max-width:980px){.hero-grid,.shop-hero-grid,.story,.shop-feature-grid{grid-template-columns:1fr!important}}
