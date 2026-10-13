@@ -104,6 +104,7 @@ function isUsablePhoto(item,p){
   const text=imageText(item);
   if(!(item.url||item.thumbnail)||BAD_PHOTO.test(text))return false;
   if(!(item.license||item.license_url))return false;
+  if(Number(item.width||0)<700||Number(item.height||0)<700)return false;
   if(PERSON_SCENE.test(text))return false;
   return photoRelevance(item,p)>0;
 }
