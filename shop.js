@@ -350,6 +350,7 @@ function enableRemotePhotoRefinement(){
     const card=img.closest(".product-card");
     const product=state.products.find(p=>String(p.id)===String(card?.dataset.id));
     if(!product)return;
+    if(verifiedPhotoIds.has(String(product.id))){img.dataset.photoLoaded="1";return;}
     const credit=img.closest(".product-media")?.querySelector(".photo-credit");
     fetchBetterPhoto(product,img,credit);
   };
