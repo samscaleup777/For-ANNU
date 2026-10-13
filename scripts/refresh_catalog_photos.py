@@ -307,19 +307,57 @@ def main():
     products=catalog["products"]
     OUT.mkdir(parents=True,exist_ok=True)
     PLACEHOLDERS.mkdir(parents=True,exist_ok=True)
+
+    # Preserve already-verified, source-credited photos. Search/download only for
+    # product IDs that still have no approved photo, so the refresh runs faster and
+    # cannot replace correct photos just to churn the catalog.
+    existing_doc={}
+    if CREDITS.exists():
+        try: existing_doc=json.loads(CREDITS.read_text(encoding="utf-8"))
+        except Exception: existing_doc={}
+    existing_credits=list(existing_doc.get("images") or [])
+    products_by_id={str(p["id"]):p for p in products}
+    verified_ids=set()
+    credits=[]
+    providers={}
+    used_hashes=[]
+    used_urls=set()
+    for item in existing_credits:
+        p=products_by_id.get(str(item.get("id")))
+        if not p:continue
+        photo_path=str(p.get("image","")).lstrip("/")
+        photo=ROOT/photo_path
+        if not photo_path.startswith("assets/shop/catalog/") or not photo.exists() or photo.suffix.lower() not in {".jpg",".jpeg"}:
+            continue
+        verified_ids.add(str(p["id"]))
+        credits.append(item)
+        url=item.get("original_url")
+        if url:used_urls.add(url)
+        provider=item.get("provider") or "Open source"
+        providers[provider]=providers.get(provider,0)+1
+        try:
+            with Image.open(photo) as img:
+                used_hashes.append(imagehash.phash(img.convert("RGB")))
+        except Exception:
+            pass
+
+    pending=[p for p in products if str(p["id"]) not in verified_ids]
     candidates={}
-    with ThreadPoolExecutor(max_workers=6) as pool:
-        futures={pool.submit(search_product,p):p for p in products}
+    with ThreadPoolExecutor(max_workers=10) as pool:
+        futures={pool.submit(search_product,p):p for p in pending}
         for i,f in enumerate(as_completed(futures),1):
             p=futures[f]
-            try:candidates[p["id"]]=f.result()
-            except Exception:candidates[p["id"]]=[]
-            print(f"searched {i}/{len(products)} {p['id']} candidates={len(candidates[p['id']])}",flush=True)
+            try:candidates[str(p["id"])]=f.result()
+            except Exception:candidates[str(p["id"])]=[]
+            print(f"searched missing {i}/{len(pending)} {p['id']} candidates={len(candidates[str(p['id'])])}",flush=True)
 
-    used_hashes=[];used_urls=set();credits=[];providers={};missing=[]
+    missing=[]
     for i,p in enumerate(products,1):
+        if str(p["id"]) in verified_ids:
+            print(f"KEEP VERIFIED {i}/{len(products)} {p['id']} {p['name']}",flush=True)
+            continue
         chosen=None
-        for candidate in candidates.get(p["id"],[]):
+        for candidate in candidates.get(str(p["id"]),[]):
             if score(candidate,p)<0:continue
             for url in (candidate.get("url"),candidate.get("thumbnail")):
                 if not url or url in used_urls:continue
@@ -335,11 +373,12 @@ def main():
         out=OUT/(p["slug"]+".jpg")
         placeholder=PLACEHOLDERS/(p["slug"]+".svg")
         if not chosen:
-            # Delete the unverified legacy photo to avoid unrelated products or faces/models.
+            # Do not restore the old unverified photo. Keep a named object-only graphic.
             out.unlink(missing_ok=True)
             placeholder.write_text(product_placeholder_svg(p),encoding="utf-8")
             p["image"]="/assets/shop/catalog/placeholders/"+p["slug"]+".svg"
             missing.append({"id":p["id"],"name":p["name"],"section":p.get("section",""),
+              "placeholder":p["image"],
               "reason":"No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."})
             print(f"PLACEHOLDER {i}/{len(products)} {p['id']} {p['name']}",flush=True)
             continue
@@ -356,11 +395,11 @@ def main():
         credits.append({"id":p["id"],"name":p["name"],"slug":p["slug"],"query":c.get("_q",p.get("query","")),
           "provider":provider,"license":c.get("license",""),"license_url":c.get("license_url",""),
           "creator":c.get("creator",""),"landing_url":c.get("foreign_landing_url") or c.get("detail_url") or url,
-          "original_url":url,"quality_check":"exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check"})
-        print(f"UPDATED {i}/{len(products)} {p['id']} {p['name']} <- {provider}",flush=True)
+          "original_url":url,"quality_check":"exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+          "local_file":"/assets/shop/catalog/"+p["slug"]+".jpg"})
+        print(f"DOWNLOADED {i}/{len(products)} {p['id']} {p['name']} <- {provider}",flush=True)
 
     # Remove every unreferenced/legacy image from the product-photo storage folder.
-    # Only exact verified JPEGs and currently referenced product-only SVG placeholders stay.
     active_jpgs={p["slug"]+".jpg" for p in products if str(p.get("image","")).endswith(".jpg")}
     for legacy in OUT.iterdir():
         if legacy.is_file() and legacy.suffix.lower() in {".jpg",".jpeg",".png",".webp",".gif"} and legacy.name not in active_jpgs:
@@ -370,16 +409,17 @@ def main():
         if legacy.name not in active_placeholders:
             legacy.unlink(missing_ok=True)
 
-    catalog["image_strategy"]="Use a locally stored open-licensed product-only photo only after exact product-name matching, >=700px resolution, face/person screening and duplicate checks. If no safe exact match exists, remove the old photograph and show a named object-only reference graphic until a suitable photo is verified."
+    # Keep a stable source manifest of all downloaded local catalog images.
+    credits.sort(key=lambda item:int(item.get("id",0)) if str(item.get("id","")).isdigit() else 99999)
+    policy="Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG."
+    catalog["image_strategy"]={"mode":"verified-product-only","primary":["Openverse","Wikimedia Commons"],"verifiedPhotoCount":len(credits),"namedObjectOnlyPlaceholderCount":len(missing),"policy":policy}
     CATALOG.write_text(json.dumps(catalog,ensure_ascii=False,indent=2),encoding="utf-8")
-    credit_doc={"generatedAt":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),
-      "providers":providers,"images":credits,
-      "policy":"Only open-licensed/public-domain photos with exact product-name metadata and no detected face/person are included. Products without an approved exact match use named object-only graphics; see the maintenance audit for outstanding matches."}
+    credit_doc={"generatedAt":time.strftime("%Y-%m-%dT%H:%M:%SZ",time.gmtime()),"providers":providers,"images":credits,"policy":policy}
     CREDITS.write_text(json.dumps(credit_doc,ensure_ascii=False,indent=2),encoding="utf-8")
     audit={"generatedAt":credit_doc["generatedAt"],"totalProducts":len(products),"verifiedInternetPhotos":len(credits),
-      "namedObjectOnlyPlaceholders":len(missing),"missing":missing,"policy":credit_doc["policy"]}
+      "namedObjectOnlyPlaceholders":len(missing),"missing":missing,"policy":policy}
     AUDIT.parent.mkdir(parents=True,exist_ok=True)
     AUDIT.write_text(json.dumps(audit,ensure_ascii=False,indent=2),encoding="utf-8")
-    print(f"REFRESH SUMMARY: verified_photos={len(credits)} placeholders={len(missing)} total={len(products)}",flush=True)
+    print(f"REFRESH SUMMARY: verified_photos={len(credits)} placeholders={len(missing)} total={len(products)} new_downloads={len(credits)-len(verified_ids)}",flush=True)
 
 if __name__=="__main__":main()
