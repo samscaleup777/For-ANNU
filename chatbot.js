@@ -5,7 +5,7 @@
   function boot() {
     const css = document.createElement('link');
     css.rel = 'stylesheet';
-    css.href = '/chatbot.css?v=6';
+    css.href = '/chatbot.css?v=7';
     document.head.appendChild(css);
 
     const root = document.createElement('div');

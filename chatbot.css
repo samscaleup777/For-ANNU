@@ -101,3 +101,36 @@
   .annika-chat-avatar .annika-chat-mark,
   .annika-chat-orbit { animation: none !important; }
 }
+
+
+/* Spin the floating chatbot's orbit, never the brand artwork inside it. */
+.annika-chat-launcher .annika-chat-mark,
+.annika-chat-avatar .annika-chat-mark,
+.annika-chat-launcher:hover .annika-chat-mark,
+.annika-chat-launcher[data-open="true"] .annika-chat-mark {
+  animation: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+.annika-chat-launcher:hover {
+  transform: translateY(-4px) !important;
+}
+.annika-chat-launcher[data-open="true"] {
+  transform: scale(.92) !important;
+}
+.annika-chat-orbit {
+  inset: -7px !important;
+  border: 2px solid transparent !important;
+  border-top-color: var(--annika-chat-gold2) !important;
+  border-right-color: rgba(229,173,121,.38) !important;
+  border-radius: 50% !important;
+  z-index: 1;
+  animation: annikaCompanionOrbitSpin 2.8s linear infinite !important;
+}
+.annika-chat-launcher .annika-chat-mark {
+  position: relative;
+  z-index: 2;
+}
+@media(prefers-reduced-motion:reduce) {
+  .annika-chat-orbit { animation: none !important; }
+}

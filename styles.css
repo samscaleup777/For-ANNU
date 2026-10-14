@@ -144,3 +144,11 @@ body.lifestyle-page .hero-art{
 body.lifestyle-page .feature-photo{
   background-image:linear-gradient(135deg,rgba(18,49,38,.06),rgba(18,49,38,.14)),url("/assets/shop/catalog/80-islamic-books.jpg")!important;
 }
+
+
+/* Keep the actual Annïka header/footer logo artwork stationary. */
+img.brand-logo-exact,
+.brand:hover img.brand-logo-exact {
+  animation: none !important;
+  transform: none !important;
+}
