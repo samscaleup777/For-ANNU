@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-14T01:39:24Z",
+  "generatedAt": "2026-10-15T00:00:00Z",
   "totalProducts": 350,
   "verifiedInternetPhotos": 247,
-  "namedObjectOnlyPlaceholders": 103,
+  "namedObjectOnlyPlaceholders": 99,
   "missing": [
     {
       "id": "03",
@@ -264,13 +264,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "110",
-      "name": "Serum",
-      "section": "Skincare",
-      "placeholder": "/assets/shop/catalog/placeholders/110-serum.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "111",
       "name": "Moisturizer",
       "section": "Skincare",
@@ -366,13 +359,6 @@
       "name": "Mascara",
       "section": "Modest Everyday Makeup",
       "placeholder": "/assets/shop/catalog/placeholders/138-mascara.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "146",
-      "name": "Makeup Organizer",
-      "section": "Modest Everyday Makeup",
-      "placeholder": "/assets/shop/catalog/placeholders/146-makeup-organizer.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -635,13 +621,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "298",
-      "name": "Personal Medicines",
-      "section": "Emergency & Safety",
-      "placeholder": "/assets/shop/catalog/placeholders/298-personal-medicines.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "302",
       "name": "Emergency Contact Card",
       "section": "Emergency & Safety",
@@ -674,13 +653,6 @@
       "name": "Eid Outfit",
       "section": "Ramadan / Eid Essentials",
       "placeholder": "/assets/shop/catalog/placeholders/336-eid-outfit.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "338",
-      "name": "Hijab",
-      "section": "Ramadan / Eid Essentials",
-      "placeholder": "/assets/shop/catalog/placeholders/338-hijab.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -726,5 +698,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     }
   ],
-  "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG."
+  "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG.",
+  "verifiedUserProvidedPhotos": 4,
+  "totalVerifiedPhotos": 251,
+  "notes": [
+    "Four user-provided product photos were reviewed by product ID and added: 110 Serum, 146 Makeup Organizer, 298 Personal Medicines, 338 Hijab. Their third-party licensing status has not been independently verified."
+  ]
 }

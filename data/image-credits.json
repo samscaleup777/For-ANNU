@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-10-14T01:39:24Z",
+  "generatedAt": "2026-10-15T00:00:00Z",
   "providers": {
     "Wikimedia Commons": 197,
     "flickr": 37,
     "wikimedia": 12,
-    "sketchfab": 1
+    "sketchfab": 1,
+    "User-provided ZIP": 4
   },
   "images": [
     {
@@ -3272,6 +3273,62 @@
       "original_url": "https://live.staticflickr.com/2248/5705260713_f6211a2ea4_b.jpg",
       "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
       "local_file": "/assets/shop/catalog/350-gift-packaging-items.jpg"
+    },
+    {
+      "id": "110",
+      "name": "Serum",
+      "slug": "110-serum",
+      "query": "face serum skincare product real photo",
+      "provider": "User-provided ZIP",
+      "license": "User-provided; third-party license not independently verified",
+      "license_url": "",
+      "creator": "Supplied by site owner",
+      "landing_url": "",
+      "original_url": "",
+      "quality_check": "Image visually reviewed against this catalog product name and ID; user-provided source, not claimed as an open-license internet photo",
+      "local_file": "/assets/shop/catalog/110-serum.webp"
+    },
+    {
+      "id": "146",
+      "name": "Makeup Organizer",
+      "slug": "146-makeup-organizer",
+      "query": "makeup organizer product real photo",
+      "provider": "User-provided ZIP",
+      "license": "User-provided; third-party license not independently verified",
+      "license_url": "",
+      "creator": "Supplied by site owner",
+      "landing_url": "",
+      "original_url": "",
+      "quality_check": "Image visually reviewed against this catalog product name and ID; user-provided source, not claimed as an open-license internet photo",
+      "local_file": "/assets/shop/catalog/146-makeup-organizer.webp"
+    },
+    {
+      "id": "298",
+      "name": "Personal Medicines",
+      "slug": "298-personal-medicines",
+      "query": "personal medicines medicine cabinet real photo",
+      "provider": "User-provided ZIP",
+      "license": "User-provided; third-party license not independently verified",
+      "license_url": "",
+      "creator": "Supplied by site owner",
+      "landing_url": "",
+      "original_url": "",
+      "quality_check": "Image visually reviewed against this catalog product name and ID; user-provided source, not claimed as an open-license internet photo",
+      "local_file": "/assets/shop/catalog/298-personal-medicines.webp"
+    },
+    {
+      "id": "338",
+      "name": "Hijab",
+      "slug": "338-hijab",
+      "query": "Eid hijab real photo",
+      "provider": "User-provided ZIP",
+      "license": "User-provided; third-party license not independently verified",
+      "license_url": "",
+      "creator": "Supplied by site owner",
+      "landing_url": "",
+      "original_url": "",
+      "quality_check": "Image visually reviewed against this catalog product name and ID; user-provided source, not claimed as an open-license internet photo",
+      "local_file": "/assets/shop/catalog/338-hijab.webp"
     }
   ],
   "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG."
