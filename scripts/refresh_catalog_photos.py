@@ -186,7 +186,7 @@ def get_json(url,params):
     return {}
 
 def openverse(q):
-    return get_json("https://api.openverse.org/v1/images/",{"q":q,"page_size":50,"mature":"false","license_type":"commercial"}).get("results",[])
+    return get_json("https://api.openverse.org/v1/images/",{"q":q,"page_size":20,"mature":"false","license_type":"commercial"}).get("results",[])
 
 def commons(q):
     j=get_json("https://commons.wikimedia.org/w/api.php",{
@@ -211,22 +211,22 @@ def queries(p):
     name=p.get("name","").strip()
     query_terms=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP]
     cleaned=" ".join(query_terms)
-    # Search by the storefront name and a wider set of product-only catalog terms.
-    # Synonym queries recover real photos when vendors use a different common name.
-    options=[name,cleaned,name+" product photo",name+" isolated product photo",
-             name+" product on white background",name+" flat lay product photo",
-             name+" catalog product image",name+" item packshot"]
+    # Search the product name and common synonyms first; anonymous Openverse is
+    # limited to 20 results per request, so use a small, high-value query set.
+    options=[name,cleaned]
     low_name=name.lower()
     for alias_key,phrases in sorted(ALIASES.items(),key=lambda pair:len(pair[0]),reverse=True):
         if alias_key in low_name:
-            for phrase in phrases[:4]:
+            for phrase in phrases[:3]:
                 options.extend([phrase,phrase+" product photo"])
             break
+    options.extend([name+" product photo",name+" isolated product photo",
+                    name+" flat lay product photo",name+" product on white background"])
     if p.get("section") in {"Hijab & Modest Wear","Everyday Clothing","Fitness","Ramadan / Eid Essentials"}:
         options.extend([name+" folded garment flat lay",name+" apparel flat lay no model"])
     else:
         options.extend([name+" object-only product photo",name+" product packaging photo"])
-    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:10]
+    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:8]
 
 def search_product(p):
     items=[];seen=set()
@@ -237,8 +237,8 @@ def search_product(p):
             c["_q"]=q;seen.add(key)
             if score(c,p)>=0:items.append(c)
         # Exact-match results are enough; do not broaden to unrelated general terms.
-        if len(items)>=12:break
-    if len(items)<2:
+        if len(items)>=6:break
+    if len(items)<3:
         for q in queries(p)[:4]:
             for c in commons(q):
                 key=c.get("url") or c.get("foreign_landing_url")
