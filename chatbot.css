@@ -63,3 +63,41 @@
   .annika-chat-row .annika-chat-bubble{max-width:95%}
   .annika-chat-composer-meta{gap:6px}
 }
+
+
+/* Exact Annïka logo in the Companion, with the requested continuous circular motion. */
+@keyframes annikaCompanionLogoSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes annikaCompanionOrbitSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-360deg); }
+}
+.annika-chat-launcher .annika-chat-mark {
+  display: block;
+  width: 42px;
+  height: 42px;
+  max-width: none;
+  object-fit: contain;
+  transform-origin: 50% 50%;
+  animation: annikaCompanionLogoSpin 7s linear infinite;
+}
+.annika-chat-avatar .annika-chat-mark {
+  display: block;
+  width: 31px;
+  height: 38px;
+  max-width: none;
+  object-fit: contain;
+  transform-origin: 50% 50%;
+  animation: annikaCompanionLogoSpin 11s linear infinite;
+}
+.annika-chat-orbit { animation: annikaCompanionOrbitSpin 12s linear infinite; }
+@media(max-width:620px) {
+  .annika-chat-launcher .annika-chat-mark { width: 39px; height: 39px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .annika-chat-launcher .annika-chat-mark,
+  .annika-chat-avatar .annika-chat-mark,
+  .annika-chat-orbit { animation: none !important; }
+}

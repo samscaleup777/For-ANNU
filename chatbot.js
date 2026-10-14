@@ -5,19 +5,19 @@
   function boot() {
     const css = document.createElement('link');
     css.rel = 'stylesheet';
-    css.href = '/chatbot.css?v=5';
+    css.href = '/chatbot.css?v=6';
     document.head.appendChild(css);
 
     const root = document.createElement('div');
     root.className = 'annika-chat-root';
     root.innerHTML =
       '<button class="annika-chat-launcher" type="button" aria-label="Open Annïka Companion" aria-expanded="false" data-open="false" title="Drag to move • Click to chat">' +
-        '<span class="annika-chat-orbit" aria-hidden="true"></span><span class="annika-chat-drag-badge" aria-hidden="true">↗</span><img class="annika-chat-mark" src="/assets/annika-mark-exact-visible.png" alt="">' +
+        '<span class="annika-chat-orbit" aria-hidden="true"></span><span class="annika-chat-drag-badge" aria-hidden="true">↗</span><img class="annika-chat-mark" src="/assets/annika-mark-exact-visible.png?logo=3" alt="Annïka logo">' +
       '</button>' +
       '<section class="annika-chat-shell" aria-label="Annïka Companion" data-open="false" aria-hidden="true" inert>' +
         '<header class="annika-chat-top" data-chat-drag>' +
           '<div class="annika-chat-top-inner">' +
-            '<div class="annika-chat-avatar"><img class="annika-chat-mark" src="/assets/annika-mark-exact-visible.png" alt=""></div>' +
+            '<div class="annika-chat-avatar"><img class="annika-chat-mark" src="/assets/annika-mark-exact-visible.png?logo=3" alt="Annïka logo"></div>' +
             '<div class="annika-chat-heading"><div class="annika-chat-title">Annïka Companion</div><div class="annika-chat-status">Product-aware site guide</div></div>' +
             '<div class="annika-chat-toolbar">' +
               '<button class="annika-chat-clear" type="button" aria-label="Start a new conversation" title="New conversation">↻</button>' +
