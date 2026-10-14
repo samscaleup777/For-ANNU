@@ -321,7 +321,7 @@ function bindProductButtons(){
   });
 }
 function add(id){
-  const p=state.products.find(x=>x.id===id);if(!p)return;
+  const p=state.products.find(x=>String(x.id)===String(id));if(!p)return;
   const i=state.products.indexOf(p),price=priceFor(p,i);
   const existing=state.cart.find(x=>x.id===id);
   if(existing)existing.qty+=1;else {
