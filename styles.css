@@ -279,3 +279,43 @@ img.brand-logo-exact,
   .brand-mark-shell::after,
   .brand-heart-dot { animation: none !important; }
 }
+
+
+/* Fine tune: give the original logo mark more room, reduce its frame, and lower the heart-dot. */
+.brand-mark-shell {
+  flex-basis: 42px !important;
+  width: 42px !important;
+  height: 44px !important;
+  padding: 1px !important;
+  border-radius: 11px 11px 11px 4px !important;
+  box-shadow: 0 3px 9px rgba(18,49,38,.16), 0 0 0 1px rgba(229,173,121,.14) !important;
+}
+.brand-mark-shell .brand-logo-exact,
+img.brand-logo-exact,
+.brand:hover img.brand-logo-exact {
+  width: 39px !important;
+  height: 42px !important;
+  object-fit: contain !important;
+  filter: none !important;
+}
+.brand-heart-dot {
+  top: -.06em !important;
+  font-size: .34em !important;
+}
+@media (max-width: 620px) {
+  .brand-mark-shell {
+    flex-basis: 36px !important;
+    width: 36px !important;
+    height: 38px !important;
+    padding: 1px !important;
+  }
+  .brand-mark-shell .brand-logo-exact,
+  img.brand-logo-exact,
+  .brand:hover img.brand-logo-exact {
+    width: 33px !important;
+    height: 36px !important;
+  }
+  .brand-heart-dot {
+    top: -.04em !important;
+  }
+}
