@@ -5,19 +5,19 @@
   function boot() {
     const css = document.createElement('link');
     css.rel = 'stylesheet';
-    css.href = '/chatbot.css?v=7';
+    css.href = '/chatbot.css?v=8';
     document.head.appendChild(css);
 
     const root = document.createElement('div');
     root.className = 'annika-chat-root';
     root.innerHTML =
       '<button class="annika-chat-launcher" type="button" aria-label="Open Annïka Companion" aria-expanded="false" data-open="false" title="Drag to move • Click to chat">' +
-        '<span class="annika-chat-orbit" aria-hidden="true"></span><span class="annika-chat-drag-badge" aria-hidden="true">↗</span><img class="annika-chat-mark" src="/assets/annika-mark-exact-visible.png?logo=3" alt="Annïka logo">' +
+        '<span class="annika-chat-orbit" aria-hidden="true"></span><span class="annika-chat-drag-badge" aria-hidden="true">↗</span><img class="annika-chat-mark" src="/assets/annika-mark-exact-visible.png?logo=3" alt="Annïka logo" draggable="false">' +
       '</button>' +
       '<section class="annika-chat-shell" aria-label="Annïka Companion" data-open="false" aria-hidden="true" inert>' +
         '<header class="annika-chat-top" data-chat-drag>' +
           '<div class="annika-chat-top-inner">' +
-            '<div class="annika-chat-avatar"><img class="annika-chat-mark" src="/assets/annika-mark-exact-visible.png?logo=3" alt="Annïka logo"></div>' +
+            '<div class="annika-chat-avatar"><img class="annika-chat-mark" src="/assets/annika-mark-exact-visible.png?logo=3" alt="Annïka logo" draggable="false"></div>' +
             '<div class="annika-chat-heading"><div class="annika-chat-title">Annïka Companion</div><div class="annika-chat-status">Product-aware site guide</div></div>' +
             '<div class="annika-chat-toolbar">' +
               '<button class="annika-chat-clear" type="button" aria-label="Start a new conversation" title="New conversation">↻</button>' +
@@ -406,6 +406,13 @@
       }
     });
     document.addEventListener('keydown', event => { if (event.key === 'Escape' && state.open) setOpen(false); });
+
+    // Prevent native image dragging/selection from hijacking pointer-based movement.
+    root.addEventListener('dragstart', event => {
+      if (event.target && event.target.closest && event.target.closest('.annika-chat-launcher')) {
+        event.preventDefault();
+      }
+    });
     bindDrag(launcher);
     bindDrag(dragHeader);
     window.addEventListener('resize', () => {

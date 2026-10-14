@@ -134,3 +134,24 @@
 @media(prefers-reduced-motion:reduce) {
   .annika-chat-orbit { animation: none !important; }
 }
+
+
+/* Treat the logo as artwork, not a separate draggable/ selectable element.
+   Pointer events fall through to the launcher so dragging starts anywhere on it. */
+.annika-chat-launcher {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  -webkit-touch-callout: none;
+  touch-action: none !important;
+}
+.annika-chat-launcher *,
+.annika-chat-launcher img {
+  -webkit-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+}
+.annika-chat-launcher .annika-chat-mark {
+  pointer-events: none !important;
+  -webkit-user-drag: none !important;
+  user-select: none !important;
+}
