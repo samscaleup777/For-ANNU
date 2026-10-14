@@ -384,7 +384,15 @@ async function init(){
       return {...item,image:image.startsWith("data:")?image:image+"?v=19"};
     });
     saveCart();
+    const queryParams = new URLSearchParams(window.location.search);
+    const requestedSearch = (queryParams.get("search") || queryParams.get("q") || "").trim().slice(0, 100);
+    if (requestedSearch) {
+      state.query = requestedSearch;
+      const searchInput = document.getElementById("shopSearch");
+      if (searchInput) searchInput.value = requestedSearch;
+    }
     render();
+    if (requestedSearch) setTimeout(() => document.getElementById("shop-products")?.scrollIntoView({behavior:"smooth",block:"start"}), 120);
   }catch(e){
     const grid=document.getElementById("productGrid");if(grid)grid.innerHTML='<div class="catalog-empty"><h3>Catalog loading failed.</h3><p>Please refresh the page.</p></div>';
   }
