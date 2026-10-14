@@ -27,7 +27,7 @@ PLACEHOLDERS=OUT/"placeholders"
 UA="AnnikaCatalogRefresh/3.0 (+https://annika-website-one.vercel.app/)"
 TIMEOUT=12
 BAD=re.compile(r"(watermark|shutterstock|getty|alamy|istock|adobe[ -]?stock|dreamstime|depositphotos|123rf|blurred|illustration|vector|clipart|3d[ -]?render|rendered|ai[ -]?generated|generative[ -]?ai|synthetic|screenshot|poster|diagram|chart|logo|collage|drawing|painting)",re.I)
-PERSON=re.compile(r"\b(woman|women|man|men|girl|boy|child|children|person|people|model|portrait|face|human|patient|nurse|doctor|wearing|posing|standing|sitting|holding|selfie|personnel)\b",re.I)
+PERSON=re.compile(r"\b(model|portrait|face|human|patient|nurse|doctor|wearing|posing|standing|sitting|holding|selfie|personnel|child|children|people|person)\b",re.I)
 STOP={"a","an","and","the","for","of","to","with","from","real","photo","photos","product","image","images","set","item","items","essentials","women","woman","womens","men","mens","muslim","modest","fashion","catalog","daily","everyday","comfortable","premium","classic","simple","new"}
 QUERY_STOP={"real","photo","product","image","images","item","items","catalog","high","quality","commercial","license","licensed","bangladesh","bangladeshi","pakistan","pakistani","saudi","arabia","uae","gulf","south","asia","global","middle","east","arab","world","muslim","modest","fashion","women","woman","mens","womens","man","men","full","length","studio","isolated","white","background","open","new","classic","premium","simple"}
 AMBIGUOUS_REQUIREMENTS={"palazzo":{"pants","trouser","trousers"},"watch":{"wrist","wristwatch"},"flats":{"shoe","shoes","footwear"},"flat":{"shoe","shoes","footwear"},"sari":{"saree","sari"},"sweater":{"clothing","garment","wear","fashion"},"abaya":{"dress","garment","clothing","apparel","fashion","wear","robe","thobe","jilbab"}}
@@ -124,27 +124,36 @@ def exact_name_match(item,p):
     tokens=product_tokens(p)
     if not tokens:return False
     name=(p.get("name","")+" "+p.get("query","")).lower()
-    # Prefer the most specific alias first: "hijab — chiffon" must match chiffon
-    # hijab/scarf, not just any generic hijab image.
-    aliases=sorted(ALIASES.items(),key=lambda pair:len(pair[0]),reverse=True)
-    alias_match=False
-    for alias_key,phrases in aliases:
-        if alias_key in name:
-            if not any(phrase in text for phrase in phrases):continue
-            remaining=[t for t in tokens if t not in normalized_tokens(alias_key)]
-            if not all(t in text for t in remaining):continue
-            alias_match=True
-            break
-    if not alias_match and not all(t in text for t in tokens):return False
 
-    # Single-word product names may have unrelated meanings ("Palazzo" can be a building).
+    # First use the controlled synonym dictionary for items whose online name differs
+    # from the short storefront name (e.g., janamaz/prayer rug, undercap/underscarf).
+    aliases=sorted(ALIASES.items(),key=lambda pair:len(pair[0]),reverse=True)
+    for alias_key,phrases in aliases:
+        if alias_key not in name:
+            continue
+        if any(phrase in text for phrase in phrases):
+            remaining=[t for t in tokens if t not in normalized_tokens(alias_key)]
+            if all(t in text for t in remaining):
+                return True
+
+    present=[t for t in tokens if t in text]
+    # Single-word product names can be ambiguous ("watch", "palazzo", "sari").
     if len(tokens)==1:
         key=tokens[0]
         allowed=AMBIGUOUS_REQUIREMENTS.get(key)
         if allowed and not any(term in text for term in allowed):return False
         query_tokens=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP and t not in tokens]
         if query_tokens and not any(term in text for term in query_tokens):return False
-    return True
+        return bool(present)
+
+    if len(present)==len(tokens):
+        return True
+    # Product titles and alt text frequently omit a non-essential descriptor
+    # (e.g. "winter boot" for "Winter Shoes / Boots"). Allow one omitted modifier,
+    # but still require at least two identity words so broad category matches do not pass.
+    if len(tokens)>=2 and len(present)>=max(2,len(tokens)-1):
+        return True
+    return False
 
 def score(item,p):
     text=metadata(item).lower()
@@ -177,7 +186,7 @@ def get_json(url,params):
     return {}
 
 def openverse(q):
-    return get_json("https://api.openverse.org/v1/images/",{"q":q,"page_size":30,"mature":"false","license_type":"commercial"}).get("results",[])
+    return get_json("https://api.openverse.org/v1/images/",{"q":q,"page_size":50,"mature":"false","license_type":"commercial"}).get("results",[])
 
 def commons(q):
     j=get_json("https://commons.wikimedia.org/w/api.php",{
@@ -202,14 +211,22 @@ def queries(p):
     name=p.get("name","").strip()
     query_terms=[t for t in normalized_tokens(p.get("query","")) if t not in QUERY_STOP]
     cleaned=" ".join(query_terms)
-    # Never search for a model, wearer, portrait, or human. Keep candidate metadata
-    # tied to the exact item, but try multiple product-photography query styles.
-    options=[name,cleaned,name+" isolated product photo",name+" flat lay product photo"]
+    # Search by the storefront name and a wider set of product-only catalog terms.
+    # Synonym queries recover real photos when vendors use a different common name.
+    options=[name,cleaned,name+" product photo",name+" isolated product photo",
+             name+" product on white background",name+" flat lay product photo",
+             name+" catalog product image",name+" item packshot"]
+    low_name=name.lower()
+    for alias_key,phrases in sorted(ALIASES.items(),key=lambda pair:len(pair[0]),reverse=True):
+        if alias_key in low_name:
+            for phrase in phrases[:4]:
+                options.extend([phrase,phrase+" product photo"])
+            break
     if p.get("section") in {"Hijab & Modest Wear","Everyday Clothing","Fitness","Ramadan / Eid Essentials"}:
-        options.extend([name+" folded garment flat lay",name+" product only no model"])
+        options.extend([name+" folded garment flat lay",name+" apparel flat lay no model"])
     else:
         options.extend([name+" object-only product photo",name+" product packaging photo"])
-    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:6]
+    return list(dict.fromkeys(q.strip() for q in options if q and q.strip()))[:10]
 
 def search_product(p):
     items=[];seen=set()
