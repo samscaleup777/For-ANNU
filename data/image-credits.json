@@ -5,7 +5,7 @@
     "flickr": 37,
     "wikimedia": 12,
     "sketchfab": 1,
-    "User-provided ZIP": 4
+    "User-provided ZIP": 5
   },
   "images": [
     {
@@ -3329,6 +3329,20 @@
       "original_url": "",
       "quality_check": "Image visually reviewed against this catalog product name and ID; user-provided source, not claimed as an open-license internet photo",
       "local_file": "/assets/shop/catalog/338-hijab.webp"
+    },
+    {
+      "id": "193",
+      "name": "Body Spray",
+      "slug": "193-body-spray",
+      "query": "body spray product real photo",
+      "provider": "User-provided ZIP",
+      "license": "User-provided; third-party license not independently verified",
+      "license_url": "",
+      "creator": "Supplied by site owner",
+      "landing_url": "",
+      "original_url": "",
+      "quality_check": "Visually reviewed: aerosol body-spray bottles match the Body Spray catalog item; no people visible. User-provided source, not claimed as an open-license internet photo.",
+      "local_file": "/assets/shop/catalog/193-body-spray.webp"
     }
   ],
   "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG."

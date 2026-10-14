@@ -2,7 +2,7 @@
   "generatedAt": "2026-10-15T00:00:00Z",
   "totalProducts": 350,
   "verifiedInternetPhotos": 247,
-  "namedObjectOnlyPlaceholders": 99,
+  "namedObjectOnlyPlaceholders": 98,
   "missing": [
     {
       "id": "03",
@@ -453,13 +453,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "193",
-      "name": "Body Spray",
-      "section": "Fragrance",
-      "placeholder": "/assets/shop/catalog/placeholders/193-body-spray.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "206",
       "name": "Hijab Brooch",
       "section": "Jewellery & Accessories",
@@ -699,9 +692,10 @@
     }
   ],
   "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG.",
-  "verifiedUserProvidedPhotos": 4,
-  "totalVerifiedPhotos": 251,
+  "verifiedUserProvidedPhotos": 5,
+  "totalVerifiedPhotos": 252,
   "notes": [
-    "Four user-provided product photos were reviewed by product ID and added: 110 Serum, 146 Makeup Organizer, 298 Personal Medicines, 338 Hijab. Their third-party licensing status has not been independently verified."
+    "Four user-provided product photos were reviewed by product ID and added: 110 Serum, 146 Makeup Organizer, 298 Personal Medicines, 338 Hijab. Their third-party licensing status has not been independently verified.",
+    "Body Spray ID 193 was visually checked against its product name and added from the user-provided ZIP; third-party license is not independently verified."
   ]
 }
