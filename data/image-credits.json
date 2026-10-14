@@ -1,9 +1,40 @@
 {
-  "generatedAt": "2026-10-14T00:04:54Z",
+  "generatedAt": "2026-10-14T01:39:24Z",
   "providers": {
-    "Wikimedia Commons": 196
+    "Wikimedia Commons": 197,
+    "flickr": 37,
+    "wikimedia": 12,
+    "sketchfab": 1
   },
   "images": [
+    {
+      "id": "01",
+      "name": "Hijab — Chiffon",
+      "slug": "01-hijab-chiffon",
+      "query": "chiffon scarf",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "Marian Elizabeth May",
+      "landing_url": "https://www.flickr.com/photos/24232165@N03/29203400084",
+      "original_url": "https://live.staticflickr.com/8821/29203400084_cbccd91f3a_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/01-hijab-chiffon.jpg"
+    },
+    {
+      "id": "02",
+      "name": "Hijab — Cotton",
+      "slug": "02-hijab-cotton",
+      "query": "cotton scarf",
+      "provider": "flickr",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "creator": "learningexecutive",
+      "landing_url": "https://www.flickr.com/photos/15558793@N07/8885967520",
+      "original_url": "https://live.staticflickr.com/7458/8885967520_c8a174691b_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/02-hijab-cotton.jpg"
+    },
     {
       "id": "10",
       "name": "Hijab Pins",
@@ -31,6 +62,62 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "15",
+      "name": "Hijab Scarf Ring",
+      "slug": "15-hijab-scarf-ring",
+      "query": "scarf ring",
+      "provider": "wikimedia",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "creator": "Ashleymarieint",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=12181373",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Large_Scarf_Ring.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/15-hijab-scarf-ring.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Long Modest Dresses",
+      "slug": "16-long-modest-dresses",
+      "query": "long dress",
+      "provider": "flickr",
+      "license": "pdm",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "creator": "Fæ",
+      "landing_url": "https://www.flickr.com/photos/50398299@N08/16682659251",
+      "original_url": "https://live.staticflickr.com/8676/16682659251_11443b5c77_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/16-long-modest-dresses.jpg"
+    },
+    {
+      "id": "17",
+      "name": "Maxi Dresses",
+      "slug": "17-maxi-dresses",
+      "query": "Maxi Dresses",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "MadelineMaisonnette",
+      "landing_url": "https://www.flickr.com/photos/36076483@N06/5714145912",
+      "original_url": "https://live.staticflickr.com/2006/5714145912_bf9045a030_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/17-maxi-dresses.jpg"
+    },
+    {
+      "id": "18",
+      "name": "Abaya",
+      "slug": "18-abaya",
+      "query": "Abaya",
+      "provider": "wikimedia",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "creator": "Rod Waddington from Kergunyah, Australia",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=29767825",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Lake_Abaya%2C_Arba_Minch_%286194081486%29.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/18-abaya.jpg"
+    },
+    {
       "id": "19",
       "name": "Jilbab",
       "slug": "19-jilbab",
@@ -42,6 +129,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Jilbab_ungu.jpg",
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Jilbab_ungu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "21",
+      "name": "Prayer Dress",
+      "slug": "21-prayer-dress",
+      "query": "Prayer Dress",
+      "provider": "flickr",
+      "license": "by-nd",
+      "license_url": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "creator": "Mara ~earth light~",
+      "landing_url": "https://www.flickr.com/photos/23665057@N02/5546134522",
+      "original_url": "https://live.staticflickr.com/5137/5546134522_0d65dae3f8_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/21-prayer-dress.jpg"
     },
     {
       "id": "22",
@@ -57,6 +158,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "23",
+      "name": "Modest Tunics",
+      "slug": "23-modest-tunics",
+      "query": "long tunic",
+      "provider": "wikimedia",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": "Wolfmann",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=113211492",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Vikingdrakter_rekonstruerte_kl%C3%A6r_mannsdrakt_tunika_kjortel_bukse_kniv_verkt%C3%B8y_saks_%28reconstructed_Viking_Age_male_clothing_knee-long_tunic_knife_in_strap_etc%29_Slottsfjellsmuseet_T%C3%B8nsberg_Norway_2021-11-10_5270.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/23-modest-tunics.jpg"
+    },
+    {
       "id": "24",
       "name": "Long Skirts",
       "slug": "24-long-skirts",
@@ -68,6 +183,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:The_trend_of_very_long_skirts%2C_Ginza_Tokyo%2C_1931.jpg",
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/The_trend_of_very_long_skirts%2C_Ginza_Tokyo%2C_1931.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "25",
+      "name": "Wide-Leg Trousers",
+      "slug": "25-wide-leg-trousers",
+      "query": "wide leg pants",
+      "provider": "flickr",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "creator": "Tigist Sapphire",
+      "landing_url": "https://www.flickr.com/photos/73159597@N03/13642141545",
+      "original_url": "https://live.staticflickr.com/7177/13642141545_417a279e46_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/25-wide-leg-trousers.jpg"
     },
     {
       "id": "26",
@@ -96,6 +225,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "28",
+      "name": "Kameez",
+      "slug": "28-kameez",
+      "query": "Kameez",
+      "provider": "wikimedia",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": "Lunaloop",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=89604111",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shalwar_kameez.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/28-kameez.jpg"
+    },
+    {
       "id": "29",
       "name": "Long Kurti",
       "slug": "29-long-kurti",
@@ -107,6 +250,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Johnny_Barraco%2C_Taylor_Kurtis_at_Porn_Star_Karaoke_1.jpg",
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Johnny_Barraco%2C_Taylor_Kurtis_at_Porn_Star_Karaoke_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "30",
+      "name": "Dupatta",
+      "slug": "30-dupatta",
+      "query": "Dupatta",
+      "provider": "wikimedia",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "creator": "Biswarup Ganguly",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=83173667",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Persian_Nobleman_Clad_in_Coat_Dupatta_Trouser_and_Turban_-_Circa_2nd_Century_BCE_-_Showcase_18-11_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/30-dupatta.jpg"
     },
     {
       "id": "31",
@@ -187,6 +344,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "40",
+      "name": "Maxi Dresses",
+      "slug": "40-maxi-dresses",
+      "query": "Maxi Dresses",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "MadelineMaisonnette",
+      "landing_url": "https://www.flickr.com/photos/36076483@N06/5714146940",
+      "original_url": "https://live.staticflickr.com/3628/5714146940_2890ab4d00_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/40-maxi-dresses.jpg"
+    },
+    {
       "id": "45",
       "name": "Pajamas",
       "slug": "45-pajamas",
@@ -264,6 +435,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Winter_clothing_at_ISPO_2014_Munich.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Winter_clothing_at_ISPO_2014_Munich.jpg/1920px-Winter_clothing_at_ISPO_2014_Munich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "52",
+      "name": "Eid Outfits",
+      "slug": "52-eid-outfits",
+      "query": "Eid Outfits",
+      "provider": "flickr",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "creator": "Casey Hugelfink",
+      "landing_url": "https://www.flickr.com/photos/93212986@N03/53753356435",
+      "original_url": "https://live.staticflickr.com/65535/53753356435_5d95bc6ff1_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/52-eid-outfits.jpg"
     },
     {
       "id": "54",
@@ -368,6 +553,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:The_Pink_Slips_%2843741079404%29.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/The_Pink_Slips_%2843741079404%29.jpg/1920px-The_Pink_Slips_%2843741079404%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "65",
+      "name": "Inner Pants",
+      "slug": "65-inner-pants",
+      "query": "Inner Pants",
+      "provider": "flickr",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "creator": "Stripy T-Shirt",
+      "landing_url": "https://www.flickr.com/photos/99339319@N00/395197485",
+      "original_url": "https://live.staticflickr.com/163/395197485_a551e83cc9_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/65-inner-pants.jpg"
     },
     {
       "id": "66",
@@ -489,6 +688,48 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "81",
+      "name": "Dua Book",
+      "slug": "81-dua-book",
+      "query": "Dua Book",
+      "provider": "wikimedia",
+      "license": "cc0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+      "creator": null,
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=98056044",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/55/Master_of_the_Geneva_Latini_%28French%2C_active_Rouen%2C_1460-80%29_-_Book_of_Hours_%28Use_of_Rouen%29%2C_fol._31r_-_1952.227.31.a_-_Cleveland_Museum_of_Art.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/81-dua-book.jpg"
+    },
+    {
+      "id": "82",
+      "name": "Prayer-Time Clock",
+      "slug": "82-prayer-time-clock",
+      "query": "Prayer-Time Clock",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "Jay Tamboli",
+      "landing_url": "https://www.flickr.com/photos/47084925@N00/3040721305",
+      "original_url": "https://live.staticflickr.com/3282/3040721305_12f6cb12d7_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/82-prayer-time-clock.jpg"
+    },
+    {
+      "id": "84",
+      "name": "Islamic Wall Calendar",
+      "slug": "84-islamic-wall-calendar",
+      "query": "Islamic Wall Calendar",
+      "provider": "Wikimedia Commons",
+      "license": "Public domain",
+      "license_url": "",
+      "creator": "",
+      "landing_url": "https://commons.wikimedia.org/wiki/File:Islamic_Calendar_LACMA_M.89.21.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/df/Islamic_Calendar_LACMA_M.89.21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/84-islamic-wall-calendar.jpg"
+    },
+    {
       "id": "86",
       "name": "Sanitary Pads",
       "slug": "86-sanitary-pads",
@@ -500,6 +741,34 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Roody_Reusable_Sanitary_Pads.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Roody_Reusable_Sanitary_Pads.jpg/1920px-Roody_Reusable_Sanitary_Pads.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "87",
+      "name": "Pantyliners",
+      "slug": "87-pantyliners",
+      "query": "pantyliners",
+      "provider": "wikimedia",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "creator": "Gsvadds",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=65022590",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Libresse_pantyliners_box.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/87-pantyliners.jpg"
+    },
+    {
+      "id": "88",
+      "name": "Tampons",
+      "slug": "88-tampons",
+      "query": "Tampons",
+      "provider": "flickr",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "creator": "jenlight",
+      "landing_url": "https://www.flickr.com/photos/71115582@N00/13689694",
+      "original_url": "https://live.staticflickr.com/9/13689694_5ed82f2df6_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/88-tampons.jpg"
     },
     {
       "id": "89",
@@ -606,6 +875,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "99",
+      "name": "Body Wash",
+      "slug": "99-body-wash",
+      "query": "Body Wash",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "JeepersMedia",
+      "landing_url": "https://www.flickr.com/photos/39160147@N03/16099793436",
+      "original_url": "https://live.staticflickr.com/8668/16099793436_011e102fd2_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/99-body-wash.jpg"
+    },
+    {
       "id": "100",
       "name": "Soap",
       "slug": "100-soap",
@@ -671,6 +954,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "109",
+      "name": "Toner",
+      "slug": "109-toner",
+      "query": "facial toner",
+      "provider": "flickr",
+      "license": "by-nd",
+      "license_url": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "creator": "sparkfete",
+      "landing_url": "https://www.flickr.com/photos/131784763@N04/18172823272",
+      "original_url": "https://live.staticflickr.com/7773/18172823272_593cfe9bba_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/109-toner.jpg"
+    },
+    {
       "id": "112",
       "name": "Sunscreen",
       "slug": "112-sunscreen",
@@ -695,6 +992,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Swedish_armed_forces_lip_balm.JPG",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Swedish_armed_forces_lip_balm.JPG/1920px-Swedish_armed_forces_lip_balm.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "114",
+      "name": "SPF Lip Balm",
+      "slug": "114-spf-lip-balm",
+      "query": "SPF Lip Balm",
+      "provider": "wikimedia",
+      "license": "cc0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+      "creator": "W.carter",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=88281848",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fd/EOS_lip_balm_8.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/114-spf-lip-balm.jpg"
     },
     {
       "id": "120",
@@ -788,6 +1099,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "131",
+      "name": "Concealer",
+      "slug": "131-concealer",
+      "query": "concealer makeup",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "nerissa's ring",
+      "landing_url": "https://www.flickr.com/photos/21524179@N08/4706633446",
+      "original_url": "https://live.staticflickr.com/4061/4706633446_3d8905058b_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/131-concealer.jpg"
+    },
+    {
       "id": "132",
       "name": "Compact Powder",
       "slug": "132-compact-powder",
@@ -812,6 +1137,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Blush_-_A_selection_of_makeup_brushes.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Blush_-_A_selection_of_makeup_brushes.jpg/1920px-Blush_-_A_selection_of_makeup_brushes.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "136",
+      "name": "Eyeliner",
+      "slug": "136-eyeliner",
+      "query": "Eyeliner",
+      "provider": "flickr",
+      "license": "by-nd",
+      "license_url": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "creator": "lilies and bees",
+      "landing_url": "https://www.flickr.com/photos/27769875@N00/1055433681",
+      "original_url": "https://live.staticflickr.com/1387/1055433681_2c59b604ed_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/136-eyeliner.jpg"
     },
     {
       "id": "139",
@@ -864,6 +1203,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Pink_lip_gloss.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Pink_lip_gloss.jpg/1920px-Pink_lip_gloss.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "143",
+      "name": "Makeup Remover",
+      "slug": "143-makeup-remover",
+      "query": "Makeup Remover",
+      "provider": "flickr",
+      "license": "by-nd",
+      "license_url": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "creator": "StaccatoCandy<3",
+      "landing_url": "https://www.flickr.com/photos/54095627@N06/5170871399",
+      "original_url": "https://live.staticflickr.com/4131/5170871399_0a52abe1ba_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/143-makeup-remover.jpg"
     },
     {
       "id": "144",
@@ -955,6 +1308,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Lid%2C_hair_oil_bottle_%28AM_1965.78.846-1%29.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Lid%2C_hair_oil_bottle_%28AM_1965.78.846-1%29.jpg/1920px-Lid%2C_hair_oil_bottle_%28AM_1965.78.846-1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "153",
+      "name": "Leave-In Conditioner",
+      "slug": "153-leave-in-conditioner",
+      "query": "Leave-In Conditioner",
+      "provider": "sketchfab",
+      "license": "by-nd",
+      "license_url": "https://creativecommons.org/licenses/by-nd/4.0/",
+      "creator": "3dscanspecialproject",
+      "landing_url": "https://sketchfab.com/3d-models/6561f044654b46c292ac914b019b6a94",
+      "original_url": "https://media.sketchfab.com/models/6561f044654b46c292ac914b019b6a94/thumbnails/4e2788d9df084f0e87380f66907e7b45/b1de2b150f5146bab9e4dd561dde03bc.jpeg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/153-leave-in-conditioner.jpg"
     },
     {
       "id": "154",
@@ -1087,6 +1454,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "169",
+      "name": "Satin / Silk Bonnet",
+      "slug": "169-satin-silk-bonnet",
+      "query": "satin bonnet",
+      "provider": "wikimedia",
+      "license": "cc0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en/",
+      "creator": "B. Berndt",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=82011259",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/B._Berndt%2C_Black_Satin_Bonnet%2C_c._1936%2C_NGA_13252.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/169-satin-silk-bonnet.jpg"
+    },
+    {
       "id": "171",
       "name": "Nail Cutter",
       "slug": "171-nail-cutter",
@@ -1124,6 +1505,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Nail_buffer_%28AM_2017.95.3-1%29.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Nail_buffer_%28AM_2017.95.3-1%29.jpg/1920px-Nail_buffer_%28AM_2017.95.3-1%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "174",
+      "name": "Cuticle Oil",
+      "slug": "174-cuticle-oil",
+      "query": "Cuticle Oil",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "goblinbox_(queen_of_ad_hoc_bento)",
+      "landing_url": "https://www.flickr.com/photos/25977089@N00/6121361621",
+      "original_url": "https://live.staticflickr.com/6191/6121361621_f67b51c611_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/174-cuticle-oil.jpg"
     },
     {
       "id": "175",
@@ -1191,6 +1586,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "184",
+      "name": "Body Razor",
+      "slug": "184-body-razor",
+      "query": "Body Razor",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "mrbill",
+      "landing_url": "https://www.flickr.com/photos/41894183508@N01/433006681",
+      "original_url": "https://live.staticflickr.com/170/433006681_0f4de2f010_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/184-body-razor.jpg"
+    },
+    {
       "id": "185",
       "name": "Electric Trimmer",
       "slug": "185-electric-trimmer",
@@ -1230,6 +1639,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "188",
+      "name": "Attar",
+      "slug": "188-attar",
+      "query": "attar perfume bottle",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "Naomi King",
+      "landing_url": "https://www.flickr.com/photos/22141297@N06/7802738368",
+      "original_url": "https://live.staticflickr.com/7122/7802738368_ee73d7f643_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/188-attar.jpg"
+    },
+    {
       "id": "189",
       "name": "Perfume",
       "slug": "189-perfume",
@@ -1241,6 +1664,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Perfume_Bottle_discovered_in_Tianfeng_Tower_in_Ningbo.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Perfume_Bottle_discovered_in_Tianfeng_Tower_in_Ningbo.jpg/1920px-Perfume_Bottle_discovered_in_Tianfeng_Tower_in_Ningbo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "192",
+      "name": "Hair Mist",
+      "slug": "192-hair-mist",
+      "query": "Hair Mist",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "MSVG",
+      "landing_url": "https://www.flickr.com/photos/13907834@N00/5625112793",
+      "original_url": "https://live.staticflickr.com/5188/5625112793_d78f54d820_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/192-hair-mist.jpg"
     },
     {
       "id": "194",
@@ -1464,6 +1901,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "213",
+      "name": "Clutch",
+      "slug": "213-clutch",
+      "query": "clutch handbag",
+      "provider": "flickr",
+      "license": "by-nd",
+      "license_url": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "creator": "3rdfloorcloset",
+      "landing_url": "https://www.flickr.com/photos/52609679@N02/6094597191",
+      "original_url": "https://live.staticflickr.com/6186/6094597191_a3a348e8a7_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/213-clutch.jpg"
+    },
+    {
       "id": "214",
       "name": "Backpack",
       "slug": "214-backpack",
@@ -1581,6 +2032,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "228",
+      "name": "Pillowcases",
+      "slug": "228-pillowcases",
+      "query": "Pillowcases",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "storebukkebruse",
+      "landing_url": "https://www.flickr.com/photos/8536261@N07/3752226365",
+      "original_url": "https://live.staticflickr.com/3527/3752226365_9a81e07483_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/228-pillowcases.jpg"
+    },
+    {
       "id": "229",
       "name": "Blanket",
       "slug": "229-blanket",
@@ -1592,6 +2057,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Blanket%2C_Texas.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Blanket%2C_Texas.jpg/1920px-Blanket%2C_Texas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "231",
+      "name": "Mattress Protector",
+      "slug": "231-mattress-protector",
+      "query": "Mattress Protector",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "The Sleep Judge",
+      "landing_url": "https://www.flickr.com/photos/152189565@N04/34356445433",
+      "original_url": "https://live.staticflickr.com/4267/34356445433_631c2d9407_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/231-mattress-protector.jpg"
     },
     {
       "id": "232",
@@ -1672,6 +2151,34 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "244",
+      "name": "Shoe Organizer",
+      "slug": "244-shoe-organizer",
+      "query": "Shoe Organizer",
+      "provider": "flickr",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "creator": "Mark.Pilgrim",
+      "landing_url": "https://www.flickr.com/photos/41169327@N00/110696323",
+      "original_url": "https://live.staticflickr.com/44/110696323_07ec13b121_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/244-shoe-organizer.jpg"
+    },
+    {
+      "id": "246",
+      "name": "Backpack",
+      "slug": "246-backpack",
+      "query": "backpack work study",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "BLM Oregon & Washington",
+      "landing_url": "https://www.flickr.com/photos/50169152@N06/14549188089",
+      "original_url": "https://live.staticflickr.com/2912/14549188089_363d3cd9b1_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/246-backpack.jpg"
+    },
+    {
       "id": "247",
       "name": "Laptop Bag",
       "slug": "247-laptop-bag",
@@ -1683,6 +2190,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Maker_faire_2009_palo_alto_laptop_bag.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Maker_faire_2009_palo_alto_laptop_bag.jpg/1920px-Maker_faire_2009_palo_alto_laptop_bag.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "248",
+      "name": "Laptop Sleeve",
+      "slug": "248-laptop-sleeve",
+      "query": "Laptop Sleeve",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "mrbichel",
+      "landing_url": "https://www.flickr.com/photos/8831683@N05/5938012689",
+      "original_url": "https://live.staticflickr.com/6141/5938012689_4cd35be535_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/248-laptop-sleeve.jpg"
     },
     {
       "id": "249",
@@ -1828,6 +2349,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "260",
+      "name": "Earbuds / Headphones",
+      "slug": "260-earbuds-headphones",
+      "query": "Earbuds / Headphones",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "JenLMichaels",
+      "landing_url": "https://www.flickr.com/photos/82145138@N00/17316087786",
+      "original_url": "https://live.staticflickr.com/7740/17316087786_f68ea30b24_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/260-earbuds-headphones.jpg"
+    },
+    {
       "id": "261",
       "name": "Phone Stand",
       "slug": "261-phone-stand",
@@ -1891,6 +2426,48 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Travel_budget_concpet_with_small_airplane_and_wallet_full_of_money_on_blue_and_pink_background_%2852136479830%29.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Travel_budget_concpet_with_small_airplane_and_wallet_full_of_money_on_blue_and_pink_background_%2852136479830%29.jpg/1920px-Travel_budget_concpet_with_small_airplane_and_wallet_full_of_money_on_blue_and_pink_background_%2852136479830%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "266",
+      "name": "Packing Cubes",
+      "slug": "266-packing-cubes",
+      "query": "Packing Cubes",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "waitscm",
+      "landing_url": "https://www.flickr.com/photos/78341140@N00/14273818111",
+      "original_url": "https://live.staticflickr.com/3787/14273818111_d7efd8a3aa_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/266-packing-cubes.jpg"
+    },
+    {
+      "id": "270",
+      "name": "Toiletry Bag",
+      "slug": "270-toiletry-bag",
+      "query": "Toiletry Bag",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "jencu",
+      "landing_url": "https://www.flickr.com/photos/10581108@N00/5976580161",
+      "original_url": "https://live.staticflickr.com/6126/5976580161_26be746906_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/270-toiletry-bag.jpg"
+    },
+    {
+      "id": "272",
+      "name": "Jewellery Pouch",
+      "slug": "272-jewellery-pouch",
+      "query": "Jewellery Pouch",
+      "provider": "flickr",
+      "license": "by-nd",
+      "license_url": "https://creativecommons.org/licenses/by-nd/2.0/",
+      "creator": "Scouse Smurf",
+      "landing_url": "https://www.flickr.com/photos/18667910@N00/50343069961",
+      "original_url": "https://live.staticflickr.com/65535/50343069961_a7e08115bc_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/272-jewellery-pouch.jpg"
     },
     {
       "id": "273",
@@ -2206,6 +2783,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "303",
+      "name": "Small Flashlight",
+      "slug": "303-small-flashlight",
+      "query": "Small Flashlight",
+      "provider": "wikimedia",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "contropa.com",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=159724062",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Small_flashlight_%285114477671%29.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/303-small-flashlight.jpg"
+    },
+    {
       "id": "304",
       "name": "Personal Alarm",
       "slug": "304-personal-alarm",
@@ -2230,6 +2821,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Safety_valves_and_whistle_%2820810917419%29.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Safety_valves_and_whistle_%2820810917419%29.jpg/1920px-Safety_valves_and_whistle_%2820810917419%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "306",
+      "name": "Portable Power Bank",
+      "slug": "306-portable-power-bank",
+      "query": "Portable Power Bank",
+      "provider": "wikimedia",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": "Ilya Plekhanov",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=32451433",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Power_bank.JPG",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/306-portable-power-bank.jpg"
     },
     {
       "id": "307",
@@ -2297,6 +2902,20 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "313",
+      "name": "Fabric Tape",
+      "slug": "313-fabric-tape",
+      "query": "Fabric Tape",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "Smabs Sputzer (1956-2017)",
+      "landing_url": "https://www.flickr.com/photos/10413717@N08/2886301194",
+      "original_url": "https://live.staticflickr.com/3203/2886301194_4074dc3cc8_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/313-fabric-tape.jpg"
+    },
+    {
       "id": "314",
       "name": "Lint Roller",
       "slug": "314-lint-roller",
@@ -2308,6 +2927,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:HK_%E9%8A%85%E9%91%BC%E7%81%A3_CWB_%E5%AE%9C%E5%AE%B6%E5%AE%B6%E5%B1%85_IKEA_shop_Lint_Rollers_sign_July_2017_IX1.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/HK_%E9%8A%85%E9%91%BC%E7%81%A3_CWB_%E5%AE%9C%E5%AE%B6%E5%AE%B6%E5%B1%85_IKEA_shop_Lint_Rollers_sign_July_2017_IX1.jpg/1920px-HK_%E9%8A%85%E9%91%BC%E7%81%A3_CWB_%E5%AE%9C%E5%AE%B6%E5%AE%B6%E5%B1%85_IKEA_shop_Lint_Rollers_sign_July_2017_IX1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "315",
+      "name": "Stain Remover",
+      "slug": "315-stain-remover",
+      "query": "Stain Remover",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "Mark Morgan Trinidad B",
+      "landing_url": "https://www.flickr.com/photos/46102325@N06/40655619515",
+      "original_url": "https://live.staticflickr.com/802/40655619515_f2fdb0d9af_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/315-stain-remover.jpg"
     },
     {
       "id": "316",
@@ -2347,6 +2980,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:US_Navy_100317-N-6006S-254_Seaman_Stanquonzie_Pittman_prepares_to_sort_the_ship%27s_laundry_bags_for_washing.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/US_Navy_100317-N-6006S-254_Seaman_Stanquonzie_Pittman_prepares_to_sort_the_ship%27s_laundry_bags_for_washing.jpg/1920px-US_Navy_100317-N-6006S-254_Seaman_Stanquonzie_Pittman_prepares_to_sort_the_ship%27s_laundry_bags_for_washing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "321",
+      "name": "Smartphone",
+      "slug": "321-smartphone",
+      "query": "smartphone device",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "HuaweiPress",
+      "landing_url": "https://www.flickr.com/photos/52080639@N07/5447161403",
+      "original_url": "https://live.staticflickr.com/5298/5447161403_cc81d0819b_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/321-smartphone.jpg"
     },
     {
       "id": "322",
@@ -2518,6 +3165,34 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
+      "id": "335",
+      "name": "Cable Organizer",
+      "slug": "335-cable-organizer",
+      "query": "Cable Organizer",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "emily @ go haus go",
+      "landing_url": "https://www.flickr.com/photos/60849758@N05/8616672338",
+      "original_url": "https://live.staticflickr.com/8114/8616672338_81e27e65ca_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/335-cable-organizer.jpg"
+    },
+    {
+      "id": "337",
+      "name": "Abaya",
+      "slug": "337-abaya",
+      "query": "Abaya",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "D-Stanley",
+      "landing_url": "https://www.flickr.com/photos/79721788@N00/11499070824",
+      "original_url": "https://live.staticflickr.com/5485/11499070824_d03210203a_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/337-abaya.jpg"
+    },
+    {
       "id": "340",
       "name": "New Prayer Mat",
       "slug": "340-new-prayer-mat",
@@ -2529,6 +3204,34 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Prayer_Mats_%28Janamaz%29.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Prayer_Mats_%28Janamaz%29.jpg/1920px-Prayer_Mats_%28Janamaz%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "341",
+      "name": "Quran",
+      "slug": "341-quran",
+      "query": "Quran",
+      "provider": "flickr",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "creator": "The Wayfarer of Morriya",
+      "landing_url": "https://www.flickr.com/photos/8121652@N02/4988600996",
+      "original_url": "https://live.staticflickr.com/4127/4988600996_f6c179f86a_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/341-quran.jpg"
+    },
+    {
+      "id": "342",
+      "name": "Tasbih",
+      "slug": "342-tasbih",
+      "query": "Tasbih",
+      "provider": "wikimedia",
+      "license": "by-sa",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "creator": "Wagino 20100516",
+      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=30557377",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d0/Bunga_tasbih_%2812%29.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/342-tasbih.jpg"
     },
     {
       "id": "344",
@@ -2555,6 +3258,20 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Quran_stand.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Quran_stand.jpg/1920px-Quran_stand.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
+    },
+    {
+      "id": "350",
+      "name": "Gift Packaging Items",
+      "slug": "350-gift-packaging-items",
+      "query": "Gift Packaging Items",
+      "provider": "flickr",
+      "license": "by",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "creator": "Dominic's pics",
+      "landing_url": "https://www.flickr.com/photos/64097751@N00/5705260713",
+      "original_url": "https://live.staticflickr.com/2248/5705260713_f6211a2ea4_b.jpg",
+      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
+      "local_file": "/assets/shop/catalog/350-gift-packaging-items.jpg"
     }
   ],
   "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG."

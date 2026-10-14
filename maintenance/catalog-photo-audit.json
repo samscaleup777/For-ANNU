@@ -1,23 +1,9 @@
 {
-  "generatedAt": "2026-10-14T00:04:54Z",
+  "generatedAt": "2026-10-14T01:39:24Z",
   "totalProducts": 350,
-  "verifiedInternetPhotos": 196,
-  "namedObjectOnlyPlaceholders": 154,
+  "verifiedInternetPhotos": 247,
+  "namedObjectOnlyPlaceholders": 103,
   "missing": [
-    {
-      "id": "01",
-      "name": "Hijab — Chiffon",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/01-hijab-chiffon.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "02",
-      "name": "Hijab — Cotton",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/02-hijab-cotton.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
     {
       "id": "03",
       "name": "Hijab — Jersey",
@@ -89,73 +75,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "15",
-      "name": "Hijab Scarf Ring",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/15-hijab-scarf-ring.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "16",
-      "name": "Long Modest Dresses",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/16-long-modest-dresses.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "17",
-      "name": "Maxi Dresses",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/17-maxi-dresses.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "18",
-      "name": "Abaya",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/18-abaya.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "20",
       "name": "Prayer Khimar",
       "section": "Hijab & Modest Wear",
       "placeholder": "/assets/shop/catalog/placeholders/20-prayer-khimar.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "21",
-      "name": "Prayer Dress",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/21-prayer-dress.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "23",
-      "name": "Modest Tunics",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/23-modest-tunics.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "25",
-      "name": "Wide-Leg Trousers",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/25-wide-leg-trousers.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "28",
-      "name": "Kameez",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/28-kameez.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "30",
-      "name": "Dupatta",
-      "section": "Hijab & Modest Wear",
-      "placeholder": "/assets/shop/catalog/placeholders/30-dupatta.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -177,13 +100,6 @@
       "name": "Long Shirts",
       "section": "Everyday Clothing",
       "placeholder": "/assets/shop/catalog/placeholders/38-long-shirts.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "40",
-      "name": "Maxi Dresses",
-      "section": "Everyday Clothing",
-      "placeholder": "/assets/shop/catalog/placeholders/40-maxi-dresses.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -222,13 +138,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "52",
-      "name": "Eid Outfits",
-      "section": "Everyday Clothing",
-      "placeholder": "/assets/shop/catalog/placeholders/52-eid-outfits.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "53",
       "name": "Wedding / Occasion Outfits",
       "section": "Everyday Clothing",
@@ -254,13 +163,6 @@
       "name": "Inner Tops",
       "section": "Innerwear & Undergarments",
       "placeholder": "/assets/shop/catalog/placeholders/64-inner-tops.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "65",
-      "name": "Inner Pants",
-      "section": "Innerwear & Undergarments",
-      "placeholder": "/assets/shop/catalog/placeholders/65-inner-pants.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -306,20 +208,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "81",
-      "name": "Dua Book",
-      "section": "Salah / Prayer Essentials",
-      "placeholder": "/assets/shop/catalog/placeholders/81-dua-book.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "82",
-      "name": "Prayer-Time Clock",
-      "section": "Salah / Prayer Essentials",
-      "placeholder": "/assets/shop/catalog/placeholders/82-prayer-time-clock.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "83",
       "name": "Qibla Compass",
       "section": "Salah / Prayer Essentials",
@@ -327,31 +215,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "84",
-      "name": "Islamic Wall Calendar",
-      "section": "Salah / Prayer Essentials",
-      "placeholder": "/assets/shop/catalog/placeholders/84-islamic-wall-calendar.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "85",
       "name": "Prayer Garment Storage Bag",
       "section": "Salah / Prayer Essentials",
       "placeholder": "/assets/shop/catalog/placeholders/85-prayer-garment-storage-bag.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "87",
-      "name": "Pantyliners",
-      "section": "Menstrual & Personal Hygiene",
-      "placeholder": "/assets/shop/catalog/placeholders/87-pantyliners.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "88",
-      "name": "Tampons",
-      "section": "Menstrual & Personal Hygiene",
-      "placeholder": "/assets/shop/catalog/placeholders/88-tampons.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -366,13 +233,6 @@
       "name": "Intimate Hygiene Products",
       "section": "Menstrual & Personal Hygiene",
       "placeholder": "/assets/shop/catalog/placeholders/98-intimate-hygiene-products.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "99",
-      "name": "Body Wash",
-      "section": "Menstrual & Personal Hygiene",
-      "placeholder": "/assets/shop/catalog/placeholders/99-body-wash.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -404,13 +264,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "109",
-      "name": "Toner",
-      "section": "Skincare",
-      "placeholder": "/assets/shop/catalog/placeholders/109-toner.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "110",
       "name": "Serum",
       "section": "Skincare",
@@ -422,13 +275,6 @@
       "name": "Moisturizer",
       "section": "Skincare",
       "placeholder": "/assets/shop/catalog/placeholders/111-moisturizer.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "114",
-      "name": "SPF Lip Balm",
-      "section": "Skincare",
-      "placeholder": "/assets/shop/catalog/placeholders/114-spf-lip-balm.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -495,13 +341,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "131",
-      "name": "Concealer",
-      "section": "Modest Everyday Makeup",
-      "placeholder": "/assets/shop/catalog/placeholders/131-concealer.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "134",
       "name": "Highlighter",
       "section": "Modest Everyday Makeup",
@@ -513,13 +352,6 @@
       "name": "Eyebrow Pencil",
       "section": "Modest Everyday Makeup",
       "placeholder": "/assets/shop/catalog/placeholders/135-eyebrow-pencil.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "136",
-      "name": "Eyeliner",
-      "section": "Modest Everyday Makeup",
-      "placeholder": "/assets/shop/catalog/placeholders/136-eyeliner.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -537,13 +369,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "143",
-      "name": "Makeup Remover",
-      "section": "Modest Everyday Makeup",
-      "placeholder": "/assets/shop/catalog/placeholders/143-makeup-remover.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "146",
       "name": "Makeup Organizer",
       "section": "Modest Everyday Makeup",
@@ -555,13 +380,6 @@
       "name": "Hair Serum",
       "section": "Haircare",
       "placeholder": "/assets/shop/catalog/placeholders/152-hair-serum.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "153",
-      "name": "Leave-In Conditioner",
-      "section": "Haircare",
-      "placeholder": "/assets/shop/catalog/placeholders/153-leave-in-conditioner.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -600,24 +418,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "169",
-      "name": "Satin / Silk Bonnet",
-      "section": "Haircare",
-      "placeholder": "/assets/shop/catalog/placeholders/169-satin-silk-bonnet.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "170",
       "name": "Satin Pillowcase",
       "section": "Haircare",
       "placeholder": "/assets/shop/catalog/placeholders/170-satin-pillowcase.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "174",
-      "name": "Cuticle Oil",
-      "section": "Hands, Feet & Grooming",
-      "placeholder": "/assets/shop/catalog/placeholders/174-cuticle-oil.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -649,20 +453,6 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "184",
-      "name": "Body Razor",
-      "section": "Hands, Feet & Grooming",
-      "placeholder": "/assets/shop/catalog/placeholders/184-body-razor.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "188",
-      "name": "Attar",
-      "section": "Fragrance",
-      "placeholder": "/assets/shop/catalog/placeholders/188-attar.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "190",
       "name": "Body Mist",
       "section": "Fragrance",
@@ -674,13 +464,6 @@
       "name": "Roll-On Fragrance",
       "section": "Fragrance",
       "placeholder": "/assets/shop/catalog/placeholders/191-roll-on-fragrance.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "192",
-      "name": "Hair Mist",
-      "section": "Fragrance",
-      "placeholder": "/assets/shop/catalog/placeholders/192-hair-mist.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -702,13 +485,6 @@
       "name": "Hijab Magnets",
       "section": "Jewellery & Accessories",
       "placeholder": "/assets/shop/catalog/placeholders/207-hijab-magnets.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "213",
-      "name": "Clutch",
-      "section": "Jewellery & Accessories",
-      "placeholder": "/assets/shop/catalog/placeholders/213-clutch.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -747,24 +523,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "228",
-      "name": "Pillowcases",
-      "section": "Home & Personal Room",
-      "placeholder": "/assets/shop/catalog/placeholders/228-pillowcases.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "230",
       "name": "Comforter",
       "section": "Home & Personal Room",
       "placeholder": "/assets/shop/catalog/placeholders/230-comforter.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "231",
-      "name": "Mattress Protector",
-      "section": "Home & Personal Room",
-      "placeholder": "/assets/shop/catalog/placeholders/231-mattress-protector.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -810,45 +572,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "244",
-      "name": "Shoe Organizer",
-      "section": "Home & Personal Room",
-      "placeholder": "/assets/shop/catalog/placeholders/244-shoe-organizer.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "245",
       "name": "Handbag",
       "section": "Work / Study",
       "placeholder": "/assets/shop/catalog/placeholders/245-handbag.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "246",
-      "name": "Backpack",
-      "section": "Work / Study",
-      "placeholder": "/assets/shop/catalog/placeholders/246-backpack.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "248",
-      "name": "Laptop Sleeve",
-      "section": "Work / Study",
-      "placeholder": "/assets/shop/catalog/placeholders/248-laptop-sleeve.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "260",
-      "name": "Earbuds / Headphones",
-      "section": "Work / Study",
-      "placeholder": "/assets/shop/catalog/placeholders/260-earbuds-headphones.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "266",
-      "name": "Packing Cubes",
-      "section": "Travel",
-      "placeholder": "/assets/shop/catalog/placeholders/266-packing-cubes.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -873,24 +600,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "270",
-      "name": "Toiletry Bag",
-      "section": "Travel",
-      "placeholder": "/assets/shop/catalog/placeholders/270-toiletry-bag.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "271",
       "name": "Makeup Pouch",
       "section": "Travel",
       "placeholder": "/assets/shop/catalog/placeholders/271-makeup-pouch.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "272",
-      "name": "Jewellery Pouch",
-      "section": "Travel",
-      "placeholder": "/assets/shop/catalog/placeholders/272-jewellery-pouch.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -936,38 +649,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "303",
-      "name": "Small Flashlight",
-      "section": "Emergency & Safety",
-      "placeholder": "/assets/shop/catalog/placeholders/303-small-flashlight.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "306",
-      "name": "Portable Power Bank",
-      "section": "Emergency & Safety",
-      "placeholder": "/assets/shop/catalog/placeholders/306-portable-power-bank.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "311",
       "name": "Mini Scissors",
       "section": "Clothing Care",
       "placeholder": "/assets/shop/catalog/placeholders/311-mini-scissors.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "313",
-      "name": "Fabric Tape",
-      "section": "Clothing Care",
-      "placeholder": "/assets/shop/catalog/placeholders/313-fabric-tape.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "315",
-      "name": "Stain Remover",
-      "section": "Clothing Care",
-      "placeholder": "/assets/shop/catalog/placeholders/315-stain-remover.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -985,31 +670,10 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
-      "id": "321",
-      "name": "Smartphone",
-      "section": "Personal Electronics",
-      "placeholder": "/assets/shop/catalog/placeholders/321-smartphone.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "335",
-      "name": "Cable Organizer",
-      "section": "Personal Electronics",
-      "placeholder": "/assets/shop/catalog/placeholders/335-cable-organizer.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
       "id": "336",
       "name": "Eid Outfit",
       "section": "Ramadan / Eid Essentials",
       "placeholder": "/assets/shop/catalog/placeholders/336-eid-outfit.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "337",
-      "name": "Abaya",
-      "section": "Ramadan / Eid Essentials",
-      "placeholder": "/assets/shop/catalog/placeholders/337-abaya.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -1024,20 +688,6 @@
       "name": "Prayer Dress",
       "section": "Ramadan / Eid Essentials",
       "placeholder": "/assets/shop/catalog/placeholders/339-prayer-dress.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "341",
-      "name": "Quran",
-      "section": "Ramadan / Eid Essentials",
-      "placeholder": "/assets/shop/catalog/placeholders/341-quran.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "342",
-      "name": "Tasbih",
-      "section": "Ramadan / Eid Essentials",
-      "placeholder": "/assets/shop/catalog/placeholders/342-tasbih.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
@@ -1073,13 +723,6 @@
       "name": "Eid Footwear",
       "section": "Ramadan / Eid Essentials",
       "placeholder": "/assets/shop/catalog/placeholders/349-eid-footwear.svg",
-      "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
-    },
-    {
-      "id": "350",
-      "name": "Gift Packaging Items",
-      "section": "Ramadan / Eid Essentials",
-      "placeholder": "/assets/shop/catalog/placeholders/350-gift-packaging-items.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     }
   ],

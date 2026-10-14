@@ -18,7 +18,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/01-hijab-chiffon.svg"
+      "image": "/assets/shop/catalog/01-hijab-chiffon.jpg"
     },
     {
       "id": "02",
@@ -35,7 +35,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/02-hijab-cotton.svg"
+      "image": "/assets/shop/catalog/02-hijab-cotton.jpg"
     },
     {
       "id": "03",
@@ -256,7 +256,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/15-hijab-scarf-ring.svg"
+      "image": "/assets/shop/catalog/15-hijab-scarf-ring.jpg"
     },
     {
       "id": "16",
@@ -273,7 +273,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/16-long-modest-dresses.svg"
+      "image": "/assets/shop/catalog/16-long-modest-dresses.jpg"
     },
     {
       "id": "17",
@@ -290,7 +290,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/17-maxi-dresses.svg"
+      "image": "/assets/shop/catalog/17-maxi-dresses.jpg"
     },
     {
       "id": "18",
@@ -307,7 +307,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/18-abaya.svg"
+      "image": "/assets/shop/catalog/18-abaya.jpg"
     },
     {
       "id": "19",
@@ -358,7 +358,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/21-prayer-dress.svg"
+      "image": "/assets/shop/catalog/21-prayer-dress.jpg"
     },
     {
       "id": "22",
@@ -392,7 +392,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/23-modest-tunics.svg"
+      "image": "/assets/shop/catalog/23-modest-tunics.jpg"
     },
     {
       "id": "24",
@@ -426,7 +426,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/25-wide-leg-trousers.svg"
+      "image": "/assets/shop/catalog/25-wide-leg-trousers.jpg"
     },
     {
       "id": "26",
@@ -477,7 +477,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/28-kameez.svg"
+      "image": "/assets/shop/catalog/28-kameez.jpg"
     },
     {
       "id": "29",
@@ -511,7 +511,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/30-dupatta.svg"
+      "image": "/assets/shop/catalog/30-dupatta.jpg"
     },
     {
       "id": "31",
@@ -681,7 +681,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/40-maxi-dresses.svg"
+      "image": "/assets/shop/catalog/40-maxi-dresses.jpg"
     },
     {
       "id": "41",
@@ -885,7 +885,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/52-eid-outfits.svg"
+      "image": "/assets/shop/catalog/52-eid-outfits.jpg"
     },
     {
       "id": "53",
@@ -1070,7 +1070,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/65-inner-pants.svg"
+      "image": "/assets/shop/catalog/65-inner-pants.jpg"
     },
     {
       "id": "66",
@@ -1330,7 +1330,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/81-dua-book.svg"
+      "image": "/assets/shop/catalog/81-dua-book.jpg"
     },
     {
       "id": "82",
@@ -1347,7 +1347,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/82-prayer-time-clock.svg"
+      "image": "/assets/shop/catalog/82-prayer-time-clock.jpg"
     },
     {
       "id": "83",
@@ -1381,7 +1381,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/84-islamic-wall-calendar.svg"
+      "image": "/assets/shop/catalog/84-islamic-wall-calendar.jpg"
     },
     {
       "id": "85",
@@ -1426,7 +1426,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/87-pantyliners.svg"
+      "image": "/assets/shop/catalog/87-pantyliners.jpg"
     },
     {
       "id": "88",
@@ -1440,7 +1440,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/88-tampons.svg"
+      "image": "/assets/shop/catalog/88-tampons.jpg"
     },
     {
       "id": "89",
@@ -1594,7 +1594,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/99-body-wash.svg"
+      "image": "/assets/shop/catalog/99-body-wash.jpg"
     },
     {
       "id": "100",
@@ -1734,7 +1734,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/109-toner.svg"
+      "image": "/assets/shop/catalog/109-toner.jpg"
     },
     {
       "id": "110",
@@ -1804,7 +1804,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/114-spf-lip-balm.svg"
+      "image": "/assets/shop/catalog/114-spf-lip-balm.jpg"
     },
     {
       "id": "115",
@@ -2042,7 +2042,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/131-concealer.svg"
+      "image": "/assets/shop/catalog/131-concealer.jpg"
     },
     {
       "id": "132",
@@ -2112,7 +2112,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/136-eyeliner.svg"
+      "image": "/assets/shop/catalog/136-eyeliner.jpg"
     },
     {
       "id": "137",
@@ -2210,7 +2210,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/143-makeup-remover.svg"
+      "image": "/assets/shop/catalog/143-makeup-remover.jpg"
     },
     {
       "id": "144",
@@ -2350,7 +2350,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/153-leave-in-conditioner.svg"
+      "image": "/assets/shop/catalog/153-leave-in-conditioner.jpg"
     },
     {
       "id": "154",
@@ -2574,7 +2574,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/169-satin-silk-bonnet.svg"
+      "image": "/assets/shop/catalog/169-satin-silk-bonnet.jpg"
     },
     {
       "id": "170",
@@ -2644,7 +2644,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/174-cuticle-oil.svg"
+      "image": "/assets/shop/catalog/174-cuticle-oil.jpg"
     },
     {
       "id": "175",
@@ -2784,7 +2784,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/184-body-razor.svg"
+      "image": "/assets/shop/catalog/184-body-razor.jpg"
     },
     {
       "id": "185",
@@ -2840,7 +2840,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/188-attar.svg"
+      "image": "/assets/shop/catalog/188-attar.jpg"
     },
     {
       "id": "189",
@@ -2896,7 +2896,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/192-hair-mist.svg"
+      "image": "/assets/shop/catalog/192-hair-mist.jpg"
     },
     {
       "id": "193",
@@ -3190,7 +3190,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/213-clutch.svg"
+      "image": "/assets/shop/catalog/213-clutch.jpg"
     },
     {
       "id": "214",
@@ -3400,7 +3400,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/228-pillowcases.svg"
+      "image": "/assets/shop/catalog/228-pillowcases.jpg"
     },
     {
       "id": "229",
@@ -3442,7 +3442,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/231-mattress-protector.svg"
+      "image": "/assets/shop/catalog/231-mattress-protector.jpg"
     },
     {
       "id": "232",
@@ -3624,7 +3624,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/244-shoe-organizer.svg"
+      "image": "/assets/shop/catalog/244-shoe-organizer.jpg"
     },
     {
       "id": "245",
@@ -3652,7 +3652,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/246-backpack.svg"
+      "image": "/assets/shop/catalog/246-backpack.jpg"
     },
     {
       "id": "247",
@@ -3680,7 +3680,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/248-laptop-sleeve.svg"
+      "image": "/assets/shop/catalog/248-laptop-sleeve.jpg"
     },
     {
       "id": "249",
@@ -3848,7 +3848,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/260-earbuds-headphones.svg"
+      "image": "/assets/shop/catalog/260-earbuds-headphones.jpg"
     },
     {
       "id": "261",
@@ -3947,7 +3947,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/266-packing-cubes.svg"
+      "image": "/assets/shop/catalog/266-packing-cubes.jpg"
     },
     {
       "id": "267",
@@ -4015,7 +4015,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/270-toiletry-bag.svg"
+      "image": "/assets/shop/catalog/270-toiletry-bag.jpg"
     },
     {
       "id": "271",
@@ -4049,7 +4049,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/272-jewellery-pouch.svg"
+      "image": "/assets/shop/catalog/272-jewellery-pouch.jpg"
     },
     {
       "id": "273",
@@ -4540,7 +4540,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/303-small-flashlight.svg"
+      "image": "/assets/shop/catalog/303-small-flashlight.jpg"
     },
     {
       "id": "304",
@@ -4582,7 +4582,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/306-portable-power-bank.svg"
+      "image": "/assets/shop/catalog/306-portable-power-bank.jpg"
     },
     {
       "id": "307",
@@ -4680,7 +4680,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/313-fabric-tape.svg"
+      "image": "/assets/shop/catalog/313-fabric-tape.jpg"
     },
     {
       "id": "314",
@@ -4708,7 +4708,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/315-stain-remover.svg"
+      "image": "/assets/shop/catalog/315-stain-remover.jpg"
     },
     {
       "id": "316",
@@ -4792,7 +4792,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/321-smartphone.svg"
+      "image": "/assets/shop/catalog/321-smartphone.jpg"
     },
     {
       "id": "322",
@@ -4988,7 +4988,7 @@
         "Pakistan",
         "global"
       ],
-      "image": "/assets/shop/catalog/placeholders/335-cable-organizer.svg"
+      "image": "/assets/shop/catalog/335-cable-organizer.jpg"
     },
     {
       "id": "336",
@@ -5022,7 +5022,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/337-abaya.svg"
+      "image": "/assets/shop/catalog/337-abaya.jpg"
     },
     {
       "id": "338",
@@ -5090,7 +5090,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/341-quran.svg"
+      "image": "/assets/shop/catalog/341-quran.jpg"
     },
     {
       "id": "342",
@@ -5107,7 +5107,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/342-tasbih.svg"
+      "image": "/assets/shop/catalog/342-tasbih.jpg"
     },
     {
       "id": "343",
@@ -5243,7 +5243,7 @@
         "South Asia",
         "global modest fashion"
       ],
-      "image": "/assets/shop/catalog/placeholders/350-gift-packaging-items.svg"
+      "image": "/assets/shop/catalog/350-gift-packaging-items.jpg"
     }
   ],
   "image_strategy": {
@@ -5252,8 +5252,8 @@
       "Openverse",
       "Wikimedia Commons"
     ],
-    "verifiedPhotoCount": 196,
-    "namedObjectOnlyPlaceholderCount": 154,
+    "verifiedPhotoCount": 247,
+    "namedObjectOnlyPlaceholderCount": 103,
     "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG."
   }
 }
