@@ -191,6 +191,66 @@ function productCard(p,i){
     '<div class="product-actions"><button class="add" type="button" data-add="'+p.id+'">Add to cart</button><button type="button" data-buy="'+p.id+'">Buy now</button></div></div></article>';
 }
 
+
+function quickViewEscape(value){
+  return String(value==null?"":value).replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+}
+let activeProductQuickView=null;
+function closeProductDetails(){
+  if(!activeProductQuickView)return;
+  const modal=activeProductQuickView;
+  activeProductQuickView=null;
+  modal.remove();
+  document.removeEventListener("keydown",modal._onKeydown);
+  const card=modal._originCard;
+  if(card&&card.isConnected)card.focus({preventScroll:true});
+}
+function openProductDetails(id){
+  const p=state.products.find(item=>String(item.id)===String(id));
+  if(!p)return;
+  closeProductDetails();
+  const card=document.querySelector('.product-card[data-id="'+CSS.escape(String(p.id))+'"]');
+  const cardImage=card?.querySelector(".product-media img");
+  const image=cardImage?.currentSrc||cardImage?.src||p.image||("/assets/shop/catalog/"+p.slug+".jpg");
+  const i=state.products.indexOf(p), price=priceFor(p,i);
+  const modal=document.createElement("div");
+  modal.className="product-quickview-backdrop";
+  modal.setAttribute("role","presentation");
+  modal._originCard=card||null;
+  modal.innerHTML=
+    '<section class="product-quickview-panel" role="dialog" aria-modal="true" aria-labelledby="productQuickTitle">'+
+      '<button class="product-quickview-close" type="button" aria-label="Close product details">×</button>'+
+      '<div class="product-quickview-layout">'+
+        '<div class="product-quickview-photo"><img class="product-quickview-image" alt="" draggable="false"><span class="product-quickview-zoom-note">Product photo · Click outside to close</span></div>'+
+        '<div class="product-quickview-info">'+
+          '<span class="product-quickview-kicker">'+quickViewEscape(p.section||"Annïka catalog")+'</span>'+
+          '<h2 id="productQuickTitle">'+quickViewEscape(p.name)+'</h2>'+
+          '<p class="product-quickview-sub">'+quickViewEscape(p.subsection||"Product listing")+' · Item #'+quickViewEscape(p.id)+'</p>'+
+          '<p class="product-quickview-description">Explore this item in the Annïka catalog. Listing prices are indicative prototype values; availability and checkout need confirmation.</p>'+
+          '<div class="product-quickview-price">'+money(price)+' <span>indicative</span></div>'+
+          '<div class="product-quickview-actions"><button class="product-quickview-add" type="button">Add to cart</button><button class="product-quickview-buy" type="button">Buy now</button></div>'+
+          '<p class="product-quickview-note">Choose Add to cart to keep browsing, or Buy now to review your order request.</p>'+
+        '</div>'+
+      '</div>'+
+    '</section>';
+  const bigImage=modal.querySelector(".product-quickview-image");
+  bigImage.src=image;
+  bigImage.alt=String(p.name||"Product")+" — product photo";
+  bigImage.addEventListener("error",()=>{
+    bigImage.onerror=null;
+    bigImage.src=p.image||productOnlyPlaceholder(p);
+  },{once:true});
+  modal.querySelector(".product-quickview-close").addEventListener("click",closeProductDetails);
+  modal.addEventListener("click",event=>{if(event.target===modal)closeProductDetails()});
+  modal.querySelector(".product-quickview-add").addEventListener("click",()=>{closeProductDetails();add(String(p.id))});
+  modal.querySelector(".product-quickview-buy").addEventListener("click",()=>{closeProductDetails();add(String(p.id));openCheckout()});
+  modal._onKeydown=event=>{if(event.key==="Escape"&&activeProductQuickView===modal){event.preventDefault();closeProductDetails()}};
+  document.addEventListener("keydown",modal._onKeydown);
+  document.body.appendChild(modal);
+  activeProductQuickView=modal;
+  modal.querySelector(".product-quickview-close").focus({preventScroll:true});
+}
+
 function sectionDescription(name){
   const map={
   "Hijab & Modest Wear":"Hijab, abaya, khimar, jilbab, dresses, skirts, trousers, dupatta and coverage essentials.",
@@ -242,8 +302,23 @@ function render(){
 }
 
 function bindProductButtons(){
-  document.querySelectorAll("[data-add]").forEach(btn=>btn.addEventListener("click",()=>add(btn.dataset.add)));
-  document.querySelectorAll("[data-buy]").forEach(btn=>btn.addEventListener("click",()=>{add(btn.dataset.buy);openCheckout()}));
+  document.querySelectorAll("[data-add]").forEach(btn=>btn.addEventListener("click",event=>{event.stopPropagation();add(btn.dataset.add)}));
+  document.querySelectorAll("[data-buy]").forEach(btn=>btn.addEventListener("click",event=>{event.stopPropagation();add(btn.dataset.buy);openCheckout()}));
+  document.querySelectorAll("#productGrid .product-card").forEach(card=>{
+    card.tabIndex=0;
+    card.setAttribute("aria-label","View product details for "+(card.dataset.name||"this product"));
+    card.setAttribute("aria-haspopup","dialog");
+    card.addEventListener("click",event=>{
+      if(event.target.closest("button,a,input,select,textarea,[contenteditable='true']"))return;
+      openProductDetails(card.dataset.id);
+    });
+    card.addEventListener("keydown",event=>{
+      if(event.target!==card)return;
+      if(event.key==="Enter"||event.key===" "){event.preventDefault();openProductDetails(card.dataset.id)}
+    });
+    const image=card.querySelector(".product-media img");
+    if(image){image.draggable=false;image.style.cursor="zoom-in";image.setAttribute("title","Click to view larger photo and product details")}
+  });
 }
 function add(id){
   const p=state.products.find(x=>x.id===id);if(!p)return;

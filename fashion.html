@@ -108,6 +108,55 @@ body.fashion-page{background:#f8f3e8}
 /* Clear image overlay: keep the photo sharp instead of applying backdrop blur. */
 .shop-hero-note{-webkit-backdrop-filter:none;backdrop-filter:none;background:rgba(18,49,38,.86)}
 /* End clear image overlays */
+
+/* Clickable product cards and accessible quick-view dialog */
+.product-card { cursor: pointer; }
+.product-card:focus-visible { outline: 3px solid var(--accent2); outline-offset: 3px; }
+.product-card .product-media img { cursor: zoom-in; }
+.product-quickview-backdrop {
+  position: fixed; inset: 0; z-index: 10020; display: grid; place-items: center;
+  padding: 18px; background: rgba(12,27,20,.68); backdrop-filter: blur(7px);
+  animation: productQuickFade .18s ease-out;
+}
+.product-quickview-panel {
+  width: min(920px,100%); max-height: min(92vh,900px); overflow: auto; position: relative;
+  background: #fbf7ef; border: 1px solid rgba(229,173,121,.45); border-radius: 26px;
+  box-shadow: 0 35px 100px rgba(0,0,0,.35); color: var(--ink, #17231d);
+}
+.product-quickview-close {
+  position: absolute; right: 13px; top: 13px; z-index: 3; width: 40px; height: 40px;
+  border: 1px solid var(--line); border-radius: 13px; background: rgba(255,255,255,.94);
+  color: var(--forest); font-size: 25px; cursor: pointer;
+}
+.product-quickview-layout { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 0; }
+.product-quickview-photo { min-height: 390px; position: relative; background: #f2e7d6; display: grid; place-items: center; overflow: hidden; }
+.product-quickview-image { width: 100%; height: 100%; max-height: min(78vh,700px); object-fit: contain; }
+.product-quickview-zoom-note { position: absolute; bottom: 13px; left: 13px; border: 1px solid rgba(223,213,194,.9); background: rgba(251,247,239,.88); padding: 6px 10px; border-radius: 999px; color: #625d54; font-size: 10px; }
+.product-quickview-info { padding: clamp(24px,4vw,44px); display: flex; flex-direction: column; justify-content: center; }
+.product-quickview-kicker { color: #a5683c; letter-spacing: .12em; text-transform: uppercase; font-size: 10px; font-weight: 900; }
+.product-quickview-info h2 { font-size: clamp(30px,4vw,43px); margin: 12px 0; line-height: 1.08; }
+.product-quickview-sub { font-size: 12px; color: #625d54; margin: 0; }
+.product-quickview-description { color: #625d54; font-size: 14px; line-height: 1.7; margin: 22px 0 12px; }
+.product-quickview-price { font-size: 30px; font-weight: 900; color: var(--forest); }
+.product-quickview-price span { display: inline-block; margin-left: 6px; color: #81776a; font-size: 10px; font-weight: 700; text-transform: uppercase; }
+.product-quickview-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 23px; }
+.product-quickview-actions button { min-height: 46px; padding: 10px 12px; border: 1px solid var(--forest); border-radius: 14px; background: #fff; color: var(--forest); font-weight: 800; cursor: pointer; }
+.product-quickview-actions .product-quickview-add { background: var(--forest); color: #fff; }
+.product-quickview-actions button:hover { transform: translateY(-1px); box-shadow: 0 9px 20px rgba(18,49,38,.12); }
+.product-quickview-note { color: #81776a; font-size: 10px; line-height: 1.6; margin: 14px 0 0; }
+@keyframes productQuickFade { from { opacity: 0; } to { opacity: 1; } }
+@media(max-width:680px) {
+  .product-quickview-backdrop { padding: 10px; }
+  .product-quickview-panel { max-height: 92vh; border-radius: 20px; }
+  .product-quickview-layout { grid-template-columns: 1fr; }
+  .product-quickview-photo { min-height: 260px; max-height: 38vh; }
+  .product-quickview-image { max-height: 38vh; }
+  .product-quickview-info { padding: 22px 20px 24px; }
+  .product-quickview-info h2 { font-size: 30px; padding-right: 22px; }
+  .product-quickview-description { margin: 14px 0 10px; }
+  .product-quickview-actions { margin-top: 15px; }
+}
+@media(prefers-reduced-motion:reduce){.product-quickview-backdrop{animation:none}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Annïka Shop","description":"Modest fashion and everyday essentials for Muslim women.","url":"https://annika-website-one.vercel.app/fashion.html","isPartOf":{"@type":"WebSite","name":"Annïka","url":"https://annika-website-one.vercel.app/"}}</script>
 <link rel="stylesheet" href="/brand-fix.css?v=1"></head>
@@ -126,7 +175,7 @@ body.fashion-page{background:#f8f3e8}
 </main>
 <footer class="footer"><div class="wrap footer-in"><div><a class="brand" href="/" aria-label="Annïka home"><span class="brand-mark-shell" aria-hidden="true"><img class="brand-logo-exact" src="/assets/annika-mark-exact-visible.png?logo=4" alt="" draggable="false"></span><span class="brand-word" aria-label="Annïka">Ann<span class="brand-heart-i">ı<span class="brand-heart-dot" aria-hidden="true">♥</span></span>ka</span></a></div><nav class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a><a href="/contact.html">Contact</a><a href="/image-credits.html">Image credits</a></nav><div style="font-size:12px;color:var(--muted)">© <span data-year></span> Annïka</div></div></footer>
 <div class="modal-backdrop" id="checkoutBackdrop" aria-hidden="true"><div class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="modal-head"><h3 id="checkoutTitle">Your Annïka order</h3><button class="modal-close" type="button" onclick="closeCheckout()" aria-label="Close checkout">×</button></div><div class="checkout-body"><div id="checkoutMain"><div class="payment-grid"><div class="payment-card"><h3>Your cart</h3><div class="cart-list" id="cartList"></div><div class="checkout-total"><span>Total</span><strong id="checkoutTotal">৳0</strong></div></div><div class="payment-card"><h3>Delivery &amp; payment</h3><form class="payment-form" id="checkoutForm"><input name="name" required placeholder="Full name"><input name="phone" required placeholder="Mobile number"><input name="email" type="email" placeholder="Email address"><textarea name="address" required placeholder="Delivery address"></textarea><select name="district" required><option value="">Select district</option><option>Dhaka</option><option>Chattogram</option><option>Rajshahi</option><option>Khulna</option><option>Barishal</option><option>Sylhet</option><option>Rangpur</option><option>Mymensingh</option></select><select name="bank" id="bankSelect"><option value="">Select bank (for bank transfer)</option><option>BRAC Bank PLC</option><option>Dutch-Bangla Bank PLC</option><option>Eastern Bank PLC</option><option>Prime Bank PLC</option><option>City Bank PLC</option></select><input name="transactionId" id="transactionId" placeholder="Transaction ID (required for wallet/manual bank payment)"><textarea name="note" placeholder="Order note (size, colour, delivery note…)"></textarea><button class="checkout-submit" type="submit">Place order request</button></form><div class="shop-footnote">This prototype records the order details in the browser and shows a confirmation. Connect a database/order API before accepting real customer orders.</div></div></div></div><div class="order-success" id="orderSuccess"><div class="success-mark">✓</div><h3>Order request saved.</h3><p>Your order details are stored in this browser for the prototype. Connect the checkout to your real order system and merchant accounts before launch.</p><button class="btn primary" type="button" onclick="closeCheckout()">Continue shopping</button></div></div></div></div>
-<script src="/shop.js?v=21" defer></script>
+<script src="/shop.js?v=22" defer></script>
 
 <script src="/chatbot.js?v=9" defer></script>
 <script src="/app.js?v=17" defer></script>
