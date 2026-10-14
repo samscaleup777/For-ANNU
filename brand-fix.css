@@ -1,0 +1,27 @@
+/* Original Annïka green-and-gold mark: enforce display in navbar and footer. */
+.brand .mark {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  flex: 0 0 30px !important;
+  width: 30px !important;
+  min-width: 30px !important;
+  height: 30px !important;
+  min-height: 30px !important;
+  border-radius: 50% 50% 50% 8px !important;
+  background: linear-gradient(145deg, #123126, #e5ad79) !important;
+  transform: rotate(-12deg);
+  position: relative;
+  box-sizing: border-box;
+}
+.brand .mark::after {
+  content: "" !important;
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: absolute;
+  inset: 6px;
+  border: 1px solid rgba(255,255,255,.62);
+  border-radius: 50%;
+  pointer-events: none;
+}

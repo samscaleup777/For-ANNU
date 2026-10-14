@@ -220,6 +220,84 @@ function fallbackAnswer(message) {
   return 'I can guide you through Annïka and its product catalog. For open-ended or live questions, I will be clear when the connected AI service is unavailable rather than guessing.';
 }
 
+function buildLocalGuideReply(message) {
+  const raw = String(message || '');
+  const q = raw.toLowerCase();
+  const bangla = /[\u0980-\u09ff]/.test(raw);
+  const fullList = isFullCatalogRequest(raw);
+  const shopping = isShoppingIntent(raw);
+  const matchedProducts = shopping && !fullList ? getRelevantProducts(raw, 8) : [];
+  const sources = [];
+  let answer = '';
+
+  if (/^(hi|hello|hey|assalamu alaikum|salam|হাই|হ্যালো|আসসালামু আলাইকুম|সালাম)[!.\s]*$/i.test(raw.trim())) {
+    answer = bangla
+      ? 'ওয়ালাইকুম আসসালাম! আমি Annïka Companion। পণ্য খোঁজা, Fashion/Shop, Quran & Hadith, Safety, Lifestyle এবং site navigation-এ সাহায্য করতে পারি। কোন বিষয়ে সাহায্য লাগবে?'
+      : 'Hi! I’m Annïka Companion. I can help you find catalog items, navigate Fashion/Shop, Quran & Hadith, Safety and Lifestyle, and understand the site. What would you like help with?';
+    sources.push({url:'https://annika-website-one.vercel.app/',title:'Annïka home'});
+  } else if (fullList) {
+    answer = bangla
+      ? 'Annïka catalog-এ ৩৫০টি product listing আছে। সম্পূর্ণ numbered product-name list এখানে: https://annika-website-one.vercel.app/data/product-name-list.txt ।'
+      : 'The Annïka prototype catalog contains 350 product listings. Open the complete numbered product-name list here: https://annika-website-one.vercel.app/data/product-name-list.txt.';
+    sources.push({url:'https://annika-website-one.vercel.app/data/product-name-list.txt',title:'Complete product-name list'});
+  } else if (/what is ann[iï]ka|about ann[iï]ka|what can i do|ann[iï]ka ki|ann[iï]ka কী|অ্যানিকা কী|annika website/i.test(q)) {
+    answer = bangla
+      ? 'Annïka হলো Muslim women-এর জন্য তৈরি একটি digital concept—এখানে modest fashion ও product catalog, Quran & Hadith learning resources, practical safety guidance এবং Islamic lifestyle content আছে।'
+      : 'Annïka is a digital concept for Muslim women, bringing together modest fashion and a product catalog, Quran & Hadith learning resources, practical safety guidance, lifestyle resources and educational articles.';
+    sources.push({url:'https://annika-website-one.vercel.app/',title:'Annïka home'});
+    sources.push({url:'https://annika-website-one.vercel.app/fashion.html',title:'Fashion and shop'});
+  } else if (shopping) {
+    answer = matchedProducts.length
+      ? (bangla
+        ? 'তোমার প্রশ্নের সঙ্গে মিলে এমন catalog item পেয়েছি। এগুলো prototype listing—live stock, supplier বা current price-এর নিশ্চয়তা নয়। কোনো item নির্বাচন করলে Shop-এ সেটি খুঁজে পাবে।'
+        : 'I found matching items in the Annïka catalog. These are prototype listings, not confirmation of live stock, supplier identity or current prices. Select an item to find it in the shop.')
+      : (bangla
+        ? 'এই wording-এর সঙ্গে নির্ভরযোগ্য catalog match পেলাম না। Shop page-এ ছোট keyword দিয়ে search করো, অথবা product-এর নাম আরও নির্দিষ্ট করে লেখো।'
+        : 'I couldn’t find a reliable catalog match for that wording. Try a shorter keyword on the Shop page, or tell me a more specific product name.');
+    sources.push({url:'https://annika-website-one.vercel.app/fashion.html',title:'Annïka Shop'});
+  } else if (/quran|hadith|dua|salah|prayer|islam|কুরআন|কোরআন|হাদিস|দোয়া|দুয়া|নামাজ/i.test(q)) {
+    answer = bangla
+      ? 'Annïka-র Quran & Hadith বিভাগে faith-focused educational resources ও reminders আছে। কুরআন/হাদিসের উদ্ধৃতি বা ব্যক্তিগত religious ruling-এর ক্ষেত্রে নির্ভরযোগ্য source ও যোগ্য আলেমের সঙ্গে মিলিয়ে নিও।'
+      : 'The Quran & Hadith section provides faith-focused educational resources and reminders. For quotations and personal religious rulings, confirm references with reliable sources and a qualified scholar.';
+    sources.push({url:'https://annika-website-one.vercel.app/quran-hadith.html',title:'Quran & Hadith'});
+  } else if (/safety|emergency|privacy|security|নিরাপত্তা|জরুরি|প্রাইভেসি/i.test(q)) {
+    answer = bangla
+      ? 'Annïka-তে digital privacy ও বাস্তব জীবনের safety নিয়ে practical guidance আছে। জরুরি বিপদে স্থানীয় emergency service বা trusted professional-এর সাহায্য নাও।'
+      : 'Annïka includes practical digital privacy and real-world safety guidance. In an urgent situation, contact appropriate local emergency services or a trusted professional.';
+    sources.push({url:'https://annika-website-one.vercel.app/safety.html',title:'Safety resources'});
+    sources.push({url:'https://annika-website-one.vercel.app/privacy.html',title:'Privacy'});
+  } else if (/lifestyle|routine|ramadan|family|wellbeing|লাইফস্টাইল|রমজান|রুটিন|পরিবার/i.test(q)) {
+    answer = bangla
+      ? 'Annïka Lifestyle-এ daily routines, wellbeing, family, learning ও Ramadan-related resources আছে।'
+      : 'Annïka Lifestyle covers practical routines, wellbeing, family, learning and Ramadan-related resources.';
+    sources.push({url:'https://annika-website-one.vercel.app/lifestyle.html',title:'Lifestyle'});
+  } else if (/payment|bkash|bikash|nagad|rocket|checkout|পেমেন্ট|বিকাশ|নগদ|রকেট|দাম|price|stock|inventory/i.test(q)) {
+    answer = bangla
+      ? 'Shop-এর price ও product listing prototype/demo data। Real-time stock, verified supplier বা live payment processing নিশ্চিত নয়; টাকা পাঠানোর আগে site owner-এর কাছ থেকে official payment instructions যাচাই করো।'
+      : 'The shop’s prices and product listings are prototype/demo data. Live stock, verified suppliers and live payment processing are not confirmed. Verify official payment instructions with the site owner before sending money.';
+    sources.push({url:'https://annika-website-one.vercel.app/fashion.html',title:'Shop and catalog'});
+  } else if (/contact|email|যোগাযোগ|কন্টাক্ট/i.test(q)) {
+    answer = bangla
+      ? 'Contact page-এ যেতে এখানে চাপো: https://annika-website-one.vercel.app/contact.html ।'
+      : 'You can open the Annïka Contact page here: https://annika-website-one.vercel.app/contact.html.';
+    sources.push({url:'https://annika-website-one.vercel.app/contact.html',title:'Contact Annïka'});
+  } else if (/help|what can you do|how to use|where can i find|কীভাবে|কোথায়|কোথায়|সাহায্য/i.test(q)) {
+    answer = bangla
+      ? 'আমি এখন built-in site guide হিসেবে কাজ করছি। Product খুঁজতে Fashion/Shop, faith resources-এর জন্য Quran & Hadith, safety guidance-এর জন্য Safety এবং daily-life content-এর জন্য Lifestyle খুলতে পারো। নির্দিষ্ট পণ্য বা section-এর নাম লিখে প্রশ্ন করো।'
+      : 'I’m currently running as the built-in site guide. Open Fashion/Shop for products, Quran & Hadith for faith resources, Safety for practical guidance, and Lifestyle for everyday content. Ask about a specific product or section for more targeted help.';
+    sources.push({url:'https://annika-website-one.vercel.app/fashion.html',title:'Fashion and shop'});
+    sources.push({url:'https://annika-website-one.vercel.app/quran-hadith.html',title:'Quran & Hadith'});
+    sources.push({url:'https://annika-website-one.vercel.app/safety.html',title:'Safety'});
+    sources.push({url:'https://annika-website-one.vercel.app/lifestyle.html',title:'Lifestyle'});
+  } else {
+    answer = bangla
+      ? 'Annïka-র live AI service আপাতত billing সমস্যার কারণে উত্তর দিতে পারছে না। Built-in guide দিয়ে product search, website navigation, Fashion/Shop, Quran & Hadith, Safety ও Lifestyle বিষয়ে সাহায্য করতে পারি। সাধারণ/open-ended প্রশ্নের পূর্ণ AI উত্তর পেতে site owner-কে OpenAI API billing ঠিক করতে হবে।'
+      : 'Annïka’s live AI service is temporarily unavailable because the AI provider account needs billing attention. I can still help with catalog searches, site navigation, Fashion/Shop, Quran & Hadith, Safety and Lifestyle. Full open-ended AI answers will return once the site owner restores the provider billing.';
+  }
+
+  return { answer, mode:'local-fallback', model:'local-site-assistant', sources, products:matchedProducts };
+}
+
 module.exports = async (req, res) => {
   if (req.method !== 'POST') return json(res, 405, { error: 'Method not allowed' });
 
@@ -292,9 +370,10 @@ module.exports = async (req, res) => {
     let data = first.data;
     let apiResponse = first.response;
 
-    // If a platform/model configuration rejects web search, retry once without it
-    // rather than leaving the user with a broken chatbot.
-    if (!apiResponse.ok) {
+    // Retry without web search only for tool/configuration errors. Billing-inactive
+    // responses will not improve on retry, so gracefully serve the built-in guide.
+    const billingInactive = data && data.error && data.error.code === 'billing_not_active';
+    if (!apiResponse.ok && !billingInactive) {
       console.error('OpenAI web-search request error', apiResponse.status, data);
       const second = await callOpenAI({ model, input, useWeb: false });
       data = second.data;
@@ -302,8 +381,9 @@ module.exports = async (req, res) => {
     }
 
     if (!apiResponse.ok) {
-      console.error('OpenAI chat request error', apiResponse.status, data);
-      return json(res, 502, { error: 'The AI service returned an error.' });
+      console.error('OpenAI chat request failed; switching to built-in guide', apiResponse.status,
+        data && data.error ? { code:data.error.code, type:data.error.type } : {});
+      return json(res, 200, buildLocalGuideReply(message));
     }
 
     const answer = typeof data.output_text === 'string'

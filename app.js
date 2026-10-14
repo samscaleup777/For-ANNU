@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
   // Keep the lightweight SVG favicon; do not inject image files into site content.
 
+  if(!document.querySelector('link[href^="/brand-fix.css"]')){const logoFix=document.createElement('link');logoFix.rel='stylesheet';logoFix.href='/brand-fix.css?v=1';document.head.appendChild(logoFix)}
   const oldAni=[...document.querySelectorAll('link[href^="/animations-v3.css"]')];
   oldAni.forEach(link=>{link.href='/animations-v3.css?v=12'});
   if(!oldAni.length){const animationStyle=document.createElement('link');animationStyle.rel='stylesheet';animationStyle.href='/animations-v3.css?v=12';document.head.appendChild(animationStyle)}
