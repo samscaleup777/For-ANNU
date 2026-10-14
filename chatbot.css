@@ -19,3 +19,47 @@
 .annika-chat-source{display:block;width:fit-content;max-width:100%;padding:5px 8px;border:1px solid var(--annika-chat-line);border-radius:9px;background:rgba(255,255,255,.72);color:var(--annika-chat-forest);font-size:9px;line-height:1.25;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .annika-chat-source:hover{border-color:rgba(201,130,79,.55);background:#fff}
 @media(max-width:620px){.annika-chat-sources{max-width:90%}}
+
+
+/* Advanced companion controls, catalog cards, and the original Annïka mark. */
+.chat-brand-mark{display:block;width:31px;height:31px;border-radius:50% 50% 50% 8px;background:linear-gradient(145deg,var(--annika-chat-forest),var(--annika-chat-gold2));transform:rotate(-12deg);position:relative;box-shadow:0 2px 9px rgba(0,0,0,.12)}
+.chat-brand-mark:after{content:"";position:absolute;inset:6px;border:1px solid rgba(255,255,255,.62);border-radius:50%}
+.annika-chat-launcher .chat-brand-mark{width:39px;height:39px}
+.annika-chat-avatar .chat-brand-mark{width:28px;height:28px}
+.annika-chat-top-inner{gap:12px}
+.annika-chat-heading{min-width:0}
+.annika-chat-toolbar{margin-left:auto;display:flex;align-items:center;gap:6px;position:relative;z-index:2}
+.annika-chat-clear,.annika-chat-close{width:32px;height:32px;flex:0 0 32px;border:1px solid rgba(255,255,255,.16);border-radius:11px;background:rgba(255,255,255,.08);color:#fff;display:grid;place-items:center;cursor:pointer;font-size:18px;line-height:1;transition:background .2s ease,transform .2s ease}
+.annika-chat-clear{font-size:19px}
+.annika-chat-clear:hover,.annika-chat-close:hover{background:rgba(255,255,255,.18);transform:translateY(-1px)}
+.annika-chat-row{flex-direction:column;align-items:flex-start}
+.annika-chat-row.user{align-items:flex-end;justify-content:flex-end}
+.annika-chat-bubble{max-width:91%;overflow-wrap:anywhere}
+.annika-chat-bubble-actions{display:flex;gap:6px;margin:5px 0 0 5px}
+.annika-chat-copy{appearance:none;border:1px solid var(--annika-chat-line);border-radius:999px;background:rgba(255,255,255,.55);color:var(--annika-chat-muted);padding:4px 8px;font-size:9px;line-height:1.2;cursor:pointer}
+.annika-chat-copy:hover{background:#fff;color:var(--annika-chat-forest)}
+.annika-chat-products{display:flex;flex-direction:column;gap:6px;margin:8px 0 2px 5px;width:min(91%,310px)}
+.annika-chat-products-heading{font-size:9px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--annika-chat-muted);margin:0 0 1px 2px}
+.annika-chat-product-card{display:grid;grid-template-columns:1fr auto;gap:2px 8px;padding:9px 10px;border:1px solid var(--annika-chat-line);border-radius:13px;background:rgba(255,255,255,.8);color:var(--annika-chat-forest);text-decoration:none;transition:border-color .2s ease,background .2s ease,transform .2s ease}
+.annika-chat-product-card:hover{border-color:rgba(201,130,79,.72);background:#fff;transform:translateY(-1px)}
+.annika-chat-product-card strong{font-size:11px;line-height:1.3;overflow-wrap:anywhere}
+.annika-chat-product-card span{grid-column:1/-1;font-size:9px;line-height:1.3;color:var(--annika-chat-muted)}
+.annika-chat-product-card em{grid-column:2;grid-row:1;font-style:normal;font-size:9px;font-weight:800;align-self:center;white-space:nowrap}
+.annika-chat-composer-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:7px}
+.annika-chat-footnote{margin:0;text-align:left;font-size:9px}
+.annika-chat-counter{font-size:9px;color:#81776a;white-space:nowrap;font-variant-numeric:tabular-nums}
+.annika-chat-send{transition:background .25s ease,transform .25s ease,opacity .2s ease}
+.annika-chat-root.is-busy .annika-chat-status:after{content:" · preparing reply";color:rgba(255,255,255,.82)}
+.annika-chat-suggestions{max-height:116px;overflow-y:auto}
+.annika-chat-input:focus-visible{outline:2px solid rgba(201,130,79,.55);outline-offset:2px;border-radius:8px}
+.annika-chat-source:focus-visible,.annika-chat-product-card:focus-visible,.annika-chat-clear:focus-visible,.annika-chat-close:focus-visible,.annika-chat-copy:focus-visible{outline:2px solid var(--annika-chat-gold2);outline-offset:2px}
+@media(max-width:620px){
+  .annika-chat-top-inner{gap:9px}
+  .annika-chat-toolbar{gap:4px}
+  .annika-chat-title{font-size:18px}
+  .annika-chat-status{font-size:10px}
+  .annika-chat-clear,.annika-chat-close{width:29px;height:29px;flex-basis:29px}
+  .annika-chat-products{width:94%}
+  .annika-chat-row .annika-chat-bubble{max-width:95%}
+  .annika-chat-composer-meta{gap:6px}
+}
