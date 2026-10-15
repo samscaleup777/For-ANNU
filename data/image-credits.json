@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-15T00:00:00Z",
+  "generatedAt": "2026-10-15T00:30:00Z",
   "providers": {
-    "Wikimedia Commons": 197,
-    "flickr": 37,
-    "wikimedia": 12,
+    "flickr": 34,
+    "Wikimedia Commons": 171,
+    "wikimedia": 10,
     "sketchfab": 1,
     "User-provided ZIP": 5
   },
@@ -77,20 +77,6 @@
       "local_file": "/assets/shop/catalog/15-hijab-scarf-ring.jpg"
     },
     {
-      "id": "16",
-      "name": "Long Modest Dresses",
-      "slug": "16-long-modest-dresses",
-      "query": "long dress",
-      "provider": "flickr",
-      "license": "pdm",
-      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-      "creator": "Fæ",
-      "landing_url": "https://www.flickr.com/photos/50398299@N08/16682659251",
-      "original_url": "https://live.staticflickr.com/8676/16682659251_11443b5c77_b.jpg",
-      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
-      "local_file": "/assets/shop/catalog/16-long-modest-dresses.jpg"
-    },
-    {
       "id": "17",
       "name": "Maxi Dresses",
       "slug": "17-maxi-dresses",
@@ -117,19 +103,6 @@
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Lake_Abaya%2C_Arba_Minch_%286194081486%29.jpg",
       "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
       "local_file": "/assets/shop/catalog/18-abaya.jpg"
-    },
-    {
-      "id": "19",
-      "name": "Jilbab",
-      "slug": "19-jilbab",
-      "query": "Jilbab",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:JV022Ekawati\" title=\"User:JV022Ekawati\">JV022Ekawati</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Jilbab_ungu.jpg",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/92/Jilbab_ungu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
       "id": "21",
@@ -213,60 +186,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "27",
-      "name": "Modest Salwar Kameez",
-      "slug": "27-modest-salwar-kameez",
-      "query": "salwar kameez",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0",
-      "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/64924693@N00\">Nagarjun Kandukuru</a> from Bangalore, India",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Siddi_woman_in_salwar_kameez_%2816094755333%29.jpg",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/de/Siddi_woman_in_salwar_kameez_%2816094755333%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "28",
-      "name": "Kameez",
-      "slug": "28-kameez",
-      "query": "Kameez",
-      "provider": "wikimedia",
-      "license": "by-sa",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
-      "creator": "Lunaloop",
-      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=89604111",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Shalwar_kameez.jpg",
-      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
-      "local_file": "/assets/shop/catalog/28-kameez.jpg"
-    },
-    {
-      "id": "29",
-      "name": "Long Kurti",
-      "slug": "29-long-kurti",
-      "query": "Long Kurti",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 2.5",
-      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
-      "creator": "Photo from www.lukeisback.com",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Johnny_Barraco%2C_Taylor_Kurtis_at_Porn_Star_Karaoke_1.jpg",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Johnny_Barraco%2C_Taylor_Kurtis_at_Porn_Star_Karaoke_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "30",
-      "name": "Dupatta",
-      "slug": "30-dupatta",
-      "query": "Dupatta",
-      "provider": "wikimedia",
-      "license": "by",
-      "license_url": "https://creativecommons.org/licenses/by/3.0/",
-      "creator": "Biswarup Ganguly",
-      "landing_url": "https://commons.wikimedia.org/w/index.php?curid=83173667",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Persian_Nobleman_Clad_in_Coat_Dupatta_Trouser_and_Turban_-_Circa_2nd_Century_BCE_-_Showcase_18-11_-_Prehistory_and_Terracotta_Gallery_-_Government_Museum_-_Mathura.jpg",
-      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
-      "local_file": "/assets/shop/catalog/30-dupatta.jpg"
-    },
-    {
       "id": "31",
       "name": "Shawl",
       "slug": "31-shawl",
@@ -303,19 +222,6 @@
       "creator": "",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Leggings_%28AM_1983.026-2%29.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Leggings_%28AM_1983.026-2%29.jpg/1920px-Leggings_%28AM_1983.026-2%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "36",
-      "name": "Salwar Kameez",
-      "slug": "36-salwar-kameez",
-      "query": "Salwar Kameez",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0",
-      "creator": "Vicki Francis/Department for International Development, United Kingdom",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Schoolgirls_in_Shalwar_Kameez%2C_Abbotabad_Pakistan_-_UK_International_Development.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Schoolgirls_in_Shalwar_Kameez%2C_Abbotabad_Pakistan_-_UK_International_Development.jpg/1920px-Schoolgirls_in_Shalwar_Kameez%2C_Abbotabad_Pakistan_-_UK_International_Development.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -399,19 +305,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "49",
-      "name": "Jackets",
-      "slug": "49-jackets",
-      "query": "Jackets",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Leech44\" title=\"User:Leech44\">Leech44</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Blue_Jackets_Cannon.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Blue_Jackets_Cannon.jpg/1920px-Blue_Jackets_Cannon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "50",
       "name": "Raincoat",
       "slug": "50-raincoat",
@@ -422,19 +315,6 @@
       "creator": "",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Raincoat_MET_1986.123_d.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Raincoat_MET_1986.123_d.jpg/1920px-Raincoat_MET_1986.123_d.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "51",
-      "name": "Winter Clothing",
-      "slug": "51-winter-clothing",
-      "query": "Winter Clothing",
-      "provider": "Wikimedia Commons",
-      "license": "CC0",
-      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Ordercrazy\" title=\"User:Ordercrazy\">Ordercrazy</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Winter_clothing_at_ISPO_2014_Munich.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Winter_clothing_at_ISPO_2014_Munich.jpg/1920px-Winter_clothing_at_ISPO_2014_Munich.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -568,19 +448,6 @@
       "original_url": "https://live.staticflickr.com/163/395197485_a551e83cc9_b.jpg",
       "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
       "local_file": "/assets/shop/catalog/65-inner-pants.jpg"
-    },
-    {
-      "id": "66",
-      "name": "Shapewear",
-      "slug": "66-shapewear",
-      "query": "Shapewear",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Tobias_ToMar_Maier\" title=\"User:Tobias ToMar Maier\">Tobias ToMar Maier</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Shapewear_bodysuit_-_pose_2_-_Modelled_by_Lady_Alexi.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Shapewear_bodysuit_-_pose_2_-_Modelled_by_Lady_Alexi.jpg/1920px-Shapewear_bodysuit_-_pose_2_-_Modelled_by_Lady_Alexi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
       "id": "67",
@@ -731,19 +598,6 @@
       "local_file": "/assets/shop/catalog/84-islamic-wall-calendar.jpg"
     },
     {
-      "id": "86",
-      "name": "Sanitary Pads",
-      "slug": "86-sanitary-pads",
-      "query": "Sanitary Pads",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Lwazi_Mema&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Lwazi Mema (page does not exist)\">Lwazi Mema</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Roody_Reusable_Sanitary_Pads.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Roody_Reusable_Sanitary_Pads.jpg/1920px-Roody_Reusable_Sanitary_Pads.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "87",
       "name": "Pantyliners",
       "slug": "87-pantyliners",
@@ -837,19 +691,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "95",
-      "name": "Tissues",
-      "slug": "95-tissues",
-      "query": "tissue box",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Corpse_Reviver\" title=\"User:Corpse Reviver\">Corpse Reviver</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Toilet_paperes_and_tissues.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Toilet_paperes_and_tissues.jpg/1920px-Toilet_paperes_and_tissues.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "96",
       "name": "Cotton Pads",
       "slug": "96-cotton-pads",
@@ -874,20 +715,6 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:Cotton_buds_-_%CE%9C%CF%80%CE%B1%CF%84%CE%BF%CE%BD%CE%AD%CF%84%CE%B5%CF%82.JPG",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Cotton_buds_-_%CE%9C%CF%80%CE%B1%CF%84%CE%BF%CE%BD%CE%AD%CF%84%CE%B5%CF%82.JPG/1920px-Cotton_buds_-_%CE%9C%CF%80%CE%B1%CF%84%CE%BF%CE%BD%CE%AD%CF%84%CE%B5%CF%82.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "99",
-      "name": "Body Wash",
-      "slug": "99-body-wash",
-      "query": "Body Wash",
-      "provider": "flickr",
-      "license": "by",
-      "license_url": "https://creativecommons.org/licenses/by/2.0/",
-      "creator": "JeepersMedia",
-      "landing_url": "https://www.flickr.com/photos/39160147@N03/16099793436",
-      "original_url": "https://live.staticflickr.com/8668/16099793436_011e102fd2_b.jpg",
-      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
-      "local_file": "/assets/shop/catalog/99-body-wash.jpg"
     },
     {
       "id": "100",
@@ -1377,19 +1204,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "161",
-      "name": "Bobby Pins",
-      "slug": "161-bobby-pins",
-      "query": "Bobby Pins",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:IllaZilla\" title=\"User:IllaZilla\">IllaZilla</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Bobby_and_the_Pins_2020-01-17_03.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Bobby_and_the_Pins_2020-01-17_03.jpg/1920px-Bobby_and_the_Pins_2020-01-17_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "162",
       "name": "Hair Pins",
       "slug": "162-hair-pins",
@@ -1522,32 +1336,6 @@
       "local_file": "/assets/shop/catalog/174-cuticle-oil.jpg"
     },
     {
-      "id": "175",
-      "name": "Hand Cream",
-      "slug": "175-hand-cream",
-      "query": "Hand Cream",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0",
-      "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/89060048@N03\">City Foodsters</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Drink_Hand_crafted_cream_soda_%2818705306063%29.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Drink_Hand_crafted_cream_soda_%2818705306063%29.jpg/1920px-Drink_Hand_crafted_cream_soda_%2818705306063%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "176",
-      "name": "Foot Scrub",
-      "slug": "176-foot-scrub",
-      "query": "Foot Scrub",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 2.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
-      "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/65695019@N07\">Bernard DUPONT</a> from FRANCE",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Orange-footed_Scrub_Fowl_%28Megapodius_reinwardt%29_%289731007749%29.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Orange-footed_Scrub_Fowl_%28Megapodius_reinwardt%29_%289731007749%29.jpg/1920px-Orange-footed_Scrub_Fowl_%28Megapodius_reinwardt%29_%289731007749%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "177",
       "name": "Foot File",
       "slug": "177-foot-file",
@@ -1614,19 +1402,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "186",
-      "name": "Wax Strips",
-      "slug": "186-wax-strips",
-      "query": "Wax Strips",
-      "provider": "Wikimedia Commons",
-      "license": "Public domain",
-      "license_url": "",
-      "creator": "MC3 Erin Devenberg",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:U.S._Navy_Machinist%27s_Mate_3rd_Class_Alyse_Newman_strips_wax_from_the_floor_in_a_training_office_aboard_the_aircraft_carrier_USS_George_Washington_%28CVN_73%29_April_2%2C_2013%2C_at_Naval_Base_Yokosuka%2C_Japan_130402-N-DP652-055.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/U.S._Navy_Machinist%27s_Mate_3rd_Class_Alyse_Newman_strips_wax_from_the_floor_in_a_training_office_aboard_the_aircraft_carrier_USS_George_Washington_%28CVN_73%29_April_2%2C_2013%2C_at_Naval_Base_Yokosuka%2C_Japan_130402-N-DP652-055.jpg/1920px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "187",
       "name": "Epilator",
       "slug": "187-epilator",
@@ -1638,20 +1413,6 @@
       "landing_url": "https://commons.wikimedia.org/wiki/File:1-Braun-epilator.JPG",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/1-Braun-epilator.JPG/1920px-1-Braun-epilator.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "188",
-      "name": "Attar",
-      "slug": "188-attar",
-      "query": "attar perfume bottle",
-      "provider": "flickr",
-      "license": "by",
-      "license_url": "https://creativecommons.org/licenses/by/2.0/",
-      "creator": "Naomi King",
-      "landing_url": "https://www.flickr.com/photos/22141297@N06/7802738368",
-      "original_url": "https://live.staticflickr.com/7122/7802738368_ee73d7f643_b.jpg",
-      "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
-      "local_file": "/assets/shop/catalog/188-attar.jpg"
     },
     {
       "id": "189",
@@ -1811,19 +1572,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "204",
-      "name": "Sunglasses",
-      "slug": "204-sunglasses",
-      "query": "Sunglasses",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 2.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
-      "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/25866036@N05\">Rollan Budi</a> from Vancouver, Canada",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Dog_chillin%27_with_red_sunglasses_%283545177630%29.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Dog_chillin%27_with_red_sunglasses_%283545177630%29.jpg/1920px-Dog_chillin%27_with_red_sunglasses_%283545177630%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "205",
       "name": "Brooch",
       "slug": "205-brooch",
@@ -1873,19 +1621,6 @@
       "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:A38footer&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:A38footer (page does not exist)\">A38footer</a>",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Tote_bag-zingara-lizardworx.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Tote_bag-zingara-lizardworx.jpg/1920px-Tote_bag-zingara-lizardworx.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "211",
-      "name": "Wallet",
-      "slug": "211-wallet",
-      "query": "Wallet",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
-      "creator": "The original uploader was <a href=\"https://en.wikipedia.org/wiki/User:TheArmadillo\" class=\"extiw\" title=\"wikipedia:User:TheArmadillo\">TheArmadillo</a> at <a href=\"https://en.wikipedia.org/wiki/\" class=\"extiw\" title=\"wikipedia:\">English Wikipedia</a>.. Uploaded to Commons by <a href=\"//commons.wikimedia.org/w/index.php?title=User:Koernerbroetchen&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Koernerbroetchen (page does not exist)\">Körnerbrötchen</a>.",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:WalletMpegMan.jpg",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/WalletMpegMan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -2220,19 +1955,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "250",
-      "name": "Planner",
-      "slug": "250-planner",
-      "query": "Planner",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Sun_irland&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Sun irland (page does not exist)\">Sun irland</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Suzana_Buuron_Architect_and_Urban_Planner.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Suzana_Buuron_Architect_and_Urban_Planner.jpg/1920px-Suzana_Buuron_Architect_and_Urban_Planner.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "251",
       "name": "Diary",
       "slug": "251-diary",
@@ -2321,19 +2043,6 @@
       "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/40215657@N03\">Carissa Rogers</a>",
       "landing_url": "https://commons.wikimedia.org/wiki/File:HP_Pavilion_Computer_laptop_keyboard_closeup.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/HP_Pavilion_Computer_laptop_keyboard_closeup.jpg/1920px-HP_Pavilion_Computer_laptop_keyboard_closeup.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "258",
-      "name": "Tablet",
-      "slug": "258-tablet",
-      "query": "tablet device",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:KKPCW\" title=\"User:KKPCW\">KKPCW（Kyu3）</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Ordering_system_using_tablet_device_at_Yoshinoya.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Ordering_system_using_tablet_device_at_Yoshinoya.jpg/1920px-Ordering_system_using_tablet_device_at_Yoshinoya.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -2549,45 +2258,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "280",
-      "name": "Modest Workout Clothes",
-      "slug": "280-modest-workout-clothes",
-      "query": "workout clothes",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "creator": "FOTO:Fortepan — <b>ID 30691</b>: <span typeof=\"mw:File\"><a href=\"https://fortepan.hu/\" rel=\"nofollow\"><img alt=\"Home page\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Nuvola_filesystems_folder_home.svg/40px-Nuvola_filesystems_folder_home.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Nuvola_filesystems_folder_home.svg/60px-Nuvola_filesystems_folder_home.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"128\" data-file-height=\"128\"></a></span><span typeof=\"mw:File\"><a href=\"https://www.fortepan.hu/_photo/download/fortepan_45806.jpg\" rel=\"nofollow\"><img alt=\"Picture\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Inkscape.svg/40px-Inkscape.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Inkscape.svg/60px-Inkscape.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"60\" data-file-height=\"60\"></a></span><span typeof=\"mw:File\"><a href=\"http://www.fortepan.hu/?lang=en&amp;img=30691\" rel=\"nofollow\"><img alt=\"Information page\" src=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Information_icon.svg/40px-Information_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail\" decoding=\"async\" loading=\"lazy\" width=\"24\" height=\"24\" class=\"mw-file-element\" srcset=\"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Information_icon.svg/60px-Information_icon.svg.png?utm_source=commons.wikimedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail 2x\" data-file-width=\"620\" data-file-height=\"620\"></a></span><br>Adományozó/Donor: Krasznai Gyula. <br><bdi lang=\"en\" dir=\"ltr\" title=\"archived on 24 January 2019 at the Wayback Machine\"><a rel=\"nofollow\" class=\"external text\" href=\"https://web.archive.org/web/20190124061717/http%3A//www.fortepan.hu/%3Fimg%3D30691\">archive copy</a> at the <span lang=\"en\" dir=\"ltr\"><a href=\"https://en.wikipedia.org/wiki/Wayback_Machine\" class=\"extiw\" title=\"en:Wayback Machine\"><span lang=\"en\" dir=\"ltr\">Wayback Machine</span></a></span></bdi>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Man%2C_portrait%2C_workout_clothes_Fortepan_30691.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Man%2C_portrait%2C_workout_clothes_Fortepan_30691.jpg/1920px-Man%2C_portrait%2C_workout_clothes_Fortepan_30691.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "282",
-      "name": "Sports Bra",
-      "slug": "282-sports-bra",
-      "query": "Sports Bra",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 2.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
-      "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/likephoto/\">Chung Keng Ryu</a> or <a rel=\"nofollow\" class=\"external text\" href=\"http://www.wretch.cc/user/workhardkono\">LU Chung Keng</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Promotional_model_wearing_Adidas_sports_bra%2C_Taipei_Game_Show_20080124.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Promotional_model_wearing_Adidas_sports_bra%2C_Taipei_Game_Show_20080124.jpg/1920px-Promotional_model_wearing_Adidas_sports_bra%2C_Taipei_Game_Show_20080124.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "283",
-      "name": "Joggers",
-      "slug": "283-joggers",
-      "query": "Joggers",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Sardaka\" title=\"User:Sardaka\">Sardaka</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Kensington_joggers_001.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Kensington_joggers_001.jpg/1920px-Kensington_joggers_001.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "286",
       "name": "Yoga Mat",
       "slug": "286-yoga-mat",
@@ -2598,19 +2268,6 @@
       "creator": "mckaysavage",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Bali_015_-_Ubud_-_yoga_mats_for_sale.jpg",
       "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Bali_015_-_Ubud_-_yoga_mats_for_sale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "287",
-      "name": "Resistance Bands",
-      "slug": "287-resistance-bands",
-      "query": "Resistance Bands",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/w/index.php?title=User:Oleg_Yunakov&amp;action=edit&amp;redlink=1\" class=\"new\" title=\"User:Oleg Yunakov (page does not exist)\">Oleg Yunakov</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Grid_Layout_of_Blue_Barry%27s_Exercise_Mats_and_Resistance_Bands.jpg",
-      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Grid_Layout_of_Blue_Barry%27s_Exercise_Mats_and_Resistance_Bands.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -2680,19 +2337,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "293",
-      "name": "Bandages",
-      "slug": "293-bandages",
-      "query": "Bandages",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY 4.0",
-      "license_url": "https://creativecommons.org/licenses/by/4.0",
-      "creator": "",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Pads_and_bandages_for_the_ear%2C_Thomas_Buchanan%2C_1825_Wellcome_L0035329.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Pads_and_bandages_for_the_ear%2C_Thomas_Buchanan%2C_1825_Wellcome_L0035329.jpg/1920px-Pads_and_bandages_for_the_ear%2C_Thomas_Buchanan%2C_1825_Wellcome_L0035329.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "294",
       "name": "Antiseptic",
       "slug": "294-antiseptic",
@@ -2703,19 +2347,6 @@
       "creator": "",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Antiseptic_machine%2C_England%2C_1879_Wellcome_L0057827.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Antiseptic_machine%2C_England%2C_1879_Wellcome_L0057827.jpg/1920px-Antiseptic_machine%2C_England%2C_1879_Wellcome_L0057827.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "295",
-      "name": "Gauze",
-      "slug": "295-gauze",
-      "query": "Gauze",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Mattia_Luigi_Nappi\" title=\"User:Mattia Luigi Nappi\">Mattia Luigi Nappi</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Impregnated_gauze_bandages_for_casts.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Impregnated_gauze_bandages_for_casts.jpg/1920px-Impregnated_gauze_bandages_for_casts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -2890,19 +2521,6 @@
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
-      "id": "312",
-      "name": "Buttons",
-      "slug": "312-buttons",
-      "query": "sewing buttons",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY 2.0",
-      "license_url": "https://creativecommons.org/licenses/by/2.0",
-      "creator": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/people/155403590@N07\">Dejan Krsmanovic</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Box_Full_of_Buttons_For_Sewing_%2842958527870%29.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Box_Full_of_Buttons_For_Sewing_%2842958527870%29.jpg/1920px-Box_Full_of_Buttons_For_Sewing_%2842958527870%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
       "id": "313",
       "name": "Fabric Tape",
       "slug": "313-fabric-tape",
@@ -2967,19 +2585,6 @@
       "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Llez\" title=\"User:Llez\">H. Zell</a>",
       "landing_url": "https://commons.wikimedia.org/wiki/File:Clothes_iron_-_Mog%C3%A1n_-_Gran_Canaria.jpg",
       "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Clothes_iron_-_Mog%C3%A1n_-_Gran_Canaria.jpg/1920px-Clothes_iron_-_Mog%C3%A1n_-_Gran_Canaria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
-    },
-    {
-      "id": "319",
-      "name": "Laundry Bags",
-      "slug": "319-laundry-bags",
-      "query": "Laundry Bags",
-      "provider": "Wikimedia Commons",
-      "license": "Public domain",
-      "license_url": "",
-      "creator": "U.S. Navy photo by Mass Communication Specialist Seaman Aaron Shelley",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:US_Navy_100317-N-6006S-254_Seaman_Stanquonzie_Pittman_prepares_to_sort_the_ship%27s_laundry_bags_for_washing.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/US_Navy_100317-N-6006S-254_Seaman_Stanquonzie_Pittman_prepares_to_sort_the_ship%27s_laundry_bags_for_washing.jpg/1920px-US_Navy_100317-N-6006S-254_Seaman_Stanquonzie_Pittman_prepares_to_sort_the_ship%27s_laundry_bags_for_washing.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
@@ -3192,19 +2797,6 @@
       "original_url": "https://live.staticflickr.com/5485/11499070824_d03210203a_b.jpg",
       "quality_check": "exact product-name metadata + resolution >= 700px + face/people-screening + duplicate check",
       "local_file": "/assets/shop/catalog/337-abaya.jpg"
-    },
-    {
-      "id": "340",
-      "name": "New Prayer Mat",
-      "slug": "340-new-prayer-mat",
-      "query": "prayer mat janamaz",
-      "provider": "Wikimedia Commons",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "creator": "<a href=\"//commons.wikimedia.org/wiki/User:Ssemmanda_will\" title=\"User:Ssemmanda will\">Ssemmanda will</a>",
-      "landing_url": "https://commons.wikimedia.org/wiki/File:Prayer_Mats_%28Janamaz%29.jpg",
-      "original_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Prayer_Mats_%28Janamaz%29.jpg/1920px-Prayer_Mats_%28Janamaz%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "quality_check": "metadata-name match + resolution >= 700px + sensitive people-photo exclusion"
     },
     {
       "id": "341",

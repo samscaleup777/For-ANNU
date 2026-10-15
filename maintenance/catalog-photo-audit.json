@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-15T00:00:00Z",
+  "generatedAt": "2026-10-15T00:30:00Z",
   "totalProducts": 350,
-  "verifiedInternetPhotos": 247,
-  "namedObjectOnlyPlaceholders": 98,
+  "verifiedInternetPhotos": 216,
+  "namedObjectOnlyPlaceholders": 129,
   "missing": [
     {
       "id": "03",
@@ -75,11 +75,53 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "16",
+      "name": "Long Modest Dresses",
+      "section": "Hijab & Modest Wear",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "19",
+      "name": "Jilbab",
+      "section": "Hijab & Modest Wear",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "20",
       "name": "Prayer Khimar",
       "section": "Hijab & Modest Wear",
       "placeholder": "/assets/shop/catalog/placeholders/20-prayer-khimar.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "27",
+      "name": "Modest Salwar Kameez",
+      "section": "Hijab & Modest Wear",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "28",
+      "name": "Kameez",
+      "section": "Hijab & Modest Wear",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "29",
+      "name": "Long Kurti",
+      "section": "Hijab & Modest Wear",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "30",
+      "name": "Dupatta",
+      "section": "Hijab & Modest Wear",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "33",
@@ -94,6 +136,13 @@
       "section": "Everyday Clothing",
       "placeholder": "/assets/shop/catalog/placeholders/35-home-dresses.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "36",
+      "name": "Salwar Kameez",
+      "section": "Everyday Clothing",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "38",
@@ -138,6 +187,20 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "49",
+      "name": "Jackets",
+      "section": "Everyday Clothing",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "51",
+      "name": "Winter Clothing",
+      "section": "Everyday Clothing",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "53",
       "name": "Wedding / Occasion Outfits",
       "section": "Everyday Clothing",
@@ -164,6 +227,13 @@
       "section": "Innerwear & Undergarments",
       "placeholder": "/assets/shop/catalog/placeholders/64-inner-tops.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "66",
+      "name": "Shapewear",
+      "section": "Innerwear & Undergarments",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "69",
@@ -222,6 +292,13 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "86",
+      "name": "Sanitary Pads",
+      "section": "Menstrual & Personal Hygiene",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "91",
       "name": "Period Disposal Bags",
       "section": "Menstrual & Personal Hygiene",
@@ -229,11 +306,25 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "95",
+      "name": "Tissues",
+      "section": "Menstrual & Personal Hygiene",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "98",
       "name": "Intimate Hygiene Products",
       "section": "Menstrual & Personal Hygiene",
       "placeholder": "/assets/shop/catalog/placeholders/98-intimate-hygiene-products.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "99",
+      "name": "Body Wash",
+      "section": "Menstrual & Personal Hygiene",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "105",
@@ -390,6 +481,13 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "161",
+      "name": "Bobby Pins",
+      "section": "Haircare",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "167",
       "name": "Curling Tool",
       "section": "Haircare",
@@ -409,6 +507,20 @@
       "section": "Haircare",
       "placeholder": "/assets/shop/catalog/placeholders/170-satin-pillowcase.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "175",
+      "name": "Hand Cream",
+      "section": "Hands, Feet & Grooming",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "176",
+      "name": "Foot Scrub",
+      "section": "Hands, Feet & Grooming",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "178",
@@ -439,6 +551,20 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "186",
+      "name": "Wax Strips",
+      "section": "Hands, Feet & Grooming",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "188",
+      "name": "Attar",
+      "section": "Fragrance",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "190",
       "name": "Body Mist",
       "section": "Fragrance",
@@ -453,6 +579,13 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "204",
+      "name": "Sunglasses",
+      "section": "Jewellery & Accessories",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "206",
       "name": "Hijab Brooch",
       "section": "Jewellery & Accessories",
@@ -465,6 +598,13 @@
       "section": "Jewellery & Accessories",
       "placeholder": "/assets/shop/catalog/placeholders/207-hijab-magnets.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "211",
+      "name": "Wallet",
+      "section": "Jewellery & Accessories",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "218",
@@ -558,6 +698,20 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "250",
+      "name": "Planner",
+      "section": "Work / Study",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "258",
+      "name": "Tablet",
+      "section": "Work / Study",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "267",
       "name": "Hijab Travel Organizer",
       "section": "Travel",
@@ -593,11 +747,32 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "280",
+      "name": "Modest Workout Clothes",
+      "section": "Fitness",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "281",
       "name": "Sports Hijab",
       "section": "Fitness",
       "placeholder": "/assets/shop/catalog/placeholders/281-sports-hijab.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "282",
+      "name": "Sports Bra",
+      "section": "Fitness",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "283",
+      "name": "Joggers",
+      "section": "Fitness",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "284",
@@ -614,6 +789,27 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "287",
+      "name": "Resistance Bands",
+      "section": "Fitness",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "293",
+      "name": "Bandages",
+      "section": "Emergency & Safety",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
+      "id": "295",
+      "name": "Gauze",
+      "section": "Emergency & Safety",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "302",
       "name": "Emergency Contact Card",
       "section": "Emergency & Safety",
@@ -628,11 +824,25 @@
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
     },
     {
+      "id": "312",
+      "name": "Buttons",
+      "section": "Clothing Care",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
+    },
+    {
       "id": "318",
       "name": "Garment Steamer",
       "section": "Clothing Care",
       "placeholder": "/assets/shop/catalog/placeholders/318-garment-steamer.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "319",
+      "name": "Laundry Bags",
+      "section": "Clothing Care",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "320",
@@ -654,6 +864,13 @@
       "section": "Ramadan / Eid Essentials",
       "placeholder": "/assets/shop/catalog/placeholders/339-prayer-dress.svg",
       "reason": "No exact open-licensed photo passed product-name, resolution, people/face and duplicate checks; named object-only placeholder used."
+    },
+    {
+      "id": "340",
+      "name": "New Prayer Mat",
+      "section": "Ramadan / Eid Essentials",
+      "placeholder": "/assets/shop/catalog/placeholders/no-person-product.svg",
+      "reason": "Face detector flagged a possible human face. The original photo was removed from the public catalog and repository; a no-person product illustration is shown until a suitable photo is reviewed."
     },
     {
       "id": "343",
@@ -693,9 +910,10 @@
   ],
   "policy": "Only locally downloaded, source-credited photos with exact product-name metadata, a commercial-use license, >=700px resolution, no detected faces/people and no near-duplicate check are treated as verified. Other products use a labeled product-only SVG.",
   "verifiedUserProvidedPhotos": 5,
-  "totalVerifiedPhotos": 252,
+  "totalVerifiedPhotos": 221,
   "notes": [
     "Four user-provided product photos were reviewed by product ID and added: 110 Serum, 146 Makeup Organizer, 298 Personal Medicines, 338 Hijab. Their third-party licensing status has not been independently verified.",
-    "Body Spray ID 193 was visually checked against its product name and added from the user-provided ZIP; third-party license is not independently verified."
+    "Body Spray ID 193 was visually checked against its product name and added from the user-provided ZIP; third-party license is not independently verified.",
+    "Face-photo review: scanned all 252 active catalog photos with OpenCV YuNet at confidence threshold 0.65; 31 possible-face images were removed and replaced with a no-person illustration. Automated detection can have false positives and may miss tiny/distant faces."
   ]
 }

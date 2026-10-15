@@ -1,0 +1,166 @@
+{
+  "generatedAt": "2026-10-15T00:30:00Z",
+  "method": "OpenCV YuNet face detector; threshold 0.65",
+  "scannedActiveProductPhotos": 252,
+  "flaggedAndRemoved": 31,
+  "activePhotosRetained": 221,
+  "placeholdersNow": 129,
+  "disclaimer": "Detection is automated and may produce false positives or miss tiny/distant faces. Flagged images are withheld pending suitable product-only alternatives.",
+  "removed": [
+    {
+      "id": "30",
+      "name": "Dupatta",
+      "originalImage": "/assets/shop/catalog/30-dupatta.jpg"
+    },
+    {
+      "id": "19",
+      "name": "Jilbab",
+      "originalImage": "/assets/shop/catalog/19-jilbab.jpg"
+    },
+    {
+      "id": "27",
+      "name": "Modest Salwar Kameez",
+      "originalImage": "/assets/shop/catalog/27-modest-salwar-kameez.jpg"
+    },
+    {
+      "id": "29",
+      "name": "Long Kurti",
+      "originalImage": "/assets/shop/catalog/29-long-kurti.jpg"
+    },
+    {
+      "id": "16",
+      "name": "Long Modest Dresses",
+      "originalImage": "/assets/shop/catalog/16-long-modest-dresses.jpg"
+    },
+    {
+      "id": "36",
+      "name": "Salwar Kameez",
+      "originalImage": "/assets/shop/catalog/36-salwar-kameez.jpg"
+    },
+    {
+      "id": "28",
+      "name": "Kameez",
+      "originalImage": "/assets/shop/catalog/28-kameez.jpg"
+    },
+    {
+      "id": "66",
+      "name": "Shapewear",
+      "originalImage": "/assets/shop/catalog/66-shapewear.jpg"
+    },
+    {
+      "id": "49",
+      "name": "Jackets",
+      "originalImage": "/assets/shop/catalog/49-jackets.jpg"
+    },
+    {
+      "id": "86",
+      "name": "Sanitary Pads",
+      "originalImage": "/assets/shop/catalog/86-sanitary-pads.jpg"
+    },
+    {
+      "id": "51",
+      "name": "Winter Clothing",
+      "originalImage": "/assets/shop/catalog/51-winter-clothing.jpg"
+    },
+    {
+      "id": "95",
+      "name": "Tissues",
+      "originalImage": "/assets/shop/catalog/95-tissues.jpg"
+    },
+    {
+      "id": "99",
+      "name": "Body Wash",
+      "originalImage": "/assets/shop/catalog/99-body-wash.jpg"
+    },
+    {
+      "id": "161",
+      "name": "Bobby Pins",
+      "originalImage": "/assets/shop/catalog/161-bobby-pins.jpg"
+    },
+    {
+      "id": "175",
+      "name": "Hand Cream",
+      "originalImage": "/assets/shop/catalog/175-hand-cream.jpg"
+    },
+    {
+      "id": "186",
+      "name": "Wax Strips",
+      "originalImage": "/assets/shop/catalog/186-wax-strips.jpg"
+    },
+    {
+      "id": "176",
+      "name": "Foot Scrub",
+      "originalImage": "/assets/shop/catalog/176-foot-scrub.jpg"
+    },
+    {
+      "id": "188",
+      "name": "Attar",
+      "originalImage": "/assets/shop/catalog/188-attar.jpg"
+    },
+    {
+      "id": "204",
+      "name": "Sunglasses",
+      "originalImage": "/assets/shop/catalog/204-sunglasses.jpg"
+    },
+    {
+      "id": "211",
+      "name": "Wallet",
+      "originalImage": "/assets/shop/catalog/211-wallet.jpg"
+    },
+    {
+      "id": "258",
+      "name": "Tablet",
+      "originalImage": "/assets/shop/catalog/258-tablet.jpg"
+    },
+    {
+      "id": "250",
+      "name": "Planner",
+      "originalImage": "/assets/shop/catalog/250-planner.jpg"
+    },
+    {
+      "id": "282",
+      "name": "Sports Bra",
+      "originalImage": "/assets/shop/catalog/282-sports-bra.jpg"
+    },
+    {
+      "id": "287",
+      "name": "Resistance Bands",
+      "originalImage": "/assets/shop/catalog/287-resistance-bands.jpg"
+    },
+    {
+      "id": "283",
+      "name": "Joggers",
+      "originalImage": "/assets/shop/catalog/283-joggers.jpg"
+    },
+    {
+      "id": "280",
+      "name": "Modest Workout Clothes",
+      "originalImage": "/assets/shop/catalog/280-modest-workout-clothes.jpg"
+    },
+    {
+      "id": "293",
+      "name": "Bandages",
+      "originalImage": "/assets/shop/catalog/293-bandages.jpg"
+    },
+    {
+      "id": "295",
+      "name": "Gauze",
+      "originalImage": "/assets/shop/catalog/295-gauze.jpg"
+    },
+    {
+      "id": "312",
+      "name": "Buttons",
+      "originalImage": "/assets/shop/catalog/312-buttons.jpg"
+    },
+    {
+      "id": "319",
+      "name": "Laundry Bags",
+      "originalImage": "/assets/shop/catalog/319-laundry-bags.jpg"
+    },
+    {
+      "id": "340",
+      "name": "New Prayer Mat",
+      "originalImage": "/assets/shop/catalog/340-new-prayer-mat.jpg"
+    }
+  ]
+}
