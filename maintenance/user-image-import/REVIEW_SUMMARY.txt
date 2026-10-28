@@ -1,0 +1,17 @@
+Annïka user-supplied catalog image review summary
+================================================
+Input ZIP: Annïka Catalog Image Compilation - Google Gemini_files-20261028T122556Z-1-001.zip
+Source image count: 335
+Optimized local JPG assets: 335
+Product IDs receiving supplied images: 303
+Direct candidate matches: 277
+Close variants: 26
+Reviewed but not mapped because no confident unique match: 32
+Catalog size: 350 products
+Products that use the existing local no-person placeholder after installer runs: 47
+Largest optimized image edge: 1000px
+Image quality setting: JPEG 87 / progressive / optimized
+Fashion hero uses source photo #275 → product ID 32 (Burqa / Niqab)
+Fashion feature panel uses source photo #041 → product ID 70 (Prayer Mat / Janamaz)
+
+Important: the import pack is prepared and installer-tested. It has NOT yet been committed to GitHub or deployed to Vercel. Live production remains unchanged until the files are added to the repository and a new READY deployment is verified.
