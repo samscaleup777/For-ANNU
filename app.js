@@ -1,4 +1,22 @@
+// On a browser reload, always begin at the top. Back/forward and normal navigation are untouched.
+const initialNavigation = performance.getEntriesByType?.('navigation')?.[0];
+const isReloadNavigation = initialNavigation?.type === 'reload';
+const forceReloadTop = () => {
+  window.scrollTo(0, 0);
+  document.documentElement.scrollTop = 0;
+  if (document.body) document.body.scrollTop = 0;
+};
+if (isReloadNavigation) {
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  forceReloadTop();
+  window.addEventListener('load', () => {
+    forceReloadTop();
+    requestAnimationFrame(() => requestAnimationFrame(forceReloadTop));
+  }, { once: true });
+}
+
 document.addEventListener('DOMContentLoaded',()=>{
+  if (isReloadNavigation) requestAnimationFrame(forceReloadTop);
   // Keep the heart-dot confined to the Annïka brand word and preserve word spacing.
   const decorateBrandNames = (root = document.body) => {
     if (!root || !window.NodeFilter) return;
@@ -13,7 +31,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
-    const wordChar = /[\\p{L}\\p{N}]$/u;
+    const wordChar = /[\p{L}\p{N}]$/u;
     nodes.forEach(node => {
       const value = node.nodeValue || '';
       const fragment = document.createDocumentFragment();
@@ -49,7 +67,7 @@ document.addEventListener('DOMContentLoaded',()=>{
         fragment.appendChild(word);
 
         cursor = matcher.lastIndex;
-        if (/[\\p{L}\\p{N}]/u.test(value.charAt(cursor))) fragment.appendChild(document.createTextNode(' '));
+        if (/[\p{L}\p{N}]/u.test(value.charAt(cursor))) fragment.appendChild(document.createTextNode(' '));
       }
       if (cursor === 0) return;
       fragment.appendChild(document.createTextNode(value.slice(cursor)));
