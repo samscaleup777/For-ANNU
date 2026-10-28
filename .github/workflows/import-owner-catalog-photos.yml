@@ -79,6 +79,7 @@ jobs:
 
           '''
           source = source[:start] + replacement + source[end:]
+          source = source.replace("    shutil.copy2(override_src, override_dest)", "    if override_src.resolve() != override_dest.resolve():\\n        shutil.copy2(override_src, override_dest)")
           p.write_text(source, encoding="utf-8")
           print("Installer compatibility patch applied.")
           PY
