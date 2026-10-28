@@ -5,7 +5,7 @@
   function boot() {
     const css = document.createElement('link');
     css.rel = 'stylesheet';
-    css.href = '/chatbot.css?v=8';
+    css.href = '/chatbot.css?v=9';
     document.head.appendChild(css);
 
     const root = document.createElement('div');
@@ -115,13 +115,27 @@
         a.className = 'annika-chat-product-card';
         a.href = safeHref(product.url, '/fashion.html#shop-products');
         a.setAttribute('aria-label', 'Find ' + product.name + ' in the shop');
+        const image = document.createElement('img');
+        image.className = 'annika-chat-product-image';
+        image.alt = String(product.name || 'Catalog product').slice(0, 120);
+        image.loading = 'lazy';
+        image.decoding = 'async';
+        image.src = safeHref(product.image, window.location.origin + '/assets/shop/catalog/01-hijab-chiffon.jpg');
+        image.addEventListener('error', () => {
+          image.onerror = null;
+          image.src = '/assets/shop/catalog/01-hijab-chiffon.jpg';
+        }, { once:true });
+        const details = document.createElement('span');
+        details.className = 'annika-chat-product-details';
         const name = document.createElement('strong');
         name.textContent = String(product.name).slice(0, 120);
         const section = document.createElement('span');
+        section.className = 'annika-chat-product-section';
         section.textContent = String(product.section || 'Annïka catalog').slice(0, 90);
         const cta = document.createElement('em');
-        cta.textContent = 'Find in shop ↗';
-        a.append(name, section, cta);
+        cta.textContent = 'View in shop ↗';
+        details.append(name, section, cta);
+        a.append(image, details);
         box.appendChild(a);
       });
       if (box.children.length > 1) row.appendChild(box);

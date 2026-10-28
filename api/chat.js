@@ -117,10 +117,15 @@ function getSearchTerms(message) {
 }
 
 function toChatProduct(p) {
+  const rawImage = String(p.image || '');
+  const image = rawImage.startsWith('/assets/shop/catalog/') && !rawImage.includes('..')
+    ? rawImage
+    : '/assets/shop/catalog/01-hijab-chiffon.jpg';
   return {
     id: String(p.id || ''),
     name: String(p.name || 'Catalog item'),
     section: String(p.section || 'Annïka catalog'),
+    image,
     url: '/fashion.html?search=' + encodeURIComponent(String(p.name || '')) + '#shop-products'
   };
 }

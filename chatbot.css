@@ -40,11 +40,14 @@
 .annika-chat-copy:hover{background:#fff;color:var(--annika-chat-forest)}
 .annika-chat-products{display:flex;flex-direction:column;gap:6px;margin:8px 0 2px 5px;width:min(91%,310px)}
 .annika-chat-products-heading{font-size:9px;font-weight:900;letter-spacing:.09em;text-transform:uppercase;color:var(--annika-chat-muted);margin:0 0 1px 2px}
-.annika-chat-product-card{display:grid;grid-template-columns:1fr auto;gap:2px 8px;padding:9px 10px;border:1px solid var(--annika-chat-line);border-radius:13px;background:rgba(255,255,255,.8);color:var(--annika-chat-forest);text-decoration:none;transition:border-color .2s ease,background .2s ease,transform .2s ease}
-.annika-chat-product-card:hover{border-color:rgba(201,130,79,.72);background:#fff;transform:translateY(-1px)}
-.annika-chat-product-card strong{font-size:11px;line-height:1.3;overflow-wrap:anywhere}
-.annika-chat-product-card span{grid-column:1/-1;font-size:9px;line-height:1.3;color:var(--annika-chat-muted)}
-.annika-chat-product-card em{grid-column:2;grid-row:1;font-style:normal;font-size:9px;font-weight:800;align-self:center;white-space:nowrap}
+.annika-chat-product-card{display:grid;grid-template-columns:68px minmax(0,1fr);align-items:center;gap:9px;padding:8px;border:1px solid var(--annika-chat-line);border-radius:13px;background:rgba(255,255,255,.88);color:var(--annika-chat-forest);text-decoration:none;transition:border-color .2s ease,background .2s ease,transform .2s ease,box-shadow .2s ease}
+.annika-chat-product-card:hover{border-color:rgba(201,130,79,.72);background:#fff;transform:translateY(-2px);box-shadow:0 8px 20px rgba(48,57,44,.08)}
+.annika-chat-product-image{display:block;width:68px;height:74px;object-fit:contain;background:#f8f3e8;border:1px solid rgba(115,100,75,.12);border-radius:9px}
+.annika-chat-product-details{display:flex;min-width:0;flex-direction:column;align-items:flex-start;gap:4px}
+.annika-chat-product-card strong{font-size:11px;line-height:1.35;overflow-wrap:anywhere}
+.annika-chat-product-section{font-size:9px;line-height:1.3;color:var(--annika-chat-muted)}
+.annika-chat-product-card em{font-style:normal;font-size:9px;font-weight:800;white-space:nowrap;color:var(--annika-chat-forest)}
+
 .annika-chat-composer-meta{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:7px}
 .annika-chat-footnote{margin:0;text-align:left;font-size:9px}
 .annika-chat-counter{font-size:9px;color:#81776a;white-space:nowrap;font-variant-numeric:tabular-nums}
@@ -60,6 +63,8 @@
   .annika-chat-status{font-size:10px}
   .annika-chat-clear,.annika-chat-close{width:29px;height:29px;flex-basis:29px}
   .annika-chat-products{width:94%}
+  .annika-chat-product-card{grid-template-columns:58px minmax(0,1fr);gap:8px}
+  .annika-chat-product-image{width:58px;height:64px}
   .annika-chat-row .annika-chat-bubble{max-width:95%}
   .annika-chat-composer-meta{gap:6px}
 }
