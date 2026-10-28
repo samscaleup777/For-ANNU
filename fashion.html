@@ -156,6 +156,20 @@ body.fashion-page{background:#f8f3e8}
   .product-quickview-description { margin: 14px 0 10px; }
   .product-quickview-actions { margin-top: 15px; }
 }
+
+.product-quickview-photo.has-gallery { display:flex; flex-direction:column; align-items:stretch; justify-content:center; gap:9px; padding:12px; box-sizing:border-box; }
+.product-quickview-photo.has-gallery .product-quickview-image { display:block; width:100%; height:auto; flex:1 1 auto; min-height:0; max-height:min(62vh,600px); object-fit:contain; }
+.product-quickview-thumbnails { display:flex; flex:0 0 auto; align-self:stretch; gap:8px; overflow-x:auto; overscroll-behavior-x:contain; padding:2px 1px 6px; }
+.product-quickview-thumb { display:block; flex:0 0 58px; width:58px; height:66px; padding:2px; border:1px solid var(--line); border-radius:9px; background:#fff; cursor:pointer; opacity:.86; transition:transform .2s ease, border-color .2s ease, opacity .2s ease; }
+.product-quickview-thumb img { display:block; width:100%; height:100%; object-fit:contain; border-radius:6px; }
+.product-quickview-thumb:hover { transform:translateY(-2px); opacity:1; }
+.product-quickview-thumb.active { border:2px solid var(--forest); opacity:1; }
+@media(max-width:680px) {
+  .product-quickview-photo.has-gallery { min-height:260px; max-height:44vh; padding:8px; gap:6px; }
+  .product-quickview-photo.has-gallery .product-quickview-image { max-height:31vh; }
+  .product-quickview-thumb { flex-basis:48px; width:48px; height:54px; }
+}
+
 @media(prefers-reduced-motion:reduce){.product-quickview-backdrop{animation:none}}
 </style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"CollectionPage","name":"Annïka Shop","description":"Modest fashion and everyday essentials for Muslim women.","url":"https://annika-website-one.vercel.app/fashion.html","isPartOf":{"@type":"WebSite","name":"Annïka","url":"https://annika-website-one.vercel.app/"}}</script>
@@ -176,7 +190,7 @@ body.fashion-page{background:#f8f3e8}
 </main>
 <footer class="footer"><div class="wrap footer-in"><div><a class="brand" href="/" aria-label="Annïka home"><span class="brand-mark-shell" aria-hidden="true"><img class="brand-logo-exact" src="/assets/annika-mark-exact-visible.png?logo=4" alt="" draggable="false"></span><span class="brand-word" aria-label="Annïka">Ann<span class="brand-heart-i">ı<span class="brand-heart-dot" aria-hidden="true">♥</span></span>ka</span></a></div><nav class="footer-links"><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a><a href="/disclaimer.html">Disclaimer</a><a href="/contact.html">Contact</a><a href="/image-credits.html">Image credits</a></nav><div style="font-size:12px;color:var(--muted)">© <span data-year></span> Annïka</div></div></footer>
 <div class="modal-backdrop" id="checkoutBackdrop" aria-hidden="true"><div class="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle"><div class="modal-head"><h3 id="checkoutTitle">Your Annïka order</h3><button class="modal-close" type="button" onclick="closeCheckout()" aria-label="Close checkout">×</button></div><div class="checkout-body"><div id="checkoutMain"><div class="payment-grid"><div class="payment-card"><h3>Your cart</h3><div class="cart-list" id="cartList"></div><div class="checkout-total"><span>Total</span><strong id="checkoutTotal">৳0</strong></div></div><div class="payment-card"><h3>Delivery &amp; payment</h3><form class="payment-form" id="checkoutForm"><input name="name" required placeholder="Full name"><input name="phone" required placeholder="Mobile number"><input name="email" type="email" placeholder="Email address"><textarea name="address" required placeholder="Delivery address"></textarea><select name="district" required><option value="">Select district</option><option>Dhaka</option><option>Chattogram</option><option>Rajshahi</option><option>Khulna</option><option>Barishal</option><option>Sylhet</option><option>Rangpur</option><option>Mymensingh</option></select><select name="bank" id="bankSelect"><option value="">Select bank (for bank transfer)</option><option>BRAC Bank PLC</option><option>Dutch-Bangla Bank PLC</option><option>Eastern Bank PLC</option><option>Prime Bank PLC</option><option>City Bank PLC</option></select><input name="transactionId" id="transactionId" placeholder="Transaction ID (required for wallet/manual bank payment)"><textarea name="note" placeholder="Order note (size, colour, delivery note…)"></textarea><button class="checkout-submit" type="submit">Place order request</button></form><div class="shop-footnote">This prototype records the order details in the browser and shows a confirmation. Connect a database/order API before accepting real customer orders.</div></div></div></div><div class="order-success" id="orderSuccess"><div class="success-mark">✓</div><h3>Order request saved.</h3><p>Your order details are stored in this browser for the prototype. Connect the checkout to your real order system and merchant accounts before launch.</p><button class="btn primary" type="button" onclick="closeCheckout()">Continue shopping</button></div></div></div></div>
-<script src="/shop.js?v=23" defer></script>
+<script src="/shop.js?v=24" defer></script>
 
 <script src="/chatbot.js?v=9" defer></script>
 <script src="/app.js?v=18" defer></script>

@@ -221,7 +221,9 @@ function openProductDetails(id){
     '<section class="product-quickview-panel" role="dialog" aria-modal="true" aria-labelledby="productQuickTitle">'+
       '<button class="product-quickview-close" type="button" aria-label="Close product details">×</button>'+
       '<div class="product-quickview-layout">'+
-        '<div class="product-quickview-photo"><img class="product-quickview-image" alt="" draggable="false"><span class="product-quickview-zoom-note">Product photo · Click outside to close</span></div>'+
+        '<div class="product-quickview-photo'+(Array.isArray(p.gallery_images)&&p.gallery_images.length?' has-gallery':'')+'"><img class="product-quickview-image" alt="" draggable="false">'+
+        (Array.isArray(p.gallery_images)&&p.gallery_images.length?'<div class="product-quickview-thumbnails" aria-label="Additional supplied photos">'+p.gallery_images.map((src,index)=>'<button class="product-quickview-thumb" type="button" data-gallery-src="'+quickViewEscape(src)+'" aria-label="View additional photo '+(index+1)+'"><img src="'+quickViewEscape(src)+'" alt="" loading="lazy"></button>').join('')+'</div>':'')+
+        '<span class="product-quickview-zoom-note">Product photo · Click outside to close</span></div>'+
         '<div class="product-quickview-info">'+
           '<span class="product-quickview-kicker">'+quickViewEscape(p.section||"Annïka catalog")+'</span>'+
           '<h2 id="productQuickTitle">'+quickViewEscape(p.name)+'</h2>'+
@@ -240,6 +242,13 @@ function openProductDetails(id){
     bigImage.onerror=null;
     bigImage.src=p.image||productOnlyPlaceholder(p);
   },{once:true});
+  modal.querySelectorAll("[data-gallery-src]").forEach(button=>{
+    button.addEventListener("click",()=>{
+      bigImage.src=button.dataset.gallerySrc;
+      bigImage.alt=String(p.name||"Product")+" — additional supplied product photo";
+      modal.querySelectorAll("[data-gallery-src]").forEach(item=>item.classList.toggle("active",item===button));
+    });
+  });
   modal.querySelector(".product-quickview-close").addEventListener("click",closeProductDetails);
   modal.addEventListener("click",event=>{if(event.target===modal)closeProductDetails()});
   modal.querySelector(".product-quickview-add").addEventListener("click",()=>{closeProductDetails();add(String(p.id))});

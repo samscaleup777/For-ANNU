@@ -473,7 +473,10 @@
       "image": "/assets/shop/catalog/user-provided/source-303.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-303.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-321.jpg"
+      ]
     },
     {
       "id": "25",
@@ -613,7 +616,10 @@
       "image": "/assets/shop/catalog/user-provided/source-113.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-113.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-332.jpg"
+      ]
     },
     {
       "id": "32",
@@ -732,7 +738,11 @@
       "image": "/assets/shop/catalog/user-provided/source-073.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-073.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-308.jpg",
+        "/assets/shop/catalog/user-provided/source-311.jpg"
+      ]
     },
     {
       "id": "38",
@@ -752,7 +762,10 @@
       "image": "/assets/shop/catalog/user-provided/source-295.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-295.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-313.jpg"
+      ]
     },
     {
       "id": "39",
@@ -812,7 +825,10 @@
       "image": "/assets/shop/catalog/user-provided/source-314.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-314.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-320.jpg"
+      ]
     },
     {
       "id": "42",
@@ -931,7 +947,10 @@
       "image": "/assets/shop/catalog/user-provided/source-282.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-282.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-294.jpg"
+      ]
     },
     {
       "id": "48",
@@ -1030,7 +1049,10 @@
       "image": "/assets/shop/catalog/user-provided/source-301.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-301.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-324.jpg"
+      ]
     },
     {
       "id": "53",
@@ -1101,7 +1123,10 @@
       "image": "/assets/shop/catalog/user-provided/source-044.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-044.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-298.jpg"
+      ]
     },
     {
       "id": "57",
@@ -1379,7 +1404,10 @@
       "image": "/assets/shop/catalog/user-provided/source-097.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-097.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-227.jpg"
+      ]
     },
     {
       "id": "73",
@@ -1499,7 +1527,10 @@
       "image": "/assets/shop/catalog/user-provided/source-102.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-102.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-268.jpg"
+      ]
     },
     {
       "id": "79",
@@ -2094,7 +2125,10 @@
       "image": "/assets/shop/catalog/user-provided/source-245.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-245.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-255.jpg"
+      ]
     },
     {
       "id": "113",
@@ -2329,7 +2363,10 @@
       "image": "/assets/shop/catalog/user-provided/source-080.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-080.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-208.jpg"
+      ]
     },
     {
       "id": "127",
@@ -2380,7 +2417,10 @@
       "image": "/assets/shop/catalog/user-provided/source-224.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-224.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-233.jpg"
+      ]
     },
     {
       "id": "130",
@@ -2397,7 +2437,10 @@
       "image": "/assets/shop/catalog/user-provided/source-225.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-225.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-228.jpg"
+      ]
     },
     {
       "id": "131",
@@ -2448,7 +2491,10 @@
       "image": "/assets/shop/catalog/user-provided/source-223.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-223.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-230.jpg"
+      ]
     },
     {
       "id": "134",
@@ -2498,7 +2544,10 @@
       "image": "/assets/shop/catalog/user-provided/source-191.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-191.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-207.jpg"
+      ]
     },
     {
       "id": "137",
@@ -2770,7 +2819,10 @@
       "image": "/assets/shop/catalog/user-provided/source-200.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-200.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-202.jpg"
+      ]
     },
     {
       "id": "153",
@@ -2973,7 +3025,10 @@
       "image": "/assets/shop/catalog/user-provided/source-185.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-185.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-189.jpg"
+      ]
     },
     {
       "id": "165",
@@ -3226,7 +3281,10 @@
       "image": "/assets/shop/catalog/user-provided/source-090.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-090.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-170.jpg"
+      ]
     },
     {
       "id": "180",
@@ -3243,7 +3301,10 @@
       "image": "/assets/shop/catalog/user-provided/source-049.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-049.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-158.jpg"
+      ]
     },
     {
       "id": "181",
@@ -3396,7 +3457,12 @@
       "image": "/assets/shop/catalog/user-provided/source-152.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-152.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-156.jpg",
+        "/assets/shop/catalog/user-provided/source-201.jpg",
+        "/assets/shop/catalog/user-provided/source-205.jpg"
+      ]
     },
     {
       "id": "190",
@@ -3464,7 +3530,10 @@
       "image": "/assets/shop/catalog/user-provided/source-157.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-157.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-239.jpg"
+      ]
     },
     {
       "id": "194",
@@ -3684,7 +3753,10 @@
       "image": "/assets/shop/catalog/user-provided/source-183.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-183.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-335.jpg"
+      ]
     },
     {
       "id": "207",
@@ -3718,7 +3790,10 @@
       "image": "/assets/shop/catalog/user-provided/source-063.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-063.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-127.jpg"
+      ]
     },
     {
       "id": "209",
@@ -3735,7 +3810,10 @@
       "image": "/assets/shop/catalog/user-provided/source-109.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-109.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-142.jpg"
+      ]
     },
     {
       "id": "210",
@@ -4024,7 +4102,10 @@
       "image": "/assets/shop/catalog/user-provided/source-047.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-047.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-128.jpg"
+      ]
     },
     {
       "id": "227",
@@ -4245,7 +4326,10 @@
       "image": "/assets/shop/catalog/user-provided/source-111.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-111.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-211.jpg"
+      ]
     },
     {
       "id": "240",
@@ -4813,7 +4897,10 @@
       "image": "/assets/shop/catalog/user-provided/source-081.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-081.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-247.jpg"
+      ]
     },
     {
       "id": "272",
@@ -6066,7 +6153,10 @@
       "image": "/assets/shop/catalog/user-provided/source-014.jpg",
       "image_source": "user-provided-local-reviewed",
       "image_source_file": "source-014.jpg",
-      "image_match_review": "exact-candidate"
+      "image_match_review": "exact-candidate",
+      "gallery_images": [
+        "/assets/shop/catalog/user-provided/source-274.jpg"
+      ]
     },
     {
       "id": "342",
