@@ -17,21 +17,45 @@ if (isReloadNavigation) {
 
 document.addEventListener('DOMContentLoaded',()=>{
   if (isReloadNavigation) requestAnimationFrame(forceReloadTop);
-  // Keep the heart-dot confined to the Annïka brand word and preserve word spacing.
+  // Replace the dot on the “i” in Annïka; preserve word boundaries across nested HTML elements.
+  const isWordChar = ch => !!ch && /[\p{L}\p{N}]/u.test(ch);
+  const lastChar = value => {
+    const text = String(value || '');
+    return text ? Array.from(text).slice(-1)[0] : '';
+  };
+  const firstChar = value => {
+    const text = String(value || '');
+    return text ? Array.from(text)[0] : '';
+  };
+  const siblingText = (node, direction) => {
+    let current = node;
+    while (current && current !== document.body) {
+      let sibling = direction === 'before' ? current.previousSibling : current.nextSibling;
+      while (sibling) {
+        if (sibling.nodeType === Node.TEXT_NODE) {
+          if (sibling.nodeValue) return sibling.nodeValue;
+        } else if (sibling.nodeType === Node.ELEMENT_NODE) {
+          const value = sibling.textContent || '';
+          if (value) return value;
+        }
+        sibling = direction === 'before' ? sibling.previousSibling : sibling.nextSibling;
+      }
+      current = current.parentNode;
+    }
+    return '';
+  };
   const decorateBrandNames = (root = document.body) => {
     if (!root || !window.NodeFilter) return;
-    const accepts = /ann(?:ï|i|ı)ka/i;
     const matcher = /ann(?:ï|i|ı)ka/gi;
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode(node) {
         const parent = node.parentElement;
         if (!parent || parent.closest('script,style,noscript,textarea,input,select,option,code,pre,[contenteditable="true"],.brand,.brand-name-inline')) return NodeFilter.FILTER_REJECT;
-        return accepts.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+        return /ann(?:ï|i|ı)ka/i.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
       }
     });
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
-    const wordChar = /[\p{L}\p{N}]$/u;
     nodes.forEach(node => {
       const value = node.nodeValue || '';
       const fragment = document.createDocumentFragment();
@@ -40,14 +64,8 @@ document.addEventListener('DOMContentLoaded',()=>{
       while ((match = matcher.exec(value))) {
         const prefix = value.slice(cursor, match.index);
         if (prefix) fragment.appendChild(document.createTextNode(prefix));
-        let addSpaceBefore = prefix ? wordChar.test(prefix) : false;
-        if (!prefix && match.index === 0) {
-          let previous = node.previousSibling;
-          if (!previous && node.parentElement) previous = node.parentElement.previousSibling;
-          const priorText = previous?.textContent || '';
-          addSpaceBefore = wordChar.test(priorText);
-        }
-        if (addSpaceBefore) fragment.appendChild(document.createTextNode(' '));
+        const previousChar = prefix ? lastChar(prefix) : lastChar(siblingText(node, 'before'));
+        if (isWordChar(previousChar)) fragment.appendChild(document.createTextNode(' '));
 
         const found = match[0];
         const word = document.createElement('span');
@@ -67,7 +85,9 @@ document.addEventListener('DOMContentLoaded',()=>{
         fragment.appendChild(word);
 
         cursor = matcher.lastIndex;
-        if (/[\p{L}\p{N}]/u.test(value.charAt(cursor))) fragment.appendChild(document.createTextNode(' '));
+        const remaining = value.slice(cursor);
+        const nextChar = remaining ? firstChar(remaining) : firstChar(siblingText(node, 'after'));
+        if (isWordChar(nextChar)) fragment.appendChild(document.createTextNode(' '));
       }
       if (cursor === 0) return;
       fragment.appendChild(document.createTextNode(value.slice(cursor)));
@@ -75,14 +95,14 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   };
   decorateBrandNames();
-  // Product cards and other content can be inserted after initial page load.
+  // Catch late-rendered text too, including links/cards inserted by other scripts.
   const brandNameObserver = new MutationObserver(records => {
-    const addedPageContent = records.some(record => [...record.addedNodes].some(node => {
+    const hasNewUnprocessedText = records.some(record => [...record.addedNodes].some(node => {
       if (node.nodeType === Node.ELEMENT_NODE && node.matches('.brand-name-inline')) return false;
       if (node.nodeType === Node.TEXT_NODE && node.parentElement?.closest('.brand-name-inline')) return false;
-      return true;
+      return node.nodeType === Node.TEXT_NODE || node.nodeType === Node.ELEMENT_NODE;
     }));
-    if (addedPageContent) decorateBrandNames();
+    if (hasNewUnprocessedText) decorateBrandNames();
   });
   brandNameObserver.observe(document.body, { childList: true, subtree: true });
 
