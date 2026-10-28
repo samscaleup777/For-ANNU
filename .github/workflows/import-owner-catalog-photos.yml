@@ -45,6 +45,68 @@ jobs:
           cp "$PACK/REVIEW_SUMMARY.txt" maintenance/user-image-import/REVIEW_SUMMARY.txt
           cp -a "$PACK/maintenance/mapping-contact-sheets" maintenance/user-image-import/
 
+      - name: Adapt installer to existing local-only shop code
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path("INSTALL_USER_CATALOG_IMAGES.py")
+          source = p.read_text(encoding="utf-8")
+          old = '''    start = shop_js.find("async function fetchBetterPhoto(p,img,credit){")
+              end = shop_js.find("async function init(){", start + 1)
+              if start < 0 or end < 0:
+                  die("Could not safely locate remote photo-refinement functions in shop.js; no writes performed.")
+              shop_js = (
+                  shop_js[:start]
+                  + "function fetchBetterPhoto(){ return Promise.resolve(); }\\n"
+                  + "function enableRemotePhotoRefinement(){ return; }\\n"
+                  + shop_js[end:]
+              )
+          '''
+          new = '''    start = shop_js.find("async function fetchBetterPhoto(p,img,credit){")
+              end = shop_js.find("async function init(){", start + 1) if start >= 0 else -1
+              if start >= 0 and end >= 0:
+                  shop_js = (
+                      shop_js[:start]
+                      + "function fetchBetterPhoto(){ return Promise.resolve(); }\\n"
+                      + "function enableRemotePhotoRefinement(){ return; }\\n"
+                      + shop_js[end:]
+                  )
+              elif not ("function fetchBetterPhoto(){ return Promise.resolve(); }" in shop_js and "function enableRemotePhotoRefinement(){ return; }" in shop_js):
+                  die("Could not safely locate remote photo-refinement functions in shop.js; no writes performed.")
+          '''
+          if old not in source:
+              # Handle importer source indentation as stored in this pack.
+              start = source.find('    start = shop_js.find("async function fetchBetterPhoto(p,img,credit){")')
+              end = source.find('    old_assignment = ', start)
+              if start < 0 or end < 0:
+                  raise SystemExit("Cannot patch importer compatibility section safely.")
+              replacement = '''    start = shop_js.find("async function fetchBetterPhoto(p,img,credit){")
+              end = shop_js.find("async function init(){", start + 1) if start >= 0 else -1
+              if start >= 0 and end >= 0:
+                  shop_js = (
+                      shop_js[:start]
+                      + "function fetchBetterPhoto(){ return Promise.resolve(); }\\n"
+                      + "function enableRemotePhotoRefinement(){ return; }\\n"
+                      + shop_js[end:]
+                  )
+              elif not ("function fetchBetterPhoto(){ return Promise.resolve(); }" in shop_js and "function enableRemotePhotoRefinement(){ return; }" in shop_js):
+                  die("Could not safely locate remote photo-refinement functions in shop.js; no writes performed.")
+
+          '''
+              source = source[:start] + replacement + source[end:]
+          else:
+              source = source.replace(old, new, 1)
+
+          old_map = '''        if count != 1:
+                  die("Could not safely replace catalog placeholder mapping in shop.js; no writes performed.")'''
+          if old_map in source:
+              source = source.replace(old_map, '''        if count != 1 and "state.products=(data.products||[]);" not in shop_js:
+                  die("Could not safely replace catalog placeholder mapping in shop.js; no writes performed.")''', 1)
+          p.write_text(source, encoding="utf-8")
+          print("Installer compatibility patch applied.")
+          PY
+
       - name: Map photos to products and disable remote image substitutions
         run: |
           set -euo pipefail
