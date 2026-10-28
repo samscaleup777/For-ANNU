@@ -320,32 +320,21 @@ img.brand-logo-exact,
   }
 }
 
-/* Annïka signature heart accent — animated across every page heading. */
-main h1:not(.brand-word)::before,
-main h2::before,
-main h3::before {
-  content: "♥";
-  display: block;
-  width: 100%;
-  text-align: inherit;
-  color: var(--accent2, #c9824f);
-  font-family: Arial, sans-serif;
-  font-size: clamp(9px, .38em, 15px);
-  font-weight: 700;
-  line-height: 1;
-  margin: 0 0 .28em;
-  opacity: .96;
-  transform-origin: center;
-  text-shadow: 0 2px 8px rgba(201,130,79,.24);
-  animation: annikaHeadingHeart 3.6s ease-in-out infinite;
-  pointer-events: none;
+/* Replace the dot on the brand-name “i” with a small animated heart wherever the name appears in page text. */
+.brand-name-inline {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: baseline;
 }
-@keyframes annikaHeadingHeart {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-3px) scale(1.09); }
+.brand-name-inline .brand-heart-i {
+  display: inline-block;
+  position: relative;
+  line-height: inherit;
+}
+.brand-name-inline .brand-heart-dot {
+  top: -.06em !important;
+  font-size: .34em !important;
 }
 @media (prefers-reduced-motion: reduce) {
-  main h1:not(.brand-word)::before,
-  main h2::before,
-  main h3::before { animation: none !important; }
+  .brand-name-inline .brand-heart-dot { animation: none !important; }
 }

@@ -1,4 +1,50 @@
 document.addEventListener('DOMContentLoaded',()=>{
+  // Render the Annïka brand name consistently: replace the ordinary i-dot with an animated heart.
+  const decorateBrandNames = () => {
+    if (!document.body || !window.NodeFilter) return;
+    const accepts = /ann(?:ï|i|ı)ka/i;
+    const matcher = /ann(?:ï|i|ı)ka/gi;
+    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode(node) {
+        const parent = node.parentElement;
+        if (!parent || parent.closest('script,style,noscript,textarea,input,select,option,code,pre,[contenteditable="true"],.brand,.brand-name-inline')) return NodeFilter.FILTER_REJECT;
+        return accepts.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    const nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node => {
+      const value = node.nodeValue || '';
+      const fragment = document.createDocumentFragment();
+      let cursor = 0, match;
+      matcher.lastIndex = 0;
+      while ((match = matcher.exec(value))) {
+        fragment.appendChild(document.createTextNode(value.slice(cursor, match.index)));
+        const found = match[0];
+        const word = document.createElement('span');
+        word.className = 'brand-name-inline';
+        word.setAttribute('aria-label', found);
+        word.appendChild(document.createTextNode(found.slice(0, 3)));
+        const letter = document.createElement('span');
+        letter.className = 'brand-heart-i';
+        letter.appendChild(document.createTextNode('ı'));
+        const heart = document.createElement('span');
+        heart.className = 'brand-heart-dot';
+        heart.setAttribute('aria-hidden', 'true');
+        heart.textContent = '♥';
+        letter.appendChild(heart);
+        word.appendChild(letter);
+        word.appendChild(document.createTextNode(found.slice(-2)));
+        fragment.appendChild(word);
+        cursor = matcher.lastIndex;
+      }
+      if (cursor === 0) return;
+      fragment.appendChild(document.createTextNode(value.slice(cursor)));
+      node.parentNode.replaceChild(fragment, node);
+    });
+  };
+  decorateBrandNames();
+
   const main=document.querySelector('main');
   if(main&&!main.id)main.id='main-content';
   if(main&&!document.querySelector('.skip-link')){const skip=document.createElement('a');skip.className='skip-link';skip.href='#main-content';skip.textContent='Skip to content';document.body.prepend(skip)}
