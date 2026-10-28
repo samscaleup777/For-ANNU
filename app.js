@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded',()=>{
-  // Render the Annïka brand name consistently: replace the ordinary i-dot with an animated heart.
-  const decorateBrandNames = () => {
-    if (!document.body || !window.NodeFilter) return;
+  // Keep the heart-dot confined to the Annïka brand word and preserve word spacing.
+  const decorateBrandNames = (root = document.body) => {
+    if (!root || !window.NodeFilter) return;
     const accepts = /ann(?:ï|i|ı)ka/i;
     const matcher = /ann(?:ï|i|ı)ka/gi;
-    const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
       acceptNode(node) {
         const parent = node.parentElement;
         if (!parent || parent.closest('script,style,noscript,textarea,input,select,option,code,pre,[contenteditable="true"],.brand,.brand-name-inline')) return NodeFilter.FILTER_REJECT;
@@ -13,13 +13,24 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
     const nodes = [];
     while (walker.nextNode()) nodes.push(walker.currentNode);
+    const wordChar = /[\\p{L}\\p{N}]$/u;
     nodes.forEach(node => {
       const value = node.nodeValue || '';
       const fragment = document.createDocumentFragment();
       let cursor = 0, match;
       matcher.lastIndex = 0;
       while ((match = matcher.exec(value))) {
-        fragment.appendChild(document.createTextNode(value.slice(cursor, match.index)));
+        const prefix = value.slice(cursor, match.index);
+        if (prefix) fragment.appendChild(document.createTextNode(prefix));
+        let addSpaceBefore = prefix ? wordChar.test(prefix) : false;
+        if (!prefix && match.index === 0) {
+          let previous = node.previousSibling;
+          if (!previous && node.parentElement) previous = node.parentElement.previousSibling;
+          const priorText = previous?.textContent || '';
+          addSpaceBefore = wordChar.test(priorText);
+        }
+        if (addSpaceBefore) fragment.appendChild(document.createTextNode(' '));
+
         const found = match[0];
         const word = document.createElement('span');
         word.className = 'brand-name-inline';
@@ -36,7 +47,9 @@ document.addEventListener('DOMContentLoaded',()=>{
         word.appendChild(letter);
         word.appendChild(document.createTextNode(found.slice(-2)));
         fragment.appendChild(word);
+
         cursor = matcher.lastIndex;
+        if (/[\\p{L}\\p{N}]/u.test(value.charAt(cursor))) fragment.appendChild(document.createTextNode(' '));
       }
       if (cursor === 0) return;
       fragment.appendChild(document.createTextNode(value.slice(cursor)));
@@ -44,6 +57,16 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   };
   decorateBrandNames();
+  // Product cards and other content can be inserted after initial page load.
+  const brandNameObserver = new MutationObserver(records => {
+    const addedPageContent = records.some(record => [...record.addedNodes].some(node => {
+      if (node.nodeType === Node.ELEMENT_NODE && node.matches('.brand-name-inline')) return false;
+      if (node.nodeType === Node.TEXT_NODE && node.parentElement?.closest('.brand-name-inline')) return false;
+      return true;
+    }));
+    if (addedPageContent) decorateBrandNames();
+  });
+  brandNameObserver.observe(document.body, { childList: true, subtree: true });
 
   const main=document.querySelector('main');
   if(main&&!main.id)main.id='main-content';
