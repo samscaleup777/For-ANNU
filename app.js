@@ -91,7 +91,12 @@ document.addEventListener('DOMContentLoaded',()=>{
       }
       if (cursor === 0) return;
       fragment.appendChild(document.createTextNode(value.slice(cursor)));
-      node.parentNode.replaceChild(fragment, node);
+      // Keep all parts of a decorated brand-name text run inside one inline wrapper.
+      // This prevents spaces from being trimmed when the parent is an inline-flex CTA.
+      const textRun = document.createElement('span');
+      textRun.className = 'brand-text-run';
+      textRun.appendChild(fragment);
+      node.parentNode.replaceChild(textRun, node);
     });
   };
   decorateBrandNames();
