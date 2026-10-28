@@ -3,7 +3,7 @@ const DATA_URL="/data/shop-catalog.json";
 const state={products:[],cart:JSON.parse(localStorage.getItem("annikaCart")||"[]"),section:"all",query:"",payment:"bkash"};
 const photoCache=new Map(),usedPhotoUrls=new Set();
 let photoObserver=null;
-const PHOTO_STORE_KEY="annikaCuratedPhotoMapV6";
+const PHOTO_STORE_KEY="annikaLocalPhotoMapV1"; try{["annikaCuratedPhotoMapV6","annikaCuratedPhotoMapV5","annikaCuratedPhotoMapV4","annikaCuratedPhotoMapV3","annikaCuratedPhotoMapV2","annikaCuratedPhotoMapV1"].forEach(k=>localStorage.removeItem(k))}catch(e){}
 const savedPhotos=(()=>{try{["annikaCuratedPhotoMapV5","annikaCuratedPhotoMapV4","annikaCuratedPhotoMapV3","annikaCuratedPhotoMapV2","annikaCuratedPhotoMapV1"].forEach(k=>localStorage.removeItem(k));const data=JSON.parse(localStorage.getItem(PHOTO_STORE_KEY)||"{}");return data&&typeof data==="object"?data:{}}catch(e){return {}}})();
 const REGIONAL_TERMS=["Bangladesh","Pakistan","Saudi Arabia","United Arab Emirates","Arab world","Middle East","South Asia","Malaysia","Indonesia","Turkey","Morocco","Egypt"];
 function persistPhoto(id,rec){try{savedPhotos[id]=rec;localStorage.setItem(PHOTO_STORE_KEY,JSON.stringify(savedPhotos))}catch(e){}}
@@ -351,99 +351,8 @@ enableRemotePhotoRefinement();
   const grid=document.getElementById("shop-products");if(grid&&state.section!=="all")grid.scrollIntoView({behavior:"smooth",block:"start"});
 };
 
-async function fetchBetterPhoto(p,img,credit){
-  if(!p||!img||img.dataset.photoLoaded==="1"||img.dataset.photoLoading==="1")return;
-  img.dataset.photoLoading="1";
-  const cacheKey=p.id;
-  const rawLocalImage=p.image||("/assets/shop/catalog/"+p.slug+".jpg");
-  const localImage=rawLocalImage.startsWith("data:")?rawLocalImage:rawLocalImage+(rawLocalImage.includes("?")?"&":"?")+"v=18";
-  const applyRecord=(rec)=>{
-    img.src=rec.url;
-    if(credit){credit.href=rec.landing||rec.url;credit.textContent="Photo source"+(rec.provider?" · "+rec.provider:"")+(rec.license?" · "+rec.license:"");credit.hidden=false}
-    img.dataset.photoLoaded="1";
-    delete img.dataset.photoLoading;
-  };
-  // Old localStorage entries were selected by a loose keyword match. Never
-  // reuse them; V3 only stores images that pass product-name and sensitivity checks.
-  const existing=savedPhotos[cacheKey];
-  if(existing && existing.url && existing.license && existing.landing){
-    const rec={...existing,title:existing.title||""};
-    const synthetic={title:rec.title||"",description:rec.description||"",url:rec.url,license:rec.license,license_url:rec.license_url,provider:rec.provider,creator:rec.creator};
-    if(isUsablePhoto(synthetic,p) && !usedPhotoUrls.has(rec.url)){
-      usedPhotoUrls.add(rec.url);photoCache.set(cacheKey,rec);applyRecord(rec);return;
-    }
-    delete savedPhotos[cacheKey];
-    try{localStorage.setItem(PHOTO_STORE_KEY,JSON.stringify(savedPhotos))}catch(e){}
-  }
-  for(const q of openverseQuery(p)){
-    try{
-      const r=await fetch("/api/images?q="+encodeURIComponent(q),{});
-      if(!r.ok)continue;
-      const data=await r.json();
-      const candidates=(data.results||[])
-        .filter(x=>isUsablePhoto(x,p)&&!usedPhotoUrls.has(x.url||x.thumbnail))
-        .map(x=>({...x,_relevance:photoRelevance(x,p)}))
-        .sort((a,b)=>b._relevance-a._relevance);
-      const pick=candidates[0];
-      // No low-confidence image substitutions. Keep this product's own local
-      // catalog file rather than showing a different item or a person on a
-      // sensitive-product card.
-      if(!pick)continue;
-      const url=pick.url||pick.thumbnail;
-      const rec={
-        url,
-        landing:pick.foreign_landing_url||pick.detail_url||url,
-        creator:pick.creator||"",
-        provider:pick.provider||pick.source||"Open source",
-        license:pick.license||"",
-        license_url:pick.license_url||"",
-        title:pick.title||"",
-        description:pick.description||""
-      };
-      usedPhotoUrls.add(url);
-      photoCache.set(cacheKey,rec);
-      persistPhoto(cacheKey,rec);
-      img.onerror=()=>{
-        img.onerror=null;
-        img.src=localImage;
-        if(credit)credit.hidden=true;
-        delete img.dataset.photoLoading;
-      };
-      applyRecord(rec);
-      return;
-    }catch(e){}
-  }
-  img.src=localImage;
-  if(credit)credit.hidden=true;
-  img.dataset.photoLoaded="1";
-  delete img.dataset.photoLoading;
-}
-function enableRemotePhotoRefinement(){
-  if(photoObserver){photoObserver.disconnect();photoObserver=null;}
-  const images=[...document.querySelectorAll("#productGrid .product-card img")];
-  if(!images.length)return;
-  const lookup=(img)=>{
-    const card=img.closest(".product-card");
-    const product=state.products.find(p=>String(p.id)===String(card?.dataset.id));
-    if(!product)return;
-    if(verifiedPhotoIds.has(String(product.id))){img.dataset.photoLoaded="1";return;}
-    const credit=img.closest(".product-media")?.querySelector(".photo-credit");
-    fetchBetterPhoto(product,img,credit);
-  };
-  if("IntersectionObserver" in window){
-    photoObserver=new IntersectionObserver(entries=>{
-      for(const entry of entries){
-        if(!entry.isIntersecting)continue;
-        photoObserver.unobserve(entry.target);
-        lookup(entry.target);
-      }
-    },{rootMargin:"320px 0px"});
-    images.forEach(img=>photoObserver.observe(img));
-  }else{
-    images.slice(0,18).forEach(lookup);
-  }
-}
-
+function fetchBetterPhoto(){ return Promise.resolve(); }
+function enableRemotePhotoRefinement(){ return; }
 async function init(){
   try{
     const res=await fetch(DATA_URL,{cache:"no-store"});if(!res.ok)throw new Error("Catalog data failed");
@@ -451,7 +360,7 @@ async function init(){
     const creditsRes=await fetch("/data/image-credits.json?photo-v=17",{cache:"no-store"}).catch(()=>null);
     let credits={images:[]};try{if(creditsRes&&creditsRes.ok)credits=await creditsRes.json()}catch(e){}
     verifiedPhotoIds=new Set((credits.images||[]).map(x=>String(x.id)));
-    state.products=(data.products||[]).map(p=>verifiedPhotoIds.has(String(p.id))?p:{...p,image:productOnlyPlaceholder(p)});
+    state.products=(data.products||[]);
     state.cart=state.cart.map(item=>{
       const product=state.products.find(p=>p.id===item.id);
       if(!product)return item;

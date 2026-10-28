@@ -1,0 +1,19 @@
+/* Fashion page: use only the reviewed, repository-local images supplied in the catalog ZIP. */
+body.fashion-page .shop-hero-art {
+  background-image:
+    linear-gradient(180deg, rgba(18,49,38,.04), rgba(18,49,38,.44)),
+    url("/assets/shop/catalog/user-provided/source-275.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+body.fashion-page .shop-image-panel {
+  background-image: url("/assets/shop/catalog/user-provided/source-041.jpg") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+body.fashion-page .shop-image-panel img {
+  object-fit: cover !important;
+  object-position: center !important;
+}
